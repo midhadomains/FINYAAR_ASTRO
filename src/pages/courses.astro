@@ -1,0 +1,67 @@
+---
+import "../styles.css";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import Icon from "../components/Icon.astro";
+
+const eyebrow = "mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand";
+const card = "rounded-[1.25rem] border border-line bg-white p-7 shadow-[0_1px_2px_rgba(11,31,75,0.04)] transition-all hover:-translate-y-1 hover:border-brand/30 hover:shadow-[0_16px_32px_rgba(11,31,75,0.1)]";
+const pill = "mb-4 inline-flex items-center rounded-full bg-brand/10 px-[0.8rem] py-[0.4rem] text-[0.85rem] font-bold text-brand";
+const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand";
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses — FinYaar Finance</title>
+  </head>
+  <body>
+    <SiteHeader />
+    <main>
+      <section class="pt-16 pb-12">
+        <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
+          <p class={eyebrow}>Certification paths</p>
+          <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">Choose the program that fits your finance role</h1>
+          <p class="mt-4 max-w-[36rem] text-muted">From financial modeling to equity research, each course is built for busy professionals who want practical outcomes.</p>
+        </div>
+      </section>
+
+      <section class="py-[5.5rem]">
+        <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class={card}>
+            <div class={iconBadge}><Icon name="chart-bar" class="h-6 w-6" /></div>
+            <span class={pill}>Core program</span>
+            <h2 class="mt-0 text-xl font-bold text-ink">Financial Modeling & Valuation</h2>
+            <p class="text-muted">Build 3-statement models, run DCFs, and create valuation-ready outputs with clean worksheets.</p>
+          </article>
+          <article class={card}>
+            <div class={iconBadge}><Icon name="sparkles" class="h-6 w-6" /></div>
+            <span class={pill}>AI workflow</span>
+            <h2 class="mt-0 text-xl font-bold text-ink">AI Finance Accelerator</h2>
+            <p class="text-muted">Use AI prompts, audit templates, and spreadsheet automation to speed up analysis without sacrificing quality.</p>
+          </article>
+          <article class={card}>
+            <div class={iconBadge}><Icon name="landmark" class="h-6 w-6" /></div>
+            <span class={pill}>Deal-focused</span>
+            <h2 class="mt-0 text-xl font-bold text-ink">Investment Banking Essentials</h2>
+            <p class="text-muted">Cover valuation, deal structure, pitchbook prep, and transaction documentation.</p>
+          </article>
+          <article class={card}>
+            <div class={iconBadge}><Icon name="search" class="h-6 w-6" /></div>
+            <span class={pill}>Research</span>
+            <h2 class="mt-0 text-xl font-bold text-ink">Equity Research & Valuation</h2>
+            <p class="text-muted">Analyze company financials, build thesis-driven models, and prepare investment summaries.</p>
+          </article>
+          <article class={card}>
+            <div class={iconBadge}><Icon name="calendar" class="h-6 w-6" /></div>
+            <span class={pill}>Planning</span>
+            <h2 class="mt-0 text-xl font-bold text-ink">FP&A Strategy</h2>
+            <p class="text-muted">Learn forecasting, variance reporting, and integrated planning in a finance team setting.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <SiteFooter />
+  </body>
+</html>

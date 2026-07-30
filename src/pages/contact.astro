@@ -1,0 +1,56 @@
+---
+import "../styles.css";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+
+const eyebrow = "mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand";
+const inputClass = "w-full rounded-2xl border border-line bg-surface p-4 text-ink placeholder:text-[#8a97b8]";
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — FinYaar Finance</title>
+  </head>
+  <body>
+    <SiteHeader />
+    <main>
+      <section class="pt-16 pb-12">
+        <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
+          <p class={eyebrow}>Contact</p>
+          <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">Get in touch with FinYaar Finance</h1>
+          <p class="mt-4 max-w-[36rem] text-muted">Ask about courses, team training, or how to bring AI workflows into your finance operations.</p>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div class="grid gap-4">
+            <h2 class="text-2xl font-extrabold text-ink">We're here to help</h2>
+            <p class="text-muted">Reach out for program details, enterprise pricing, or custom finance learning plans.</p>
+            <p class="text-muted">Email: <a class="text-brand hover:text-brand-dark" href="mailto:hello@finyaar.com">hello@finyaar.com</a></p>
+            <p class="text-muted">Phone: +1 (555) 123-4567</p>
+          </div>
+
+          <form class="grid gap-5">
+            <label class="grid gap-2 font-semibold text-ink">
+              Name
+              <input class={inputClass} type="text" name="name" placeholder="Your name" />
+            </label>
+            <label class="grid gap-2 font-semibold text-ink">
+              Email
+              <input class={inputClass} type="email" name="email" placeholder="you@example.com" />
+            </label>
+            <label class="grid gap-2 font-semibold text-ink">
+              Message
+              <textarea class={inputClass} name="message" rows="6" placeholder="Tell us what you need"></textarea>
+            </label>
+            <button class="w-fit inline-flex items-center justify-center rounded-full bg-brand px-[1.6rem] py-4 font-bold text-white transition-transform hover:-translate-y-px hover:bg-brand-dark" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <SiteFooter />
+  </body>
+</html>

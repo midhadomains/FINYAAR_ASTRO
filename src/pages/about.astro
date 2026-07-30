@@ -1,0 +1,149 @@
+---
+import "../styles.css";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import Icon from "../components/Icon.astro";
+
+const eyebrow = "mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand";
+const card = "rounded-[1.25rem] border border-line bg-white p-7 shadow-[0_1px_2px_rgba(11,31,75,0.04)] transition-all hover:-translate-y-1 hover:border-brand/30 hover:shadow-[0_16px_32px_rgba(11,31,75,0.1)]";
+const sectionIntro = "mx-auto mb-8 w-[calc(100%-2rem)] max-w-[760px]";
+const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand";
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — FinYaar Finance</title>
+  </head>
+  <body>
+    <SiteHeader />
+    <main>
+      <section class="pt-16 pb-12">
+        <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
+          <p class={eyebrow}>Who we are</p>
+          <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">Finance education built around real analyst workflows</h1>
+          <p class="mt-4 max-w-[36rem] text-muted">Our mission: train finance professionals with the depth of real practice, the speed of AI, and the rigor only practitioners can teach.</p>
+        </div>
+      </section>
+
+      <section class="py-[5.5rem]">
+        <div class="mx-auto flex w-[calc(100%-2rem)] max-w-[1160px] flex-wrap justify-between gap-8 rounded-[1.25rem] border border-line bg-surface p-10">
+          <div>
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand/10 text-brand"><Icon name="graduation-cap" class="h-5 w-5" /></div>
+            <div class="grid"><strong class="text-[2.25rem] font-extrabold text-ink">500K+</strong><span class="text-[0.9rem] text-muted">Learners trained</span></div>
+          </div>
+          <div>
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand/10 text-brand"><Icon name="users" class="h-5 w-5" /></div>
+            <div class="grid"><strong class="text-[2.25rem] font-extrabold text-ink">125K+</strong><span class="text-[0.9rem] text-muted">Community members</span></div>
+          </div>
+          <div>
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand/10 text-brand"><Icon name="book-open" class="h-5 w-5" /></div>
+            <div class="grid"><strong class="text-[2.25rem] font-extrabold text-ink">10K+</strong><span class="text-[0.9rem] text-muted">Finance articles &amp; guides</span></div>
+          </div>
+          <div>
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand/10 text-brand"><Icon name="globe" class="h-5 w-5" /></div>
+            <div class="grid"><strong class="text-[2.25rem] font-extrabold text-ink">50+</strong><span class="text-[0.9rem] text-muted">Countries served</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-surface py-[5.5rem]">
+        <div class={sectionIntro}>
+          <p class={eyebrow}>What we stand for</p>
+          <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">Every lesson is built, reviewed, and audited by people who've done the work.</h2>
+        </div>
+        <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class={card}>
+            <div class={iconBadge}><Icon name="person" class="h-6 w-6" /></div>
+            <h2 class="mt-0 text-xl font-bold text-ink">Practitioner-reviewed</h2>
+            <p class="text-muted">Every lesson includes real case exercises, templates, and a practical output you can use again.</p>
+          </article>
+          <article class={card}>
+            <div class={iconBadge}><Icon name="shield-check" class="h-6 w-6" /></div>
+            <h2 class="mt-0 text-xl font-bold text-ink">AI audit methodology</h2>
+            <p class="text-muted">Learn how to apply AI safely in modeling, valuation, and reporting with audit checks built in.</p>
+          </article>
+          <article class={card}>
+            <div class={iconBadge}><Icon name="document" class="h-6 w-6" /></div>
+            <h2 class="mt-0 text-xl font-bold text-ink">Real-world case focus</h2>
+            <p class="text-muted">We focus on skills you can use today in investment banking, FP&A, equity research, and operational finance.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="py-[5.5rem]">
+        <div class={sectionIntro}>
+          <p class={eyebrow}>Our story</p>
+          <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">From a two-person curriculum to a global finance learning platform.</h2>
+        </div>
+        <div class="relative mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-10 sm:grid-cols-4">
+          <div class="pointer-events-none absolute left-0 right-0 top-[7px] hidden h-px bg-line sm:block"></div>
+          <div class="relative pl-5 sm:pl-0">
+            <div class="absolute left-0 top-[3px] h-3.5 w-3.5 rounded-full bg-brand ring-4 ring-white sm:relative sm:mb-4"></div>
+            <span class="mb-2 block text-xl font-extrabold text-ink">2014</span>
+            <p class="m-0 text-muted">Founded by former investment banking and equity research analysts frustrated with theory-only finance courses.</p>
+          </div>
+          <div class="relative pl-5 sm:pl-0">
+            <div class="absolute left-0 top-[3px] h-3.5 w-3.5 rounded-full bg-brand ring-4 ring-white sm:relative sm:mb-4"></div>
+            <span class="mb-2 block text-xl font-extrabold text-ink">2018</span>
+            <p class="m-0 text-muted">Launched our first certification tracks in financial modeling and investment banking, built entirely around live case studies.</p>
+          </div>
+          <div class="relative pl-5 sm:pl-0">
+            <div class="absolute left-0 top-[3px] h-3.5 w-3.5 rounded-full bg-brand ring-4 ring-white sm:relative sm:mb-4"></div>
+            <span class="mb-2 block text-xl font-extrabold text-ink">2020</span>
+            <p class="m-0 text-muted">Crossed 500,000 learners across 50+ countries, with teams at major banks and advisory firms enrolling cohorts.</p>
+          </div>
+          <div class="relative pl-5 sm:pl-0">
+            <div class="absolute left-0 top-[3px] h-3.5 w-3.5 rounded-full bg-brand ring-4 ring-white sm:relative sm:mb-4"></div>
+            <span class="mb-2 block text-xl font-extrabold text-ink">2026</span>
+            <p class="m-0 text-muted">Launched the AI Finance Vault — audit-first AI prompts and templates built for practitioner workflows.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="bg-surface py-[5.5rem]">
+        <div class={sectionIntro}>
+          <p class={eyebrow}>Our team</p>
+          <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">Led by practitioners who've sat inside the deals they teach.</h2>
+        </div>
+        <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class={card}>
+            <div class="mb-4 grid size-14 place-items-center rounded-full bg-gradient-to-br from-brand to-ink text-[1.05rem] font-bold text-white">AC</div>
+            <h3 class="mt-0 text-lg font-bold text-ink">Ariana Cole</h3>
+            <p class="mt-1 mb-3 text-[0.9rem] font-bold text-brand">Co-founder — ex-Goldman Sachs, Investment Banking</p>
+            <p class="text-muted">Led M&A execution and pitchbook development before building FinYaar's investment banking curriculum.</p>
+          </article>
+          <article class={card}>
+            <div class="mb-4 grid size-14 place-items-center rounded-full bg-gradient-to-br from-brand to-ink text-[1.05rem] font-bold text-white">DR</div>
+            <h3 class="mt-0 text-lg font-bold text-ink">Daniel Reyes</h3>
+            <p class="mt-1 mb-3 text-[0.9rem] font-bold text-brand">Co-founder — ex-J.P. Morgan, Equity Research</p>
+            <p class="text-muted">Spent seven years covering tech and consumer names; now designs the equity research and valuation tracks.</p>
+          </article>
+          <article class={card}>
+            <div class="mb-4 grid size-14 place-items-center rounded-full bg-gradient-to-br from-brand to-ink text-[1.05rem] font-bold text-white">PN</div>
+            <h3 class="mt-0 text-lg font-bold text-ink">Priya Nandan</h3>
+            <p class="mt-1 mb-3 text-[0.9rem] font-bold text-brand">Head of AI Curriculum — ex-Deloitte Advisory</p>
+            <p class="text-muted">Built audit-first AI workflows for finance teams; leads the AI Finance Vault and AI Mastery Program.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 items-start gap-6 sm:grid-cols-2">
+          <div>
+            <h2 class="mt-0 text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">Expert instructors from finance and analytics</h2>
+            <p class="text-muted">Our curriculum is designed by analysts who have led models, investment memorandums, valuations, and transaction analyses in top finance roles.</p>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-bold text-ink">Data-driven instruction</h3>
+            <p class="text-muted">We combine financial concepts, case studies, and tool-ready templates so learners can move from explanation to execution quickly.</p>
+            <h3 class="mt-4 mb-3 text-lg font-bold text-ink">Ready for teams</h3>
+            <p class="text-muted">Courses are a good fit for individuals and finance teams who want to standardize workflows across reporting, budgeting, and deal review.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <SiteFooter />
+  </body>
+</html>

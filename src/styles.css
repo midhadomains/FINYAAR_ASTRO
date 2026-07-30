@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0b1f4b;
+  --color-brand: #1a56db;
+  --color-brand-dark: #123a99;
+  --color-muted: #5b6b8c;
+  --color-line: #e4e9f5;
+  --color-surface: #f6f8fd;
+  --font-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-white text-ink font-sans;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.15;
+}

@@ -1,0 +1,61 @@
+---
+import "../../styles.css";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import BlogCard from "../../components/BlogCard.astro";
+import { getAllPosts } from "../../lib/wordpress";
+import type { BlogPostSummary } from "../../lib/wordpress";
+
+const eyebrow = "mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand";
+
+let posts: BlogPostSummary[] = [];
+let loadError = false;
+
+try {
+  posts = await getAllPosts();
+} catch (error) {
+  console.error("Failed to load posts from WordPress:", error);
+  loadError = true;
+}
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog — FinYaar Finance</title>
+  </head>
+  <body>
+    <SiteHeader />
+    <main>
+      <section class="pt-16 pb-12">
+        <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
+          <p class={eyebrow}>Insights & analysis</p>
+          <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">The FinYaar Finance Blog</h1>
+          <p class="mt-4 max-w-[36rem] text-muted">Practitioner takes on modeling, valuation, AI workflows, and the finance career skills that matter.</p>
+        </div>
+      </section>
+
+      <section class="py-[5.5rem]">
+        <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
+          {loadError && (
+            <p class="rounded-[1.25rem] border border-line bg-surface p-7 text-muted">
+              We couldn't load blog posts right now. Please check back shortly.
+            </p>
+          )}
+          {!loadError && posts.length === 0 && (
+            <p class="rounded-[1.25rem] border border-line bg-surface p-7 text-muted">
+              No posts published yet — check back soon.
+            </p>
+          )}
+          {!loadError && posts.length > 0 && (
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {posts.map((post) => <BlogCard post={post} />)}
+            </div>
+          )}
+        </div>
+      </section>
+    </main>
+    <SiteFooter />
+  </body>
+</html>

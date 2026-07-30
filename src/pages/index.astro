@@ -1,17 +1,305 @@
 ---
+import "../styles.css";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import Icon from "../components/Icon.astro";
 
+const eyebrow = "mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand";
+const card = "rounded-[1.25rem] border border-line bg-white p-7 shadow-[0_1px_2px_rgba(11,31,75,0.04)] transition-all hover:-translate-y-1 hover:border-brand/30 hover:shadow-[0_16px_32px_rgba(11,31,75,0.1)]";
+const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand";
+const buttonBase = "inline-flex items-center justify-center rounded-full px-[1.6rem] py-4 font-bold transition-transform hover:-translate-y-px";
+const buttonPrimary = `${buttonBase} bg-brand text-white hover:bg-brand-dark`;
+const buttonSecondary = `${buttonBase} border border-line bg-white text-ink hover:border-brand hover:text-brand`;
+const buttonSecondaryDark = `${buttonBase} border border-white/35 bg-transparent text-white hover:border-white`;
 ---
-
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Hello World - We are building Astro Project</title>
-	</head>
-	<body>
-		<h1>Hello World - We are building Astro Project</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinYaar Finance — Finance skills built for the AI era</title>
+  </head>
+  <body>
+    <SiteHeader />
+    <main>
+      <header class="pt-[4.5rem] pb-20">
+        <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 items-center gap-10 md:grid-cols-[1.1fr_0.9fr] md:gap-10">
+          <div class="max-w-[680px]">
+            <p class={eyebrow}>Practitioner-led finance & AI certifications</p>
+            <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">Finance skills, built for the AI era</h1>
+            <p class="my-7 max-w-[36rem] text-muted">Master financial modeling, valuation, investment banking, and FP&A with real analyst workflows, practical templates, and AI audit-first execution.</p>
+            <div class="flex flex-wrap gap-4">
+              <a class={buttonPrimary} href="#programs">Explore Certifications</a>
+              <a class={buttonSecondary} href="/courses">Start with a free course</a>
+            </div>
+            <div class="mt-6 flex flex-wrap items-center gap-6 text-[0.95rem] font-semibold text-muted">
+              <span>&#9733; 4.8 rating</span>
+              <span>500K+ learners</span>
+              <span>50+ countries</span>
+            </div>
+          </div>
+
+          <div class="rounded-[1.25rem] border border-line bg-[linear-gradient(160deg,#eef2ff,#ffffff)] p-5 shadow-[0_24px_48px_rgba(11,31,75,0.1)]">
+            <div class="mb-5 flex gap-[0.4rem]">
+              <span class="h-[0.65rem] w-[0.65rem] rounded-full bg-line"></span>
+              <span class="h-[0.65rem] w-[0.65rem] rounded-full bg-line"></span>
+              <span class="h-[0.65rem] w-[0.65rem] rounded-full bg-line"></span>
+            </div>
+            <div class="flex h-[140px] items-end gap-[0.6rem] border-b border-line px-4 pt-4">
+              <span class="flex-1 rounded-t-[0.4rem] bg-gradient-to-b from-brand to-brand-dark opacity-85" style="height: 35%;"></span>
+              <span class="flex-1 rounded-t-[0.4rem] bg-gradient-to-b from-brand to-brand-dark opacity-85" style="height: 55%;"></span>
+              <span class="flex-1 rounded-t-[0.4rem] bg-gradient-to-b from-brand to-brand-dark opacity-85" style="height: 40%;"></span>
+              <span class="flex-1 rounded-t-[0.4rem] bg-gradient-to-b from-brand to-brand-dark opacity-85" style="height: 75%;"></span>
+              <span class="flex-1 rounded-t-[0.4rem] bg-gradient-to-b from-brand to-brand-dark opacity-85" style="height: 60%;"></span>
+              <span class="flex-1 rounded-t-[0.4rem] bg-gradient-to-b from-brand to-brand-dark opacity-85" style="height: 90%;"></span>
+              <span class="flex-1 rounded-t-[0.4rem] bg-gradient-to-b from-amber-300 to-amber-500 opacity-85" style="height: 100%;"></span>
+            </div>
+            <div class="flex items-start justify-between gap-4 px-4 pt-5 pb-2">
+              <p class="m-0 text-[0.95rem] font-semibold text-ink">Netflix DCF dashboard — build the same model our analysts use to teach valuation, live in Excel.</p>
+              <span class="inline-flex flex-shrink-0 items-center rounded-full bg-brand/10 px-[0.8rem] py-[0.4rem] text-[0.85rem] font-bold text-brand">Live model</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="py-[5.5rem]">
+        <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
+          <p class={`${eyebrow} text-center`}>Trusted by teams at</p>
+          <div class="grid grid-cols-2 items-stretch gap-6 sm:grid-cols-3 md:grid-cols-6">
+            <div class="rounded-2xl border border-line p-4 text-center text-[0.92rem] font-bold text-muted">J.P. Morgan</div>
+            <div class="rounded-2xl border border-line p-4 text-center text-[0.92rem] font-bold text-muted">Goldman Sachs</div>
+            <div class="rounded-2xl border border-line p-4 text-center text-[0.92rem] font-bold text-muted">Morgan Stanley</div>
+            <div class="rounded-2xl border border-line p-4 text-center text-[0.92rem] font-bold text-muted">Citi</div>
+            <div class="rounded-2xl border border-line p-4 text-center text-[0.92rem] font-bold text-muted">Deloitte</div>
+            <div class="rounded-2xl border border-line p-4 text-center text-[0.92rem] font-bold text-muted">EY</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-surface py-[5.5rem]">
+        <div class="mx-auto mb-8 w-[calc(100%-2rem)] max-w-[760px]">
+          <p class={eyebrow}>Why FinYaar Finance</p>
+          <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">Built by practitioners, taught for outcomes you can use on day one.</h2>
+        </div>
+        <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class={card}>
+            <div class={iconBadge}><Icon name="person" class="h-6 w-6" /></div>
+            <h2 class="mt-0 text-xl font-bold text-ink">Practitioner-led</h2>
+            <p class="text-muted">Every course is built and taught by analysts who have worked inside investment banks, PE firms, and Big Four advisory teams.</p>
+          </article>
+          <article class={card}>
+            <div class={iconBadge}><Icon name="shield-check" class="h-6 w-6" /></div>
+            <h2 class="mt-0 text-xl font-bold text-ink">Audit-first AI</h2>
+            <p class="text-muted">We teach AI as a workflow accelerator with built-in checks, not a shortcut — every output is structured for review and accuracy.</p>
+          </article>
+          <article class={card}>
+            <div class={iconBadge}><Icon name="document" class="h-6 w-6" /></div>
+            <h2 class="mt-0 text-xl font-bold text-ink">Case-based learning</h2>
+            <p class="text-muted">Learn on real company filings and live models instead of toy examples, so the skills transfer directly to your desk.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="py-[5.5rem]">
+        <div class="mx-auto mb-12 w-[calc(100%-2rem)] max-w-[760px] text-center">
+          <p class={`${eyebrow} text-center`}>How it works</p>
+          <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">Three steps from zero to job-ready.</h2>
+        </div>
+        <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
+          <div class="relative grid grid-cols-1 gap-10 sm:grid-cols-3">
+            <div class="pointer-events-none absolute top-6 left-0 right-0 hidden h-px bg-line sm:block"></div>
+            <div class="relative text-center">
+              <div class="relative z-10 mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-brand text-lg font-extrabold text-white">1</div>
+              <div class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand"><Icon name="compass" class="h-6 w-6" /></div>
+              <h3 class="mb-2 text-lg font-bold text-ink">Pick your path</h3>
+              <p class="text-muted">Choose a certification track that matches your role — modeling, banking, research, or FP&A.</p>
+            </div>
+            <div class="relative text-center">
+              <div class="relative z-10 mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-brand text-lg font-extrabold text-white">2</div>
+              <div class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand"><Icon name="document" class="h-6 w-6" /></div>
+              <h3 class="mb-2 text-lg font-bold text-ink">Learn with real cases</h3>
+              <p class="text-muted">Work through live filings and full models instead of toy examples, guided by practitioner instructors.</p>
+            </div>
+            <div class="relative text-center">
+              <div class="relative z-10 mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-brand text-lg font-extrabold text-white">3</div>
+              <div class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand"><Icon name="sparkles" class="h-6 w-6" /></div>
+              <h3 class="mb-2 text-lg font-bold text-ink">Apply with the AI Vault</h3>
+              <p class="text-muted">Put it into practice with audit-first AI prompts and templates built for everyday analyst workflows.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="programs" class="bg-surface py-[5.5rem]">
+        <div class="mx-auto mb-8 w-[calc(100%-2rem)] max-w-[760px]">
+          <p class={eyebrow}>Certification paths built around real analyst work</p>
+          <h2 class="mb-4 text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">Focused programs that combine concept clarity, spreadsheet practice, and AI-enabled execution.</h2>
+          <p class="text-muted">Choose the path that matches your goal, then build deep skills with practical cases and templates.</p>
+        </div>
+
+        <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class={card}>
+            <div class={iconBadge}><Icon name="chart-bar" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink">Financial Modeling & Valuation + AI</h3>
+            <p class="text-muted">Netflix DCF case, 3-statement modeling, and Claude + Excel workflow.</p>
+            <p class="text-muted"><strong>4.9 rating • 12K learners</strong></p>
+          </article>
+
+          <article class={card}>
+            <div class={iconBadge}><Icon name="sparkles" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink">FMV using AI</h3>
+            <p class="text-muted">Apply AI to financial modeling, analysis, and valuation workflows.</p>
+            <p class="text-muted"><strong>4.8 rating • AI-ready</strong></p>
+          </article>
+
+          <article class={card}>
+            <div class={iconBadge}><Icon name="landmark" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink">Investment Banking Certification</h3>
+            <p class="text-muted">Deal structures, LBO, pitchbooks, comps, and M&A.</p>
+            <p class="text-muted"><strong>4.8 rating • 8.5K learners</strong></p>
+          </article>
+
+          <article class={card}>
+            <div class={iconBadge}><Icon name="search" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink">Fundamental Analysis + AI</h3>
+            <p class="text-muted">10-K reading, investment thesis, and AI-augmented research workflows.</p>
+            <p class="text-muted"><strong>Analyst workflow • AI audits</strong></p>
+          </article>
+
+          <article class={card}>
+            <div class={iconBadge}><Icon name="calendar" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink">FP&A</h3>
+            <p class="text-muted">Budgeting, forecasting, reporting, and planning workflows.</p>
+            <p class="text-muted"><strong>Forecasting • Reporting</strong></p>
+          </article>
+
+          <article class={card}>
+            <div class={iconBadge}><Icon name="lightbulb" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink">AI Mastery Program</h3>
+            <p class="text-muted">Use AI for research, analysis, modeling, and productivity.</p>
+            <p class="text-muted"><strong>Prompts • Workflows • Audit</strong></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="vault" class="py-[5.5rem]">
+        <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] rounded-[1.25rem] bg-[linear-gradient(135deg,var(--color-ink),var(--color-brand-dark))] p-12 shadow-[0_24px_48px_rgba(11,31,75,0.18)]">
+          <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-white">The AI Finance Vault</h2>
+          <p class="max-w-[42rem] text-white/90">500+ finance prompts, 120+ AI templates, and audit-ready workflows for modeling, valuation, FP&A, and research.</p>
+          <p class="max-w-[42rem] text-white/90">Includes prompt libraries, Excel templates, real case examples, and weekly updates.</p>
+          <div class="my-8 flex flex-wrap gap-10">
+            <div class="grid"><strong class="text-[1.75rem] font-extrabold text-white">500+</strong><span class="text-[0.9rem] text-white/65">Finance prompts</span></div>
+            <div class="grid"><strong class="text-[1.75rem] font-extrabold text-white">120+</strong><span class="text-[0.9rem] text-white/65">AI templates</span></div>
+            <div class="grid"><strong class="text-[1.75rem] font-extrabold text-white">Weekly</strong><span class="text-[0.9rem] text-white/65">New updates</span></div>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <a class={buttonPrimary} href="/vault">Get Vault Access</a>
+            <a class={buttonSecondaryDark} href="/vault">See Sample Prompts</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-surface py-[5.5rem]">
+        <div class="mx-auto mb-8 w-[calc(100%-2rem)] max-w-[760px] text-center">
+          <p class={eyebrow}>Follow the path that matches your goal</p>
+          <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">Build core modeling and AI audit confidence before moving into role-specific cases.</h2>
+        </div>
+
+        <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article class={`relative pr-10 ${card}`}>
+            <div class={iconBadge}><Icon name="chart-bar" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink">Financial Modeling</h3>
+            <p class="text-muted">Core modeling, DCF, valuation, and AI audit workflows.</p>
+            <span class="absolute right-6 top-7 text-xl text-brand">&rarr;</span>
+          </article>
+          <article class={`relative pr-10 ${card}`}>
+            <div class={iconBadge}><Icon name="landmark" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink">Investment Banking</h3>
+            <p class="text-muted">Pitchbooks, deal analysis, LBO, and interview-ready outputs.</p>
+            <span class="absolute right-6 top-7 text-xl text-brand">&rarr;</span>
+          </article>
+          <article class={`relative pr-10 ${card}`}>
+            <div class={iconBadge}><Icon name="search" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink">Equity Research</h3>
+            <p class="text-muted">10-K analysis, investment thesis, valuation, and research checks.</p>
+            <span class="absolute right-6 top-7 text-xl text-brand">&rarr;</span>
+          </article>
+          <article class={`relative pr-10 ${card}`}>
+            <div class={iconBadge}><Icon name="calendar" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink">FP&A</h3>
+            <p class="text-muted">Forecasting, budgeting, reporting, and modern planning workflows.</p>
+            <span class="absolute right-6 top-7 text-xl text-brand">&rarr;</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="py-[5.5rem]">
+        <div class="mx-auto mb-8 w-[calc(100%-2rem)] max-w-[760px]">
+          <p class={eyebrow}>Meet the team</p>
+          <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">Led by practitioners who've sat inside the deals they teach.</h2>
+        </div>
+        <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class={card}>
+            <div class="mb-4 grid size-14 place-items-center rounded-full bg-gradient-to-br from-brand to-ink text-[1.05rem] font-bold text-white">AC</div>
+            <h3 class="mt-0 text-lg font-bold text-ink">Ariana Cole</h3>
+            <p class="mt-1 mb-3 text-[0.9rem] font-bold text-brand">Co-founder — ex-Goldman Sachs, Investment Banking</p>
+            <p class="text-muted">Led M&A execution and pitchbook development before building FinYaar's investment banking curriculum.</p>
+          </article>
+          <article class={card}>
+            <div class="mb-4 grid size-14 place-items-center rounded-full bg-gradient-to-br from-brand to-ink text-[1.05rem] font-bold text-white">DR</div>
+            <h3 class="mt-0 text-lg font-bold text-ink">Daniel Reyes</h3>
+            <p class="mt-1 mb-3 text-[0.9rem] font-bold text-brand">Co-founder — ex-J.P. Morgan, Equity Research</p>
+            <p class="text-muted">Spent seven years covering tech and consumer names; now designs the equity research and valuation tracks.</p>
+          </article>
+          <article class={card}>
+            <div class="mb-4 grid size-14 place-items-center rounded-full bg-gradient-to-br from-brand to-ink text-[1.05rem] font-bold text-white">PN</div>
+            <h3 class="mt-0 text-lg font-bold text-ink">Priya Nandan</h3>
+            <p class="mt-1 mb-3 text-[0.9rem] font-bold text-brand">Head of AI Curriculum — ex-Deloitte Advisory</p>
+            <p class="text-muted">Built audit-first AI workflows for finance teams; leads the AI Finance Vault and AI Mastery Program.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="learners" class="bg-surface py-[5.5rem]">
+        <div class="mx-auto mb-8 w-[calc(100%-2rem)] max-w-[760px]">
+          <p class={eyebrow}>What learners say</p>
+          <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">500K+ learners across 50+ countries have trusted this training.</h2>
+        </div>
+        <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class={card}>
+            <div class="mb-3 tracking-[0.1em] text-amber-500">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="mt-0 text-muted">"The Netflix DCF case made valuation click in a way three years of self-study never did."</p>
+            <span class="mt-4 block font-bold text-ink">Meera Suresh<span class="block text-[0.85rem] font-normal text-muted">Equity Research Associate</span></span>
+          </article>
+          <article class={card}>
+            <div class="mb-3 tracking-[0.1em] text-amber-500">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="mt-0 text-muted">"I used the IB certification templates directly in my summer analyst pitchbook. Huge time saver."</p>
+            <span class="mt-4 block font-bold text-ink">Jonah Whitfield<span class="block text-[0.85rem] font-normal text-muted">Summer Analyst, Bulge Bracket Bank</span></span>
+          </article>
+          <article class={card}>
+            <div class="mb-3 tracking-[0.1em] text-amber-500">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="mt-0 text-muted">"The AI Finance Vault prompts cut my monthly reporting time in half without sacrificing accuracy."</p>
+            <span class="mt-4 block font-bold text-ink">Carlos Am&eacute;zaga<span class="block text-[0.85rem] font-normal text-muted">FP&A Manager</span></span>
+          </article>
+          <article class={card}>
+            <div class="mb-3 tracking-[0.1em] text-amber-500">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="mt-0 text-muted">"Practical, case-based, and taught by people who've actually done the work. Exactly what I needed."</p>
+            <span class="mt-4 block font-bold text-ink">Wanjiru Kamau<span class="block text-[0.85rem] font-normal text-muted">Corporate Finance Analyst</span></span>
+          </article>
+          <article class={card}>
+            <div class="mb-3 tracking-[0.1em] text-amber-500">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="mt-0 text-muted">"Rolled this out to my whole team. The audit-first AI approach fits how we actually review models."</p>
+            <span class="mt-4 block font-bold text-ink">Soo-ah Baek<span class="block text-[0.85rem] font-normal text-muted">Finance Team Lead</span></span>
+          </article>
+          <article class={card}>
+            <div class="mb-3 tracking-[0.1em] text-amber-500">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="mt-0 text-muted">"Best investment banking prep I found — the LBO and comps modules mirror real deal work closely."</p>
+            <span class="mt-4 block font-bold text-ink">Tomás Ferreira<span class="block text-[0.85rem] font-normal text-muted">Investment Banking Analyst</span></span>
+          </article>
+        </div>
+      </section>
+
+    </main>
+    <SiteFooter />
+  </body>
 </html>
