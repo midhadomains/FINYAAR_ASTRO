@@ -1,45 +1,41 @@
 ---
 const year = new Date().getFullYear();
 ---
-<footer class="border-t border-line bg-surface pt-12 pb-8">
+<footer class="border-t border-line bg-surface pt-14 pb-8">
   <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
-    <div class="grid grid-cols-1 gap-8 pb-8 sm:grid-cols-2 lg:grid-cols-[1.4fr_repeat(4,1fr)]">
+    <div class="grid grid-cols-1 gap-10 pb-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_repeat(3,1fr)]">
       <div>
         <a class="text-lg font-extrabold text-ink" href="/">FinYaar Finance</a>
         <p class="mt-3 max-w-[22rem] text-muted">Practitioner-led finance and AI certifications — practical training for analysts, teams, and modern finance pros.</p>
       </div>
       <div>
-        <h4 class="mb-4 text-[0.85rem] font-semibold uppercase tracking-wide text-ink">Company</h4>
+        <h4 class="mb-4 flex items-center gap-1.5 text-[0.85rem] font-bold uppercase tracking-wide text-ink">
+          <span class="material-symbols-outlined text-[18px] text-brand">menu_book</span>
+          Dictionary
+        </h4>
         <ul class="grid gap-2.5">
-          <li><a class="text-muted transition-colors hover:text-brand" href="/about">About</a></li>
-          <li><a class="text-muted transition-colors hover:text-brand" href="/about#team">Our Team</a></li>
-          <li><a class="text-muted transition-colors hover:text-brand" href="/#learners">Reviews</a></li>
+          <li><a class="text-muted transition-colors hover:text-brand" href="/dictionary">Browse All Terms</a></li>
+          <li><a class="text-muted transition-colors hover:text-brand" href="/dictionary?category=valuation">Valuation & Modeling</a></li>
+          <li><a class="text-muted transition-colors hover:text-brand" href="/dictionary?category=ma">M&A & Deals</a></li>
+          <li><a class="text-muted transition-colors hover:text-brand" href="/dictionary?category=ai">AI & Data</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="mb-4 text-[0.85rem] font-bold uppercase tracking-wide text-ink">Learn</h4>
+        <ul class="grid gap-2.5">
+          <li><a class="text-muted transition-colors hover:text-brand" href="/courses">Certifications</a></li>
+          <li><a class="text-muted transition-colors hover:text-brand" href="/courses">Free Courses</a></li>
+          <li><a class="text-muted transition-colors hover:text-brand" href="/vault">AI Finance Vault</a></li>
           <li><a class="text-muted transition-colors hover:text-brand" href="/blog">Blog</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="mb-4 text-[0.85rem] font-semibold uppercase tracking-wide text-ink">Courses</h4>
+        <h4 class="mb-4 text-[0.85rem] font-bold uppercase tracking-wide text-ink">Company</h4>
         <ul class="grid gap-2.5">
-          <li><a class="text-muted transition-colors hover:text-brand" href="/courses">Financial Modeling</a></li>
-          <li><a class="text-muted transition-colors hover:text-brand" href="/courses">Investment Banking</a></li>
-          <li><a class="text-muted transition-colors hover:text-brand" href="/courses">Equity Research</a></li>
-          <li><a class="text-muted transition-colors hover:text-brand" href="/courses">FP&A</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="mb-4 text-[0.85rem] font-semibold uppercase tracking-wide text-ink">Free Learning</h4>
-        <ul class="grid gap-2.5">
-          <li><a class="text-muted transition-colors hover:text-brand" href="/courses">Free Courses</a></li>
-          <li><a class="text-muted transition-colors hover:text-brand" href="/vault">Templates</a></li>
-          <li><a class="text-muted transition-colors hover:text-brand" href="/vault">Resources</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="mb-4 text-[0.85rem] font-semibold uppercase tracking-wide text-ink">Support</h4>
-        <ul class="grid gap-2.5">
+          <li><a class="text-muted transition-colors hover:text-brand" href="/about">About</a></li>
+          <li><a class="text-muted transition-colors hover:text-brand" href="/about#team">Our Team</a></li>
+          <li><a class="text-muted transition-colors hover:text-brand" href="/#learners">Reviews</a></li>
           <li><a class="text-muted transition-colors hover:text-brand" href="/contact">Contact</a></li>
-          <li><a class="text-muted transition-colors hover:text-brand" href="/vault">AI Finance Vault</a></li>
-          <li><a class="text-muted transition-colors hover:text-brand" href="/contact">Partnerships</a></li>
         </ul>
       </div>
     </div>

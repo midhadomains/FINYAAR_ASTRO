@@ -1,0 +1,238 @@
+---
+import "../styles.css";
+import SiteFonts from "../components/SiteFonts.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import { categories, terms, getTermBySlug } from "../lib/dictionary";
+
+const sortedTerms = [...terms].sort((a, b) => a.term.localeCompare(b.term));
+const letters = "#ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+const groups = new Map<string, typeof terms>();
+for (const t of sortedTerms) {
+  const first = /[0-9]/.test(t.term[0]) ? "#" : t.term[0].toUpperCase();
+  if (!groups.has(first)) groups.set(first, []);
+  groups.get(first)!.push(t);
+}
+
+const trending = ["dcf", "wacc", "ebitda", "lbo"].map((slug) => getTermBySlug(slug)).filter(Boolean);
+
+const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-brand hover:shadow-[0_4px_20px_rgba(15,23,32,0.06)] transition-all";
+---
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Dictionary — FinYaar Finance</title>
+    <meta name="description" content="A practitioner-reviewed glossary of finance terms across valuation, accounting, M&A, markets, FP&A, and AI." />
+    <SiteFonts />
+  </head>
+  <body class="bg-surface">
+    <SiteHeader />
+    <main class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] py-10">
+      <!-- Breadcrumbs -->
+      <nav class="mb-8 flex items-center gap-2 text-sm text-muted">
+        <a class="hover:text-brand" href="/">Home</a>
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+        <span class="text-ink">Dictionary</span>
+      </nav>
+
+      <!-- Hero -->
+      <div class="mb-10 flex flex-col items-center text-center">
+        <h1 class="text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold tracking-[-0.02em] text-ink">Finance Dictionary</h1>
+        <p class="mx-auto mt-3 max-w-2xl text-muted">
+          Plain-English definitions across valuation, accounting, M&amp;A, markets, FP&amp;A, and AI — written the way practitioners use these terms on the job, not the way textbooks define them.
+        </p>
+        <div class="relative mt-8 w-full max-w-2xl">
+          <span class="material-symbols-outlined pointer-events-none absolute left-5 top-1/2 -translate-y-1/2 text-brand">search</span>
+          <input
+            id="dict-search"
+            type="text"
+            placeholder="Search terms like 'EBITDA', 'WACC', or 'DCF'..."
+            class="w-full rounded-[14px] border border-line bg-white py-4 pl-14 pr-16 text-base text-ink shadow-[0_1px_2px_rgba(15,23,32,0.04)] outline-none transition-all placeholder:text-muted focus:border-brand focus:ring-4 focus:ring-brand/10"
+          />
+          <kbd id="dict-count" class="absolute right-4 top-1/2 hidden -translate-y-1/2 items-center rounded-md border border-line bg-surface px-2 py-1 text-xs text-muted sm:flex">{terms.length} terms</kbd>
+        </div>
+      </div>
+
+      <div class="flex gap-8">
+        <!-- A-Z Sticky Sidebar -->
+        <aside class="hidden h-fit w-14 flex-shrink-0 xl:block xl:sticky xl:top-24">
+          <nav class="flex flex-col items-center gap-1 rounded-[14px] border border-line bg-white p-2 shadow-[0_1px_2px_rgba(15,23,32,0.04)]">
+            {letters.map((l) =>
+              groups.has(l) ? (
+                <a href={`#letter-${l}`} data-az-link data-letter={l} class="az-link grid h-9 w-9 place-items-center rounded-lg text-sm font-semibold text-muted transition-colors hover:bg-surface hover:text-brand">{l}</a>
+              ) : (
+                <span class="grid h-9 w-9 place-items-center rounded-lg text-sm text-line">{l}</span>
+              )
+            )}
+          </nav>
+        </aside>
+
+        <!-- Main content -->
+        <div class="min-w-0 flex-1 space-y-10">
+          <!-- Category filters -->
+          <section class="flex flex-wrap items-center gap-2.5 border-b border-line pb-6">
+            <span class="mr-1 text-sm font-semibold text-muted">Filter by:</span>
+            <button type="button" class="category-pill inline-flex items-center gap-1.5 rounded-[14px] border border-brand bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors" data-category="all" aria-pressed="true">All Terms</button>
+            {categories.map((c) => (
+              <button type="button" class="category-pill inline-flex items-center gap-1.5 rounded-[14px] border border-line bg-white px-4 py-2 text-sm font-semibold text-muted transition-colors hover:bg-surface" data-category={c.key} aria-pressed="false">
+                <span class="material-symbols-outlined text-[18px]">{c.icon}</span>
+                {c.label}
+              </button>
+            ))}
+          </section>
+
+          <!-- Mobile letter strip -->
+          <div class="-mx-1 flex gap-1 overflow-x-auto px-1 xl:hidden">
+            {letters.filter((l) => groups.has(l)).map((l) => (
+              <a href={`#letter-${l}`} class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md bg-white border border-line text-sm font-semibold text-muted hover:border-brand hover:text-brand">{l}</a>
+            ))}
+          </div>
+
+          <!-- Grouped term list -->
+          <div id="dict-results" class="space-y-12">
+            {letters.filter((l) => groups.has(l)).map((l) => (
+              <section id={`letter-${l}`} data-letter={l} class="scroll-mt-24">
+                <div class="mb-5 flex items-center gap-4">
+                  <h2 class="text-[2.5rem] font-extrabold leading-none text-brand/15">{l}</h2>
+                  <div class="h-px flex-1 bg-line"></div>
+                </div>
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                  {groups.get(l)!.map((t) => (
+                    <a
+                      href={`/dictionary/${t.slug}`}
+                      class={`term-card group block ${card14}`}
+                      data-category={t.category}
+                      data-search={`${t.term} ${t.definition}`.toLowerCase()}
+                    >
+                      <div class="mb-2 flex items-start justify-between gap-3">
+                        <h3 class="text-lg font-bold text-ink transition-colors group-hover:text-brand">{t.term}</h3>
+                        <span class="flex-shrink-0 rounded-md bg-surface px-2 py-1 text-[0.68rem] font-bold uppercase tracking-wide text-muted">{categories.find((c) => c.key === t.category)?.label.split(" & ")[0]}</span>
+                      </div>
+                      <p class="line-clamp-2 text-sm text-muted">{t.definition}</p>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+          <div id="no-results" class="hidden py-20 text-center">
+            <span class="material-symbols-outlined text-4xl text-brand">search_off</span>
+            <p class="mt-3 text-lg font-bold text-ink">No terms match your search</p>
+            <p class="mt-1 text-muted">Try a different keyword or clear the category filter.</p>
+          </div>
+        </div>
+
+        <!-- Promo sidebar -->
+        <aside class="hidden h-fit w-72 flex-shrink-0 space-y-5 lg:block lg:sticky lg:top-24">
+          <div class="rounded-[14px] bg-[linear-gradient(135deg,var(--color-ink),var(--color-brand-dark))] p-6 text-white shadow-[0_4px_20px_rgba(15,23,32,0.1)]">
+            <h4 class="text-lg font-bold">Master Financial Modeling</h4>
+            <p class="mt-2 text-sm text-white/85">Turn these definitions into practice with the Netflix DCF case and live analyst workflows.</p>
+            <a href="/courses" class="mt-4 inline-flex items-center gap-1 rounded-[10px] bg-white px-4 py-2 text-sm font-bold text-ink transition-transform hover:-translate-y-px">
+              Explore Courses
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+          </div>
+          <div class={card14}>
+            <h4 class="mb-3 text-sm font-bold uppercase tracking-wide text-muted">Trending Terms</h4>
+            <ul class="space-y-2.5">
+              {trending.map((t) => t && (
+                <li>
+                  <a href={`/dictionary/${t.slug}`} class="text-sm font-semibold text-brand hover:underline">{t.term}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <SiteFooter />
+
+    <script>
+      const searchInput = document.getElementById("dict-search");
+      const pills = document.querySelectorAll(".category-pill");
+      const cards = document.querySelectorAll(".term-card");
+      const letterGroups = document.querySelectorAll("[data-letter]");
+      const countEl = document.getElementById("dict-count");
+      const noResults = document.getElementById("no-results");
+      const totalCount = cards.length;
+      let activeCategory = "all";
+
+      function applyFilters() {
+        const query = (searchInput instanceof HTMLInputElement ? searchInput.value : "").trim().toLowerCase();
+        let visible = 0;
+
+        cards.forEach((card) => {
+          const matchesCategory = activeCategory === "all" || card.getAttribute("data-category") === activeCategory;
+          const matchesQuery = query === "" || (card.getAttribute("data-search") || "").includes(query);
+          const show = matchesCategory && matchesQuery;
+          card.classList.toggle("hidden", !show);
+          if (show) visible++;
+        });
+
+        letterGroups.forEach((group) => {
+          const hasVisible = group.querySelector(".term-card:not(.hidden)");
+          group.classList.toggle("hidden", !hasVisible);
+        });
+
+        if (countEl) countEl.textContent = query || activeCategory !== "all" ? `${visible} of ${totalCount}` : `${totalCount} terms`;
+        if (noResults) noResults.classList.toggle("hidden", visible !== 0);
+      }
+
+      searchInput?.addEventListener("input", applyFilters);
+
+      pills.forEach((pill) => {
+        pill.addEventListener("click", () => {
+          activeCategory = pill.getAttribute("data-category") || "all";
+          pills.forEach((p) => {
+            const isActive = p === pill;
+            p.classList.toggle("bg-brand", isActive);
+            p.classList.toggle("text-white", isActive);
+            p.classList.toggle("border-brand", isActive);
+            p.classList.toggle("bg-white", !isActive);
+            p.classList.toggle("text-muted", !isActive);
+            p.classList.toggle("border-line", !isActive);
+            p.setAttribute("aria-pressed", String(isActive));
+          });
+          applyFilters();
+        });
+      });
+
+      const azLinks = document.querySelectorAll(".az-link");
+      if (azLinks.length && letterGroups.length) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              const letter = entry.target.getAttribute("data-letter");
+              azLinks.forEach((link) => {
+                const isActive = link.getAttribute("data-letter") === letter;
+                link.classList.toggle("bg-brand", isActive);
+                link.classList.toggle("text-white", isActive);
+                link.classList.toggle("text-muted", !isActive);
+              });
+            });
+          },
+          { rootMargin: "-15% 0px -70% 0px" }
+        );
+        letterGroups.forEach((group) => observer.observe(group));
+      }
+
+      const params = new URLSearchParams(window.location.search);
+      const initialQuery = params.get("q");
+      const initialCategory = params.get("category");
+
+      if (initialQuery && searchInput instanceof HTMLInputElement) {
+        searchInput.value = initialQuery;
+      }
+      if (initialCategory) {
+        const matchingPill = document.querySelector(`.category-pill[data-category="${initialCategory}"]`);
+        if (matchingPill) matchingPill.dispatchEvent(new Event("click"));
+      }
+      if (initialQuery || initialCategory) {
+        applyFilters();
+      }
+    </script>
+  </body>
+</html>

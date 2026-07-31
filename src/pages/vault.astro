@@ -1,11 +1,12 @@
 ---
 import "../styles.css";
+import SiteFonts from "../components/SiteFonts.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import Icon from "../components/Icon.astro";
 
 const eyebrow = "mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand";
-const card = "rounded-[1.25rem] border border-line bg-white p-7 shadow-[0_1px_2px_rgba(11,31,75,0.04)] transition-all hover:-translate-y-1 hover:border-brand/30 hover:shadow-[0_16px_32px_rgba(11,31,75,0.1)]";
+const card = "rounded-[1.25rem] border border-line bg-white p-7 shadow-[0_1px_2px_rgba(15,23,32,0.04)] transition-all hover:-translate-y-1 hover:border-brand/30 hover:shadow-[0_16px_32px_rgba(15,23,32,0.1)]";
 const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand";
 ---
 <!DOCTYPE html>
@@ -14,6 +15,7 @@ const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounde
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vault — FinYaar Finance</title>
+    <SiteFonts />
   </head>
   <body>
     <SiteHeader />

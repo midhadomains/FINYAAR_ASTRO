@@ -1,5 +1,6 @@
 ---
 import "../styles.css";
+import SiteFonts from "../components/SiteFonts.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import { getAllPostSlugs, getPostBySlug, formatPostDate } from "../lib/wordpress";
@@ -31,6 +32,7 @@ const category = post.categories[0];
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{post.title} — FinYaar Finance Blog</title>
     <meta name="description" content={post.excerpt.replace(/<[^>]*>/g, "").trim()} />
+    <SiteFonts />
   </head>
   <body>
     <SiteHeader />

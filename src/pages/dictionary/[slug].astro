@@ -1,0 +1,277 @@
+---
+import "../../styles.css";
+import SiteFonts from "../../components/SiteFonts.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import { terms, categoryMap, getRelatedTerms, type CategoryKey } from "../../lib/dictionary";
+
+export async function getStaticPaths() {
+  return terms.map((term) => ({
+    params: { slug: term.slug },
+    props: { term },
+  }));
+}
+
+const { term } = Astro.props;
+const category = categoryMap[term.category];
+const related = getRelatedTerms(term, 4);
+
+const REVIEWERS: Record<CategoryKey, { name: string; title: string; initials: string }> = {
+  valuation: { name: "Daniel Reyes", title: "Co-founder — ex-J.P. Morgan, Equity Research", initials: "DR" },
+  accounting: { name: "Daniel Reyes", title: "Co-founder — ex-J.P. Morgan, Equity Research", initials: "DR" },
+  ma: { name: "Ariana Cole", title: "Co-founder — ex-Goldman Sachs, Investment Banking", initials: "AC" },
+  markets: { name: "Daniel Reyes", title: "Co-founder — ex-J.P. Morgan, Equity Research", initials: "DR" },
+  fpa: { name: "Ariana Cole", title: "Co-founder — ex-Goldman Sachs, Investment Banking", initials: "AC" },
+  ai: { name: "Priya Nandan", title: "Head of AI Curriculum — ex-Deloitte Advisory", initials: "PN" },
+};
+const reviewer = REVIEWERS[term.category];
+
+const readMinutes = 2 + (term.formula ? 1 : 0) + (term.example ? 1 : 0) + (term.comparison ? 1 : 0) + (term.faq?.length ?? 0) + (term.quiz ? 1 : 0);
+
+const toc = [
+  { id: "concept", label: "Core Concept" },
+  ...(term.formula ? [{ id: "formula", label: "The Formula" }] : []),
+  ...(term.example ? [{ id: "example", label: "Worked Example" }] : []),
+  ...(term.comparison ? [{ id: "comparison", label: term.comparison.title }] : []),
+  ...(term.quiz ? [{ id: "quiz", label: "Self-Test Quiz" }] : []),
+  ...(term.faq ? [{ id: "faq", label: "FAQ" }] : []),
+];
+
+const card14 = "rounded-[14px] border border-line bg-white p-6";
+---
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{term.term} — FinYaar Dictionary</title>
+    <meta name="description" content={term.definition} />
+    <SiteFonts />
+    <style>
+      .formula-font {
+        font-family: "Times New Roman", serif;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body class="bg-surface">
+    <SiteHeader />
+    <main class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] py-10">
+      <nav class="mb-6 flex items-center gap-2 text-sm text-muted">
+        <a class="hover:text-brand" href="/dictionary">Dictionary</a>
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+        <span class="text-ink">{category.label}</span>
+      </nav>
+
+      <header class="mb-10 max-w-[760px]">
+        <span class="mb-4 inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-brand">
+          <span class="material-symbols-outlined text-[16px]">{category.icon}</span>
+          {category.label}
+        </span>
+        <h1 class="text-[clamp(2rem,4vw,3rem)] font-extrabold tracking-[-0.02em] text-ink">{term.term}</h1>
+        <p class="mt-4 text-lg text-muted">{term.definition}</p>
+
+        <div class="mt-8 flex flex-wrap items-center gap-6 border-y border-line py-4">
+          <div class="flex items-center gap-3">
+            <div class="grid h-10 w-10 flex-shrink-0 place-items-center rounded-full bg-gradient-to-br from-brand to-ink text-sm font-bold text-white">{reviewer.initials}</div>
+            <div>
+              <p class="text-sm font-bold text-ink">{reviewer.name}</p>
+              <p class="text-xs text-muted">Reviewed by</p>
+            </div>
+          </div>
+          <div class="hidden h-8 w-px bg-line sm:block"></div>
+          <div class="flex items-center gap-2 text-muted">
+            <span class="material-symbols-outlined text-[18px]">schedule</span>
+            <span class="text-sm font-semibold">{readMinutes} min read</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
+        <!-- Main content -->
+        <article class="space-y-8 lg:col-span-8">
+          <section id="concept" class="scroll-mt-24 rounded-r-[14px] border-l-4 border-brand bg-brand/5 p-6">
+            <h2 class="mb-2 flex items-center gap-2 text-lg font-bold text-brand">
+              <span class="material-symbols-outlined">menu_book</span>
+              The Core Concept
+            </h2>
+            <p class="text-base text-ink">{term.definition}</p>
+          </section>
+
+          {term.formula && (
+            <section id="formula" class={`scroll-mt-24 ${card14}`}>
+              <h3 class="mb-6 text-lg font-bold text-ink">The Formula</h3>
+              <div class="mb-6 flex justify-center rounded-[10px] bg-surface p-8">
+                <p class="formula-font text-center text-2xl font-bold text-ink">{term.formula.equation}</p>
+              </div>
+              <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                {term.formula.variables.map((v) => (
+                  <div class="flex items-start gap-3 rounded-[10px] border border-line bg-surface p-3">
+                    <span class="formula-font font-bold text-brand">{v.symbol}</span>
+                    <span class="text-sm text-muted">{v.meaning}</span>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {term.example && (
+            <section id="example" class={`scroll-mt-24 ${card14}`}>
+              <h3 class="mb-3 text-lg font-bold text-ink">Worked Example</h3>
+              <p class="mb-5 text-sm text-muted">{term.example.intro}</p>
+              <div class="space-y-2">
+                {term.example.steps.map((s) => (
+                  <div class="flex items-center justify-between gap-4 rounded-[10px] bg-surface px-4 py-3">
+                    <div>
+                      <p class="text-sm font-bold text-ink">{s.label}</p>
+                      <p class="text-xs text-muted">{s.detail}</p>
+                    </div>
+                    <p class="flex-shrink-0 font-bold text-brand">{s.value}</p>
+                  </div>
+                ))}
+              </div>
+              <div class="mt-4 flex items-center gap-3 rounded-[10px] bg-brand/10 p-4">
+                <span class="material-symbols-outlined text-brand">insights</span>
+                <p class="text-sm font-bold text-ink">{term.example.result}</p>
+              </div>
+            </section>
+          )}
+
+          {term.comparison && (
+            <section id="comparison" class="scroll-mt-24">
+              <h3 class="mb-4 text-lg font-bold text-ink">{term.comparison.title}</h3>
+              <div class="overflow-x-auto rounded-[14px] border border-line bg-white">
+                <table class="w-full min-w-[480px] border-collapse text-left">
+                  <thead class="bg-surface text-sm font-bold text-ink">
+                    <tr>
+                      <th class="p-4">Feature</th>
+                      {term.comparison.columns.map((c) => <th class="p-4">{c}</th>)}
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-line text-sm">
+                    {term.comparison.rows.map((r) => (
+                      <tr>
+                        <td class="p-4 font-bold text-ink">{r.label}</td>
+                        {r.values.map((v) => <td class="p-4 text-muted">{v}</td>)}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          )}
+
+          {term.quiz && (
+            <section id="quiz" class="scroll-mt-24 rounded-[14px] bg-ink p-6 text-white shadow-[0_4px_20px_rgba(15,23,32,0.15)]">
+              <div class="mb-4 flex items-center gap-3">
+                <div class="rounded-lg bg-brand p-2">
+                  <span class="material-symbols-outlined">quiz</span>
+                </div>
+                <h3 class="text-lg font-bold">Check Your Understanding</h3>
+              </div>
+              <p class="mb-5 font-medium text-white/90">{term.quiz.question}</p>
+              <div class="quiz-block grid gap-2.5" data-correct-index={term.quiz.correctIndex}>
+                {term.quiz.options.map((opt, i) => (
+                  <button type="button" data-index={i} class="quiz-option w-full rounded-[10px] border border-white/25 p-3.5 text-left text-sm text-white/90 transition-all hover:bg-white/10">
+                    {opt}
+                  </button>
+                ))}
+                <p class="quiz-explanation hidden rounded-[10px] bg-white/10 p-4 text-sm italic text-white/85">{term.quiz.explanation}</p>
+              </div>
+            </section>
+          )}
+
+          {term.faq && (
+            <section id="faq" class="scroll-mt-24">
+              <h3 class="mb-4 text-lg font-bold text-ink">Frequently Asked Questions</h3>
+              <div class="space-y-3">
+                {term.faq.map((item) => (
+                  <details class="group rounded-[14px] border border-line bg-white">
+                    <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5">
+                      <span class="text-sm font-bold text-ink">{item.question}</span>
+                      <span class="material-symbols-outlined flex-shrink-0 text-brand transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <p class="px-5 pb-5 text-sm text-muted">{item.answer}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <p class="border-t border-line pt-6 text-xs leading-relaxed text-muted">
+            Educational content only — FinYaar Finance does not provide investment, legal, or tax advice. Reviewed against FinYaar's practitioner curriculum; always confirm figures against primary sources before relying on them professionally.
+          </p>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="space-y-5 lg:col-span-4 lg:h-fit lg:sticky lg:top-24">
+          <nav class={card14}>
+            <p class="mb-3 text-xs font-bold uppercase tracking-wide text-brand">On this page</p>
+            <ul class="space-y-2.5 text-sm text-muted">
+              {toc.map((item) => (
+                <li>
+                  <a class="flex items-center gap-2 hover:text-brand" href={`#${item.id}`}>
+                    <span class="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-line"></span>
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div class="rounded-[14px] bg-surface p-6">
+            <p class="mb-3 text-xs font-bold uppercase tracking-wide text-muted">Related Terms</p>
+            <div class="space-y-3">
+              {related.map((r) => (
+                <a href={`/dictionary/${r.slug}`} class="group block rounded-[10px] border border-line bg-white p-3 transition-colors hover:border-brand">
+                  <p class="text-sm font-bold text-ink group-hover:text-brand">{r.term}</p>
+                  <p class="mt-1 line-clamp-1 text-xs text-muted">{r.definition}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div class="rounded-[14px] bg-brand p-6 text-white">
+            <h4 class="text-lg font-bold">Master Finance</h4>
+            <p class="mt-2 text-sm text-white/85">Get the workflows behind every term in the AI Finance Vault.</p>
+            <a href="/vault" class="mt-4 inline-flex items-center gap-1 rounded-[10px] bg-accent-soft px-4 py-2 text-sm font-bold text-brand-dark transition-transform hover:-translate-y-px">
+              Explore the Vault
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <SiteFooter />
+
+    <script>
+      document.querySelectorAll(".quiz-block").forEach((block) => {
+        const correctIndex = Number(block.getAttribute("data-correct-index"));
+        const buttons = block.querySelectorAll(".quiz-option");
+        const explanation = block.querySelector(".quiz-explanation");
+        let answered = false;
+
+        buttons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            if (answered) return;
+            answered = true;
+            const clickedIndex = Number(btn.getAttribute("data-index"));
+
+            buttons.forEach((b) => {
+              const i = Number(b.getAttribute("data-index"));
+              if (i === correctIndex) {
+                b.classList.add("bg-brand/20", "border-brand");
+              } else if (i === clickedIndex) {
+                b.classList.add("bg-red-500/15", "border-red-400");
+              } else {
+                b.classList.add("opacity-50");
+              }
+            });
+
+            explanation?.classList.remove("hidden");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
