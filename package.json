@@ -8,12 +8,16 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "postbuild": "node scripts/create-sitemap-alias.mjs && node scripts/audit-seo.mjs",
+    "seo:audit": "node scripts/audit-seo.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.1.1",
+    "katex": "^0.18.1",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {

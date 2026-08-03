@@ -1,0 +1,264 @@
+{
+  "terms": [
+    {
+      "slug": "compound-interest",
+      "term": "Compound Interest",
+      "category": "Investing Basics",
+      "url": "/dictionary/compound-interest/",
+      "definition": "the interest you earn on both your original money and on the interest already added to it, so your balance grows faster over time.",
+      "seo_title": "Compound Interest: Meaning, Formula & Examples",
+      "meta_description": "What is compound interest? Simple definition, the formula, a step-by-step example, and how compounding grows your money faster than simple interest.",
+      "focus_keyword": "compound interest",
+      "faqs": [
+        { "q": "What is the difference between simple and compound interest?", "a": "Simple interest is calculated only on the original principal, so it grows in a straight line. Compound interest is calculated on the principal plus all previously earned interest, so it grows faster and faster over time." },
+        { "q": "Is compound interest good or bad?", "a": "It is excellent when you are investing or saving, because your money grows faster. It works against you on borrowings such as credit card debt, where the amount you owe compounds if you do not pay in full." },
+        { "q": "How can I calculate compound interest quickly?", "a": "Use the Rule of 72: divide 72 by the annual return to estimate the years it takes your money to double. At 12% a year, money doubles in roughly 72 / 12 = 6 years." }
+      ],
+      "related": [
+        { "term": "Simple Interest", "slug": "simple-interest" },
+        { "term": "Rule of 72", "slug": "rule-of-72" },
+        { "term": "SIP (Systematic Investment Plan)", "slug": "sip-systematic-investment-plan" },
+        { "term": "Inflation", "slug": "inflation" },
+        { "term": "Fixed Deposit", "slug": "fixed-deposit" }
+      ]
+    },
+    {
+      "slug": "mutual-fund",
+      "term": "Mutual Fund",
+      "category": "Mutual Funds and SIP",
+      "url": "/dictionary/mutual-fund/",
+      "definition": "an investment vehicle that pools money from many investors and uses it to buy a professionally managed portfolio of stocks, bonds, or other assets.",
+      "seo_title": "What is a Mutual Fund? Meaning, Types & How It Works",
+      "meta_description": "A mutual fund pools money from many investors to buy stocks and bonds, managed by professionals. Learn how mutual funds work, their types, NAV, and costs.",
+      "focus_keyword": "mutual fund",
+      "faqs": [
+        { "q": "Are mutual funds safe?", "a": "Mutual funds are regulated by SEBI and your money is held separately from the AMC, so the fund house cannot run away with it. However, the value of your units rises and falls with the market, so returns are not guaranteed and you can lose money, especially over short periods." },
+        { "q": "What is NAV in a mutual fund?", "a": "NAV, or Net Asset Value, is the price of one unit of the fund. It equals the total value of the fund&#39;s holdings minus its expenses, divided by the number of units outstanding, and is published at the end of each trading day." },
+        { "q": "Is a SIP the same as a mutual fund?", "a": "No. A mutual fund is the investment product. A SIP is simply a method of investing in it, putting in a fixed amount at regular intervals instead of a single lump sum." }
+      ],
+      "related": [
+        { "term": "SIP (Systematic Investment Plan)", "slug": "sip-systematic-investment-plan" },
+        { "term": "NAV (Net Asset Value)", "slug": "nav-net-asset-value" },
+        { "term": "Expense Ratio", "slug": "expense-ratio" },
+        { "term": "Index Fund", "slug": "index-fund" },
+        { "term": "ETF", "slug": "etf" }
+      ]
+    },
+    {
+      "slug": "sip-systematic-investment-plan",
+      "term": "SIP (Systematic Investment Plan)",
+      "category": "Mutual Funds and SIP",
+      "url": "/dictionary/sip-systematic-investment-plan/",
+      "definition": "a way of investing a fixed amount into a mutual fund at regular intervals, usually every month, instead of putting in a single lump sum.",
+      "seo_title": "SIP (Systematic Investment Plan): Meaning & How It Works",
+      "meta_description": "A SIP lets you invest a fixed amount in a mutual fund every month. Learn how SIPs work, rupee cost averaging, benefits, and a simple worked example.",
+      "focus_keyword": "sip",
+      "faqs": [
+        { "q": "Can I lose money in a SIP?", "a": "Yes. A SIP invests in mutual funds, whose value moves with the market, so your investment can fall, especially in the short term. Over long periods, staying invested through the ups and downs has historically smoothed out much of this risk, though past performance does not guarantee future returns." },
+        { "q": "Can I stop or pause a SIP?", "a": "Yes. SIPs are flexible. You can pause, increase, decrease, or stop them at any time without penalty, and you keep the units already bought. Stopping is different from redeeming, which is when you actually sell your units." },
+        { "q": "Is SIP better than a lump sum?", "a": "Neither is always better. A SIP suits regular income earners and volatile markets because it spreads risk over time. A lump sum can do better when markets rise steadily after you invest. Many investors use both." }
+      ],
+      "related": [
+        { "term": "Mutual Fund", "slug": "mutual-fund" },
+        { "term": "Compound Interest", "slug": "compound-interest" },
+        { "term": "NAV (Net Asset Value)", "slug": "nav-net-asset-value" },
+        { "term": "Lump Sum vs SIP", "slug": "lump-sum-vs-sip" },
+        { "term": "Index Fund", "slug": "index-fund" }
+      ]
+    },
+    {
+      "slug": "beta",
+      "term": "Beta",
+      "category": "Derivatives and Risk",
+      "url": "/dictionary/beta/",
+      "definition": "a measure of how much a stock or portfolio tends to move relative to the overall market, used to gauge its market-related (systematic) risk.",
+      "seo_title": "Beta in Finance: Meaning, Formula & Interpretation",
+      "meta_description": "Beta measures how much a stock moves relative to the market. Learn what beta means, its formula, how to read high vs low beta, and its role in CAPM.",
+      "focus_keyword": "beta in finance",
+      "faqs": [
+        { "q": "What does a beta of 1.2 mean?", "a": "It means the stock has tended to move about 20% more than the market. If the market rises or falls 10%, a beta of 1.2 suggests the stock moves roughly 12% in the same direction, on average." },
+        { "q": "Is a high or low beta better?", "a": "Neither is universally better. High-beta stocks offer bigger gains in rising markets but bigger losses in falling ones, suiting aggressive investors. Low-beta stocks are steadier and suit those wanting less volatility." },
+        { "q": "Can beta be negative?", "a": "Yes, though it is rare. A negative beta means the asset tends to move opposite to the market. Gold and certain hedging assets sometimes show this behaviour, which can make them useful for reducing portfolio risk." }
+      ],
+      "related": [
+        { "term": "Risk vs Return", "slug": "risk-vs-return" },
+        { "term": "Diversification", "slug": "diversification" },
+        { "term": "Hedging", "slug": "hedging" },
+        { "term": "Volatility", "slug": "volatility" },
+        { "term": "Equity Share", "slug": "equity-share" }
+      ]
+    },
+    {
+      "slug": "ebitda",
+      "term": "EBITDA",
+      "category": "Accounting and Financial Statements",
+      "url": "/dictionary/ebitda/",
+      "definition": "a measure of a company&#39;s operating profitability, calculated before subtracting interest, taxes, depreciation, and amortisation.",
+      "seo_title": "EBITDA: Meaning, Formula & Why It Matters",
+      "meta_description": "EBITDA is Earnings Before Interest, Taxes, Depreciation and Amortisation. Learn the formula, a worked example, and what EBITDA does and does not tell you.",
+      "focus_keyword": "ebitda",
+      "faqs": [
+        { "q": "Why do companies use EBITDA?", "a": "Because it isolates operating performance from financing and accounting choices, making it easier to compare businesses and to value them. It is also used in loan agreements and in valuation multiples such as EV/EBITDA." },
+        { "q": "Is a higher EBITDA always better?", "a": "Generally a higher EBITDA signals stronger operating earnings, but not always. A company can boost EBITDA while burning cash on capital expenditure or drowning in debt. Judge it alongside cash flow, capex, and net profit." },
+        { "q": "What is the difference between EBIT and EBITDA?", "a": "EBIT is Earnings Before Interest and Taxes, and it still subtracts depreciation and amortisation. EBITDA adds those two non-cash charges back, so EBITDA is always equal to or larger than EBIT." }
+      ],
+      "related": [
+        { "term": "Income Statement", "slug": "income-statement" },
+        { "term": "Depreciation", "slug": "depreciation" },
+        { "term": "Cash Flow Statement", "slug": "cash-flow-statement" },
+        { "term": "Working Capital", "slug": "working-capital" },
+        { "term": "P/E Ratio", "slug": "pe-ratio" }
+      ]
+    },
+    {
+      "slug": "pe-ratio",
+      "term": "P/E Ratio",
+      "category": "Ratios and Valuation",
+      "url": "/dictionary/pe-ratio/",
+      "definition": "a valuation ratio that compares a company&#39;s share price to its earnings per share, showing how much investors pay for each rupee of profit.",
+      "seo_title": "P/E Ratio (Price to Earnings): Meaning & Formula",
+      "meta_description": "The P/E ratio compares a stock price to its earnings per share. Learn the formula, how to read high vs low P/E, and a simple worked example.",
+      "focus_keyword": "pe ratio",
+      "faqs": [
+        { "q": "What is a good P/E ratio?", "a": "There is no single good number. It depends on the industry and growth rate. A stable utility might normally trade at a P/E of 12 to 18, while a fast-growing tech firm might trade at 40 or more. Always compare against peers and the company&#39;s own past levels." },
+        { "q": "Is a low P/E ratio always better?", "a": "Not necessarily. A low P/E can mean a stock is undervalued, but it can also mean the market expects earnings to fall or that the business faces problems. It is a starting point for research, not a buy signal on its own." },
+        { "q": "What does a negative P/E mean?", "a": "A negative P/E arises when a company has negative earnings, meaning it is making a loss. In that case the ratio is not meaningful, and analysts turn to other measures such as price-to-sales or EV/EBITDA." }
+      ],
+      "related": [
+        { "term": "EPS", "slug": "eps" },
+        { "term": "EBITDA", "slug": "ebitda" },
+        { "term": "Book Value", "slug": "book-value" },
+        { "term": "Dividend Yield", "slug": "dividend-yield" },
+        { "term": "Market Capitalization", "slug": "market-capitalization" }
+      ]
+    },
+    {
+      "slug": "fixed-deposit",
+      "term": "Fixed Deposit",
+      "category": "Banking Savings and Deposits",
+      "url": "/dictionary/fixed-deposit/",
+      "definition": "a deposit where you lock a lump sum with a bank or NBFC for a fixed term at a fixed interest rate, earning guaranteed returns whatever the market does.",
+      "seo_title": "Fixed Deposit (FD): Meaning, Interest & How It Works",
+      "meta_description": "A fixed deposit locks a lump sum at a fixed rate for a set term for guaranteed returns. Learn how FDs work, interest, tax, and a worked example.",
+      "focus_keyword": "fixed deposit",
+      "faqs": [
+        { "q": "Is FD interest taxable?", "a": "Yes. FD interest is fully taxable as per your income-tax slab, and banks deduct TDS once your interest crosses the annual threshold. You must still report it even if no TDS is deducted." },
+        { "q": "What is a tax-saving FD?", "a": "A 5-year tax-saver FD qualifies for a deduction under Section 80C, up to the 80C limit. In return it has a 5-year lock-in and does not allow premature withdrawal." },
+        { "q": "Is a fixed deposit safe?", "a": "Bank FDs are among the safest options: the rate is fixed and deposits are insured up to &#8377;5 lakh per depositor per bank. NBFC or company FDs can offer higher rates but carry more risk." }
+      ],
+      "related": [
+        { "term": "Recurring Deposit", "slug": "recurring-deposit" },
+        { "term": "Compound Interest", "slug": "compound-interest" },
+        { "term": "Inflation", "slug": "inflation" },
+        { "term": "SIP (Systematic Investment Plan)", "slug": "sip-systematic-investment-plan" },
+        { "term": "Simple Interest", "slug": "simple-interest" }
+      ]
+    },
+    {
+      "slug": "emi",
+      "term": "EMI",
+      "category": "Loans Credit and Debt",
+      "url": "/dictionary/emi/",
+      "definition": "Equated Monthly Instalment, the fixed amount you pay every month to repay a loan, covering both interest and part of the principal, until the loan is fully paid.",
+      "seo_title": "EMI: Meaning, Formula & How It Is Calculated",
+      "meta_description": "EMI is the fixed monthly payment on a loan covering interest and principal. Learn the EMI formula, a worked example, and how tenure affects cost.",
+      "focus_keyword": "emi",
+      "faqs": [
+        { "q": "What is the difference between fixed and floating rate EMIs?", "a": "A fixed-rate loan keeps the same interest rate and EMI throughout. A floating-rate loan&#39;s rate moves with the market, so the EMI or the tenure changes when rates change." },
+        { "q": "Does prepayment reduce my EMI or my tenure?", "a": "Usually you can choose. Most lenders let you either keep the EMI and shorten the tenure (saves the most interest) or reduce the EMI and keep the tenure. Reducing tenure generally saves more." },
+        { "q": "Why is most of my early EMI going to interest?", "a": "Because interest is charged on the outstanding balance, which is highest at the start. As you repay principal, the balance falls, so a larger share of each later EMI goes to principal." }
+      ],
+      "related": [
+        { "term": "Credit Score (CIBIL)", "slug": "credit-score-cibil" },
+        { "term": "Compound Interest", "slug": "compound-interest" },
+        { "term": "Simple Interest", "slug": "simple-interest" },
+        { "term": "Fixed Deposit", "slug": "fixed-deposit" }
+      ]
+    },
+    {
+      "slug": "credit-score-cibil",
+      "term": "Credit Score (CIBIL)",
+      "category": "Loans Credit and Debt",
+      "url": "/dictionary/credit-score-cibil/",
+      "definition": "a three-digit number, in India usually between 300 and 900, that summarises how reliably you repay borrowed money; lenders use it to decide whether to lend to you and at what rate.",
+      "seo_title": "Credit Score (CIBIL): Meaning, Range & How to Improve It",
+      "meta_description": "A credit score (300 to 900 in India) shows how reliably you repay. Learn what affects your CIBIL score, why it matters, and how to improve it.",
+      "focus_keyword": "credit score",
+      "faqs": [
+        { "q": "How can I check my credit score for free?", "a": "Each bureau (CIBIL, Experian, Equifax, CRIF) must provide one free full credit report a year, and many banks and apps show your score for free. Checking your own score is a soft enquiry and does not lower it." },
+        { "q": "Does checking my score hurt it?", "a": "No. Checking your own score is a soft enquiry with no impact. Only hard enquiries, when a lender checks your report because you applied for credit, can slightly lower the score." },
+        { "q": "How long does it take to improve a credit score?", "a": "There is no instant fix. Consistent on-time payments and low utilisation usually show improvement over several months, and it can take longer to recover from missed payments or a default." }
+      ],
+      "related": [
+        { "term": "EMI", "slug": "emi" },
+        { "term": "Compound Interest", "slug": "compound-interest" },
+        { "term": "Fixed Deposit", "slug": "fixed-deposit" }
+      ]
+    },
+    {
+      "slug": "index-fund",
+      "term": "Index Fund",
+      "category": "Mutual Funds and SIP",
+      "url": "/dictionary/index-fund/",
+      "definition": "a mutual fund that passively tracks a market index such as the Nifty 50, aiming to match the index&#39;s return at very low cost rather than to beat it.",
+      "seo_title": "Index Fund: Meaning, How It Works & Benefits",
+      "meta_description": "An index fund passively tracks an index like the Nifty 50 at low cost. Learn how index funds work, costs, tracking error, and a worked example.",
+      "focus_keyword": "index fund",
+      "faqs": [
+        { "q": "Is an index fund better than an active fund?", "a": "Not always, but over long periods most active funds fail to beat their index after fees, so low-cost index funds often win on net returns. Active funds can outperform in specific segments, but consistently picking those in advance is hard." },
+        { "q": "What is tracking error?", "a": "It is the small difference between an index fund&#39;s return and the index it follows, caused by fund costs, cash holdings, and timing. A well-run index fund keeps tracking error low." },
+        { "q": "Can I do a SIP in an index fund?", "a": "Yes. Index funds work well with SIPs, combining low cost with rupee cost averaging for disciplined long-term investing." }
+      ],
+      "related": [
+        { "term": "Mutual Fund", "slug": "mutual-fund" },
+        { "term": "ETF", "slug": "etf" },
+        { "term": "Expense Ratio", "slug": "expense-ratio" },
+        { "term": "NAV (Net Asset Value)", "slug": "nav-net-asset-value" },
+        { "term": "SIP (Systematic Investment Plan)", "slug": "sip-systematic-investment-plan" }
+      ]
+    },
+    {
+      "slug": "etf",
+      "term": "ETF",
+      "category": "Mutual Funds and SIP",
+      "url": "/dictionary/etf/",
+      "definition": "an Exchange-Traded Fund: a basket of securities, often tracking an index, that you buy and sell on the stock exchange like a single share.",
+      "seo_title": "ETF (Exchange-Traded Fund): Meaning & How It Works",
+      "meta_description": "An ETF is a basket of securities that trades on the exchange like a share. Learn how ETFs work, ETF vs index fund, and what you need to invest.",
+      "focus_keyword": "etf",
+      "faqs": [
+        { "q": "What is the difference between an ETF and a mutual fund?", "a": "A mutual fund is bought and sold once a day at its NAV, directly from the fund house. An ETF trades on the exchange all day at a live market price and needs a demat account. Both can track the same index." },
+        { "q": "Do I need a demat account to buy an ETF?", "a": "Yes. Because ETFs trade on the stock exchange, you need a demat and trading account to buy and hold them, unlike a regular mutual fund." },
+        { "q": "Are ETFs cheaper than mutual funds?", "a": "ETFs are usually low cost because most are passive and traded directly, but remember to factor in brokerage and the small gap between price and NAV when you trade." }
+      ],
+      "related": [
+        { "term": "Index Fund", "slug": "index-fund" },
+        { "term": "Mutual Fund", "slug": "mutual-fund" },
+        { "term": "NAV (Net Asset Value)", "slug": "nav-net-asset-value" },
+        { "term": "Expense Ratio", "slug": "expense-ratio" },
+        { "term": "Equity Share", "slug": "equity-share" }
+      ]
+    },
+    {
+      "slug": "ipo",
+      "term": "IPO",
+      "category": "Stock Market and Equities",
+      "url": "/dictionary/ipo/",
+      "definition": "an Initial Public Offering: the first time a private company sells its shares to the public and lists on a stock exchange, raising money and letting anyone become a shareholder.",
+      "seo_title": "IPO (Initial Public Offering): Meaning & How It Works",
+      "meta_description": "An IPO is a company's first sale of shares to the public. Learn how IPOs work, primary vs secondary market, how to apply, and the risks.",
+      "focus_keyword": "ipo",
+      "faqs": [
+        { "q": "How do I apply for an IPO in India?", "a": "You apply online through your bank or broker using the ASBA or UPI process. The application amount is blocked in your bank account and is debited only if shares are allotted to you." },
+        { "q": "Is investing in an IPO safe?", "a": "An IPO carries real risk. Some list at a premium and some below the issue price, and short-term demand does not guarantee long-term value. Read the prospectus and assess the business before applying." },
+        { "q": "What is the difference between the primary and secondary market?", "a": "The primary market is where the company first issues shares (the IPO). The secondary market is the stock exchange where investors then buy and sell those shares among themselves." }
+      ],
+      "related": [
+        { "term": "Equity Share", "slug": "equity-share" },
+        { "term": "Market Capitalization", "slug": "market-capitalization" },
+        { "term": "Dividend", "slug": "dividend" },
+        { "term": "Sensex and Nifty", "slug": "sensex-and-nifty" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+---
+import { breadcrumbSchema, buildMetaDescription, buildSeoTitle, faqSchema, type BreadcrumbItem, type PageKeywordTarget, type SeoFaq } from "../lib/seo";
+
+interface Props {
+  target: PageKeywordTarget;
+  benefit: string;
+  faqs: SeoFaq[];
+  breadcrumbs?: BreadcrumbItem[];
+  additionalSchema?: Record<string, unknown>[];
+}
+
+const { target, benefit, faqs, breadcrumbs = target.url === "/"
+  ? [{ label: "Home", href: "/" }]
+  : [{ label: "Home", href: "/" }, { label: target.primaryKeyword, href: target.url }], additionalSchema = [] } = Astro.props;
+const title = buildSeoTitle(target.primaryKeyword);
+const description = buildMetaDescription(target.primaryKeyword, benefit);
+const canonicalUrl = new URL(target.url, Astro.site ?? Astro.url.origin);
+const schema = JSON.stringify({ "@context": "https://schema.org", "@graph": [
+  { "@type": "WebPage", name: title, description, url: canonicalUrl.href },
+  breadcrumbSchema(breadcrumbs, canonicalUrl),
+  faqSchema(faqs, canonicalUrl),
+  ...additionalSchema,
+] }).replaceAll("<", "\\u003c");
+---
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="keywords" content={target.primaryKeyword} />
+<link rel="canonical" href={canonicalUrl} />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+<script is:inline type="application/ld+json" set:html={schema} />

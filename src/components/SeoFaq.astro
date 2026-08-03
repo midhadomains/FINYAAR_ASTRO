@@ -1,0 +1,24 @@
+---
+import type { SeoFaq as SeoFaqItem } from "../lib/seo";
+
+interface Props {
+  faqs: SeoFaqItem[];
+}
+
+const { faqs } = Astro.props;
+---
+<section id="faq" class="scroll-mt-24">
+  <p class="text-xs font-bold uppercase tracking-[0.16em] text-brand">People also ask</p>
+  <h2 class="mt-2 text-2xl font-extrabold text-ink">Frequently asked questions</h2>
+  <div class="mt-5 space-y-3">
+    {faqs.map((faq) => (
+      <details class="group rounded-[14px] border border-line bg-white">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5">
+          <span class="font-bold text-ink">{faq.question}</span>
+          <span class="material-symbols-outlined flex-shrink-0 text-brand transition-transform group-open:rotate-180">expand_more</span>
+        </summary>
+        <p class="px-5 pb-5 leading-relaxed text-muted">{faq.answer}</p>
+      </details>
+    ))}
+  </div>
+</section>

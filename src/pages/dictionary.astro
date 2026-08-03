@@ -3,7 +3,16 @@ import "../styles.css";
 import SiteFonts from "../components/SiteFonts.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
-import { categories, terms, getTermBySlug } from "../lib/dictionary";
+import SeoFaq from "../components/SeoFaq.astro";
+import { categories, dictionaryCategories, terms, getTermBySlug, getTermCategorySlug } from "../lib/dictionary";
+import { buildGenericFaqs, buildMetaDescription, buildSeoTitle, faqSchema, getKeywordTargetByUrl } from "../lib/seo";
+
+const lessonCategories = dictionaryCategories.filter((category) => category.hasLessonContent);
+const indexDescription = "Plain-English finance definitions across money, banking, investing, markets, accounting, valuation, risk, and corporate finance.";
+const seo = getKeywordTargetByUrl("/dictionary/")!;
+const seoTitle = buildSeoTitle(seo.primaryKeyword);
+const metaDescription = buildMetaDescription(seo.primaryKeyword, indexDescription);
+const faqs = buildGenericFaqs(seo.primaryKeyword, indexDescription);
 
 const sortedTerms = [...terms].sort((a, b) => a.term.localeCompare(b.term));
 const letters = "#ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
@@ -15,6 +24,32 @@ for (const t of sortedTerms) {
 }
 
 const trending = ["dcf", "wacc", "ebitda", "lbo"].map((slug) => getTermBySlug(slug)).filter(Boolean);
+const canonicalUrl = new URL("/dictionary/", Astro.site ?? Astro.url.origin);
+const structuredData = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "DefinedTermSet",
+      "@id": `${canonicalUrl.href}#dictionary`,
+      name: "FinYaar Finance Dictionary",
+      description: indexDescription,
+      url: canonicalUrl.href,
+      hasDefinedTerm: terms.map((term) => ({
+        "@type": "DefinedTerm",
+        name: term.term,
+        url: new URL(`/dictionary/${term.slug}/`, canonicalUrl).href,
+      })),
+    },
+    faqSchema(faqs, canonicalUrl),
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: new URL("/", canonicalUrl).href },
+        { "@type": "ListItem", position: 2, name: "Dictionary", item: canonicalUrl.href },
+      ],
+    },
+  ],
+}).replaceAll("<", "\\u003c");
 
 const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-brand hover:shadow-[0_4px_20px_rgba(15,23,32,0.06)] transition-all";
 ---
@@ -23,15 +58,23 @@ const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-bran
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Finance Dictionary — FinYaar Finance</title>
-    <meta name="description" content="A practitioner-reviewed glossary of finance terms across valuation, accounting, M&A, markets, FP&A, and AI." />
+    <title>{seoTitle}</title>
+    <meta name="description" content={metaDescription} />
+    <meta name="keywords" content={seo.primaryKeyword} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={seoTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <link rel="sitemap" href="/sitemap.xml" />
+    <script is:inline type="application/ld+json" set:html={structuredData} />
     <SiteFonts />
   </head>
   <body class="bg-surface">
     <SiteHeader />
     <main class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] py-10">
       <!-- Breadcrumbs -->
-      <nav class="mb-8 flex items-center gap-2 text-sm text-muted">
+      <nav aria-label="Breadcrumb" class="mb-8 flex items-center gap-2 text-sm text-muted">
         <a class="hover:text-brand" href="/">Home</a>
         <span class="material-symbols-outlined text-[16px]">chevron_right</span>
         <span class="text-ink">Dictionary</span>
@@ -41,7 +84,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-bran
       <div class="mb-10 flex flex-col items-center text-center">
         <h1 class="text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold tracking-[-0.02em] text-ink">Finance Dictionary</h1>
         <p class="mx-auto mt-3 max-w-2xl text-muted">
-          Plain-English definitions across valuation, accounting, M&amp;A, markets, FP&amp;A, and AI — written the way practitioners use these terms on the job, not the way textbooks define them.
+          {seo.snippetAnswer} Browse every term alphabetically or filter the lesson-backed categories below.
         </p>
         <div class="relative mt-8 w-full max-w-2xl">
           <span class="material-symbols-outlined pointer-events-none absolute left-5 top-1/2 -translate-y-1/2 text-brand">search</span>
@@ -75,13 +118,28 @@ const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-bran
           <section class="flex flex-wrap items-center gap-2.5 border-b border-line pb-6">
             <span class="mr-1 text-sm font-semibold text-muted">Filter by:</span>
             <button type="button" class="category-pill inline-flex items-center gap-1.5 rounded-[14px] border border-brand bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors" data-category="all" aria-pressed="true">All Terms</button>
-            {categories.map((c) => (
-              <button type="button" class="category-pill inline-flex items-center gap-1.5 rounded-[14px] border border-line bg-white px-4 py-2 text-sm font-semibold text-muted transition-colors hover:bg-surface" data-category={c.key} aria-pressed="false">
-                <span class="material-symbols-outlined text-[18px]">{c.icon}</span>
-                {c.label}
+            {lessonCategories.map((category) => (
+              <button type="button" class="category-pill inline-flex items-center gap-1.5 rounded-[14px] border border-line bg-white px-4 py-2 text-sm font-semibold text-muted transition-colors hover:bg-surface" data-category={category.slug} aria-pressed="false">
+                <span class="material-symbols-outlined text-[18px]">{category.icon}</span>
+                {category.label}
               </button>
             ))}
           </section>
+
+          <details class="rounded-[14px] border border-line bg-white">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-bold text-ink">
+              Browse dictionary category hubs
+              <span class="material-symbols-outlined text-brand">expand_more</span>
+            </summary>
+            <div class="grid gap-2 border-t border-line p-4 sm:grid-cols-2 lg:grid-cols-3">
+              {dictionaryCategories.map((category) => (
+                <a href={`/dictionary/category/${category.slug}/`} class="flex items-center justify-between gap-3 rounded-[10px] bg-surface px-3 py-2.5 text-sm font-semibold text-ink hover:text-brand">
+                  <span>{category.label}</span>
+                  <span class="text-xs text-muted">{category.termCount}</span>
+                </a>
+              ))}
+            </div>
+          </details>
 
           <!-- Mobile letter strip -->
           <div class="-mx-1 flex gap-1 overflow-x-auto px-1 xl:hidden">
@@ -103,12 +161,12 @@ const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-bran
                     <a
                       href={`/dictionary/${t.slug}`}
                       class={`term-card group block ${card14}`}
-                      data-category={t.category}
+                      data-category={getTermCategorySlug(t)}
                       data-search={`${t.term} ${t.definition}`.toLowerCase()}
                     >
                       <div class="mb-2 flex items-start justify-between gap-3">
                         <h3 class="text-lg font-bold text-ink transition-colors group-hover:text-brand">{t.term}</h3>
-                        <span class="flex-shrink-0 rounded-md bg-surface px-2 py-1 text-[0.68rem] font-bold uppercase tracking-wide text-muted">{categories.find((c) => c.key === t.category)?.label.split(" & ")[0]}</span>
+                        <span class="flex-shrink-0 rounded-md bg-surface px-2 py-1 text-[0.68rem] font-bold uppercase tracking-wide text-muted">{t.categoryLabel ?? categories.find((c) => c.key === t.category)?.label.split(" & ")[0]}</span>
                       </div>
                       <p class="line-clamp-2 text-sm text-muted">{t.definition}</p>
                     </a>
@@ -122,6 +180,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-bran
             <p class="mt-3 text-lg font-bold text-ink">No terms match your search</p>
             <p class="mt-1 text-muted">Try a different keyword or clear the category filter.</p>
           </div>
+          <SeoFaq faqs={faqs} />
         </div>
 
         <!-- Promo sidebar -->
@@ -153,7 +212,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-bran
       const searchInput = document.getElementById("dict-search");
       const pills = document.querySelectorAll(".category-pill");
       const cards = document.querySelectorAll(".term-card");
-      const letterGroups = document.querySelectorAll("[data-letter]");
+      const letterGroups = document.querySelectorAll("#dict-results > section[data-letter]");
       const countEl = document.getElementById("dict-count");
       const noResults = document.getElementById("no-results");
       const totalCount = cards.length;

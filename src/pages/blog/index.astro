@@ -3,28 +3,24 @@ import "../../styles.css";
 import SiteFonts from "../../components/SiteFonts.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
-import BlogCard from "../../components/BlogCard.astro";
-import { getAllPosts } from "../../lib/wordpress";
-import type { BlogPostSummary } from "../../lib/wordpress";
+import SeoHead from "../../components/SeoHead.astro";
+import SeoFaq from "../../components/SeoFaq.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { buildGenericFaqs, getKeywordTargetByUrl } from "../../lib/seo";
 
 const eyebrow = "mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand";
-
-let posts: BlogPostSummary[] = [];
-let loadError = false;
-
-try {
-  posts = await getAllPosts();
-} catch (error) {
-  console.error("Failed to load posts from WordPress:", error);
-  loadError = true;
-}
+const seo = getKeywordTargetByUrl("/blog/")!;
+const benefit = "Read practical finance learning articles about modelling, valuation, investing, AI workflows and career skills from FinYaar.";
+const faqs = buildGenericFaqs(seo.primaryKeyword, benefit);
+const pageH1 = seo.primaryKeyword.charAt(0).toUpperCase() + seo.primaryKeyword.slice(1);
+const breadcrumbs = [{ label: "Home", href: "/" }, { label: pageH1, href: seo.url }];
 ---
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog — FinYaar Finance</title>
+    <SeoHead target={seo} benefit={benefit} faqs={faqs} />
     <SiteFonts />
   </head>
   <body>
@@ -32,29 +28,30 @@ try {
     <main>
       <section class="pt-16 pb-12">
         <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
-          <p class={eyebrow}>Insights & analysis</p>
-          <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">The FinYaar Finance Blog</h1>
-          <p class="mt-4 max-w-[36rem] text-muted">Practitioner takes on modeling, valuation, AI workflows, and the finance career skills that matter.</p>
+          <Breadcrumbs items={breadcrumbs} />
+          <p class={eyebrow}>Insights &amp; analysis</p>
+          <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">{pageH1}</h1>
+          <p class="mt-4 max-w-[36rem] text-muted">{pageH1} gives you practitioner perspectives on modelling, valuation, AI workflows and the finance career skills that matter.</p>
         </div>
+      </section>
+
+      <section class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] pb-16">
+        <SeoFaq faqs={faqs} />
       </section>
 
       <section class="py-[5.5rem]">
         <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
-          {loadError && (
-            <p class="rounded-[1.25rem] border border-line bg-surface p-7 text-muted">
-              We couldn't load blog posts right now. Please check back shortly.
+          <div class="rounded-[1.25rem] border border-line bg-surface p-7 sm:p-10">
+            <p class={eyebrow}>Editorial library</p>
+            <h2 class="text-2xl font-extrabold tracking-[-0.02em] text-ink">New finance articles are coming soon</h2>
+            <p class="mt-3 max-w-[42rem] text-muted">
+              In the meantime, explore FinYaar's finance dictionary and topic hubs for practical definitions, examples, FAQs, and learning paths.
             </p>
-          )}
-          {!loadError && posts.length === 0 && (
-            <p class="rounded-[1.25rem] border border-line bg-surface p-7 text-muted">
-              No posts published yet — check back soon.
-            </p>
-          )}
-          {!loadError && posts.length > 0 && (
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {posts.map((post) => <BlogCard post={post} />)}
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="/dictionary/" class="rounded-full bg-brand px-5 py-3 font-bold text-white">Browse the dictionary</a>
+              <a href="/topics/" class="rounded-full border border-line bg-white px-5 py-3 font-bold text-ink">Explore finance topics</a>
             </div>
-          )}
+          </div>
         </div>
       </section>
     </main>

@@ -1,0 +1,22 @@
+---
+interface LinkItem { href: string; label: string; description: string; }
+interface Props { links?: LinkItem[]; }
+
+const { links = [
+  { href: "/dictionary/", label: "Finance Dictionary", description: "Check definitions, formulas and related concepts." },
+  { href: "/topics/", label: "Finance Topics", description: "Continue through the complete pillar learning map." },
+  { href: "/courses/", label: "Finance Courses", description: "Apply the concepts through practical training." },
+  { href: "/blog/", label: "Finance Articles", description: "Read related analysis and learning guides." },
+] } = Astro.props;
+---
+<nav aria-label="Continue learning" class="rounded-[14px] border border-line bg-surface p-6">
+  <h2 class="text-xl font-extrabold text-ink">Continue learning</h2>
+  <div class="mt-4 grid gap-3 sm:grid-cols-2">
+    {links.slice(0, 6).map((link) => (
+      <a href={link.href} class="rounded-[10px] border border-line bg-white p-4 hover:border-brand">
+        <span class="font-bold text-brand">{link.label}</span>
+        <span class="mt-1 block text-sm text-muted">{link.description}</span>
+      </a>
+    ))}
+  </div>
+</nav>

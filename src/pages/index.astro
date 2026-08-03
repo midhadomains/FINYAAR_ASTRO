@@ -4,7 +4,19 @@ import SiteFonts from "../components/SiteFonts.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import Icon from "../components/Icon.astro";
+import SeoHead from "../components/SeoHead.astro";
+import SeoFaq from "../components/SeoFaq.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { categories, terms, getTermBySlug, getAvailableLetters } from "../lib/dictionary";
+import { buildGenericFaqs, getKeywordTargetByUrl, organizationSchema, websiteSchema } from "../lib/seo";
+
+const seo = getKeywordTargetByUrl("/")!;
+const benefit = "Learn finance through plain-English dictionary definitions, practical courses, calculators and India-focused investing examples from FinYaar.";
+const faqs = buildGenericFaqs(seo.primaryKeyword, benefit);
+const pageH1 = seo.primaryKeyword.charAt(0).toUpperCase() + seo.primaryKeyword.slice(1);
+const breadcrumbs = [{ label: "Home", href: "/" }];
+const homeUrl = new URL("/", Astro.site ?? Astro.url.origin);
+const homeSchema = [organizationSchema(homeUrl), websiteSchema(homeUrl)];
 
 const eyebrow = "mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand";
 const card = "rounded-[1.25rem] border border-line bg-white p-7 shadow-[0_1px_2px_rgba(15,23,32,0.04)] transition-all hover:-translate-y-1 hover:border-brand/30 hover:shadow-[0_16px_32px_rgba(15,23,32,0.1)]";
@@ -41,7 +53,7 @@ const goals = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FinYaar Finance — Finance, explained like a practitioner would</title>
+    <SeoHead target={seo} benefit={benefit} faqs={faqs} additionalSchema={homeSchema} />
     <SiteFonts />
   </head>
   <body>
@@ -50,11 +62,10 @@ const goals = [
       <!-- Hero -->
       <header class="relative overflow-hidden bg-surface pt-20 pb-16 md:pt-28 md:pb-20">
         <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] text-center">
-          <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-extrabold tracking-[-0.02em] text-ink">
-            Finance, explained <span class="italic text-brand">like a practitioner would.</span>
-          </h1>
+          <Breadcrumbs items={breadcrumbs} class="mb-8 justify-center" />
+          <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-extrabold tracking-[-0.02em] text-ink">{pageH1}</h1>
           <p class="mx-auto mt-5 max-w-2xl text-lg text-muted">
-            Search any term, see it defined in plain English, then go deeper with formulas, worked examples, and the same cases our instructors teach.
+            {pageH1} from FinYaar combines plain-English definitions, formulas, worked examples, calculators and practitioner-led learning for Indian finance students.
           </p>
 
           <form action="/dictionary" method="GET" class="mx-auto mt-8 max-w-2xl">
@@ -391,6 +402,8 @@ const goals = [
           </article>
         </div>
       </section>
+
+      <section class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] py-16"><SeoFaq faqs={faqs} /></section>
 
     </main>
     <SiteFooter />

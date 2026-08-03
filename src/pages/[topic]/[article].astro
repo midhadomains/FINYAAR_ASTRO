@@ -1,0 +1,21 @@
+---
+import ClusterPage from "../../components/ClusterPage.astro";
+import { pillars, type ClusterPage as Cluster, type Pillar } from "../../lib/pillars";
+
+interface Props {
+  pillar: Pillar;
+  cluster: Cluster;
+}
+
+export function getStaticPaths() {
+  return pillars.flatMap((pillar) =>
+    pillar.clusters.map((cluster) => ({
+      params: { topic: pillar.slug, article: cluster.slug },
+      props: { pillar, cluster },
+    })),
+  );
+}
+
+const { pillar, cluster } = Astro.props as Props;
+---
+<ClusterPage pillar={pillar} cluster={cluster} />

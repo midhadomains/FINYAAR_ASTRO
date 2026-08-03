@@ -1,0 +1,165 @@
+---
+import "../styles.css";
+import SiteFonts from "./SiteFonts.astro";
+import SiteHeader from "./SiteHeader.astro";
+import SiteFooter from "./SiteFooter.astro";
+import SeoFaq from "./SeoFaq.astro";
+import { terms } from "../lib/dictionary";
+import { getPillarSlugForTerm, type Pillar } from "../lib/pillars";
+import { breadcrumbSchema, buildGenericFaqs, buildMetaDescription, buildSeoTitle, courseSchema, faqSchema, getPillarSeo } from "../lib/seo";
+
+interface Props {
+  pillar: Pillar;
+}
+
+const { pillar } = Astro.props;
+const seo = getPillarSeo(pillar);
+const seoTitle = buildSeoTitle(seo.primaryKeyword);
+const metaDescription = buildMetaDescription(seo.primaryKeyword, pillar.description);
+const pageH1 = seo.primaryKeyword.charAt(0).toUpperCase() + seo.primaryKeyword.slice(1);
+const openingAnswer = `${pageH1} brings together ${pillar.description.charAt(0).toLowerCase()}${pillar.description.slice(1)}`;
+const faqs = buildGenericFaqs(seo.primaryKeyword, pillar.description);
+const canonicalUrl = new URL(seo.url, Astro.site ?? Astro.url.origin);
+const examCourse = pillar.slug === "cfa"
+  ? courseSchema("CFA Exam Preparation Learning Hub", pillar.description, canonicalUrl, "CFA")
+  : pillar.slug === "frm"
+    ? courseSchema("FRM Exam Preparation Learning Hub", pillar.description, canonicalUrl, "FRM")
+    : undefined;
+const structuredData = JSON.stringify({ "@context": "https://schema.org", "@graph": [
+  { "@type": "CollectionPage", name: pageH1, description: metaDescription, url: canonicalUrl.href },
+  {
+    "@type": "Article",
+    "@id": `${canonicalUrl.href}#article`,
+    headline: pageH1,
+    description: metaDescription,
+    url: canonicalUrl.href,
+    mainEntityOfPage: canonicalUrl.href,
+    publisher: { "@id": `${new URL("/", canonicalUrl).href}#organization` },
+  },
+  breadcrumbSchema([{ label: "Home", href: "/" }, { label: pillar.title, href: seo.url }], canonicalUrl),
+  faqSchema(faqs, canonicalUrl),
+  ...(examCourse ? [examCourse] : []),
+] }).replaceAll("<", "\\u003c");
+const dictionaryTerms = terms
+  .filter((term) => getPillarSlugForTerm(term) === pillar.slug)
+  .sort((a, b) => a.term.localeCompare(b.term));
+const kindLabels = {
+  explainer: "Explainer",
+  "how-to": "How-to guide",
+  comparison: "Comparison",
+  calculator: "Calculator",
+  "exam-guide": "Exam guide",
+};
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{seoTitle}</title>
+    <meta name="description" content={metaDescription} />
+    <meta name="keywords" content={seo.primaryKeyword} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={seoTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <script is:inline type="application/ld+json" set:html={structuredData} />
+    <SiteFonts />
+  </head>
+  <body class="bg-surface">
+    <SiteHeader />
+    <main>
+      <section class="border-b border-line bg-white py-14 sm:py-18">
+        <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
+          <nav aria-label="Breadcrumb" class="mb-7 flex items-center gap-2 text-sm text-muted">
+            <a href="/" class="hover:text-brand">Home</a>
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+            <a href="/topics" class="hover:text-brand">Topics</a>
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+            <span class="text-ink">{pillar.title}</span>
+          </nav>
+          <div class="grid gap-8 lg:grid-cols-[1fr_280px] lg:items-end">
+            <div class="max-w-3xl">
+              <span class="mb-5 inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-brand">
+                <span class="material-symbols-outlined text-[17px]">{pillar.icon}</span>
+                Finance pillar
+              </span>
+              <h1 class="text-[clamp(2.35rem,5vw,4rem)] font-extrabold tracking-[-0.035em] text-ink">{pageH1}</h1>
+              <p class="mt-5 max-w-2xl text-lg leading-relaxed text-muted">{openingAnswer}</p>
+            </div>
+            <div class="rounded-[14px] border border-line bg-surface p-5">
+              <p class="text-xs font-bold uppercase tracking-wide text-muted">Primary search intent</p>
+              <p class="mt-1 font-bold text-ink">{pillar.searchIntent}</p>
+              <div class="mt-4 flex gap-5 border-t border-line pt-4 text-sm">
+                <span><b class="text-ink">{pillar.clusters.length}</b> guides</span>
+                <span><b class="text-ink">{dictionaryTerms.length}</b> terms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] gap-12 py-12 lg:grid-cols-[1fr_320px]">
+        <div>
+          <section>
+            <div class="mb-6 flex items-end justify-between gap-4">
+              <div>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-brand">Learn the topic</p>
+                <h2 class="mt-2 text-2xl font-extrabold text-ink">Guides, comparisons and tools</h2>
+              </div>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              {pillar.clusters.map((cluster) => (
+                <a href={`/${pillar.slug}/${cluster.slug}/`} data-cluster-link class="group rounded-[14px] border border-line bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-brand hover:shadow-[0_8px_24px_rgba(15,23,32,0.07)]">
+                  <div class="mb-3 flex items-center justify-between gap-3">
+                    <span class="rounded-md bg-surface px-2 py-1 text-[0.68rem] font-bold uppercase tracking-wide text-brand">{kindLabels[cluster.kind]}</span>
+                    <span class="material-symbols-outlined text-[19px] text-muted transition-transform group-hover:translate-x-1 group-hover:text-brand">arrow_forward</span>
+                  </div>
+                  <h3 class="text-lg font-bold text-ink group-hover:text-brand">{cluster.title}</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-muted">{cluster.summary}</p>
+                </a>
+              ))}
+            </div>
+          </section>
+
+          {dictionaryTerms.length > 0 && (
+            <section class="mt-12 border-t border-line pt-10">
+              <p class="text-xs font-bold uppercase tracking-[0.16em] text-brand">Foundation layer</p>
+              <div class="mt-2 flex flex-wrap items-end justify-between gap-4">
+                <h2 class="text-2xl font-extrabold text-ink">Dictionary terms in this pillar</h2>
+                <a href="/dictionary" class="text-sm font-bold text-brand hover:underline">Browse the full dictionary</a>
+              </div>
+              <div class="mt-6 grid gap-3 sm:grid-cols-2">
+                {dictionaryTerms.map((term) => (
+                  <a href={`/dictionary/${term.slug}/`} class="rounded-[12px] border border-line bg-white p-4 transition-colors hover:border-brand">
+                    <p class="font-bold text-ink">{term.term}</p>
+                    <p class="mt-1 line-clamp-2 text-sm text-muted">{term.definition}</p>
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
+          <div class="mt-12"><SeoFaq faqs={faqs} /></div>
+        </div>
+
+        <aside class="space-y-5 lg:sticky lg:top-28 lg:h-fit">
+          <div class="rounded-[14px] bg-ink p-6 text-white">
+            <span class="material-symbols-outlined text-accent-soft">route</span>
+            <h2 class="mt-3 text-xl font-bold">How this pillar works</h2>
+            <ol class="mt-4 grid gap-3 text-sm text-white/80">
+              <li><b class="text-white">1. Learn:</b> start with a plain-English dictionary term.</li>
+              <li><b class="text-white">2. Apply:</b> use the guide, comparison, or calculator.</li>
+              <li><b class="text-white">3. Explore:</b> continue through related cluster pages.</li>
+            </ol>
+          </div>
+          <a href="/topics" class="flex items-center justify-between rounded-[14px] border border-line bg-white p-5 font-bold text-ink hover:border-brand hover:text-brand">
+            Explore all finance pillars
+            <span class="material-symbols-outlined">apps</span>
+          </a>
+        </aside>
+      </div>
+    </main>
+    <SiteFooter />
+  </body>
+</html>

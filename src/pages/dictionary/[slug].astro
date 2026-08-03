@@ -3,7 +3,11 @@ import "../../styles.css";
 import SiteFonts from "../../components/SiteFonts.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
-import { terms, categoryMap, getRelatedTerms, type CategoryKey } from "../../lib/dictionary";
+import SeoFaq from "../../components/SeoFaq.astro";
+import { terms, categoryMap, getRelatedTerms, getTermCategorySlug, type CategoryKey } from "../../lib/dictionary";
+import { getPillarBySlug, getPillarSlugForTerm } from "../../lib/pillars";
+import { buildGenericFaqs, buildMetaDescription, buildSeoTitle, faqSchema, getTermSeo } from "../../lib/seo";
+import "katex/dist/katex.min.css";
 
 export async function getStaticPaths() {
   return terms.map((term) => ({
@@ -13,8 +17,19 @@ export async function getStaticPaths() {
 }
 
 const { term } = Astro.props;
+const termSeo = getTermSeo(term);
+const pageH1 = termSeo.primaryKeyword.charAt(0).toUpperCase() + termSeo.primaryKeyword.slice(1);
+const openingAnswer = `${pageH1} is ${term.definition.replace(/^[A-Z]/, (letter) => letter.toLowerCase())}`;
+const seoTitle = term.seoTitle && term.seoTitle.length <= 60 && term.seoTitle.toLowerCase().includes(termSeo.primaryKeyword.toLowerCase())
+  ? term.seoTitle
+  : buildSeoTitle(termSeo.primaryKeyword);
+const metaDescription = buildMetaDescription(termSeo.primaryKeyword, term.metaDescription ?? term.definition);
+const pageFaqs = term.faq?.map((item) => ({ question: item.question, answer: item.answer }))
+  ?? buildGenericFaqs(termSeo.primaryKeyword, term.definition);
 const category = categoryMap[term.category];
+const categoryLabel = term.categoryLabel ?? category.label;
 const related = getRelatedTerms(term, 4);
+const pillar = getPillarBySlug(getPillarSlugForTerm(term));
 
 const REVIEWERS: Record<CategoryKey, { name: string; title: string; initials: string }> = {
   valuation: { name: "Daniel Reyes", title: "Co-founder — ex-J.P. Morgan, Equity Research", initials: "DR" },
@@ -25,17 +40,54 @@ const REVIEWERS: Record<CategoryKey, { name: string; title: string; initials: st
   ai: { name: "Priya Nandan", title: "Head of AI Curriculum — ex-Deloitte Advisory", initials: "PN" },
 };
 const reviewer = REVIEWERS[term.category];
-
-const readMinutes = 2 + (term.formula ? 1 : 0) + (term.example ? 1 : 0) + (term.comparison ? 1 : 0) + (term.faq?.length ?? 0) + (term.quiz ? 1 : 0);
-
-const toc = [
-  { id: "concept", label: "Core Concept" },
-  ...(term.formula ? [{ id: "formula", label: "The Formula" }] : []),
-  ...(term.example ? [{ id: "example", label: "Worked Example" }] : []),
-  ...(term.comparison ? [{ id: "comparison", label: term.comparison.title }] : []),
-  ...(term.quiz ? [{ id: "quiz", label: "Self-Test Quiz" }] : []),
-  ...(term.faq ? [{ id: "faq", label: "FAQ" }] : []),
+const canonicalPath = term.url ?? `/dictionary/${term.slug}/`;
+const canonicalUrl = new URL(canonicalPath, Astro.site ?? Astro.url.origin);
+const categoryUrl = new URL(`/dictionary/category/${getTermCategorySlug(term)}/`, canonicalUrl);
+const dictionaryUrl = new URL("/dictionary/", canonicalUrl);
+const schemaGraph: Record<string, unknown>[] = [
+  {
+    "@type": "DefinedTerm",
+    "@id": `${canonicalUrl.href}#term`,
+    name: term.term,
+    termCode: term.slug,
+    description: term.definition,
+    url: canonicalUrl.href,
+    inDefinedTermSet: {
+      "@type": "DefinedTermSet",
+      "@id": `${dictionaryUrl.href}#dictionary`,
+      name: "FinYaar Finance Dictionary",
+      url: dictionaryUrl.href,
+    },
+  },
+  {
+    "@type": "BreadcrumbList",
+    "@id": `${canonicalUrl.href}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: new URL("/", canonicalUrl).href },
+      { "@type": "ListItem", position: 2, name: "Dictionary", item: dictionaryUrl.href },
+      { "@type": "ListItem", position: 3, name: categoryLabel, item: categoryUrl.href },
+      { "@type": "ListItem", position: 4, name: term.term, item: canonicalUrl.href },
+    ],
+  },
 ];
+schemaGraph.push(faqSchema(pageFaqs, canonicalUrl));
+const structuredData = JSON.stringify({ "@context": "https://schema.org", "@graph": schemaGraph }).replaceAll("<", "\\u003c");
+
+const lessonWordCount = term.lessonBody?.replace(/<[^>]+>/g, " ").trim().split(/\s+/).length ?? 0;
+const readMinutes = term.lessonBody
+  ? Math.max(3, Math.ceil(lessonWordCount / 200))
+  : 2 + (term.formula ? 1 : 0) + (term.example ? 1 : 0) + (term.comparison ? 1 : 0) + (term.faq?.length ?? 0) + (term.quiz ? 1 : 0);
+
+const toc = term.lessonToc?.length
+  ? [...term.lessonToc, { id: "faq", label: "FAQ" }]
+  : [
+      { id: "concept", label: "Core Concept" },
+      ...(term.formula ? [{ id: "formula", label: "The Formula" }] : []),
+      ...(term.example ? [{ id: "example", label: "Worked Example" }] : []),
+      ...(term.comparison ? [{ id: "comparison", label: term.comparison.title }] : []),
+      ...(term.quiz ? [{ id: "quiz", label: "Self-Test Quiz" }] : []),
+      { id: "faq", label: "FAQ" },
+    ];
 
 const card14 = "rounded-[14px] border border-line bg-white p-6";
 ---
@@ -44,8 +96,17 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{term.term} — FinYaar Dictionary</title>
-    <meta name="description" content={term.definition} />
+    <title>{seoTitle}</title>
+    <meta name="description" content={metaDescription} />
+    <meta name="keywords" content={termSeo.primaryKeyword} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={seoTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="article:tag" content={termSeo.primaryKeyword} />
+    <link rel="sitemap" href="/sitemap.xml" />
+    <script is:inline type="application/ld+json" set:html={structuredData} />
     <SiteFonts />
     <style>
       .formula-font {
@@ -53,23 +114,156 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
         font-style: italic;
       }
     </style>
+    <style is:global>
+      .lesson-body {
+        display: grid;
+        gap: 1.25rem;
+      }
+      .lesson-body .section {
+        scroll-margin-top: 6rem;
+        overflow: hidden;
+        border: 1px solid var(--color-line);
+        border-radius: 14px;
+        background: white;
+      }
+      .lesson-body .sec-head {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.1rem 1.5rem;
+      }
+      .lesson-body .sec-head::after {
+        content: "−";
+        color: var(--color-brand);
+        font-size: 1.35rem;
+        font-weight: 700;
+      }
+      .lesson-body .section.collapsed .sec-head::after {
+        content: "+";
+      }
+      .lesson-body .sec-head h2 {
+        color: var(--color-ink);
+        font-size: 1.15rem;
+        font-weight: 800;
+      }
+      .lesson-body .sec-body {
+        display: grid;
+        gap: 1rem;
+        border-top: 1px solid var(--color-line);
+        padding: 1.5rem;
+        color: var(--color-muted);
+        line-height: 1.75;
+      }
+      .lesson-body .section.collapsed .sec-body {
+        display: none;
+      }
+      .lesson-body .sec-body ul {
+        list-style: disc;
+        padding-left: 1.4rem;
+      }
+      .lesson-body .sec-body li + li {
+        margin-top: 0.45rem;
+      }
+      .lesson-body .formula {
+        overflow-x: auto;
+        border-radius: 10px;
+        background: var(--color-surface);
+        padding: 1.25rem;
+        color: var(--color-ink);
+        text-align: center;
+      }
+      .lesson-body .worked {
+        overflow: hidden;
+        border: 1px solid color-mix(in srgb, var(--color-brand) 25%, transparent);
+        border-radius: 12px;
+        background: color-mix(in srgb, var(--color-brand) 5%, white);
+      }
+      .lesson-body .w-tag,
+      .lesson-body .st-label {
+        color: var(--color-brand);
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .lesson-body .w-tag {
+        border-bottom: 1px solid color-mix(in srgb, var(--color-brand) 18%, transparent);
+        padding: 0.75rem 1rem;
+      }
+      .lesson-body .w-body {
+        display: grid;
+        gap: 0.9rem;
+        padding: 1rem;
+      }
+      .lesson-body .q-stem,
+      .lesson-body .qt {
+        color: var(--color-ink);
+        font-weight: 700;
+      }
+      .lesson-body .soln {
+        border-left: 3px solid var(--color-brand);
+        padding-left: 1rem;
+      }
+      .lesson-body .selftest {
+        display: grid;
+        gap: 0.65rem;
+        border-radius: 12px;
+        background: var(--color-ink);
+        padding: 1rem;
+        color: white;
+      }
+      .lesson-body .selftest .st-label {
+        color: var(--color-accent-soft);
+      }
+      .lesson-body .selftest .q {
+        display: grid;
+        gap: 0.75rem;
+      }
+      .lesson-body .selftest .qt {
+        color: white;
+      }
+      .lesson-body .show-btn {
+        width: fit-content;
+        cursor: pointer;
+        border-radius: 10px;
+        background: var(--color-brand);
+        padding: 0.6rem 0.9rem;
+        color: white;
+        font-size: 0.85rem;
+        font-weight: 700;
+      }
+      .lesson-body .qa {
+        display: none;
+        border-radius: 10px;
+        background: rgb(255 255 255 / 0.1);
+        padding: 0.9rem;
+        color: rgb(255 255 255 / 0.85);
+      }
+      .lesson-body .q.answer-visible .qa {
+        display: block;
+      }
+    </style>
   </head>
   <body class="bg-surface">
     <SiteHeader />
     <main class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] py-10">
-      <nav class="mb-6 flex items-center gap-2 text-sm text-muted">
+      <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-sm text-muted">
         <a class="hover:text-brand" href="/dictionary">Dictionary</a>
         <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-        <span class="text-ink">{category.label}</span>
+        <a href={`/dictionary/category/${getTermCategorySlug(term)}/`} class="hover:text-brand">{categoryLabel}</a>
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+        <span class="text-ink">{term.term}</span>
       </nav>
 
       <header class="mb-10 max-w-[760px]">
-        <span class="mb-4 inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-brand">
+        <a href={pillar ? `/${pillar.slug}/` : "/topics"} class="mb-4 inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-brand hover:bg-brand/15">
           <span class="material-symbols-outlined text-[16px]">{category.icon}</span>
-          {category.label}
-        </span>
-        <h1 class="text-[clamp(2rem,4vw,3rem)] font-extrabold tracking-[-0.02em] text-ink">{term.term}</h1>
-        <p class="mt-4 text-lg text-muted">{term.definition}</p>
+          {categoryLabel}
+        </a>
+        <h1 class="text-[clamp(2rem,4vw,3rem)] font-extrabold tracking-[-0.02em] text-ink">{pageH1}</h1>
+        <p class="mt-4 text-lg text-muted">{openingAnswer}</p>
 
         <div class="mt-8 flex flex-wrap items-center gap-6 border-y border-line py-4">
           <div class="flex items-center gap-3">
@@ -90,6 +284,10 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
         <!-- Main content -->
         <article class="space-y-8 lg:col-span-8">
+          {term.lessonBody ? (
+            <div class="lesson-body" set:html={term.lessonBody} />
+          ) : (
+            <>
           <section id="concept" class="scroll-mt-24 rounded-r-[14px] border-l-4 border-brand bg-brand/5 p-6">
             <h2 class="mb-2 flex items-center gap-2 text-lg font-bold text-brand">
               <span class="material-symbols-outlined">menu_book</span>
@@ -180,23 +378,10 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
               </div>
             </section>
           )}
-
-          {term.faq && (
-            <section id="faq" class="scroll-mt-24">
-              <h3 class="mb-4 text-lg font-bold text-ink">Frequently Asked Questions</h3>
-              <div class="space-y-3">
-                {term.faq.map((item) => (
-                  <details class="group rounded-[14px] border border-line bg-white">
-                    <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5">
-                      <span class="text-sm font-bold text-ink">{item.question}</span>
-                      <span class="material-symbols-outlined flex-shrink-0 text-brand transition-transform group-open:rotate-180">expand_more</span>
-                    </summary>
-                    <p class="px-5 pb-5 text-sm text-muted">{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            </>
           )}
+
+          <SeoFaq faqs={pageFaqs} />
 
           <p class="border-t border-line pt-6 text-xs leading-relaxed text-muted">
             Educational content only — FinYaar Finance does not provide investment, legal, or tax advice. Reviewed against FinYaar's practitioner curriculum; always confirm figures against primary sources before relying on them professionally.
@@ -205,6 +390,14 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
 
         <!-- Sidebar -->
         <aside class="space-y-5 lg:col-span-4 lg:h-fit lg:sticky lg:top-24">
+          {pillar && (
+            <a href={`/${pillar.slug}/`} class="block rounded-[14px] bg-ink p-6 text-white transition-transform hover:-translate-y-0.5">
+              <span class="material-symbols-outlined text-accent-soft">hub</span>
+              <p class="mt-3 text-xs font-bold uppercase tracking-wide text-white/60">Explore the pillar</p>
+              <h2 class="mt-1 text-lg font-bold">{pillar.title}</h2>
+              <p class="mt-2 text-sm text-white/75">Guides, comparisons, calculators, and related dictionary terms.</p>
+            </a>
+          )}
           <nav class={card14}>
             <p class="mb-3 text-xs font-bold uppercase tracking-wide text-brand">On this page</p>
             <ul class="space-y-2.5 text-sm text-muted">
@@ -223,7 +416,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
             <p class="mb-3 text-xs font-bold uppercase tracking-wide text-muted">Related Terms</p>
             <div class="space-y-3">
               {related.map((r) => (
-                <a href={`/dictionary/${r.slug}`} class="group block rounded-[10px] border border-line bg-white p-3 transition-colors hover:border-brand">
+                <a href={`/dictionary/${r.slug}`} data-related-term class="group block rounded-[10px] border border-line bg-white p-3 transition-colors hover:border-brand">
                   <p class="text-sm font-bold text-ink group-hover:text-brand">{r.term}</p>
                   <p class="mt-1 line-clamp-1 text-xs text-muted">{r.definition}</p>
                 </a>
@@ -245,6 +438,27 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
     <SiteFooter />
 
     <script>
+      document.querySelectorAll(".lesson-body .sec-head").forEach((heading) => {
+        heading.setAttribute("role", "button");
+        heading.setAttribute("tabindex", "0");
+        const toggle = () => heading.closest(".section")?.classList.toggle("collapsed");
+        heading.addEventListener("click", toggle);
+        heading.addEventListener("keydown", (event) => {
+          if (event instanceof KeyboardEvent && (event.key === "Enter" || event.key === " ")) {
+            event.preventDefault();
+            toggle();
+          }
+        });
+      });
+
+      document.querySelectorAll(".lesson-body .show-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const question = button.closest(".q");
+          question?.classList.toggle("answer-visible");
+          button.textContent = question?.classList.contains("answer-visible") ? "Hide answer" : "Show answer";
+        });
+      });
+
       document.querySelectorAll(".quiz-block").forEach((block) => {
         const correctIndex = Number(block.getAttribute("data-correct-index"));
         const buttons = block.querySelectorAll(".quiz-option");

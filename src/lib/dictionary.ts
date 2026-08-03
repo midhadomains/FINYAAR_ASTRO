@@ -1,3 +1,12 @@
+import dictionaryMetadata from "../data/finyaar-dictionary-metadata.json";
+import katex from "katex";
+
+const lessonModules = import.meta.glob<string>("../data/dictionary-lessons/*-lesson-body.html", {
+  eager: true,
+  query: "?raw",
+  import: "default",
+});
+
 export type CategoryKey = "valuation" | "accounting" | "ma" | "markets" | "fpa" | "ai";
 
 export interface Category {
@@ -40,12 +49,20 @@ export interface Term {
   term: string;
   slug: string;
   category: CategoryKey;
+  categoryLabel?: string;
   definition: string;
   formula?: FormulaBlock;
   example?: WorkedExample;
   comparison?: ComparisonTable;
   faq?: FaqItem[];
   quiz?: QuizBlock;
+  url?: string;
+  seoTitle?: string;
+  metaDescription?: string;
+  focusKeyword?: string;
+  relatedSlugs?: string[];
+  lessonBody?: string;
+  lessonToc?: { id: string; label: string }[];
 }
 
 export const categories: Category[] = [
@@ -322,6 +339,9 @@ const rawTerms: RawTerm[] = [
   { term: "Credit Spread", category: "markets", definition: "The yield difference between a corporate bond and a risk-free benchmark, reflecting credit risk." },
   { term: "Alpha", category: "markets", definition: "Investment return in excess of a benchmark, after adjusting for risk." },
   { term: "Underwriting", category: "markets", definition: "The process by which an investment bank prices, guarantees, and distributes new securities to investors." },
+  { term: "Simple Interest", category: "markets", categoryLabel: "Investing Basics", definition: "Interest calculated only on the original principal, without earning additional interest on past interest." },
+  { term: "Rule of 72", category: "markets", categoryLabel: "Investing Basics", definition: "A quick estimate of how many years an investment may take to double, calculated by dividing 72 by its annual return percentage." },
+  { term: "Inflation", category: "markets", categoryLabel: "Economics & Macro", definition: "A sustained rise in the general price level that reduces what each unit of money can buy over time." },
 
   // FP&A & Corporate Finance
   { term: "Budgeting", category: "fpa", definition: "The process of planning expected revenue and expenses for a future period." },
@@ -345,17 +365,183 @@ const rawTerms: RawTerm[] = [
   { term: "XBRL", category: "ai", definition: "A standardized data format used to tag financial statements so they can be read and compared programmatically." },
 ];
 
-export const terms: Term[] = rawTerms.map((t) => ({ ...t, slug: slugify(t.term) }));
+interface MetadataTerm {
+  slug: string;
+  term: string;
+  category: string;
+  url: string;
+  definition: string;
+  seo_title: string;
+  meta_description: string;
+  focus_keyword: string;
+  faqs: { q: string; a: string }[];
+  related: { term: string; slug: string }[];
+}
+
+const metadataCategoryMap: Record<string, CategoryKey> = {
+  "Investing Basics": "markets",
+  "Mutual Funds and SIP": "markets",
+  "Derivatives and Risk": "markets",
+  "Accounting and Financial Statements": "accounting",
+  "Ratios and Valuation": "valuation",
+  "Banking Savings and Deposits": "fpa",
+  "Loans Credit and Debt": "fpa",
+  "Stock Market and Equities": "markets",
+};
+
+function decodeEntities(value: string): string {
+  return value.replaceAll("&#39;", "'").replaceAll("&#8377;", "₹");
+}
+
+function prepareLesson(html: string): Pick<Term, "lessonBody" | "lessonToc"> {
+  const start = html.indexOf('<div class="section"');
+  const faqStart = html.indexOf('<div class="section collapsed" id="faqs"');
+  const lessonBody = html
+    .slice(start >= 0 ? start : 0, faqStart >= 0 ? faqStart : html.length)
+    .replace(/<span data-math="([^"]*)"><\/span>/g, (_, expression: string) =>
+      katex.renderToString(expression, { displayMode: true, throwOnError: false }),
+    )
+    .trim();
+  const lessonToc = Array.from(
+    lessonBody.matchAll(/<div class="section(?: collapsed)?" id="([^"]+)" data-name="([^"]+)">/g),
+    ([, id, label]) => ({ id, label }),
+  );
+  return { lessonBody, lessonToc };
+}
+
+const lessonsBySlug = new Map(
+  Object.entries(lessonModules).map(([path, html]) => {
+    const filename = path.split("/").at(-1) ?? "";
+    const slug = filename.replace(/-lesson-body\.html$/, "");
+    return [slug, prepareLesson(html)] as const;
+  }),
+);
+
+const metadataSourceTerms = dictionaryMetadata.terms as MetadataTerm[];
+const duplicateMetadataSlugs = metadataSourceTerms
+  .map(({ slug }) => slug)
+  .filter((slug, index, slugs) => slugs.indexOf(slug) !== index);
+const metadataSlugs = new Set(metadataSourceTerms.map(({ slug }) => slug));
+const lessonsWithoutMetadata = [...lessonsBySlug.keys()].filter((slug) => !metadataSlugs.has(slug));
+const metadataWithoutLessons = metadataSourceTerms
+  .map(({ slug }) => slug)
+  .filter((slug) => !lessonsBySlug.has(slug));
+
+if (duplicateMetadataSlugs.length || lessonsWithoutMetadata.length || metadataWithoutLessons.length) {
+  throw new Error([
+    duplicateMetadataSlugs.length ? `Duplicate dictionary metadata slugs: ${duplicateMetadataSlugs.join(", ")}` : "",
+    lessonsWithoutMetadata.length ? `Lesson fragments missing metadata: ${lessonsWithoutMetadata.join(", ")}` : "",
+    metadataWithoutLessons.length ? `Dictionary metadata missing lesson fragments: ${metadataWithoutLessons.join(", ")}` : "",
+  ].filter(Boolean).join("\n"));
+}
+
+function fromMetadata(item: MetadataTerm): Term {
+  return {
+    term: item.term,
+    slug: item.slug,
+    category: metadataCategoryMap[item.category] ?? "markets",
+    categoryLabel: item.category,
+    url: item.url,
+    definition: decodeEntities(item.definition),
+    seoTitle: decodeEntities(item.seo_title),
+    metaDescription: decodeEntities(item.meta_description),
+    focusKeyword: item.focus_keyword,
+    faq: item.faqs.map(({ q, a }) => ({ question: decodeEntities(q), answer: decodeEntities(a) })),
+    relatedSlugs: item.related.map(({ slug }) => slug),
+    ...lessonsBySlug.get(item.slug),
+  };
+}
+
+const originalTerms: Term[] = rawTerms.map((t) => ({ ...t, slug: slugify(t.term) }));
+const metadataTerms = metadataSourceTerms.map(fromMetadata);
+const metadataBySlug = new Map(metadataTerms.map((term) => [term.slug, term]));
+
+export const terms: Term[] = [
+  ...originalTerms.map((term) => {
+    const metadata = metadataBySlug.get(term.slug);
+    return metadata ? { ...term, ...metadata } : term;
+  }),
+  ...metadataTerms.filter((term) => !originalTerms.some((existing) => existing.slug === term.slug)),
+];
+
+export interface DictionaryCategory {
+  slug: string;
+  label: string;
+  icon: string;
+  description: string;
+  termCount: number;
+  hasLessonContent: boolean;
+}
+
+export function getTermCategoryLabel(term: Term): string {
+  return term.categoryLabel ?? categoryMap[term.category].label;
+}
+
+export function getTermCategorySlug(term: Term): string {
+  return slugify(getTermCategoryLabel(term));
+}
+
+function getCategoryIcon(label: string, fallback: string): string {
+  const normalized = label.toLowerCase();
+  if (normalized.includes("banking") || normalized.includes("deposit")) return "account_balance";
+  if (normalized.includes("mutual") || normalized.includes("sip")) return "donut_large";
+  if (normalized.includes("loan") || normalized.includes("credit")) return "credit_score";
+  if (normalized.includes("accounting") || normalized.includes("statement")) return "receipt_long";
+  if (normalized.includes("ratio") || normalized.includes("valuation")) return "calculate";
+  if (normalized.includes("stock") || normalized.includes("market")) return "candlestick_chart";
+  if (normalized.includes("derivative") || normalized.includes("risk")) return "shield";
+  if (normalized.includes("investing")) return "trending_up";
+  if (normalized.includes("economic") || normalized.includes("macro")) return "public";
+  return fallback;
+}
+
+const categoryStore = new Map<string, DictionaryCategory>();
+for (const term of terms) {
+  const label = getTermCategoryLabel(term);
+  const slug = getTermCategorySlug(term);
+  const existing = categoryStore.get(slug);
+  if (existing) {
+    existing.termCount += 1;
+    existing.hasLessonContent ||= Boolean(term.lessonBody);
+  } else {
+    const fallback = categoryMap[term.category];
+    categoryStore.set(slug, {
+      slug,
+      label,
+      icon: getCategoryIcon(label, fallback.icon),
+      description: term.categoryLabel
+        ? `Plain-English definitions, lessons, and related concepts for ${label}.`
+        : fallback.description,
+      termCount: 1,
+      hasLessonContent: Boolean(term.lessonBody),
+    });
+  }
+}
+
+export const dictionaryCategories = [...categoryStore.values()].sort((a, b) => a.label.localeCompare(b.label));
+
+export function getDictionaryCategoryBySlug(slug: string): DictionaryCategory | undefined {
+  return categoryStore.get(slug);
+}
+
+export function getTermsByDictionaryCategory(slug: string): Term[] {
+  return terms
+    .filter((term) => getTermCategorySlug(term) === slug)
+    .sort((a, b) => a.term.localeCompare(b.term));
+}
 
 export function getTermBySlug(slug: string): Term | undefined {
   return terms.find((t) => t.slug === slug);
 }
 
 export function getRelatedTerms(term: Term, count = 4): Term[] {
-  const sameCategory = terms.filter((t) => t.slug !== term.slug && t.category === term.category);
-  if (sameCategory.length >= count) return sameCategory.slice(0, count);
-  const others = terms.filter((t) => t.slug !== term.slug && t.category !== term.category);
-  return [...sameCategory, ...others].slice(0, count);
+  const explicit = (term.relatedSlugs ?? [])
+    .map((slug) => getTermBySlug(slug))
+    .filter((related): related is Term => Boolean(related));
+  const selected = new Set([term.slug, ...explicit.map(({ slug }) => slug)]);
+  const sameCategory = terms.filter((candidate) => !selected.has(candidate.slug) && candidate.category === term.category);
+  const others = terms.filter((candidate) => !selected.has(candidate.slug) && candidate.category !== term.category);
+  return [...explicit, ...sameCategory, ...others].slice(0, count);
 }
 
 export function getAvailableLetters(): Set<string> {

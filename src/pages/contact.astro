@@ -3,6 +3,17 @@ import "../styles.css";
 import SiteFonts from "../components/SiteFonts.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
+import SeoHead from "../components/SeoHead.astro";
+import SeoFaq from "../components/SeoFaq.astro";
+import ContextLinks from "../components/ContextLinks.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { buildGenericFaqs, getKeywordTargetByUrl } from "../lib/seo";
+
+const seo = getKeywordTargetByUrl("/contact/")!;
+const benefit = "Contact FinYaar Finance about courses, team training, enterprise pricing and practical AI workflows for finance professionals.";
+const faqs = buildGenericFaqs(seo.primaryKeyword, benefit);
+const pageH1 = seo.primaryKeyword.charAt(0).toUpperCase() + seo.primaryKeyword.slice(1);
+const breadcrumbs = [{ label: "Home", href: "/" }, { label: pageH1, href: seo.url }];
 
 const eyebrow = "mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand";
 const inputClass = "w-full rounded-2xl border border-line bg-surface p-4 text-ink placeholder:text-[#8a97b8]";
@@ -12,7 +23,7 @@ const inputClass = "w-full rounded-2xl border border-line bg-surface p-4 text-in
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact — FinYaar Finance</title>
+    <SeoHead target={seo} benefit={benefit} faqs={faqs} />
     <SiteFonts />
   </head>
   <body>
@@ -20,9 +31,10 @@ const inputClass = "w-full rounded-2xl border border-line bg-surface p-4 text-in
     <main>
       <section class="pt-16 pb-12">
         <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
+          <Breadcrumbs items={breadcrumbs} />
           <p class={eyebrow}>Contact</p>
-          <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">Get in touch with FinYaar Finance</h1>
-          <p class="mt-4 max-w-[36rem] text-muted">Ask about courses, team training, or how to bring AI workflows into your finance operations.</p>
+          <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">{pageH1}</h1>
+          <p class="mt-4 max-w-[36rem] text-muted">{pageH1} for questions about courses, team training, enterprise plans or introducing responsible AI workflows into finance operations.</p>
         </div>
       </section>
 
@@ -52,6 +64,7 @@ const inputClass = "w-full rounded-2xl border border-line bg-surface p-4 text-in
           </form>
         </div>
       </section>
+      <section class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] gap-10 pb-16"><ContextLinks /><SeoFaq faqs={faqs} /></section>
     </main>
     <SiteFooter />
   </body>

@@ -4,6 +4,17 @@ import SiteFonts from "../components/SiteFonts.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import Icon from "../components/Icon.astro";
+import SeoHead from "../components/SeoHead.astro";
+import SeoFaq from "../components/SeoFaq.astro";
+import ContextLinks from "../components/ContextLinks.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { buildGenericFaqs, getKeywordTargetByUrl } from "../lib/seo";
+
+const seo = getKeywordTargetByUrl("/about/")!;
+const benefit = "Learn about FinYaar Finance, its practitioner-led teaching approach, editorial standards and practical finance training mission.";
+const faqs = buildGenericFaqs(seo.primaryKeyword, benefit);
+const pageH1 = seo.primaryKeyword.charAt(0).toUpperCase() + seo.primaryKeyword.slice(1);
+const breadcrumbs = [{ label: "Home", href: "/" }, { label: pageH1, href: seo.url }];
 
 const eyebrow = "mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand";
 const card = "rounded-[1.25rem] border border-line bg-white p-7 shadow-[0_1px_2px_rgba(15,23,32,0.04)] transition-all hover:-translate-y-1 hover:border-brand/30 hover:shadow-[0_16px_32px_rgba(15,23,32,0.1)]";
@@ -15,7 +26,7 @@ const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounde
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About — FinYaar Finance</title>
+    <SeoHead target={seo} benefit={benefit} faqs={faqs} />
     <SiteFonts />
   </head>
   <body>
@@ -23,9 +34,10 @@ const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounde
     <main>
       <section class="pt-16 pb-12">
         <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
+          <Breadcrumbs items={breadcrumbs} />
           <p class={eyebrow}>Who we are</p>
-          <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">Finance education built around real analyst workflows</h1>
-          <p class="mt-4 max-w-[36rem] text-muted">Our mission: train finance professionals with the depth of real practice, the speed of AI, and the rigor only practitioners can teach.</p>
+          <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">{pageH1}</h1>
+          <p class="mt-4 max-w-[36rem] text-muted">{pageH1} explains our mission: practical finance education combining analyst workflows, responsible AI and practitioner-led review.</p>
         </div>
       </section>
 
@@ -145,6 +157,7 @@ const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounde
           </div>
         </div>
       </section>
+      <section class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] gap-10 pb-16"><ContextLinks /><SeoFaq faqs={faqs} /></section>
     </main>
     <SiteFooter />
   </body>
