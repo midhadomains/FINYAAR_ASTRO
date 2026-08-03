@@ -8,7 +8,6 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "postbuild": "node scripts/create-sitemap-alias.mjs",
     "seo:audit": "node scripts/audit-seo.mjs",
     "preview": "astro preview",
     "astro": "astro"

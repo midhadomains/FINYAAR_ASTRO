@@ -4,7 +4,7 @@ export const prerender = true;
 
 export const GET: APIRoute = ({ site }) => {
   const origin = site ?? new URL("https://finyaar.com");
-  const sitemapUrl = new URL("sitemap.xml", origin);
+  const sitemapUrl = new URL("sitemap-index.xml", origin);
   const body = [
     "User-agent: *",
     "Allow: /",
