@@ -3,9 +3,7 @@ const navLinks = [
   { href: "/dictionary", label: "Dictionary" },
   { href: "/topics", label: "Topics" },
   { href: "/courses", label: "Courses" },
-  { href: "/vault", label: "AI Vault" },
   { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -38,7 +36,7 @@ function isActive(href: string) {
       <a href="/dictionary" aria-label="Search the dictionary" class="hidden h-10 w-10 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-brand sm:flex">
         <span class="material-symbols-outlined">search</span>
       </a>
-      <a class="hidden rounded-[14px] bg-brand px-5 py-2.5 font-bold text-white transition-colors hover:bg-brand-dark lg:inline-flex" href="/vault">Get Vault Access</a>
+      <a class="hidden rounded-[14px] bg-brand px-5 py-2.5 font-bold text-white transition-colors hover:bg-brand-dark lg:inline-flex" href="/courses">Explore Courses</a>
       <button id="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="grid h-10 w-10 place-items-center rounded-full text-ink lg:hidden">
         <span class="material-symbols-outlined">menu</span>
       </button>
@@ -60,7 +58,7 @@ function isActive(href: string) {
       </a>
     ))}
   </nav>
-  <a href="/vault" class="mt-8 block rounded-[14px] bg-brand px-5 py-3.5 text-center font-bold text-white">Get Vault Access</a>
+  <a href="/courses" class="mt-8 block rounded-[14px] bg-brand px-5 py-3.5 text-center font-bold text-white">Explore Courses</a>
 </div>
 
 <script>

@@ -22,9 +22,6 @@ const eyebrow = "mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand";
 const card = "rounded-[1.25rem] border border-line bg-white p-7 shadow-[0_1px_2px_rgba(15,23,32,0.04)] transition-all hover:-translate-y-1 hover:border-brand/30 hover:shadow-[0_16px_32px_rgba(15,23,32,0.1)]";
 const card14 = "rounded-[14px] border border-line bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_4px_20px_rgba(15,23,32,0.06)]";
 const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand";
-const buttonBase = "inline-flex items-center justify-center rounded-full px-[1.6rem] py-4 font-bold transition-transform hover:-translate-y-px";
-const buttonPrimary = `${buttonBase} bg-brand text-white hover:bg-brand-dark`;
-const buttonSecondaryDark = `${buttonBase} border border-white/35 bg-transparent text-white hover:border-white`;
 
 const letters = "#ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const availableLetters = getAvailableLetters();
@@ -45,7 +42,6 @@ const difference = [
 const goals = [
   { icon: "school", title: "I'm new to finance", body: "Start with a free course and build core modeling fundamentals before moving into a certification track.", href: "/courses" },
   { icon: "account_balance", title: "I want to break into IB or PE", body: "Follow the Investment Banking or Financial Modeling certifications, built around real deal workflows.", href: "/courses" },
-  { icon: "auto_awesome", title: "I want to use AI in my finance work", body: "Explore the AI Finance Vault for audit-first prompts, templates, and workflows.", href: "/vault" },
 ];
 ---
 <!DOCTYPE html>
@@ -157,7 +153,7 @@ const goals = [
               <div class="relative z-10 max-w-[70%]">
                 <span class="mb-4 inline-block rounded-full bg-accent px-3 py-1 text-[0.7rem] font-bold uppercase tracking-wide text-ink">Audit-First AI</span>
                 <h3 class="text-lg font-bold text-white">{categories[5].label}</h3>
-                <p class="mt-1 text-white/70">{categories[5].description} See it applied in the AI Finance Vault.</p>
+                <p class="mt-1 text-white/70">{categories[5].description}</p>
               </div>
               <span class="material-symbols-outlined flex-shrink-0 text-[64px] text-brand/40">{categories[5].icon}</span>
             </a>
@@ -263,7 +259,6 @@ const goals = [
                 <span class="text-ink">Continuously expanded as new terms come up in our courses</span>
               </li>
             </ul>
-            <a href="/about" class="mt-8 inline-flex items-center justify-center rounded-full bg-accent px-[1.6rem] py-4 font-bold text-ink transition-transform hover:-translate-y-px">Learn more about us</a>
           </div>
         </div>
       </section>
@@ -320,50 +315,6 @@ const goals = [
         </div>
       </section>
 
-      <section id="vault" class="py-[5.5rem]">
-        <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] rounded-[1.25rem] bg-[linear-gradient(135deg,var(--color-ink),var(--color-brand-dark))] p-12 shadow-[0_24px_48px_rgba(15,23,32,0.18)]">
-          <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-white">The AI Finance Vault</h2>
-          <p class="max-w-[42rem] text-white/90">500+ finance prompts, 120+ AI templates, and audit-ready workflows for modeling, valuation, FP&A, and research.</p>
-          <p class="max-w-[42rem] text-white/90">Includes prompt libraries, Excel templates, real case examples, and weekly updates.</p>
-          <div class="my-8 flex flex-wrap gap-10">
-            <div class="grid"><strong class="text-[1.75rem] font-extrabold text-white">500+</strong><span class="text-[0.9rem] text-white/65">Finance prompts</span></div>
-            <div class="grid"><strong class="text-[1.75rem] font-extrabold text-white">120+</strong><span class="text-[0.9rem] text-white/65">AI templates</span></div>
-            <div class="grid"><strong class="text-[1.75rem] font-extrabold text-white">Weekly</strong><span class="text-[0.9rem] text-white/65">New updates</span></div>
-          </div>
-          <div class="flex flex-wrap gap-4">
-            <a class={buttonPrimary} href="/vault">Get Vault Access</a>
-            <a class={buttonSecondaryDark} href="/vault">See Sample Prompts</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-[5.5rem]">
-        <div class="mx-auto mb-8 w-[calc(100%-2rem)] max-w-[760px]">
-          <p class={eyebrow}>Meet the team</p>
-          <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">Led by practitioners who've sat inside the deals they teach.</h2>
-        </div>
-        <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article class={card}>
-            <div class="mb-4 grid size-14 place-items-center rounded-full bg-gradient-to-br from-brand to-ink text-[1.05rem] font-bold text-white">AC</div>
-            <h3 class="mt-0 text-lg font-bold text-ink">Ariana Cole</h3>
-            <p class="mt-1 mb-3 text-[0.9rem] font-bold text-brand">Co-founder — ex-Goldman Sachs, Investment Banking</p>
-            <p class="text-muted">Led M&A execution and pitchbook development before building FinYaar's investment banking curriculum.</p>
-          </article>
-          <article class={card}>
-            <div class="mb-4 grid size-14 place-items-center rounded-full bg-gradient-to-br from-brand to-ink text-[1.05rem] font-bold text-white">DR</div>
-            <h3 class="mt-0 text-lg font-bold text-ink">Daniel Reyes</h3>
-            <p class="mt-1 mb-3 text-[0.9rem] font-bold text-brand">Co-founder — ex-J.P. Morgan, Equity Research</p>
-            <p class="text-muted">Spent seven years covering tech and consumer names; now designs the equity research and valuation tracks.</p>
-          </article>
-          <article class={card}>
-            <div class="mb-4 grid size-14 place-items-center rounded-full bg-gradient-to-br from-brand to-ink text-[1.05rem] font-bold text-white">PN</div>
-            <h3 class="mt-0 text-lg font-bold text-ink">Priya Nandan</h3>
-            <p class="mt-1 mb-3 text-[0.9rem] font-bold text-brand">Head of AI Curriculum — ex-Deloitte Advisory</p>
-            <p class="text-muted">Built audit-first AI workflows for finance teams; leads the AI Finance Vault and AI Mastery Program.</p>
-          </article>
-        </div>
-      </section>
-
       <section id="learners" class="bg-surface py-[5.5rem]">
         <div class="mx-auto mb-8 w-[calc(100%-2rem)] max-w-[760px]">
           <p class={eyebrow}>What learners say</p>
@@ -379,11 +330,6 @@ const goals = [
             <div class="mb-3 tracking-[0.1em] text-amber-500">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             <p class="mt-0 text-muted">"I used the IB certification templates directly in my summer analyst pitchbook. Huge time saver."</p>
             <span class="mt-4 block font-bold text-ink">Jonah Whitfield<span class="block text-[0.85rem] font-normal text-muted">Summer Analyst, Bulge Bracket Bank</span></span>
-          </article>
-          <article class={card}>
-            <div class="mb-3 tracking-[0.1em] text-amber-500">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mt-0 text-muted">"The AI Finance Vault prompts cut my monthly reporting time in half without sacrificing accuracy."</p>
-            <span class="mt-4 block font-bold text-ink">Carlos Am&eacute;zaga<span class="block text-[0.85rem] font-normal text-muted">FP&A Manager</span></span>
           </article>
           <article class={card}>
             <div class="mb-3 tracking-[0.1em] text-amber-500">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
