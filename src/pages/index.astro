@@ -23,6 +23,9 @@ const card = "rounded-[1.25rem] border border-line bg-white p-7 shadow-[0_1px_2p
 const card14 = "rounded-[14px] border border-line bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_4px_20px_rgba(15,23,32,0.06)]";
 const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand";
 
+const productCard = "group flex flex-col rounded-[1.25rem] border border-line bg-white p-7 shadow-[0_1px_2px_rgba(15,23,32,0.04)] transition-all duration-300 hover:-translate-y-1.5 hover:border-brand/30 hover:shadow-[0_20px_40px_rgba(15,23,32,0.12)]";
+const productIconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-white";
+
 const letters = "#ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const availableLetters = getAvailableLetters();
 
@@ -33,10 +36,10 @@ const trendingSlugs = ["dcf", "ebitda", "wacc", "npv", "lbo"];
 const trendingTerms = trendingSlugs.map((slug) => getTermBySlug(slug)).filter(Boolean);
 
 const difference = [
-  { icon: "groups", title: "Practitioner Definitions", body: "Every term is written and reviewed by analysts who've worked inside banks, PE firms, and advisory teams — not generic textbook copy." },
-  { icon: "menu_book", title: "Real Case Context", body: "Definitions link back to the same filings and live models we use in our certification courses, like the Netflix DCF case." },
-  { icon: "calculate", title: "Interactive Math", body: "Formulas, worked examples, and self-test quizzes are built directly into the definitions you can actually practice with." },
-  { icon: "verified", title: "Audit-First Review", body: "Every definition follows the same audit-first standard we teach for AI-assisted finance work — checked, not just generated." },
+  { icon: "groups", title: "Practitioner Definitions", body: "Written and reviewed by working analysts, not textbooks." },
+  { icon: "menu_book", title: "Real Case Context", body: "Linked to real filings and models, like our Netflix DCF." },
+  { icon: "calculate", title: "Interactive Math", body: "Formulas and self-test quizzes built into every definition." },
+  { icon: "verified", title: "Audit-First Review", body: "Checked against our audit standard, not just generated." },
 ];
 
 const goals = [
@@ -56,12 +59,12 @@ const goals = [
     <SiteHeader />
     <main>
       <!-- Hero -->
-      <header class="relative overflow-hidden bg-surface pt-20 pb-16 md:pt-28 md:pb-20">
+      <header class="relative overflow-hidden bg-white pt-20 pb-16 md:pt-28 md:pb-20">
         <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] text-center">
           <Breadcrumbs items={breadcrumbs} class="mb-8 justify-center" />
           <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-extrabold tracking-[-0.02em] text-ink">{pageH1}</h1>
           <p class="mx-auto mt-5 max-w-2xl text-lg text-muted">
-            {pageH1} from FinYaar combines plain-English definitions, formulas, worked examples, calculators and practitioner-led learning for Indian finance students.
+            Plain-English definitions and practitioner-led courses, built for Indian finance students.
           </p>
 
           <form action="/dictionary" method="GET" class="mx-auto mt-8 max-w-2xl">
@@ -86,7 +89,7 @@ const goals = [
       </header>
 
       <!-- Trust bar -->
-      <section class="py-14">
+      <section class="bg-slate-50 py-14">
         <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
           <p class={`${eyebrow} text-center`}>Trusted by teams at</p>
           <div class="grid grid-cols-2 items-stretch gap-4 sm:grid-cols-3 md:grid-cols-6">
@@ -117,7 +120,7 @@ const goals = [
       </div>
 
       <!-- Explore by Topic -->
-      <section class="py-[5.5rem]">
+      <section class="bg-slate-50 py-[5.5rem]">
         <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
           <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
             <div>
@@ -162,7 +165,7 @@ const goals = [
       </section>
 
       <!-- Popular This Week -->
-      <section class="border-y border-line bg-surface py-12">
+      <section class="border-y border-line bg-white py-12">
         <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
           <p class={eyebrow}>Popular this week</p>
           <div class="flex flex-wrap gap-x-12 gap-y-5">
@@ -177,29 +180,35 @@ const goals = [
       </section>
 
       <!-- The FinYaar Difference -->
-      <section class="py-[5.5rem]">
+      <section class="bg-[linear-gradient(135deg,var(--color-ink),var(--color-brand-dark))] py-[5.5rem]">
         <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]">
           <div class="mb-12 text-center">
-            <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">The FinYaar Difference</h2>
-            <p class="mt-2 text-muted">How we make dense finance concepts feel usable, not academic.</p>
+            <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-white">The FinYaar Difference</h2>
+            <p class="mt-2 text-white/70">How we make dense finance concepts feel usable, not academic.</p>
           </div>
           <div class="relative grid grid-cols-1 gap-10 md:grid-cols-4">
-            <div class="pointer-events-none absolute top-9 left-[12.5%] right-[12.5%] hidden h-px bg-line md:block"></div>
+            <div class="pointer-events-none absolute top-9 left-[12.5%] right-[12.5%] hidden h-px bg-white/15 md:block"></div>
             {difference.map((d) => (
               <div class="relative z-10 flex flex-col items-center px-4 text-center">
-                <div class="mb-5 flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-full border-4 border-surface bg-white text-brand shadow-[0_1px_2px_rgba(15,23,32,0.06)]">
+                <div class="mb-5 flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-full border-4 border-white/10 bg-white text-brand shadow-[0_1px_2px_rgba(15,23,32,0.06)]">
                   <span class="material-symbols-outlined text-3xl">{d.icon}</span>
                 </div>
-                <h4 class="mb-2 font-bold text-ink">{d.title}</h4>
-                <p class="text-sm text-muted">{d.body}</p>
+                <h4 class="mb-2 font-bold text-white">{d.title}</h4>
+                <p class="text-sm text-white/70">{d.body}</p>
               </div>
             ))}
+          </div>
+          <div class="mt-12 text-center">
+            <a href="/dictionary" class="inline-flex items-center gap-1.5 rounded-[14px] border-2 border-white/30 px-6 py-3 font-bold text-white transition-colors hover:border-white hover:bg-white/10">
+              Browse the Dictionary
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
           </div>
         </div>
       </section>
 
       <!-- What's your goal today? -->
-      <section class="py-[5.5rem]">
+      <section class="bg-white py-[5.5rem]">
         <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] rounded-[1.25rem] bg-accent-soft/60 p-10 md:p-12">
           <h2 class="text-[clamp(1.75rem,3vw,2.25rem)] font-extrabold text-ink">What's your goal today?</h2>
           <p class="mt-2 max-w-xl text-muted">Tailored starting points based on where you are in your finance career.</p>
@@ -220,9 +229,9 @@ const goals = [
       </section>
 
       <!-- Our Editorial Standard -->
-      <section class="pb-[5.5rem]">
+      <section class="bg-slate-50 py-[5.5rem]">
         <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 items-center gap-10 md:grid-cols-2">
-          <div class="rounded-[1.25rem] border border-line bg-surface p-10">
+          <div class="rounded-[1.25rem] border border-line bg-white p-10 shadow-[0_1px_2px_rgba(15,23,32,0.04)]">
             <div class="grid grid-cols-2 gap-8">
               <div>
                 <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand/10 text-brand"><span class="material-symbols-outlined">menu_book</span></div>
@@ -244,7 +253,7 @@ const goals = [
           </div>
           <div>
             <h2 class="text-[clamp(1.75rem,3vw,2.25rem)] font-extrabold text-ink">Our Editorial Standard</h2>
-            <p class="mt-4 text-muted">FinYaar was built by practitioners frustrated with theory-only finance education. Every definition is grounded in how the term is actually used on the desk, not how a textbook defines it.</p>
+            <p class="mt-4 text-muted">Every definition reflects how the term is actually used on the desk, not a textbook.</p>
             <ul class="mt-6 space-y-3">
               <li class="flex items-center gap-3">
                 <span class="material-symbols-outlined text-brand">check_circle</span>
@@ -259,63 +268,98 @@ const goals = [
                 <span class="text-ink">Continuously expanded as new terms come up in our courses</span>
               </li>
             </ul>
+            <a href="/dictionary" class="mt-7 inline-flex items-center gap-1.5 font-bold text-brand hover:underline">
+              Browse the Dictionary
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
           </div>
         </div>
       </section>
 
-      <section id="programs" class="bg-surface py-[5.5rem]">
-        <div class="mx-auto mb-8 w-[calc(100%-2rem)] max-w-[760px]">
-          <p class={eyebrow}>Certification paths built around real analyst work</p>
-          <h2 class="mb-4 text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">Focused programs that combine concept clarity, spreadsheet practice, and AI-enabled execution.</h2>
-          <p class="text-muted">Choose the path that matches your goal, then build deep skills with practical cases and templates.</p>
+      <section id="programs" class="bg-white py-[5.5rem]">
+        <div class="mx-auto mb-8 w-[calc(100%-2rem)] max-w-[1160px]">
+          <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p class={eyebrow}>Certification paths</p>
+              <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">Programs built for real analyst work.</h2>
+            </div>
+            <a href="/courses" class="inline-flex items-center gap-1 font-semibold text-brand hover:underline">
+              View All Courses
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+          </div>
         </div>
 
         <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article class={card}>
-            <div class={iconBadge}><Icon name="chart-bar" class="h-6 w-6" /></div>
-            <h3 class="mt-0 text-lg font-bold text-ink">Financial Modeling & Valuation + AI</h3>
+          <a href="/courses" class={productCard}>
+            <div class={productIconBadge}><Icon name="chart-bar" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink transition-colors duration-300 group-hover:text-brand">Financial Modeling & Valuation + AI</h3>
             <p class="text-muted">Netflix DCF case, 3-statement modeling, and Claude + Excel workflow.</p>
-            <p class="text-muted"><strong>4.9 rating • 12K learners</strong></p>
-          </article>
+            <p class="mt-1 text-sm text-muted"><strong>4.9 rating • 12K learners</strong></p>
+            <span class="mt-auto flex items-center gap-1.5 pt-5 text-sm font-bold text-brand">
+              Learn more
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+            </span>
+          </a>
 
-          <article class={card}>
-            <div class={iconBadge}><Icon name="sparkles" class="h-6 w-6" /></div>
-            <h3 class="mt-0 text-lg font-bold text-ink">FMV using AI</h3>
+          <a href="/courses" class={productCard}>
+            <div class={productIconBadge}><Icon name="sparkles" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink transition-colors duration-300 group-hover:text-brand">FMV using AI</h3>
             <p class="text-muted">Apply AI to financial modeling, analysis, and valuation workflows.</p>
-            <p class="text-muted"><strong>4.8 rating • AI-ready</strong></p>
-          </article>
+            <p class="mt-1 text-sm text-muted"><strong>4.8 rating • AI-ready</strong></p>
+            <span class="mt-auto flex items-center gap-1.5 pt-5 text-sm font-bold text-brand">
+              Learn more
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+            </span>
+          </a>
 
-          <article class={card}>
-            <div class={iconBadge}><Icon name="landmark" class="h-6 w-6" /></div>
-            <h3 class="mt-0 text-lg font-bold text-ink">Investment Banking Certification</h3>
+          <a href="/courses" class={productCard}>
+            <div class={productIconBadge}><Icon name="landmark" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink transition-colors duration-300 group-hover:text-brand">Investment Banking Certification</h3>
             <p class="text-muted">Deal structures, LBO, pitchbooks, comps, and M&A.</p>
-            <p class="text-muted"><strong>4.8 rating • 8.5K learners</strong></p>
-          </article>
+            <p class="mt-1 text-sm text-muted"><strong>4.8 rating • 8.5K learners</strong></p>
+            <span class="mt-auto flex items-center gap-1.5 pt-5 text-sm font-bold text-brand">
+              Learn more
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+            </span>
+          </a>
 
-          <article class={card}>
-            <div class={iconBadge}><Icon name="search" class="h-6 w-6" /></div>
-            <h3 class="mt-0 text-lg font-bold text-ink">Fundamental Analysis + AI</h3>
+          <a href="/courses" class={productCard}>
+            <div class={productIconBadge}><Icon name="search" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink transition-colors duration-300 group-hover:text-brand">Fundamental Analysis + AI</h3>
             <p class="text-muted">10-K reading, investment thesis, and AI-augmented research workflows.</p>
-            <p class="text-muted"><strong>Analyst workflow • AI audits</strong></p>
-          </article>
+            <p class="mt-1 text-sm text-muted"><strong>Analyst workflow • AI audits</strong></p>
+            <span class="mt-auto flex items-center gap-1.5 pt-5 text-sm font-bold text-brand">
+              Learn more
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+            </span>
+          </a>
 
-          <article class={card}>
-            <div class={iconBadge}><Icon name="calendar" class="h-6 w-6" /></div>
-            <h3 class="mt-0 text-lg font-bold text-ink">FP&A</h3>
+          <a href="/courses" class={productCard}>
+            <div class={productIconBadge}><Icon name="calendar" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink transition-colors duration-300 group-hover:text-brand">FP&A</h3>
             <p class="text-muted">Budgeting, forecasting, reporting, and planning workflows.</p>
-            <p class="text-muted"><strong>Forecasting • Reporting</strong></p>
-          </article>
+            <p class="mt-1 text-sm text-muted"><strong>Forecasting • Reporting</strong></p>
+            <span class="mt-auto flex items-center gap-1.5 pt-5 text-sm font-bold text-brand">
+              Learn more
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+            </span>
+          </a>
 
-          <article class={card}>
-            <div class={iconBadge}><Icon name="lightbulb" class="h-6 w-6" /></div>
-            <h3 class="mt-0 text-lg font-bold text-ink">AI Mastery Program</h3>
+          <a href="/courses" class={productCard}>
+            <div class={productIconBadge}><Icon name="lightbulb" class="h-6 w-6" /></div>
+            <h3 class="mt-0 text-lg font-bold text-ink transition-colors duration-300 group-hover:text-brand">AI Mastery Program</h3>
             <p class="text-muted">Use AI for research, analysis, modeling, and productivity.</p>
-            <p class="text-muted"><strong>Prompts • Workflows • Audit</strong></p>
-          </article>
+            <p class="mt-1 text-sm text-muted"><strong>Prompts • Workflows • Audit</strong></p>
+            <span class="mt-auto flex items-center gap-1.5 pt-5 text-sm font-bold text-brand">
+              Learn more
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+            </span>
+          </a>
         </div>
       </section>
 
-      <section id="learners" class="bg-surface py-[5.5rem]">
+      <section id="learners" class="bg-slate-50 py-[5.5rem]">
         <div class="mx-auto mb-8 w-[calc(100%-2rem)] max-w-[760px]">
           <p class={eyebrow}>What learners say</p>
           <h2 class="text-[clamp(2rem,3vw,2.75rem)] font-extrabold text-ink">500K+ learners across 50+ countries have trusted this training.</h2>
@@ -349,7 +393,9 @@ const goals = [
         </div>
       </section>
 
-      <section class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] py-16"><SeoFaq faqs={faqs} /></section>
+      <section class="bg-white py-16">
+        <div class="mx-auto w-[calc(100%-2rem)] max-w-[1160px]"><SeoFaq faqs={faqs} /></div>
+      </section>
 
     </main>
     <SiteFooter />

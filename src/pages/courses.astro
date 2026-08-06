@@ -17,9 +17,10 @@ const pageH1 = seo.primaryKeyword.charAt(0).toUpperCase() + seo.primaryKeyword.s
 const breadcrumbs = [{ label: "Home", href: "/" }, { label: pageH1, href: seo.url }];
 
 const eyebrow = "mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand";
-const card = "rounded-[1.25rem] border border-line bg-white p-7 shadow-[0_1px_2px_rgba(15,23,32,0.04)] transition-all hover:-translate-y-1 hover:border-brand/30 hover:shadow-[0_16px_32px_rgba(15,23,32,0.1)]";
 const pill = "mb-4 inline-flex items-center rounded-full bg-brand/10 px-[0.8rem] py-[0.4rem] text-[0.85rem] font-bold text-brand";
-const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand";
+
+const productCard = "group flex flex-col rounded-[1.25rem] border border-line bg-white p-7 shadow-[0_1px_2px_rgba(15,23,32,0.04)] transition-all duration-300 hover:-translate-y-1.5 hover:border-brand/30 hover:shadow-[0_20px_40px_rgba(15,23,32,0.12)]";
+const productIconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-white";
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -43,36 +44,56 @@ const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounde
 
       <section class="py-[5.5rem]">
         <div class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article class={card}>
-            <div class={iconBadge}><Icon name="chart-bar" class="h-6 w-6" /></div>
+          <a href="/contact" class={productCard}>
+            <div class={productIconBadge}><Icon name="chart-bar" class="h-6 w-6" /></div>
             <span class={pill}>Core program</span>
-            <h2 class="mt-0 text-xl font-bold text-ink">Financial Modeling & Valuation</h2>
+            <h2 class="mt-0 text-xl font-bold text-ink transition-colors duration-300 group-hover:text-brand">Financial Modeling & Valuation</h2>
             <p class="text-muted">Build 3-statement models, run DCFs, and create valuation-ready outputs with clean worksheets.</p>
-          </article>
-          <article class={card}>
-            <div class={iconBadge}><Icon name="sparkles" class="h-6 w-6" /></div>
+            <span class="mt-auto flex items-center gap-1.5 pt-5 text-sm font-bold text-brand">
+              Enquire now
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+            </span>
+          </a>
+          <a href="/contact" class={productCard}>
+            <div class={productIconBadge}><Icon name="sparkles" class="h-6 w-6" /></div>
             <span class={pill}>AI workflow</span>
-            <h2 class="mt-0 text-xl font-bold text-ink">AI Finance Accelerator</h2>
+            <h2 class="mt-0 text-xl font-bold text-ink transition-colors duration-300 group-hover:text-brand">AI Finance Accelerator</h2>
             <p class="text-muted">Use AI prompts, audit templates, and spreadsheet automation to speed up analysis without sacrificing quality.</p>
-          </article>
-          <article class={card}>
-            <div class={iconBadge}><Icon name="landmark" class="h-6 w-6" /></div>
+            <span class="mt-auto flex items-center gap-1.5 pt-5 text-sm font-bold text-brand">
+              Enquire now
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+            </span>
+          </a>
+          <a href="/contact" class={productCard}>
+            <div class={productIconBadge}><Icon name="landmark" class="h-6 w-6" /></div>
             <span class={pill}>Deal-focused</span>
-            <h2 class="mt-0 text-xl font-bold text-ink">Investment Banking Essentials</h2>
+            <h2 class="mt-0 text-xl font-bold text-ink transition-colors duration-300 group-hover:text-brand">Investment Banking Essentials</h2>
             <p class="text-muted">Cover valuation, deal structure, pitchbook prep, and transaction documentation.</p>
-          </article>
-          <article class={card}>
-            <div class={iconBadge}><Icon name="search" class="h-6 w-6" /></div>
+            <span class="mt-auto flex items-center gap-1.5 pt-5 text-sm font-bold text-brand">
+              Enquire now
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+            </span>
+          </a>
+          <a href="/contact" class={productCard}>
+            <div class={productIconBadge}><Icon name="search" class="h-6 w-6" /></div>
             <span class={pill}>Research</span>
-            <h2 class="mt-0 text-xl font-bold text-ink">Equity Research & Valuation</h2>
+            <h2 class="mt-0 text-xl font-bold text-ink transition-colors duration-300 group-hover:text-brand">Equity Research & Valuation</h2>
             <p class="text-muted">Analyze company financials, build thesis-driven models, and prepare investment summaries.</p>
-          </article>
-          <article class={card}>
-            <div class={iconBadge}><Icon name="calendar" class="h-6 w-6" /></div>
+            <span class="mt-auto flex items-center gap-1.5 pt-5 text-sm font-bold text-brand">
+              Enquire now
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+            </span>
+          </a>
+          <a href="/contact" class={productCard}>
+            <div class={productIconBadge}><Icon name="calendar" class="h-6 w-6" /></div>
             <span class={pill}>Planning</span>
-            <h2 class="mt-0 text-xl font-bold text-ink">FP&A Strategy</h2>
+            <h2 class="mt-0 text-xl font-bold text-ink transition-colors duration-300 group-hover:text-brand">FP&A Strategy</h2>
             <p class="text-muted">Learn forecasting, variance reporting, and integrated planning in a finance team setting.</p>
-          </article>
+            <span class="mt-auto flex items-center gap-1.5 pt-5 text-sm font-bold text-brand">
+              Enquire now
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+            </span>
+          </a>
         </div>
       </section>
       <section class="mx-auto grid w-[calc(100%-2rem)] max-w-[1160px] gap-10 pb-16"><ContextLinks /><SeoFaq faqs={faqs} /></section>
