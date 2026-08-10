@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "deploy": "npm run build && wrangler deploy",
     "seo:audit": "node scripts/audit-seo.mjs",
     "preview": "astro preview",
     "astro": "astro"
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "wrangler": "4.120.0"
   }
 }
