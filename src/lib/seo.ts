@@ -312,6 +312,7 @@ const siteTargets: PageKeywordTarget[] = [
   ["/dictionary/", "dictionary-index", "finance dictionary", "Definition navigation", "Global", "head-term", "P2", "The FinYaar Finance Dictionary provides plain-English definitions, examples, FAQs, and related lessons."],
   ["/courses/", "site", "finance certification courses", "Commercial investigation", "Global", "head-term", "P3", "Compare practical finance certification courses and learning paths."],
   ["/blog/", "site", "finance learning articles", "Informational navigation", "Global", "supporting", "P3", "Read practical finance, markets, modelling, and career articles."],
+  ["/about/", "site", "about FinYaar Finance", "Navigational", "Global", "supporting", "P3", "Learn about FinYaar Finance, its practical teaching approach, editorial standards, and finance education mission."],
   ["/contact/", "site", "contact FinYaar Finance", "Navigational", "Global", "supporting", "P3", "Contact the FinYaar Finance team."],
 ].map(([url, pageType, primaryKeyword, searchIntent, market, stage, priority, snippetAnswer]) => ({
   url,
