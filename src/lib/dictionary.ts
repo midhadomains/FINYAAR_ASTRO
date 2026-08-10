@@ -88,7 +88,7 @@ function slugify(term: string): string {
 
 type RawTerm = Omit<Term, "slug">;
 
-const rawTerms: RawTerm[] = [
+const _unpublishedTerms: RawTerm[] = [
   // Valuation & Modeling
   {
     term: "DCF (Discounted Cash Flow)",
@@ -365,6 +365,10 @@ const rawTerms: RawTerm[] = [
   { term: "XBRL", category: "ai", definition: "A standardized data format used to tag financial statements so they can be read and compared programmatically." },
 ];
 
+// Retained as an unpublished editorial backlog; it is intentionally not part of
+// the exported dictionary collection or any generated public route.
+void _unpublishedTerms;
+
 interface MetadataTerm {
   slug: string;
   term: string;
@@ -452,17 +456,12 @@ function fromMetadata(item: MetadataTerm): Term {
   };
 }
 
-const originalTerms: Term[] = rawTerms.map((t) => ({ ...t, slug: slugify(t.term) }));
 const metadataTerms = metadataSourceTerms.map(fromMetadata);
-const metadataBySlug = new Map(metadataTerms.map((term) => [term.slug, term]));
 
-export const terms: Term[] = [
-  ...originalTerms.map((term) => {
-    const metadata = metadataBySlug.get(term.slug);
-    return metadata ? { ...term, ...metadata } : term;
-  }),
-  ...metadataTerms.filter((term) => !originalTerms.some((existing) => existing.slug === term.slug)),
-];
+// Only publish entries that have a complete, validated long-form lesson body.
+// Short definition-only records in `_unpublishedTerms` remain excluded from every public
+// dictionary index, category, related-term list, sitemap, and generated route.
+export const terms: Term[] = metadataTerms.filter((term) => Boolean(term.lessonBody));
 
 export interface DictionaryCategory {
   slug: string;

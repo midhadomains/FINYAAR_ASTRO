@@ -23,7 +23,7 @@ for (const t of sortedTerms) {
   groups.get(first)!.push(t);
 }
 
-const trending = ["dcf", "wacc", "ebitda", "lbo"].map((slug) => getTermBySlug(slug)).filter(Boolean);
+const trending = ["sip-systematic-investment-plan", "compound-interest", "ebitda", "pe-ratio"].map((slug) => getTermBySlug(slug)).filter(Boolean);
 const canonicalUrl = new URL("/dictionary/", Astro.site ?? Astro.url.origin);
 const structuredData = JSON.stringify({
   "@context": "https://schema.org",

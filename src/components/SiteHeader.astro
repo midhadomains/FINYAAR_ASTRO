@@ -4,31 +4,37 @@ const navLinks = [
   { href: "/topics", label: "Topics" },
   { href: "/courses", label: "Courses" },
   { href: "/blog", label: "Blog" },
+<<<<<<< HEAD
   { href: "/contact", label: "Contact" },
+=======
+  { href: "/about", label: "About" },
+>>>>>>> dd193a6 (updated design and removed the contents)
 ];
 
 const currentPath = Astro.url.pathname;
-function isActive(href: string) {
-  return currentPath === href || currentPath.startsWith(`${href}/`);
-}
+const isActive = (href: string) => currentPath === href || currentPath.startsWith(`${href}/`);
 ---
+<<<<<<< HEAD
 <header class="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur-md">
   <div class="mx-auto flex w-[calc(100%-2rem)] max-w-[1160px] items-center justify-between gap-4 py-4">
     <a class="text-lg font-extrabold text-ink" href="/">FinYaar Finance</a>
+=======
+<header class="sticky top-0 z-50 border-b border-white/10 bg-[#0b0c10]/85 text-[#f5f2ea] backdrop-blur-xl">
+  <div class="relative mx-auto flex h-[68px] w-[calc(100%-2rem)] max-w-[1160px] items-center justify-between gap-6">
+    <a class="font-display text-[23px] font-bold tracking-[-0.04em] text-[#f5f2ea]" href="/" aria-label="FinYaar home">
+      Fin<span class="bg-[linear-gradient(100deg,#ffc24b,#ff6b5e_48%,#a483ff)] bg-clip-text text-transparent">Yaar</span><i class="ml-0.5 inline-block size-[7px] -translate-y-2 rounded-full bg-[#ff6b5e]"></i>
+    </a>
+>>>>>>> dd193a6 (updated design and removed the contents)
 
-    <nav class="hidden items-center gap-6 lg:flex">
+    <nav class="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 lg:flex" aria-label="Main navigation">
       {navLinks.map((link) => (
-        <a
-          href={link.href}
-          class={`border-b-2 pb-1 text-[0.95rem] font-semibold transition-colors ${
-            isActive(link.href) ? "border-brand text-brand" : "border-transparent text-muted hover:text-brand"
-          }`}
-        >
+        <a href={link.href} class={`border-b pb-1 text-sm font-semibold transition-colors ${isActive(link.href) ? "border-[#ff6b5e] text-white" : "border-transparent text-[#a7a9b6] hover:text-white"}`}>
           {link.label}
         </a>
       ))}
     </nav>
 
+<<<<<<< HEAD
     <div class="flex items-center gap-2">
       <a href="/dictionary" aria-label="Search the dictionary" class="hidden h-10 w-10 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-brand sm:flex">
         <span class="material-symbols-outlined">search</span>
@@ -38,42 +44,44 @@ function isActive(href: string) {
         <span class="material-symbols-outlined">menu</span>
       </button>
     </div>
+=======
+    <a class="hidden items-center gap-2 rounded-xl bg-[linear-gradient(100deg,#ffc24b,#ff6b5e_48%,#a483ff)] px-[18px] py-[11px] font-display text-sm font-bold text-[#1b110d] shadow-[0_12px_30px_-18px_#ff6b5e] transition-transform hover:-translate-y-0.5 lg:inline-flex" href="/dictionary">
+      Browse A–Z <span aria-hidden="true">→</span>
+    </a>
+    <button id="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="grid size-10 place-items-center rounded-xl border border-white/10 text-white lg:hidden">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+>>>>>>> dd193a6 (updated design and removed the contents)
   </div>
 </header>
 
-<div id="mobile-menu" class="fixed inset-0 z-50 hidden flex-col bg-white p-6 lg:hidden">
+<div id="mobile-menu" class="fixed inset-0 z-[60] hidden flex-col bg-[#0b0c10] p-6 text-[#f5f2ea] lg:hidden">
   <div class="flex items-center justify-between">
-    <a class="text-lg font-extrabold text-ink" href="/">FinYaar Finance</a>
-    <button id="mobile-menu-close" type="button" aria-label="Close menu" class="grid h-10 w-10 place-items-center rounded-full text-ink">
-      <span class="material-symbols-outlined">close</span>
-    </button>
+    <a class="font-display text-[23px] font-bold text-white" href="/">Fin<span class="text-[#ff6b5e]">Yaar</span></a>
+    <button id="mobile-menu-close" type="button" aria-label="Close menu" class="grid size-10 place-items-center rounded-xl border border-white/10 text-white"><span class="material-symbols-outlined">close</span></button>
   </div>
-  <nav class="mt-8 flex flex-col gap-1">
-    {navLinks.map((link) => (
-      <a href={link.href} class={`rounded-[10px] px-3 py-3 text-lg font-bold ${isActive(link.href) ? "bg-brand/10 text-brand" : "text-ink"}`}>
-        {link.label}
-      </a>
-    ))}
+  <nav class="mt-9 flex flex-col gap-1">
+    {navLinks.map((link) => <a href={link.href} class={`rounded-xl px-4 py-3 font-display text-xl font-bold ${isActive(link.href) ? "bg-white/10 text-[#ffc24b]" : "text-[#f5f2ea]"}`}>{link.label}</a>)}
+    <a href="/contact" class={`rounded-xl px-4 py-3 font-display text-xl font-bold ${isActive("/contact") ? "bg-white/10 text-[#ffc24b]" : "text-[#f5f2ea]"}`}>Contact</a>
   </nav>
+<<<<<<< HEAD
   <a href="/courses" class="mt-8 block rounded-[14px] bg-brand px-5 py-3.5 text-center font-bold text-white">Explore Courses</a>
+=======
+  <a href="/dictionary" class="mt-8 rounded-xl bg-[linear-gradient(100deg,#ffc24b,#ff6b5e_48%,#a483ff)] px-5 py-3.5 text-center font-display font-bold text-[#1b110d]">Browse the dictionary</a>
+>>>>>>> dd193a6 (updated design and removed the contents)
 </div>
 
 <script>
   const toggle = document.getElementById("mobile-menu-toggle");
-  const closeBtn = document.getElementById("mobile-menu-close");
+  const closeButton = document.getElementById("mobile-menu-close");
   const menu = document.getElementById("mobile-menu");
-
-  toggle?.addEventListener("click", () => {
-    menu?.classList.remove("hidden");
-    menu?.classList.add("flex");
-    toggle.setAttribute("aria-expanded", "true");
-    document.body.style.overflow = "hidden";
-  });
-
-  closeBtn?.addEventListener("click", () => {
-    menu?.classList.add("hidden");
-    menu?.classList.remove("flex");
-    toggle?.setAttribute("aria-expanded", "false");
-    document.body.style.overflow = "";
-  });
+  const setOpen = (open: boolean) => {
+    menu?.classList.toggle("hidden", !open);
+    menu?.classList.toggle("flex", open);
+    toggle?.setAttribute("aria-expanded", String(open));
+    document.body.style.overflow = open ? "hidden" : "";
+  };
+  toggle?.addEventListener("click", () => setOpen(true));
+  closeButton?.addEventListener("click", () => setOpen(false));
+  menu?.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setOpen(false)));
 </script>
