@@ -334,14 +334,10 @@ const _unpublishedTerms: RawTerm[] = [
   { term: "Yield Curve", category: "markets", definition: "A plot of bond yields across maturities, commonly read for market expectations on growth and rates." },
   { term: "Basis Point (bps)", category: "markets", definition: "One hundredth of one percent, commonly used to express changes in interest rates or spreads." },
   { term: "Short Selling", category: "markets", definition: "Selling borrowed shares in anticipation of buying them back later at a lower price." },
-  { term: "Volatility", category: "markets", definition: "The degree of variation in an asset's price over time." },
   { term: "Derivative", category: "markets", definition: "A financial contract whose value is derived from an underlying asset, index, or rate." },
   { term: "Credit Spread", category: "markets", definition: "The yield difference between a corporate bond and a risk-free benchmark, reflecting credit risk." },
   { term: "Alpha", category: "markets", definition: "Investment return in excess of a benchmark, after adjusting for risk." },
   { term: "Underwriting", category: "markets", definition: "The process by which an investment bank prices, guarantees, and distributes new securities to investors." },
-  { term: "Simple Interest", category: "markets", categoryLabel: "Investing Basics", definition: "Interest calculated only on the original principal, without earning additional interest on past interest." },
-  { term: "Rule of 72", category: "markets", categoryLabel: "Investing Basics", definition: "A quick estimate of how many years an investment may take to double, calculated by dividing 72 by its annual return percentage." },
-  { term: "Inflation", category: "markets", categoryLabel: "Economics & Macro", definition: "A sustained rise in the general price level that reduces what each unit of money can buy over time." },
 
   // FP&A & Corporate Finance
   { term: "Budgeting", category: "fpa", definition: "The process of planning expected revenue and expenses for a future period." },

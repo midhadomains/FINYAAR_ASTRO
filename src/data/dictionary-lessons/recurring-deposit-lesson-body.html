@@ -1,0 +1,116 @@
+<!-- FINYAAR DICTIONARY: Banking Savings and Deposits · Recurring Deposit -->
+<!-- Paste everything below into the WordPress Text tab or a Custom HTML block. -->
+
+<div class="doc-kicker">FINYAAR DICTIONARY · BANKING SAVINGS AND DEPOSITS</div>
+<h1 class="doc-title">Recurring Deposit</h1>
+<div class="doc-note">Recurring Deposit is a bank or post-office savings product in which you deposit a fixed sum every month for a chosen tenure, and the bank pays a pre-agreed rate of interest, compounded quarterly, so you receive a lump-sum maturity amount at the end. It is designed for people who want the discipline of monthly saving with the assured returns and capital safety of a term deposit.</div>
+
+<div class="section" id="s1" data-name="What is a Recurring Deposit">
+<div class="sec-head"><h2>What is a Recurring Deposit?</h2></div>
+<div class="sec-body">
+<p>A <b>Recurring Deposit (RD)</b> lets you park a fixed instalment, say <b>&#8377;5,000</b>, every month into a bank or post-office account for a fixed tenure, usually <b>6 months to 10 years</b>. In return the bank pays interest at a locked-in rate and, unlike a savings account, compounds it every quarter. When the RD matures you get back the total of all instalments plus the accumulated interest as a single lump sum.</p>
+<p>Think of a Bengaluru software engineer who cannot commit a big amount in one shot but can spare <b>&#8377;5,000</b> a month. An RD forces that discipline, much like a <a href="/dictionary/sip-systematic-investment-plan/">SIP (Systematic Investment Plan)</a> does for <a href="/dictionary/mutual-fund/">mutual funds</a>, but with a guaranteed rate and no market risk. It is the middle ground between a plain savings account and a <a href="/dictionary/fixed-deposit/">Fixed Deposit</a>: a Fixed Deposit needs one large amount upfront, while an RD builds the corpus in small monthly steps.</p>
+<p>RDs are offered by every scheduled bank, small finance banks, and India Post. Deposits with banks are insured up to <b>&#8377;5 lakh</b> per depositor per bank by the DICGC (a subsidiary of the RBI), which is why RDs are considered a very low <a href="/dictionary/risk-vs-return/">risk vs return</a> instrument.</p>
+</div>
+</div>
+
+<div class="section" id="s2" data-name="How the maturity value is calculated">
+<div class="sec-head"><h2>How the maturity value is calculated</h2></div>
+<div class="sec-body">
+<p>Because each instalment stays invested for a different length of time, the first instalment earns interest for the full tenure while the last earns it for just one period. Banks typically compound <b>quarterly</b>. A clean way to see the maturity value is as the future value of a series of equal monthly instalments (an annuity-due, since you pay at the start of each month):</p>
+<div class="formula"><span data-math="M = P \times \frac{(1+i)^{n} - 1}{i} \times (1+i)"></span></div>
+<p>Here <b>M</b> is the maturity amount, <b>P</b> is the fixed monthly instalment, <b>i</b> is the interest rate per compounding period expressed as a decimal, and <b>n</b> is the total number of instalments (periods). The extra <span data-math="(1+i)"></span> at the end reflects that each payment is made at the beginning of the month, so it earns one additional period of interest.</p>
+<p>The power of an RD comes from <a href="/dictionary/compound-interest/">Compound Interest</a>: interest earns interest each quarter. This is very different from <a href="/dictionary/simple-interest/">Simple Interest</a>, where only the original instalments earn interest. Over long tenures the gap between the two widens sharply, and the <a href="/dictionary/rule-of-72/">Rule of 72</a> gives a quick feel for how long money takes to double at a given rate.</p>
+</div>
+</div>
+
+<div class="section" id="s3" data-name="RD vs FD vs SIP">
+<div class="sec-head"><h2>RD vs FD vs SIP: how to choose</h2></div>
+<div class="sec-body">
+<p>An RD is often confused with a Fixed Deposit and a SIP. They differ in how you invest, the return profile, and the risk taken.</p>
+<div class="tbl-scroll"><table class="data">
+<thead><tr><th>Feature</th><th>Recurring Deposit</th><th>Fixed Deposit</th><th>SIP in Mutual Funds</th></tr></thead>
+<tbody>
+<tr><td>How you invest</td><td>Fixed amount every month</td><td>One lump sum upfront</td><td>Fixed amount every month</td></tr>
+<tr><td>Return</td><td>Fixed, assured (approx 6.5&ndash;7.5% p.a.)</td><td>Fixed, assured (approx 6.5&ndash;7.75% p.a.)</td><td>Market-linked, not guaranteed</td></tr>
+<tr><td>Risk</td><td>Very low (DICGC up to &#8377;5 lakh)</td><td>Very low (DICGC up to &#8377;5 lakh)</td><td>Market risk / <a href="/dictionary/volatility/">volatility</a></td></tr>
+<tr><td>Tax on returns</td><td>Interest fully taxable at slab</td><td>Interest fully taxable at slab</td><td>Capital gains rules apply</td></tr>
+<tr><td>Best for</td><td>Disciplined short-term goals</td><td>Idle lump sum for a fixed term</td><td>Long-term wealth creation</td></tr>
+</tbody>
+</table></div>
+<p>Rule of thumb: use an RD when you have a steady monthly surplus and a short-to-medium goal (a trip, a gadget, an emergency buffer). Use a Fixed Deposit when a lump sum is already sitting idle. Use a SIP when the goal is 5+ years away and you can tolerate <a href="/dictionary/volatility/">volatility</a> in exchange for potentially higher returns that beat <a href="/dictionary/inflation/">inflation</a>.</p>
+</div>
+</div>
+
+<div class="section collapsed" id="s4" data-name="Worked example">
+<div class="sec-head"><h2>Example</h2></div>
+<div class="sec-body">
+<div class="worked"><div class="w-tag">Worked example</div><div class="w-body">
+<div class="q-stem">Priya, a schoolteacher in Pune, opens a 12-month RD depositing <b>&#8377;5,000</b> on the first of every month at an interest rate of <b>7% per annum</b>. How much will she receive at maturity, and how much of it is interest?</div>
+<div class="soln">
+<p><b>Step 1 &mdash; Set up the numbers.</b> Monthly instalment <b>P = &#8377;5,000</b>. For a monthly-compounding view, the periodic rate is <span data-math="i = 0.07 / 12 = 0.0058333"></span> and the number of periods is <b>n = 12</b>.</p>
+<p><b>Step 2 &mdash; Value each instalment separately.</b> The instalment paid at the start of month 1 stays invested for all 12 months; the one paid in month 12 stays for just 1 month. Each instalment grows as <span data-math="5000 \times (1.0058333)^{m}"></span>, where m is the number of months it remains invested.</p>
+<div class="tbl-scroll"><table class="data">
+<thead><tr><th>Instalment paid in month</th><th>Amount (&#8377;)</th><th>Months invested</th><th>Value at maturity (&#8377;)</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>5,000</td><td>12</td><td>5,361.45</td></tr>
+<tr><td>2</td><td>5,000</td><td>11</td><td>5,330.36</td></tr>
+<tr><td>6</td><td>5,000</td><td>7</td><td>5,207.78</td></tr>
+<tr><td>12</td><td>5,000</td><td>1</td><td>5,029.17</td></tr>
+<tr><td><b>All 12 instalments</b></td><td><b>60,000</b></td><td>&mdash;</td><td><b>62,324</b></td></tr>
+</tbody>
+</table></div>
+<p><b>Step 3 &mdash; Use the formula to confirm the total.</b> Plugging into the annuity-due formula:</p>
+<div class="formula"><span data-math="M = 5000 \times \frac{(1.0058333)^{12} - 1}{0.0058333} \times (1.0058333)"></span></div>
+<p>Since <span data-math="(1.0058333)^{12} = 1.07229"></span>, the bracket becomes <span data-math="(0.07229 / 0.0058333) = 12.3924"></span>. So <span data-math="M = 5000 \times 12.3924 \times 1.0058333 \approx 62{,}324"></span>.</p>
+<p><b>Step 4 &mdash; Split principal and interest.</b> Priya deposited <b>&#8377;60,000</b> in total (12 x &#8377;5,000). Her maturity value is about <b>&#8377;62,324</b>, so the interest earned is roughly <b>&#8377;2,324</b>.</p>
+<p><b>So what?</b> The interest looks small versus a headline "7%" because on average her money is invested for only about half the tenure &mdash; early instalments earn a full year, later ones barely a month. That is the key intuition of an RD: your <b>effective</b> return on total contributions is lower than the quoted rate over a single year, but it rises with longer tenures as quarterly <a href="/dictionary/compound-interest/">compounding</a> takes over. If interest across all her RDs at one bank crossed <b>&#8377;40,000</b> in a year, the bank would deduct <b>10% TDS</b>; she would still owe tax at her slab, so a high earner keeps less than &#8377;2,324 after tax.</p>
+</div>
+</div></div>
+<div class="selftest"><div class="st-label">Check yourself</div><div class="q"><div class="qt">If two people invest the same total amount over a year, one via a &#8377;60,000 lump-sum FD and one via a &#8377;5,000-a-month RD at the same rate, who earns more interest and why?</div><button class="show-btn">Show answer</button><div class="qa">A: The FD investor earns more. The full &#8377;60,000 in the FD stays invested for all 12 months, whereas in the RD only the first instalment gets a full year and later instalments earn interest for progressively fewer months. Because the average time invested in an RD is roughly half the tenure, the same total contribution earns less interest than a lump-sum FD held for the whole period.</div></div></div>
+</div>
+</div>
+
+<div class="section" id="s5" data-name="Taxation, premature closure and eligibility">
+<div class="sec-head"><h2>Taxation, premature closure and eligibility</h2></div>
+<div class="sec-body">
+<p><b>Tax:</b> RD interest is fully taxable and added to your income under "Income from Other Sources," taxed at your slab. Banks deduct <b>10% TDS</b> if total interest on your deposits at that bank exceeds <b>&#8377;40,000</b> in a year (<b>&#8377;50,000</b> for senior citizens). Unlike a 5-year tax-saver FD, a normal RD gives <b>no Section 80C</b> deduction.</p>
+<p><b>Premature closure:</b> Most banks allow it after a lock-in of a few months but levy a penalty of <b>0.5% to 1%</b> on the applicable rate. Missing an instalment usually attracts a small penalty and can lead to account closure after repeated defaults.</p>
+<p><b>Eligibility:</b> Any resident individual, minors (through a guardian), HUFs, and firms can open an RD; NRIs can open them through NRE or NRO accounts. Opening one has no bearing on your <a href="/dictionary/credit-score-cibil/">Credit Score (CIBIL)</a>, though banks may let you take a loan against the RD balance instead of breaking it, similar in spirit to how a lender sizes an <a href="/dictionary/emi/">EMI</a> against your income.</p>
+</div>
+</div>
+
+<div class="section collapsed" id="takeaways" data-name="Key takeaways">
+<div class="sec-head"><h2>Key takeaways</h2></div>
+<div class="sec-body"><ul>
+<li>An RD builds a lump sum through fixed monthly deposits at an assured rate, usually compounded quarterly.</li>
+<li>Bank RDs are insured up to <b>&#8377;5 lakh</b> per depositor per bank by the DICGC, making them very low risk.</li>
+<li>Because early instalments stay invested longer, the effective one-year return is below the quoted rate; longer tenures compound better.</li>
+<li>Interest is fully taxable at your slab, with <b>10% TDS</b> above the &#8377;40,000 threshold, and there is <b>no 80C benefit</b> on a normal RD.</li>
+<li>Choose an RD for disciplined short-term goals; consider a <a href="/dictionary/sip-systematic-investment-plan/">SIP</a> for long-term, inflation-beating growth.</li>
+</ul></div>
+</div>
+
+<div class="section collapsed" id="faqs" data-name="FAQs">
+<div class="sec-head"><h2>Frequently asked questions</h2></div>
+<div class="sec-body">
+<div class="reveal"><div class="reveal-head">Is a Recurring Deposit better than a Fixed Deposit? <span class="tag"></span></div><div class="reveal-body"><p>Neither is universally better; they suit different situations. An FD earns more on the same total amount because the full sum stays invested for the whole term, so if you already have a lump sum, choose an FD. An RD is better when you can only save monthly and want to build the corpus gradually with discipline.</p></div></div>
+<div class="reveal"><div class="reveal-head">Is RD interest taxable in India? <span class="tag"></span></div><div class="reveal-body"><p>Yes. RD interest is added to your total income and taxed at your slab rate. Banks deduct <b>10% TDS</b> once interest across your deposits at that bank crosses <b>&#8377;40,000</b> a year (&#8377;50,000 for seniors). You can submit Form 15G/15H to avoid TDS if your income is below the taxable limit.</p></div></div>
+<div class="reveal"><div class="reveal-head">What happens if I miss a monthly RD instalment? <span class="tag"></span></div><div class="reveal-body"><p>You will usually be charged a small default penalty for the missed month, and the maturity date or amount may be adjusted. Repeated defaults (often six consecutive missed instalments) can lead the bank to close the account prematurely and pay only the applicable interest with penalty.</p></div></div>
+<div class="reveal"><div class="reveal-head">Can I withdraw money from an RD before maturity? <span class="tag"></span></div><div class="reveal-body"><p>Full premature withdrawal is generally allowed after a short lock-in, but attracts a penalty of about <b>0.5% to 1%</b> on the rate. Partial withdrawal is usually not permitted; instead, many banks offer a loan or overdraft of up to 80&ndash;90% against the RD balance so you keep the deposit intact.</p></div></div>
+<div class="reveal"><div class="reveal-head">Does an RD beat inflation? <span class="tag"></span></div><div class="reveal-body"><p>Often only marginally. With RBI targeting <a href="/dictionary/inflation/">inflation</a> at <b>4% (within a 2&ndash;6% band)</b> and RDs paying around 6.5&ndash;7.5%, the real return after tax can be close to zero for high earners. For long-term goals, market-linked options like <a href="/dictionary/index-fund/">index funds</a> may offer better inflation-adjusted returns, at the cost of higher risk.</p></div></div>
+<div class="reveal"><div class="reveal-head">Is a bank RD safe? <span class="tag"></span></div><div class="reveal-body"><p>Yes, RDs are among the safest instruments. Bank deposits are insured up to <b>&#8377;5 lakh</b> per depositor per bank by the DICGC, and the rate is locked at opening, so market swings do not affect your maturity value. Post-office RDs carry a sovereign guarantee.</p></div></div>
+</div>
+</div>
+
+<div class="section collapsed" id="related" data-name="Related terms">
+<div class="sec-head"><h2>Related terms</h2></div>
+<div class="sec-body"><ul>
+<li><a href="/dictionary/fixed-deposit/">Fixed Deposit</a></li>
+<li><a href="/dictionary/compound-interest/">Compound Interest</a></li>
+<li><a href="/dictionary/sip-systematic-investment-plan/">SIP (Systematic Investment Plan)</a></li>
+<li><a href="/dictionary/simple-interest/">Simple Interest</a></li>
+</ul></div>
+</div>
+
+<div class="end-note">Educational information only, not investment advice. Verify current rates with RBI and SEBI. Last reviewed 2026.</div>

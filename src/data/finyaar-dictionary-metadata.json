@@ -10,9 +10,12 @@
       "meta_description": "What is compound interest? Simple definition, the formula, a step-by-step example, and how compounding grows your money faster than simple interest.",
       "focus_keyword": "compound interest",
       "faqs": [
-        { "q": "What is the difference between simple and compound interest?", "a": "Simple interest is calculated only on the original principal, so it grows in a straight line. Compound interest is calculated on the principal plus all previously earned interest, so it grows faster and faster over time." },
-        { "q": "Is compound interest good or bad?", "a": "It is excellent when you are investing or saving, because your money grows faster. It works against you on borrowings such as credit card debt, where the amount you owe compounds if you do not pay in full." },
-        { "q": "How can I calculate compound interest quickly?", "a": "Use the Rule of 72: divide 72 by the annual return to estimate the years it takes your money to double. At 12% a year, money doubles in roughly 72 / 12 = 6 years." }
+        { "q": "What is the difference between simple and compound interest?", "a": "Simple interest is calculated only on the original principal, so you earn the same amount each period. Compound interest is calculated on principal plus previously earned interest, so your returns grow faster over time. Over long horizons the difference becomes very large." },
+        { "q": "How does compounding frequency affect returns?", "a": "The more often interest is compounded, the sooner interest starts earning its own interest, so you finish with more. On the same rate and principal, monthly compounding beats quarterly, which beats annual. Most Indian bank FDs compound quarterly." },
+        { "q": "Is a SIP an example of compound interest?", "a": "Broadly yes. A SIP benefits from compounding when returns on your invested units are reinvested and themselves earn returns over time. The long-term power of a SIP comes largely from staying invested and letting gains compound, though market returns fluctuate year to year unlike a fixed rate." },
+        { "q": "What is the Rule of 72?", "a": "It is a shortcut to estimate how long money takes to double. Divide 72 by the annual return rate. At 12% money doubles in about 6 years, and at 9% in about 8 years. It is an approximation, not an exact figure." },
+        { "q": "Does inflation reduce the benefit of compound interest?", "a": "Yes. Your real return is the compounded return adjusted for inflation. With the RBI targeting around 4% CPI within a 2-6% band, an 8% FD delivers a real return closer to 4% before tax. Aim for investments that comfortably beat inflation over the long run." },
+        { "q": "Can compound interest work against me?", "a": "Absolutely. Credit-card balances and overdue loans compound against you, often at 36-48% per annum, so debt can balloon quickly. Paying dues on time protects both your wallet and your CIBIL score." }
       ],
       "related": [
         { "term": "Simple Interest", "slug": "simple-interest" },
@@ -20,6 +23,126 @@
         { "term": "SIP (Systematic Investment Plan)", "slug": "sip-systematic-investment-plan" },
         { "term": "Inflation", "slug": "inflation" },
         { "term": "Fixed Deposit", "slug": "fixed-deposit" }
+      ]
+    },
+    {
+      "slug": "simple-interest",
+      "term": "Simple Interest",
+      "category": "Investing Basics",
+      "url": "/dictionary/simple-interest/",
+      "definition": "the money a lender earns, or a borrower pays, calculated only on the original principal for the full period, without adding earned interest back to the principal; because the base never changes, the interest amount stays the same every period.",
+      "seo_title": "Simple Interest: Meaning, Formula & Examples",
+      "meta_description": "Simple interest is calculated only on the original principal, so it never compounds. Learn the formula, a worked example, and how it compares to compound interest.",
+      "focus_keyword": "simple interest",
+      "faqs": [
+        { "q": "Is a Fixed Deposit simple or compound interest?", "a": "It depends on the option you pick. A Fixed Deposit with the cumulative option compounds interest, usually quarterly, and pays everything at maturity. The non-cumulative or payout option behaves more like simple interest, handing you interest monthly, quarterly or yearly without reinvesting it. Bank FDs are also protected up to &#8377;5 lakh per bank by DICGC." },
+        { "q": "Why do banks use simple interest for some loans but compound for savings?", "a": "Flat or simple-interest quotes make a loan look cheaper because the headline rate seems low, even though the effective cost can be higher than a reducing-balance loan. On deposits and standard loans, compounding is used because it reflects the true time value of money. Always compare the effective annual rate, not just the advertised number." },
+        { "q": "Does simple interest affect my CIBIL score?", "a": "The interest type itself does not directly move your credit score, which ranges from 300 to 900. What matters is whether you repay on time. Whether a loan uses simple or compound interest, missed EMIs and high credit utilisation pull your score down, while consistent repayment lifts it." },
+        { "q": "How is flat-rate EMI related to simple interest?", "a": "A flat-rate EMI charges interest on the full original principal for the entire tenure, exactly like simple interest, even though you keep repaying the principal each month. This makes the effective interest rate almost double the flat rate. A reducing-balance loan, which charges interest only on the outstanding amount, is usually cheaper for the borrower." },
+        { "q": "Can simple interest ever beat compound interest?", "a": "Only over a period of exactly one compounding cycle or less. For a tenure of one year with annual compounding, both give the same result. Beyond that, compound interest always wins for the investor because the earned interest starts earning too. The longer the horizon, the wider the gap." },
+        { "q": "Where is simple interest still used in India today?", "a": "You will find it in many personal, car and two-wheeler loans quoted at flat rates, in informal hand loans, in some post-office and company deposit payout schemes, and in interim or penal interest calculations. It is prized for being transparent and easy to verify, even where it is not the cheapest structure." }
+      ],
+      "related": [
+        { "term": "Compound Interest", "slug": "compound-interest" },
+        { "term": "Fixed Deposit", "slug": "fixed-deposit" },
+        { "term": "EMI", "slug": "emi" },
+        { "term": "Rule of 72", "slug": "rule-of-72" }
+      ]
+    },
+    {
+      "slug": "rule-of-72",
+      "term": "Rule of 72",
+      "category": "Investing Basics",
+      "url": "/dictionary/rule-of-72/",
+      "definition": "a quick mental-maths shortcut that estimates how many years an investment takes to double in value, found by dividing 72 by the annual rate of return; it is a fast approximation of compound interest, not an exact formula.",
+      "seo_title": "Rule of 72: Meaning, Formula & How to Use It",
+      "meta_description": "The Rule of 72 estimates how many years it takes to double your money: divide 72 by the annual return. See the formula, related rules, and a worked example.",
+      "focus_keyword": "rule of 72",
+      "faqs": [
+        { "q": "Is the Rule of 72 accurate?", "a": "It is a close approximation, not exact. In the 6% to 10% range it is usually within a few months of the true doubling time calculated with logarithms. Accuracy drops at very high or very low rates, where the Rule of 70 or a proper compounding calculator works better." },
+        { "q": "Does the Rule of 72 work for a fixed deposit?", "a": "Yes. At a 6.5% FD rate, 72 divided by 6.5 is about 11 years to double. Just remember FD interest is taxable at your slab, so your post-tax doubling time is a bit longer than the headline number suggests. DICGC insures bank deposits up to &#8377;5 lakh per bank." },
+        { "q": "Can I use the Rule of 72 for inflation?", "a": "Absolutely, and it is one of the best uses. At 6% inflation, the RBI&#39;s upper tolerance band around its 4% target, prices double in 72 divided by 6, or 12 years, meaning your purchasing power halves. This is why parking long-term money in low-yield accounts quietly erodes wealth." },
+        { "q": "How is the Rule of 72 different from compound interest?", "a": "Compound interest is the actual exponential formula that grows your money. The Rule of 72 is a shortcut that estimates one specific output of that formula, the doubling time, without a calculator. Think of it as a quick mental proxy for the full compounding maths." },
+        { "q": "What return do I need to double money in 5 years?", "a": "Rearrange the rule: 72 divided by 5 is about 14.4% a year. That is achievable historically with diversified equity over long horizons, but not guaranteed, and it comes with real volatility. Be sceptical of any product promising it as a safe or fixed return." },
+        { "q": "Why the number 72 specifically?", "a": "The mathematically precise numerator is roughly 69.3 for continuous compounding. But 72 is chosen because it divides evenly by 2, 3, 4, 6, 8, 9 and 12, making the mental arithmetic clean, while staying accurate for the mid-single-digit rates most people actually earn." }
+      ],
+      "related": [
+        { "term": "Compound Interest", "slug": "compound-interest" },
+        { "term": "Inflation", "slug": "inflation" },
+        { "term": "SIP (Systematic Investment Plan)", "slug": "sip-systematic-investment-plan" },
+        { "term": "Fixed Deposit", "slug": "fixed-deposit" }
+      ]
+    },
+    {
+      "slug": "inflation",
+      "term": "Inflation",
+      "category": "Investing Basics",
+      "url": "/dictionary/inflation/",
+      "definition": "the rate at which the general level of prices for goods and services rises over time, reducing the purchasing power of money; in India it is tracked via the Consumer Price Index, which the RBI targets at 4% within a 2% to 6% band.",
+      "seo_title": "Inflation: Meaning, Formula & How It Is Measured",
+      "meta_description": "Inflation is the rate at which prices rise and money loses purchasing power. Learn the CPI formula, types of inflation, and a worked real-return example.",
+      "focus_keyword": "inflation",
+      "faqs": [
+        { "q": "What is a good inflation rate for India?", "a": "The RBI aims for CPI inflation of 4%, with a tolerance band of 2% to 6%. Mild inflation in this range is considered healthy because it supports growth without badly hurting savers. Trouble begins when inflation stays above 6% for long or turns unpredictable." },
+        { "q": "What causes inflation?", "a": "Two broad forces: demand-pull, when strong spending outpaces the supply of goods, and cost-push, when input costs like crude oil, food, wages or a weaker rupee rise and get passed to consumers. Excess money supply and supply-chain shocks can amplify both." },
+        { "q": "How does the RBI control inflation?", "a": "Mainly through the repo rate. When inflation runs hot, the RBI raises rates to make borrowing costlier, cooling demand. When inflation is low and growth is weak, it cuts rates to encourage spending. This is called monetary policy, decided by the Monetary Policy Committee." },
+        { "q": "What is the difference between CPI and WPI?", "a": "CPI tracks retail prices that households actually pay and is the RBI&#39;s official inflation target. WPI tracks wholesale prices at the producer level. CPI matters more to you as a consumer because it reflects your real cost of living." },
+        { "q": "How can I beat inflation on my savings?", "a": "You need investments whose returns exceed inflation after tax. Historically, equity via mutual funds, index funds or SIPs has outpaced inflation over the long run, while FDs often only match or trail it. Diversifying across assets and staying invested for years is the common approach." },
+        { "q": "Is inflation the same as interest rate?", "a": "No. Inflation is how fast prices rise; the interest rate is what you earn on savings or pay on loans. They are linked, though: the RBI raises interest rates to fight high inflation, so your FD and loan rates tend to move with it." }
+      ],
+      "related": [
+        { "term": "Compound Interest", "slug": "compound-interest" },
+        { "term": "Rule of 72", "slug": "rule-of-72" },
+        { "term": "Fixed Deposit", "slug": "fixed-deposit" },
+        { "term": "Risk vs Return", "slug": "risk-vs-return" }
+      ]
+    },
+    {
+      "slug": "risk-vs-return",
+      "term": "Risk vs Return",
+      "category": "Investing Basics",
+      "url": "/dictionary/risk-vs-return/",
+      "definition": "the core investing principle that potential reward rises and falls with uncertainty: an asset that can earn more must, on average, also carry a greater chance of losing money or delivering a bumpier ride.",
+      "seo_title": "Risk vs Return: Meaning, Formula & Trade-off",
+      "meta_description": "Risk vs return means higher expected reward requires accepting more uncertainty. Learn the Sharpe ratio formula, the risk-return spectrum, and a worked example.",
+      "focus_keyword": "risk vs return",
+      "faqs": [
+        { "q": "Does higher risk always mean higher return?", "a": "No. Higher risk means higher expected return, not guaranteed return. Risk is precisely the chance that the outcome disappoints. Over long periods risky assets have tended to beat safe ones, but in any single year a risky investment can easily underperform an FD or even lose money." },
+        { "q": "Are fixed deposits truly risk-free?", "a": "Almost, but not entirely. Deposits are insured by DICGC up to &#8377;5 lakh per bank, so default risk is very low. However, FDs carry inflation risk: if your FD earns 7% while inflation runs at 6%, your real gain is only about 1%. They also carry reinvestment risk when rates fall at renewal." },
+        { "q": "How do I know my personal risk tolerance?", "a": "Consider three things: your time horizon, your income stability, and how you would react to a 30% paper loss. Money needed within 2 to 3 years should stay in low-risk assets. If a market fall would make you panic-sell, you are carrying more risk than you can stomach, and should hold more debt and less equity." },
+        { "q": "What does beta tell me about risk?", "a": "Beta measures a stock&#39;s sensitivity to the overall market. A beta of 1 moves with the Nifty; a beta of 1.5 tends to rise and fall 50% more than the market, so it is riskier; a beta below 1 is more defensive. Beta captures market-linked risk, not company-specific risk." },
+        { "q": "Can diversification remove all risk?", "a": "No. Diversification removes unsystematic risk, the risk specific to one company or sector. It cannot remove systematic, or market-wide, risk such as a broad recession or a rate shock, because those hit almost everything at once. That is why even a well-diversified equity portfolio still swings with the market." },
+        { "q": "How does a SIP change the risk equation?", "a": "A SIP spreads your buying across many dates, so you purchase more units when prices are low and fewer when high. This rupee-cost averaging reduces the risk of investing a lump sum at a market peak and smooths the emotional ride, though it does not eliminate the underlying volatility of the asset itself." }
+      ],
+      "related": [
+        { "term": "Diversification", "slug": "diversification" },
+        { "term": "Volatility", "slug": "volatility" },
+        { "term": "Beta", "slug": "beta" },
+        { "term": "Fixed Deposit", "slug": "fixed-deposit" }
+      ]
+    },
+    {
+      "slug": "diversification",
+      "term": "Diversification",
+      "category": "Investing Basics",
+      "url": "/dictionary/diversification/",
+      "definition": "the practice of spreading money across many different investments, asset classes and sectors so that no single loss can badly hurt your overall wealth; it works because different assets rarely fall at the same time, lowering portfolio swings without necessarily lowering expected return.",
+      "seo_title": "Diversification: Meaning, Formula & Benefits",
+      "meta_description": "Diversification spreads money across assets to lower risk without sacrificing much return. Learn the formula, types, and a worked equity-gold example.",
+      "focus_keyword": "diversification",
+      "faqs": [
+        { "q": "Does diversification reduce my returns?", "a": "Not necessarily. Diversification mainly reduces risk, and it lowers return only if you shift money into lower-return assets. A spread across many equities of similar expected return keeps your return roughly the same while cutting volatility. The give-up is usually small relative to the risk you remove." },
+        { "q": "How many stocks do I need to be diversified?", "a": "Research suggests roughly 20 to 25 well-chosen stocks across different sectors capture most of the diversification benefit. Beyond that, each new stock adds little. For most retail investors in India, a single broad index fund or two mutual funds achieves this instantly and cheaply." },
+        { "q": "Is a mutual fund automatically diversified?", "a": "Mostly, yes. A diversified equity fund holds 30 to 60 stocks across sectors, so you get instant spread. But a sectoral or thematic fund, say a banking fund, is not diversified across sectors. Owning several funds with overlapping holdings also does not add much real diversification." },
+        { "q": "Can I be over-diversified?", "a": "Yes. Holding eight equity funds that all own the same top Nifty stocks is sometimes called diworsification: you pay more in expense ratio and track the index without any edge. A tighter set of two or three complementary funds is usually cleaner and cheaper to manage." },
+        { "q": "Does diversification protect me in a market crash?", "a": "Only partly. In a broad crash, most equities fall together, which is systematic risk, so equity-only diversification helps little. Adding uncorrelated assets such as gold, debt or an FD is what actually cushions a crash. That is why asset-class diversification matters more than owning many stocks." },
+        { "q": "How does an Indian beginner start diversifying?", "a": "Start with a monthly SIP into one diversified index fund for equity, add a debt component such as an FD (bank deposits are DICGC-insured up to &#8377;5 lakh), and a small allocation to gold. That three-bucket mix already spreads you across asset classes, sectors and time." }
+      ],
+      "related": [
+        { "term": "Risk vs Return", "slug": "risk-vs-return" },
+        { "term": "Mutual Fund", "slug": "mutual-fund" },
+        { "term": "Beta", "slug": "beta" },
+        { "term": "Index Fund", "slug": "index-fund" }
       ]
     },
     {
@@ -32,9 +155,12 @@
       "meta_description": "A mutual fund pools money from many investors to buy stocks and bonds, managed by professionals. Learn how mutual funds work, their types, NAV, and costs.",
       "focus_keyword": "mutual fund",
       "faqs": [
-        { "q": "Are mutual funds safe?", "a": "Mutual funds are regulated by SEBI and your money is held separately from the AMC, so the fund house cannot run away with it. However, the value of your units rises and falls with the market, so returns are not guaranteed and you can lose money, especially over short periods." },
-        { "q": "What is NAV in a mutual fund?", "a": "NAV, or Net Asset Value, is the price of one unit of the fund. It equals the total value of the fund&#39;s holdings minus its expenses, divided by the number of units outstanding, and is published at the end of each trading day." },
-        { "q": "Is a SIP the same as a mutual fund?", "a": "No. A mutual fund is the investment product. A SIP is simply a method of investing in it, putting in a fixed amount at regular intervals instead of a single lump sum." }
+        { "q": "Are Mutual Funds safe in India?", "a": "Mutual Funds are regulated by SEBI and their assets are held under a regulated structure that separates scheme assets from the AMC's own assets. However, they are not capital-guaranteed; unit values can fall with the market. Mutual-fund units do not receive bank-deposit insurance." },
+        { "q": "How much money do I need to start?", "a": "The minimum varies by scheme and platform. Many funds allow relatively small SIP or lump-sum investments, but you should check the current scheme documents before investing." },
+        { "q": "What is the difference between a Mutual Fund and an ETF?", "a": "A traditional open-ended Mutual Fund is transacted at the applicable NAV through the fund or an intermediary. An ETF trades on a stock exchange at market prices and generally requires a demat and trading account. Compare total costs, liquidity and tracking quality rather than the expense ratio alone." },
+        { "q": "Should I choose SIP or lump sum?", "a": "A SIP spreads investments across dates and can suit regular income, while a lump sum invests available money immediately. The better choice depends on cash flow, goals, risk tolerance and asset allocation; neither method guarantees a better return." },
+        { "q": "How are Mutual Fund gains taxed in India?", "a": "Tax treatment depends on the scheme's underlying assets, purchase date, holding period and current law. Equity-oriented and other funds may follow different rules, and ELSS deductions depend on the applicable tax regime. Verify current rates and thresholds before filing or redeeming." },
+        { "q": "Can I lose all my money in a Mutual Fund?", "a": "Mutual Funds can lose value, sometimes sharply. Diversification reduces concentration risk but does not eliminate market, credit, liquidity or other risks. A total loss in a broadly diversified fund may be unlikely, but investors should not treat any market-linked fund as guaranteed." }
       ],
       "related": [
         { "term": "SIP (Systematic Investment Plan)", "slug": "sip-systematic-investment-plan" },
@@ -54,15 +180,66 @@
       "meta_description": "A SIP lets you invest a fixed amount in a mutual fund every month. Learn how SIPs work, rupee cost averaging, benefits, and a simple worked example.",
       "focus_keyword": "sip",
       "faqs": [
-        { "q": "Can I lose money in a SIP?", "a": "Yes. A SIP invests in mutual funds, whose value moves with the market, so your investment can fall, especially in the short term. Over long periods, staying invested through the ups and downs has historically smoothed out much of this risk, though past performance does not guarantee future returns." },
-        { "q": "Can I stop or pause a SIP?", "a": "Yes. SIPs are flexible. You can pause, increase, decrease, or stop them at any time without penalty, and you keep the units already bought. Stopping is different from redeeming, which is when you actually sell your units." },
-        { "q": "Is SIP better than a lump sum?", "a": "Neither is always better. A SIP suits regular income earners and volatile markets because it spreads risk over time. A lump sum can do better when markets rise steadily after you invest. Many investors use both." }
+        { "q": "Is SIP better than a lump-sum investment?", "a": "Neither is universally better. A lump sum puts available money to work immediately, while a SIP spreads purchases across dates and can suit regular income. The outcome depends on market movements, time in the market, asset allocation and investor behaviour." },
+        { "q": "Can I lose money in a SIP?", "a": "Yes. A SIP is an investment method, and the underlying fund remains market-linked. The value can fall below your contributions, especially over short periods, and a long holding period does not guarantee a positive return." },
+        { "q": "What is the minimum amount for a SIP?", "a": "The minimum varies by scheme and platform. Many funds permit relatively small instalments, but investors should check the current scheme documents and transaction rules rather than assume one universal minimum." },
+        { "q": "Does a SIP give tax benefits?", "a": "A SIP does not itself create a tax benefit. An investment in an eligible scheme such as ELSS may qualify under applicable tax rules and tax regimes, with a lock-in applying separately to each instalment. Verify current law before relying on a deduction." },
+        { "q": "Can I stop or pause my SIP anytime?", "a": "Many SIP mandates can be paused or cancelled according to the AMC or platform process. Stopping future instalments does not automatically redeem existing units. Redemption may still be subject to exit loads, lock-ins, taxes and processing rules." },
+        { "q": "SIP or recurring deposit: which should I choose?", "a": "A recurring deposit provides a stated bank interest rate and may suit goals requiring greater predictability. A SIP's outcome depends on the chosen mutual fund and carries market risk. Choose based on goal, horizon, liquidity, risk tolerance and applicable deposit-insurance terms." }
       ],
       "related": [
         { "term": "Mutual Fund", "slug": "mutual-fund" },
         { "term": "Compound Interest", "slug": "compound-interest" },
         { "term": "NAV (Net Asset Value)", "slug": "nav-net-asset-value" },
         { "term": "Lump Sum vs SIP", "slug": "lump-sum-vs-sip" },
+        { "term": "Index Fund", "slug": "index-fund" }
+      ]
+    },
+    {
+      "slug": "expense-ratio",
+      "term": "Expense Ratio",
+      "category": "Mutual Funds and SIP",
+      "url": "/dictionary/expense-ratio/",
+      "definition": "the annual fee, shown as a percentage of a scheme&#39;s average assets, that a mutual fund charges every investor to manage and run the fund; it is deducted from the fund&#39;s assets each day, so you never pay it separately, but it directly reduces your returns.",
+      "seo_title": "Expense Ratio: Meaning, Formula & SEBI Limits",
+      "meta_description": "Expense ratio (TER) is the annual fee a mutual fund charges as a percentage of assets. Learn the formula, SEBI limits, Direct vs Regular plans, and an example.",
+      "focus_keyword": "expense ratio",
+      "faqs": [
+        { "q": "Is a lower expense ratio always better?", "a": "For passive funds like index funds and ETFs, yes, since they all track the same index, the cheapest one usually wins. For active funds, a low TER is desirable but not the only test; a fund that reliably beats its benchmark after costs can justify a slightly higher fee. Always compare cost against consistent net returns." },
+        { "q": "How do I find a fund's expense ratio?", "a": "Every AMC must disclose the daily TER of each scheme on its website, and it is also listed on the scheme information document, fact sheet and platforms like the SEBI-regulated aggregators. Look specifically at the Direct plan&#39;s TER if you buy directly. Funds must inform investors of any change in TER before it takes effect." },
+        { "q": "Does the expense ratio include exit load or brokerage?", "a": "No. The TER covers ongoing running costs only. Exit load (a charge for redeeming early), STT, stamp duty and the fund&#39;s own trading brokerage are separate and not part of the TER. Exit load, if any, is charged only when you sell within a defined period." },
+        { "q": "Why is the Direct plan cheaper than the Regular plan?", "a": "The Regular plan builds in a commission paid to the distributor or agent who sold you the fund. The Direct plan has no such commission because you buy straight from the AMC. Same portfolio, same fund manager, only the TER differs, which is why the Direct plan&#39;s NAV grows faster over time." },
+        { "q": "Does the expense ratio affect my SIP too?", "a": "Yes. Whether you invest a lump sum or through a monthly SIP, the same daily deduction applies to your holdings. Because SIP investors typically stay invested for many years, a lower expense ratio compounds into a meaningfully larger corpus over the full journey." },
+        { "q": "What is a good expense ratio for an equity fund in India?", "a": "As a rough guide, a Direct equity fund under about 1% is competitive, an index fund under 0.30% is attractive, and an ETF under 0.10% is excellent. Anything near the SEBI cap of 2.25% deserves a second look, especially if the fund is not outperforming." }
+      ],
+      "related": [
+        { "term": "Mutual Fund", "slug": "mutual-fund" },
+        { "term": "Index Fund", "slug": "index-fund" },
+        { "term": "ETF", "slug": "etf" },
+        { "term": "NAV (Net Asset Value)", "slug": "nav-net-asset-value" }
+      ]
+    },
+    {
+      "slug": "nav-net-asset-value",
+      "term": "NAV (Net Asset Value)",
+      "category": "Mutual Funds and SIP",
+      "url": "/dictionary/nav-net-asset-value/",
+      "definition": "the per-unit market value of a mutual fund scheme, calculated as the fund&#39;s total assets minus its total liabilities, divided by the number of units outstanding; it is the price at which you buy or redeem units on any given business day.",
+      "seo_title": "NAV (Net Asset Value): Meaning & How It Is Calculated",
+      "meta_description": "NAV is a mutual fund&#39;s per-unit price, calculated as assets minus liabilities divided by units outstanding. Learn the formula, cut-off timing, and a worked example.",
+      "focus_keyword": "net asset value",
+      "faqs": [
+        { "q": "Is a lower NAV fund better to buy?", "a": "No. NAV is only a per-unit accounting figure. A fund with a &#8377;15 NAV and a fund with a &#8377;300 NAV that both rise 12% give you the same 12% return. Focus on the fund&#39;s track record, category and expense ratio, not the NAV level." },
+        { "q": "At what time is NAV declared?", "a": "Fund houses compute NAV after markets close and typically publish it by 9:00 to 11:00 PM on the AMC website and AMFI&#39;s portal. SEBI cut-off times, usually 3:00 PM for equity and debt funds, determine which day&#39;s NAV your transaction receives." },
+        { "q": "Why did my fund's NAV suddenly drop sharply?", "a": "If you hold an IDCW option, the NAV falls by the exact amount of any payout, because that cash left the fund. Otherwise a sharp drop reflects a market fall in the underlying holdings. Check whether a distribution or a market correction caused it." },
+        { "q": "How does NAV differ from an ETF's market price?", "a": "A mutual fund transacts once a day at NAV. An ETF trades live on the exchange like a stock, so its market price can differ slightly from its underlying NAV due to demand and supply. Both are eventually anchored to the value of their holdings." },
+        { "q": "Does a higher NAV mean I own less of the fund?", "a": "Not at all. If NAV is high you simply get fewer units for the same rupee, but each unit is worth more. Your total invested amount and your proportional ownership of the fund are unchanged." },
+        { "q": "Is mutual fund NAV guaranteed like an FD return?", "a": "No. NAV rises and falls with market prices and can go down. A bank Fixed Deposit offers a fixed rate with DICGC cover up to &#8377;5 lakh, whereas mutual funds carry market risk and no capital guarantee." }
+      ],
+      "related": [
+        { "term": "Mutual Fund", "slug": "mutual-fund" },
+        { "term": "Expense Ratio", "slug": "expense-ratio" },
+        { "term": "SIP (Systematic Investment Plan)", "slug": "sip-systematic-investment-plan" },
         { "term": "Index Fund", "slug": "index-fund" }
       ]
     },
@@ -76,15 +253,42 @@
       "meta_description": "Beta measures how much a stock moves relative to the market. Learn what beta means, its formula, how to read high vs low beta, and its role in CAPM.",
       "focus_keyword": "beta in finance",
       "faqs": [
-        { "q": "What does a beta of 1.2 mean?", "a": "It means the stock has tended to move about 20% more than the market. If the market rises or falls 10%, a beta of 1.2 suggests the stock moves roughly 12% in the same direction, on average." },
-        { "q": "Is a high or low beta better?", "a": "Neither is universally better. High-beta stocks offer bigger gains in rising markets but bigger losses in falling ones, suiting aggressive investors. Low-beta stocks are steadier and suit those wanting less volatility." },
-        { "q": "Can beta be negative?", "a": "Yes, though it is rare. A negative beta means the asset tends to move opposite to the market. Gold and certain hedging assets sometimes show this behaviour, which can make them useful for reducing portfolio risk." }
+        { "q": "What is a good beta value for a stock?", "a": "There is no universally good beta; it depends on your goal. A cautious investor near retirement may prefer defensive stocks with beta below 1 to reduce swings, while a young investor chasing growth may accept beta above 1 for higher potential returns. The right beta is the one that matches your risk tolerance and time horizon." },
+        { "q": "Can beta be negative?", "a": "Yes, though it is uncommon for equities. A negative beta means the asset tends to move opposite to the market, rising when the market falls. Gold and certain hedging instruments sometimes behave this way, which is why they can cushion a portfolio during equity downturns." },
+        { "q": "Is a high beta always riskier?", "a": "High beta means larger swings relative to the market, so more systematic risk, but risk cuts both ways. A high-beta stock falls harder in corrections yet rises more in rallies. It is riskier in the sense of higher market sensitivity, not automatically a bad investment. Beta also ignores company-specific risks entirely." },
+        { "q": "What is the difference between beta and volatility?", "a": "Volatility measures how much a stock moves on its own, regardless of the market. Beta measures its sensitivity to market movements. A stock can be highly volatile but have a low beta if its swings are weakly related to the index." },
+        { "q": "Where can I find the beta of an Indian stock?", "a": "Beta is published on stock exchange and broker platforms, financial data sites, and in the fact sheets of many mutual funds and ETFs. Different sources may show different betas because they use different time periods and index benchmarks. Always check the lookback window before comparing." },
+        { "q": "Does an index fund have a beta of 1?", "a": "A fund tracking the same index used as the market benchmark, such as a Nifty 50 index fund measured against the Nifty 50, will have a beta very close to 1, subject to small tracking differences. A fund tracking another index can have a beta above or below 1 against the Nifty 50." }
       ],
       "related": [
         { "term": "Risk vs Return", "slug": "risk-vs-return" },
         { "term": "Diversification", "slug": "diversification" },
         { "term": "Hedging", "slug": "hedging" },
         { "term": "Volatility", "slug": "volatility" },
+        { "term": "Equity Share", "slug": "equity-share" }
+      ]
+    },
+    {
+      "slug": "volatility",
+      "term": "Volatility",
+      "category": "Derivatives and Risk",
+      "url": "/dictionary/volatility/",
+      "definition": "the degree to which the price or return of an asset swings up and down over time, usually measured by the standard deviation of its returns; higher volatility means larger, less predictable moves and therefore greater risk.",
+      "seo_title": "Volatility in Finance: Meaning, Formula & Types",
+      "meta_description": "Volatility measures how much an asset&#39;s returns swing over time. Learn the formula, historical vs implied volatility, India VIX, and a worked example.",
+      "focus_keyword": "volatility in finance",
+      "faqs": [
+        { "q": "Is high volatility always bad?", "a": "No. Volatility cuts both ways: it includes big up-moves as well as down-moves. For a long-horizon investor using a SIP, volatility even helps by buying more units when prices dip. It only becomes a real problem when you are forced to sell during a downswing or cannot emotionally handle the swings." },
+        { "q": "What is India VIX?", "a": "India VIX is the volatility index calculated by the NSE from the prices of Nifty index options. It reflects the market&#39;s expected volatility over the next 30 days. A rising VIX signals fear and uncertainty, while a low, stable VIX suggests calm, complacent markets." },
+        { "q": "How is volatility different from beta?", "a": "Volatility (standard deviation) measures the total size of an asset&#39;s swings in absolute terms. Beta measures only the part of those swings that moves together with the overall market. A stock can have high total volatility but a low beta if much of its movement is company-specific rather than market-driven." },
+        { "q": "Do fixed deposits have volatility?", "a": "Practically none in rupee terms: your FD balance grows at a fixed rate and never falls, and deposits up to &#8377;5 lakh per bank are insured by DICGC. But zero price volatility does not mean zero risk, since FDs still carry inflation risk if inflation runs above the FD rate." },
+        { "q": "How can I reduce the volatility of my portfolio?", "a": "Spread money across assets that do not move in lockstep, such as equities, debt, and gold, so gains in one cushion losses in another. This is diversification. Adding low-volatility instruments like debt funds or FDs, and investing gradually through SIPs rather than a lump sum, also smooths the ride." },
+        { "q": "Which is more volatile: an ETF or a single stock?", "a": "A broad ETF or index fund is almost always less volatile than a single stock, because it holds dozens of companies whose individual swings partly cancel out. A single mid-cap or small-cap share concentrates all its company-specific risk in one place, producing sharper ups and downs." }
+      ],
+      "related": [
+        { "term": "Beta", "slug": "beta" },
+        { "term": "Risk vs Return", "slug": "risk-vs-return" },
+        { "term": "Diversification", "slug": "diversification" },
         { "term": "Equity Share", "slug": "equity-share" }
       ]
     },
@@ -98,9 +302,12 @@
       "meta_description": "EBITDA is Earnings Before Interest, Taxes, Depreciation and Amortisation. Learn the formula, a worked example, and what EBITDA does and does not tell you.",
       "focus_keyword": "ebitda",
       "faqs": [
-        { "q": "Why do companies use EBITDA?", "a": "Because it isolates operating performance from financing and accounting choices, making it easier to compare businesses and to value them. It is also used in loan agreements and in valuation multiples such as EV/EBITDA." },
-        { "q": "Is a higher EBITDA always better?", "a": "Generally a higher EBITDA signals stronger operating earnings, but not always. A company can boost EBITDA while burning cash on capital expenditure or drowning in debt. Judge it alongside cash flow, capex, and net profit." },
-        { "q": "What is the difference between EBIT and EBITDA?", "a": "EBIT is Earnings Before Interest and Taxes, and it still subtracts depreciation and amortisation. EBITDA adds those two non-cash charges back, so EBITDA is always equal to or larger than EBIT." }
+        { "q": "Is a higher EBITDA always better?", "a": "Generally a higher EBITDA and EBITDA margin signal stronger operations, but not always. A company can present flattering EBITDA by excluding exceptional items. Compare it against capital expenditure, interest cost, net profit, and actual cash flow before judging profitability." },
+        { "q": "What is a good EBITDA margin in India?", "a": "It varies sharply by sector. IT services and FMCG firms often have higher margins than trading or construction businesses. Always compare a company against peers in the same industry and against its own historical margin." },
+        { "q": "How is EBITDA different from cash flow?", "a": "EBITDA adds back depreciation and amortization but ignores changes in working capital, tax actually paid, interest, and capital expenditure. A firm can show strong EBITDA yet generate weak or negative cash flow. Treat EBITDA as a proxy, not a replacement, for cash flow." },
+        { "q": "What does EV/EBITDA tell me?", "a": "EV/EBITDA compares enterprise value, broadly market capitalization plus net debt, with EBITDA. It is useful for comparing companies with different debt levels. A lower multiple can suggest a cheaper valuation, all else equal." },
+        { "q": "Is EBITDA reported in Indian financial statements?", "a": "EBITDA is a non-GAAP figure not mandated as a single labelled line by Ind AS, so it may not appear directly in audited statements. Many listed companies disclose it in investor materials, and it can be calculated from the profit and loss statement." },
+        { "q": "Why do lenders use Net Debt/EBITDA?", "a": "Net Debt/EBITDA is a leverage indicator showing debt relative to operating earnings. Lenders use it to assess repayment capacity, but acceptable levels vary significantly by industry, business stability, and loan terms." }
       ],
       "related": [
         { "term": "Income Statement", "slug": "income-statement" },
@@ -120,9 +327,12 @@
       "meta_description": "The P/E ratio compares a stock price to its earnings per share. Learn the formula, how to read high vs low P/E, and a simple worked example.",
       "focus_keyword": "pe ratio",
       "faqs": [
-        { "q": "What is a good P/E ratio?", "a": "There is no single good number. It depends on the industry and growth rate. A stable utility might normally trade at a P/E of 12 to 18, while a fast-growing tech firm might trade at 40 or more. Always compare against peers and the company&#39;s own past levels." },
-        { "q": "Is a low P/E ratio always better?", "a": "Not necessarily. A low P/E can mean a stock is undervalued, but it can also mean the market expects earnings to fall or that the business faces problems. It is a starting point for research, not a buy signal on its own." },
-        { "q": "What does a negative P/E mean?", "a": "A negative P/E arises when a company has negative earnings, meaning it is making a loss. In that case the ratio is not meaningful, and analysts turn to other measures such as price-to-sales or EV/EBITDA." }
+        { "q": "What is a good P/E ratio in India?", "a": "There is no single good number. A reasonable P/E depends on the company's sector, growth, cyclicality, financial risk, accounting quality and current market conditions. Compare the company with genuinely similar peers and its own historical range." },
+        { "q": "Is a high or low P/E better?", "a": "Neither is automatically better. A low P/E may indicate value or a business facing declining earnings. A high P/E may be supported by strong growth and quality or may reflect excessive optimism. Investigate why the multiple differs." },
+        { "q": "Can a company have a negative P/E?", "a": "A loss produces negative EPS, so a calculation can yield a negative number, but P/E is normally treated as not meaningful in that situation. Analysts may use measures such as price-to-sales or an appropriate enterprise-value multiple, while considering each metric's limitations." },
+        { "q": "What is the difference between trailing and forward P/E?", "a": "Trailing P/E uses reported earnings from the previous 12 months. Forward P/E uses estimated future earnings, so it incorporates expectations but is only as reliable as the forecast." },
+        { "q": "How is P/E different from EPS?", "a": "EPS measures earnings attributable to each share. P/E divides the share price by EPS to express the valuation multiple. EPS is an input to P/E, not a valuation conclusion by itself." },
+        { "q": "Does the P/E ratio apply to mutual funds?", "a": "A mutual fund unit is valued using NAV rather than its own corporate earnings. An equity fund factsheet may report a portfolio P/E calculated from its holdings, which can indicate a value or growth tilt but should not be used alone." }
       ],
       "related": [
         { "term": "EPS", "slug": "eps" },
@@ -130,6 +340,54 @@
         { "term": "Book Value", "slug": "book-value" },
         { "term": "Dividend Yield", "slug": "dividend-yield" },
         { "term": "Market Capitalization", "slug": "market-capitalization" }
+      ]
+    },
+    {
+      "slug": "eps",
+      "term": "EPS (Earnings Per Share)",
+      "category": "Ratios and Valuation",
+      "url": "/dictionary/eps/",
+      "definition": "the portion of a company&#39;s net profit attributable to each outstanding equity share, calculated as net profit minus preference dividends divided by the weighted average number of equity shares; it is the earnings half of the P/E ratio.",
+      "seo_title": "EPS (Earnings Per Share): Meaning & Formula",
+      "meta_description": "EPS (Earnings Per Share) is net profit divided by shares outstanding. Learn the basic vs diluted EPS formula, how it drives P/E, and a worked example.",
+      "focus_keyword": "earnings per share",
+      "faqs": [
+        { "q": "Is a higher EPS always better?", "a": "Generally, a higher EPS signals stronger per-share profitability, but not always. EPS can be pushed up by share buybacks or one-off gains rather than real business growth. Always look at the multi-year EPS trend and check whether profit growth is sustainable before drawing conclusions." },
+        { "q": "What is the difference between basic and diluted EPS?", "a": "Basic EPS uses only the shares currently outstanding. Diluted EPS assumes all potential shares from ESOPs, warrants and convertible bonds are issued, spreading profit over a larger share count. Diluted EPS is the more conservative figure and is always equal to or lower than basic EPS." },
+        { "q": "How is EPS related to the P/E ratio?", "a": "The P/E ratio is simply the share price divided by EPS. So EPS is the earnings half of that valuation multiple. If a stock trades at &#8377;400 with an EPS of &#8377;20, its P/E is 20 times, meaning you pay &#8377;20 for every &#8377;1 of annual earnings." },
+        { "q": "Where can I find a company's EPS in India?", "a": "Every listed Indian company must report basic and diluted EPS at the foot of its profit-and-loss statement under Ind AS 33. You will also find it on NSE and BSE company pages, in quarterly results filed with SEBI, and on stock screeners, usually as a trailing twelve-month (TTM) figure." },
+        { "q": "Can EPS be negative?", "a": "Yes. If a company makes a net loss, its EPS is negative and often shown as loss per share. Many young, fast-growing firms report negative EPS for years while they invest for scale, so a negative number is not automatically a red flag, but it does mean the P/E ratio becomes meaningless." },
+        { "q": "Does EPS account for dividends paid to shareholders?", "a": "EPS measures profit earned per share, not profit distributed. It only subtracts dividends owed to preference shareholders. What ordinary shareholders actually receive as dividend is a separate decision, captured by the payout ratio and dividend yield, not by EPS itself." }
+      ],
+      "related": [
+        { "term": "P/E Ratio", "slug": "pe-ratio" },
+        { "term": "Dividend", "slug": "dividend" },
+        { "term": "Market Capitalization", "slug": "market-capitalization" },
+        { "term": "EBITDA", "slug": "ebitda" }
+      ]
+    },
+    {
+      "slug": "dividend-yield",
+      "term": "Dividend Yield",
+      "category": "Ratios and Valuation",
+      "url": "/dictionary/dividend-yield/",
+      "definition": "the annual dividend a company pays per share expressed as a percentage of its current market price, showing how much cash income a shareholder earns each year for every rupee invested in the stock.",
+      "seo_title": "Dividend Yield: Meaning, Formula & How to Use It",
+      "meta_description": "Dividend yield is the annual dividend per share as a percentage of price, showing your cash return from a stock. Learn the formula, types, and an example.",
+      "focus_keyword": "dividend yield",
+      "faqs": [
+        { "q": "What is a good dividend yield in India?", "a": "There is no single good number, but yields of 2 to 6% are common among stable large-caps and PSUs. A yield sharply above a stock&#39;s own history or its sector deserves scrutiny, since it may reflect a depressed price or an expected dividend cut rather than a genuine opportunity." },
+        { "q": "Is dividend yield better than a fixed deposit?", "a": "They serve different needs. An FD gives a guaranteed, DICGC-insured return, while dividends are variable and can be cut. However, a growing dividend plus potential capital appreciation can beat an FD over time. The FD wins on safety; the stock offers growth with higher risk." },
+        { "q": "Are dividends taxed in India?", "a": "Yes. Since FY 2020-21, dividends are taxed in the investor&#39;s hands at their income-tax slab rate. Companies deduct TDS at 10% once your total dividend from that company crosses &#8377;5,000 in a financial year." },
+        { "q": "Why do some good companies have a very low dividend yield?", "a": "Fast-growing companies often reinvest profits into expansion instead of paying them out, so their yield is low or zero. Their reward comes as capital gains. A low yield is not bad, it can signal a company choosing growth over immediate income." },
+        { "q": "Does a high dividend yield mean the stock is cheap?", "a": "Not always. A high yield can appear because the price has crashed on bad news, a classic value trap. Always check whether the dividend is sustainable by looking at the payout ratio, earnings, and cash flow before buying purely for yield." },
+        { "q": "How is dividend yield different from dividend rate?", "a": "Dividend rate is the dividend declared as a percentage of the share&#39;s face value (for example 150% of &#8377;10 is &#8377;15). Dividend yield divides that rupee amount by the current market price. Because market price is usually far above face value, the yield is much smaller than the declared rate." }
+      ],
+      "related": [
+        { "term": "Dividend", "slug": "dividend" },
+        { "term": "P/E Ratio", "slug": "pe-ratio" },
+        { "term": "Equity Share", "slug": "equity-share" },
+        { "term": "EPS", "slug": "eps" }
       ]
     },
     {
@@ -142,14 +400,41 @@
       "meta_description": "A fixed deposit locks a lump sum at a fixed rate for a set term for guaranteed returns. Learn how FDs work, interest, tax, and a worked example.",
       "focus_keyword": "fixed deposit",
       "faqs": [
-        { "q": "Is FD interest taxable?", "a": "Yes. FD interest is fully taxable as per your income-tax slab, and banks deduct TDS once your interest crosses the annual threshold. You must still report it even if no TDS is deducted." },
-        { "q": "What is a tax-saving FD?", "a": "A 5-year tax-saver FD qualifies for a deduction under Section 80C, up to the 80C limit. In return it has a 5-year lock-in and does not allow premature withdrawal." },
-        { "q": "Is a fixed deposit safe?", "a": "Bank FDs are among the safest options: the rate is fixed and deposits are insured up to &#8377;5 lakh per depositor per bank. NBFC or company FDs can offer higher rates but carry more risk." }
+        { "q": "Is a Fixed Deposit completely safe?", "a": "Bank FDs are among the lower-risk options in India because the rate is fixed and eligible deposits are insured by DICGC up to &#8377;5 lakh per depositor per bank, including principal and interest. Amounts above that limit remain exposed to the bank, and NBFC or company FDs do not receive the same DICGC cover." },
+        { "q": "Can I withdraw my FD before maturity?", "a": "Most regular FDs allow premature withdrawal, but the bank usually applies the rate for the actual period held and may levy a penalty. A 5-year tax-saver FD normally cannot be broken early. A loan or overdraft against the FD may be an alternative, subject to the bank's terms." },
+        { "q": "How is FD interest taxed?", "a": "FD interest is generally added to your taxable income and taxed at the applicable slab rate. TDS rules and thresholds can change, and TDS is not the final tax liability. Eligible taxpayers may use Form 15G or 15H when the statutory conditions are satisfied." },
+        { "q": "FD or mutual fund - which is better?", "a": "They serve different goals. An eligible bank FD offers a fixed return and limited deposit insurance, making it useful for capital stability and shorter goals. A mutual fund may offer higher long-term return potential but carries market risk and no guaranteed return." },
+        { "q": "What is the minimum and maximum I can invest?", "a": "Minimum deposit amounts and product limits vary by institution. Many banks accept relatively small opening amounts, while large deposits may be classified differently. DICGC insurance remains capped at &#8377;5 lakh per depositor per bank across eligible deposits in the same right and capacity." },
+        { "q": "Do senior citizens get a higher FD rate?", "a": "Many banks offer resident senior citizens an additional interest rate over the regular card rate, but the premium varies by bank and tenure. Tax deductions and TDS treatment also depend on current law and the depositor's circumstances." }
       ],
       "related": [
         { "term": "Recurring Deposit", "slug": "recurring-deposit" },
         { "term": "Compound Interest", "slug": "compound-interest" },
         { "term": "Inflation", "slug": "inflation" },
+        { "term": "SIP (Systematic Investment Plan)", "slug": "sip-systematic-investment-plan" },
+        { "term": "Simple Interest", "slug": "simple-interest" }
+      ]
+    },
+    {
+      "slug": "recurring-deposit",
+      "term": "Recurring Deposit",
+      "category": "Banking Savings and Deposits",
+      "url": "/dictionary/recurring-deposit/",
+      "definition": "a bank or post-office savings product in which you deposit a fixed sum every month for a chosen tenure, and the bank pays a pre-agreed rate of interest, compounded quarterly, so you receive a lump-sum maturity amount at the end.",
+      "seo_title": "Recurring Deposit (RD): Meaning, Interest & How It Works",
+      "meta_description": "A Recurring Deposit lets you save a fixed amount every month at a guaranteed rate. Learn the maturity formula, RD vs FD vs SIP, tax rules, and an example.",
+      "focus_keyword": "recurring deposit",
+      "faqs": [
+        { "q": "Is a Recurring Deposit better than a Fixed Deposit?", "a": "Neither is universally better; they suit different situations. An FD earns more on the same total amount because the full sum stays invested for the whole term, so if you already have a lump sum, choose an FD. An RD is better when you can only save monthly and want to build the corpus gradually with discipline." },
+        { "q": "Is RD interest taxable in India?", "a": "Yes. RD interest is added to your total income and taxed at your slab rate. Banks deduct 10% TDS once interest across your deposits at that bank crosses &#8377;40,000 a year (&#8377;50,000 for seniors). You can submit Form 15G/15H to avoid TDS if your income is below the taxable limit." },
+        { "q": "What happens if I miss a monthly RD instalment?", "a": "You will usually be charged a small default penalty for the missed month, and the maturity date or amount may be adjusted. Repeated defaults (often six consecutive missed instalments) can lead the bank to close the account prematurely and pay only the applicable interest with penalty." },
+        { "q": "Can I withdraw money from an RD before maturity?", "a": "Full premature withdrawal is generally allowed after a short lock-in, but attracts a penalty of about 0.5% to 1% on the rate. Partial withdrawal is usually not permitted; instead, many banks offer a loan or overdraft of up to 80-90% against the RD balance so you keep the deposit intact." },
+        { "q": "Does an RD beat inflation?", "a": "Often only marginally. With the RBI targeting inflation at 4% (within a 2-6% band) and RDs paying around 6.5% to 7.5%, the real return after tax can be close to zero for high earners. For long-term goals, market-linked options like index funds may offer better inflation-adjusted returns, at the cost of higher risk." },
+        { "q": "Is a bank RD safe?", "a": "Yes, RDs are among the safest instruments. Bank deposits are insured up to &#8377;5 lakh per depositor per bank by the DICGC, and the rate is locked at opening, so market swings do not affect your maturity value. Post-office RDs carry a sovereign guarantee." }
+      ],
+      "related": [
+        { "term": "Fixed Deposit", "slug": "fixed-deposit" },
+        { "term": "Compound Interest", "slug": "compound-interest" },
         { "term": "SIP (Systematic Investment Plan)", "slug": "sip-systematic-investment-plan" },
         { "term": "Simple Interest", "slug": "simple-interest" }
       ]
@@ -164,9 +449,12 @@
       "meta_description": "EMI is the fixed monthly payment on a loan covering interest and principal. Learn the EMI formula, a worked example, and how tenure affects cost.",
       "focus_keyword": "emi",
       "faqs": [
-        { "q": "What is the difference between fixed and floating rate EMIs?", "a": "A fixed-rate loan keeps the same interest rate and EMI throughout. A floating-rate loan&#39;s rate moves with the market, so the EMI or the tenure changes when rates change." },
-        { "q": "Does prepayment reduce my EMI or my tenure?", "a": "Usually you can choose. Most lenders let you either keep the EMI and shorten the tenure (saves the most interest) or reduce the EMI and keep the tenure. Reducing tenure generally saves more." },
-        { "q": "Why is most of my early EMI going to interest?", "a": "Because interest is charged on the outstanding balance, which is highest at the start. As you repay principal, the balance falls, so a larger share of each later EMI goes to principal." }
+        { "q": "Does paying a higher EMI reduce my total interest?", "a": "Yes. A higher EMI means a shorter tenure, and since interest accrues on the outstanding balance each month, clearing the principal faster leaves less balance for interest to build on. The same loan repaid over 10 years instead of 20 can save several lakh rupees in interest." },
+        { "q": "What happens if I miss an EMI?", "a": "The lender may charge a late-payment penalty and bounce fees, and the missed payment can be reported to credit bureaus, lowering your CIBIL score. Repeated defaults can raise your future borrowing cost or cause loan applications to be rejected. If you foresee trouble, contact the lender early." },
+        { "q": "Is prepaying my loan always a good idea?", "a": "It is often worthwhile for high-interest loans and saves the most when done early. Compare the loan rate with realistic alternative returns, and retain an emergency fund before prepaying because money paid into the loan is no longer liquid." },
+        { "q": "How does inflation affect my EMI burden?", "a": "On a fixed-rate loan the EMI stays constant in rupees, so it may become a smaller share of income over time if income rises. On floating-rate loans, however, interest-rate increases can raise the EMI or extend the tenure." },
+        { "q": "Are no-cost EMI offers really free?", "a": "Not always. The cost may appear as a discount you forgo, a processing fee, a higher product price, or GST on the interest component. Read the total-cost disclosure and fine print before accepting the offer." },
+        { "q": "Should I choose a longer tenure to keep EMI low?", "a": "Only if the lower EMI is needed to keep your finances safe. A longer tenure reduces monthly strain but substantially increases total interest. Choose the shortest tenure your budget can comfortably support." }
       ],
       "related": [
         { "term": "Credit Score (CIBIL)", "slug": "credit-score-cibil" },
@@ -185,9 +473,12 @@
       "meta_description": "A credit score (300 to 900 in India) shows how reliably you repay. Learn what affects your CIBIL score, why it matters, and how to improve it.",
       "focus_keyword": "credit score",
       "faqs": [
-        { "q": "How can I check my credit score for free?", "a": "Each bureau (CIBIL, Experian, Equifax, CRIF) must provide one free full credit report a year, and many banks and apps show your score for free. Checking your own score is a soft enquiry and does not lower it." },
-        { "q": "Does checking my score hurt it?", "a": "No. Checking your own score is a soft enquiry with no impact. Only hard enquiries, when a lender checks your report because you applied for credit, can slightly lower the score." },
-        { "q": "How long does it take to improve a credit score?", "a": "There is no instant fix. Consistent on-time payments and low utilisation usually show improvement over several months, and it can take longer to recover from missed payments or a default." }
+        { "q": "What is a good CIBIL score in India?", "a": "A score of 750 or above is considered good and typically unlocks the best rates. Anything above 800 is excellent, while below 650 makes approvals difficult. Each lender sets its own cut-off, so the exact threshold can vary." },
+        { "q": "Does checking my own score reduce it?", "a": "No. Checking your own report is a soft enquiry and has no impact on your score. Only hard enquiries, when a lender pulls your report after a loan or card application, can temporarily lower it. You are entitled to one free report per bureau every year." },
+        { "q": "How long does it take to improve a CIBIL score?", "a": "There is no overnight fix. With disciplined, on-time payments and low utilisation, many people see meaningful improvement over 6 to 12 months. A serious default can weigh on the score for years, though its impact fades as fresh good behaviour builds up." },
+        { "q": "Can I get a loan with a low CIBIL score?", "a": "Sometimes, but on worse terms. Options include adding a co-applicant, offering collateral such as a fixed deposit, or taking a secured credit card. Expect a higher interest rate to compensate the lender for the added risk." },
+        { "q": "Why is my score different across bureaus?", "a": "Each of the four bureaus, CIBIL, Experian, Equifax and CRIF High Mark, uses its own model and may receive data on different dates. Some variation between bureau scores is therefore normal." },
+        { "q": "Does having no loans mean a high score?", "a": "No. With no borrowing history, the bureau may show NA, NH or -1, meaning it cannot score you yet. Responsibly using one card and paying it in full is one way to build a credit history from scratch." }
       ],
       "related": [
         { "term": "EMI", "slug": "emi" },
@@ -205,9 +496,12 @@
       "meta_description": "An index fund passively tracks an index like the Nifty 50 at low cost. Learn how index funds work, costs, tracking error, and a worked example.",
       "focus_keyword": "index fund",
       "faqs": [
-        { "q": "Is an index fund better than an active fund?", "a": "Not always, but over long periods most active funds fail to beat their index after fees, so low-cost index funds often win on net returns. Active funds can outperform in specific segments, but consistently picking those in advance is hard." },
-        { "q": "What is tracking error?", "a": "It is the small difference between an index fund&#39;s return and the index it follows, caused by fund costs, cash holdings, and timing. A well-run index fund keeps tracking error low." },
-        { "q": "Can I do a SIP in an index fund?", "a": "Yes. Index funds work well with SIPs, combining low cost with rupee cost averaging for disciplined long-term investing." }
+        { "q": "Are index funds safe in India?", "a": "Index funds are regulated by SEBI and hold a basket of listed companies, which reduces single-company and fund-manager selection risk. But they are still market-linked investments, so their NAV can fall when the market falls. Unlike eligible bank deposits, they do not have deposit-insurance protection. Treat them as long-term investments, not guaranteed products." },
+        { "q": "Which is better, an index fund or an ETF?", "a": "Both can track the same index. An index fund is easier for SIP investors because you buy at NAV without a demat account, while an ETF trades live on the exchange and often has a slightly lower expense ratio. If you invest a fixed amount monthly and prefer simplicity, the index fund usually wins." },
+        { "q": "Can I do a SIP in an index fund?", "a": "Yes. A monthly SIP into a Nifty 50 or Sensex index fund is a popular way to invest in India. It spreads purchases across market ups and downs and lets compounding build wealth over time, though returns are not guaranteed." },
+        { "q": "Do index funds pay dividends?", "a": "Most investors choose the growth option, where income from the underlying stocks remains invested and is reflected in the NAV. An IDCW option may also be available, but distributions are not guaranteed and are subject to applicable tax rules." },
+        { "q": "What return can I expect from an index fund?", "a": "No return is guaranteed. An index fund aims to deliver the underlying index's return minus fees and tracking difference. Equity indices can deliver strong long-term returns but may experience sharp declines." },
+        { "q": "How are index funds taxed in India?", "a": "Tax treatment depends on the fund's underlying holdings and how long you hold its units. Equity-oriented index funds generally follow equity capital-gains rules, while other index funds may be treated differently. Tax rules can change, so verify the current rates and thresholds before redeeming." }
       ],
       "related": [
         { "term": "Mutual Fund", "slug": "mutual-fund" },
@@ -227,9 +521,12 @@
       "meta_description": "An ETF is a basket of securities that trades on the exchange like a share. Learn how ETFs work, ETF vs index fund, and what you need to invest.",
       "focus_keyword": "etf",
       "faqs": [
-        { "q": "What is the difference between an ETF and a mutual fund?", "a": "A mutual fund is bought and sold once a day at its NAV, directly from the fund house. An ETF trades on the exchange all day at a live market price and needs a demat account. Both can track the same index." },
-        { "q": "Do I need a demat account to buy an ETF?", "a": "Yes. Because ETFs trade on the stock exchange, you need a demat and trading account to buy and hold them, unlike a regular mutual fund." },
-        { "q": "Are ETFs cheaper than mutual funds?", "a": "ETFs are usually low cost because most are passive and traded directly, but remember to factor in brokerage and the small gap between price and NAV when you trade." }
+        { "q": "Do I need a Demat account to buy an ETF in India?", "a": "Yes. Because ETFs trade on the stock exchange like shares, you need both a Demat and a trading account with a broker. An index fund can instead be bought directly from the AMC with a bank account and completed KYC." },
+        { "q": "Are ETFs safer than stocks?", "a": "A diversified ETF reduces the impact of any one company performing badly. However, an equity ETF can still fall when the overall market falls, so it is not risk-free. It reduces company-specific risk, not market risk." },
+        { "q": "Can I do a SIP in an ETF?", "a": "Some brokers offer ETF SIP features, but ETFs trade at live prices in whole units, so fixed-rupee monthly purchases can be less straightforward than a mutual-fund SIP. An index fund SIP is often simpler for automated monthly investing." },
+        { "q": "How are ETFs taxed in India?", "a": "Tax treatment depends on the ETF's underlying assets and the applicable holding period. Equity-oriented, gold, debt, and international ETFs may be taxed differently, and tax rules can change. Verify the current rules before investing." },
+        { "q": "What is the difference between an ETF and a mutual fund?", "a": "A mutual fund is bought and sold once a day at its closing NAV directly from the fund house. An ETF trades continuously on the exchange at a live market price and needs a Demat account. Most ETFs are passive index trackers." },
+        { "q": "Do ETFs pay dividends?", "a": "When underlying companies pay dividends, the ETF receives them. Depending on the scheme's option and distribution policy, that income may be retained in the fund or distributed to investors. Check the scheme documents before investing." }
       ],
       "related": [
         { "term": "Index Fund", "slug": "index-fund" },
@@ -249,14 +546,113 @@
       "meta_description": "An IPO is a company's first sale of shares to the public. Learn how IPOs work, primary vs secondary market, how to apply, and the risks.",
       "focus_keyword": "ipo",
       "faqs": [
-        { "q": "How do I apply for an IPO in India?", "a": "You apply online through your bank or broker using the ASBA or UPI process. The application amount is blocked in your bank account and is debited only if shares are allotted to you." },
-        { "q": "Is investing in an IPO safe?", "a": "An IPO carries real risk. Some list at a premium and some below the issue price, and short-term demand does not guarantee long-term value. Read the prospectus and assess the business before applying." },
-        { "q": "What is the difference between the primary and secondary market?", "a": "The primary market is where the company first issues shares (the IPO). The secondary market is the stock exchange where investors then buy and sell those shares among themselves." }
+        { "q": "Do I need a demat account to apply for an IPO?", "a": "Yes. Shares are allotted electronically, so you need a demat account and valid investor details such as a PAN. You can apply through an eligible bank's ASBA facility or a supported UPI-enabled broker flow, where the application amount is blocked until allotment." },
+        { "q": "Is IPO investment guaranteed profit?", "a": "No. An IPO is an equity investment with no capital protection. Shares may list at, above or below the issue price and can fall afterwards. Unlike an eligible bank fixed deposit, an IPO has no deposit-insurance protection." },
+        { "q": "What is oversubscription and how does allotment work?", "a": "Oversubscription means valid bids exceed the shares available. Allotment follows the basis approved for the issue. In a heavily oversubscribed retail category, eligible applicants may receive the minimum lot through a computerised draw, while some applicants receive no shares." },
+        { "q": "What is the difference between an IPO and an FPO?", "a": "An IPO is the first public offer of shares by a company, while an FPO (Follow-on Public Offer) is made by a company that is already listed." },
+        { "q": "What is a grey market premium (GMP)?", "a": "GMP is an unofficial and unregulated indication of the price at which an IPO may trade before listing. It is not endorsed by SEBI, can change rapidly and should not be the basis of an investment decision." },
+        { "q": "Can I invest in equities without applying to every IPO?", "a": "Yes. An index fund, ETF or mutual fund can provide diversified equity exposure. A monthly SIP can help you invest consistently without depending on IPO allotments." }
       ],
       "related": [
         { "term": "Equity Share", "slug": "equity-share" },
         { "term": "Market Capitalization", "slug": "market-capitalization" },
         { "term": "Dividend", "slug": "dividend" },
+        { "term": "Sensex and Nifty", "slug": "sensex-and-nifty" }
+      ]
+    },
+    {
+      "slug": "dividend",
+      "term": "Dividend",
+      "category": "Stock Market and Equities",
+      "url": "/dictionary/dividend/",
+      "definition": "the portion of a company&#39;s profit that it distributes to its shareholders, usually in cash, as a reward for owning its shares; in India it is declared by the board, approved by shareholders, and paid per share held on a fixed record date.",
+      "seo_title": "Dividend: Meaning, Formula & How It Is Paid",
+      "meta_description": "A dividend is the portion of company profit paid to shareholders, usually in cash. Learn the formula, dividend yield, payout ratio, and a worked example.",
+      "focus_keyword": "dividend",
+      "faqs": [
+        { "q": "Are dividends taxable in India?", "a": "Yes. Since FY 2020-21, the earlier Dividend Distribution Tax was abolished and dividends are now taxed in the investor&#39;s hands at their income-tax slab rate. If your dividend from a single company exceeds &#8377;5,000 in a financial year, the company deducts TDS at 10% before paying you." },
+        { "q": "Do I need to sell shares to get a dividend?", "a": "No. A dividend is paid on shares you hold on the record date and lands directly in your linked bank account. You keep all your shares and can receive dividends year after year without selling a single one." },
+        { "q": "Why do some companies pay no dividend at all?", "a": "Fast-growing firms often reinvest every rupee of profit to expand faster, judging that this will lift the share price more than a cash payout would. Investors in such companies expect their return from capital appreciation rather than dividends." },
+        { "q": "What is the difference between dividend and dividend yield?", "a": "The dividend is the rupee amount paid per share, while the dividend yield expresses that amount as a percentage of the current market price. Yield lets you compare income across stocks and against products like fixed deposits." },
+        { "q": "Does the share price fall after a dividend?", "a": "Typically yes. On the ex-dividend date the price usually drops by roughly the dividend amount, because that cash has left the company. This is normal and does not mean you have lost money, since you receive the dividend separately." },
+        { "q": "Is a very high dividend yield always good?", "a": "Not necessarily. An unusually high yield can occur because the share price has crashed, not because the payout is generous. Always check whether the dividend is sustainable from real profits and cash flow, and look at the payout ratio and the company&#39;s track record." }
+      ],
+      "related": [
+        { "term": "Dividend Yield", "slug": "dividend-yield" },
+        { "term": "Equity Share", "slug": "equity-share" },
+        { "term": "EPS", "slug": "eps" },
+        { "term": "IPO", "slug": "ipo" }
+      ]
+    },
+    {
+      "slug": "sensex-and-nifty",
+      "term": "Sensex and Nifty",
+      "category": "Stock Market and Equities",
+      "url": "/dictionary/sensex-and-nifty/",
+      "definition": "India&#39;s two headline stock market indices: the BSE Sensex tracks 30 large, established companies on the Bombay Stock Exchange, while the Nifty 50 tracks 50 large companies on the National Stock Exchange, both weighted by free-float market capitalisation.",
+      "seo_title": "Sensex and Nifty: Meaning, Formula & Key Differences",
+      "meta_description": "Sensex and Nifty are India&#39;s benchmark stock indices. Learn how free-float market-cap weighting works, their key differences, and a worked example.",
+      "focus_keyword": "sensex and nifty",
+      "faqs": [
+        { "q": "Which is better, Sensex or Nifty?", "a": "Neither is objectively better; they track almost the same large-cap market and move together. Nifty 50 is broader (50 vs 30 stocks) and hosts most ETFs and derivatives, so it is often preferred as a benchmark. For a long-term investor the practical difference is negligible." },
+        { "q": "Can I buy the Sensex or Nifty directly?", "a": "No. An index is just a number, not a security. You gain exposure by buying an index fund or ETF that replicates it, or through index futures and options. A Nifty 50 or Sensex index fund via SIP is the simplest route for most people." },
+        { "q": "Why do Sensex and Nifty move together?", "a": "Because the same heavyweight companies dominate both baskets. Reliance, HDFC Bank, ICICI Bank, TCS and Infosys carry large weights in each index, so when they move, both indices move nearly identically, usually within a few tenths of a percent of each other." },
+        { "q": "How are companies chosen for the index?", "a": "Stocks are selected on criteria like large free-float market capitalisation, high liquidity, and a solid listing history. Index committees review the list periodically, dropping companies that shrink or turn illiquid and adding rising large-caps. This keeps the index representative of the current market leaders." },
+        { "q": "What returns have Sensex and Nifty given historically?", "a": "Over multi-decade periods both have delivered roughly 11-12% annualised, including price gains and reinvested dividends. Returns are lumpy, though: some years are strongly positive, others sharply negative. Equity indices reward patience, not short-term timing." },
+        { "q": "Does the index include dividends?", "a": "The headline Sensex and Nifty are price indices, so they capture only price changes, not dividends. Separate Total Return Index (TRI) versions add reinvested dividends and are the fair benchmark for comparing a fund&#39;s performance." }
+      ],
+      "related": [
+        { "term": "Index Fund", "slug": "index-fund" },
+        { "term": "Market Capitalization", "slug": "market-capitalization" },
+        { "term": "Equity Share", "slug": "equity-share" },
+        { "term": "IPO", "slug": "ipo" }
+      ]
+    },
+    {
+      "slug": "market-capitalization",
+      "term": "Market Capitalization",
+      "category": "Stock Market and Equities",
+      "url": "/dictionary/market-capitalization/",
+      "definition": "the total rupee value of a listed company&#39;s outstanding shares, calculated by multiplying the current share price by the number of shares in issue; in India it decides whether a stock is classified as large-cap, mid-cap, or small-cap.",
+      "seo_title": "Market Capitalization: Meaning, Formula & Cap Sizes",
+      "meta_description": "Market capitalization is a company&#39;s share price times shares outstanding. Learn the formula, free-float weighting, large/mid/small-cap rules, and an example.",
+      "focus_keyword": "market capitalization",
+      "faqs": [
+        { "q": "Is a higher market cap always better?", "a": "No. Large-cap companies are generally more stable and liquid, but they often grow slowly. Mid-cap and small-cap companies carry more risk and volatility yet can deliver faster growth. The better choice depends entirely on your goals, time horizon and risk appetite, not on size alone." },
+        { "q": "What is the difference between market cap and enterprise value?", "a": "Market cap values only the equity, the shares. Enterprise value adds the company&#39;s debt and subtracts its cash, so it reflects the total cost of buying the whole business. Enterprise value is often compared against EBITDA for valuation, while market cap is compared against net profit." },
+        { "q": "Does market cap change when a company pays a dividend?", "a": "Indirectly, yes. On the ex-dividend date the share price usually drops by roughly the dividend amount, which nudges market cap down. The share count is unchanged, so the fall comes purely through price. Over time, the effect is small compared with normal price swings." },
+        { "q": "How does an IPO affect market cap?", "a": "When a company completes an IPO, its market cap is set for the first time by the issue price multiplied by total shares. On listing day, the price can open above or below the issue price, immediately re-rating the company&#39;s market cap higher or lower than the IPO valuation." },
+        { "q": "Why do indices use free-float market cap instead of full market cap?", "a": "Free-float counts only shares that can actually be bought and sold by the public. Promoter and government holdings rarely trade, so including them would overstate a company&#39;s real influence on the market. Free-float weighting makes indices like the Nifty 50 reflect tradable value more fairly." },
+        { "q": "Can market cap go up without the company earning more profit?", "a": "Absolutely. Market cap tracks the share price, which reflects investor expectations, not just current profit. Optimism, sector rerating, or falling inflation and interest rates can all lift prices, and therefore market cap, even before earnings actually improve." }
+      ],
+      "related": [
+        { "term": "Equity Share", "slug": "equity-share" },
+        { "term": "Sensex and Nifty", "slug": "sensex-and-nifty" },
+        { "term": "P/E Ratio", "slug": "pe-ratio" },
+        { "term": "EPS", "slug": "eps" }
+      ]
+    },
+    {
+      "slug": "equity-share",
+      "term": "Equity Share",
+      "category": "Stock Market and Equities",
+      "url": "/dictionary/equity-share/",
+      "definition": "a unit of ownership in a company that gives the holder a proportionate claim on the firm&#39;s profits and assets, along with voting rights at shareholder meetings; returns come from capital appreciation and dividends, but both are variable and carry no guarantee.",
+      "seo_title": "Equity Share: Meaning, Formula & How It Works",
+      "meta_description": "An equity share is a unit of company ownership with voting rights and a claim on profits. Learn the return formula, equity vs preference shares, and an example.",
+      "focus_keyword": "equity share",
+      "faqs": [
+        { "q": "What is the difference between an equity share and a preference share?", "a": "Equity shares carry voting rights and variable dividends, and rank last for payouts. Preference shares usually have no vote but receive a fixed dividend and rank ahead of equity if the company winds up. Equity offers higher upside; preference offers steadier income." },
+        { "q": "How do I buy equity shares in India?", "a": "Open a demat and trading account with a SEBI-registered broker, complete KYC, add funds, and place a buy order on the NSE or BSE. Shares are credited to your demat account by T+1. You can also gain exposure through an IPO or an equity mutual fund." },
+        { "q": "Are equity shares safe?", "a": "They carry no capital protection: prices can and do fall, and a company can go bankrupt, wiping out equity holders. Over long horizons of 7 to 10 years or more, diversified equity has historically beaten inflation and fixed deposits, but short-term losses are common. Never invest money you may need within a few years." },
+        { "q": "How are equity share gains taxed in India?", "a": "Listed shares held over 12 months attract long-term capital gains tax at 12.5% on gains above &#8377;1.25 lakh a year. Shares held 12 months or less attract short-term capital gains at 20%. Dividends are taxed at your income-tax slab rate." },
+        { "q": "Do equity shares always pay dividends?", "a": "No. Dividends are discretionary: the board decides each year. Many high-growth companies pay little or nothing, reinvesting profits to expand. In such cases your entire return depends on the share price rising." },
+        { "q": "What voting rights do equity shareholders have?", "a": "Each equity share typically carries one vote on resolutions such as electing directors, approving auditors and major decisions, exercised at the AGM or via e-voting. Small retail holders have limited practical influence, but the right is real and legally protected." }
+      ],
+      "related": [
+        { "term": "IPO", "slug": "ipo" },
+        { "term": "Dividend", "slug": "dividend" },
+        { "term": "Market Capitalization", "slug": "market-capitalization" },
         { "term": "Sensex and Nifty", "slug": "sensex-and-nifty" }
       ]
     }

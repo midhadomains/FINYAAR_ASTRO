@@ -1,52 +1,97 @@
-<!-- FINYAAR DICTIONARY: Mutual Funds and SIP · ETF -->
-<!-- Paste everything below into the WordPress Text tab or a Custom HTML block. -->
+<!-- FINYAAR DICTIONARY: Mutual Funds and SIP &middot; ETF -->
 
-<div class="doc-kicker">FINYAAR DICTIONARY · MUTUAL FUNDS AND SIP</div>
+<div class="doc-kicker">FINYAAR DICTIONARY &middot; MUTUAL FUNDS AND SIP</div>
 <h1 class="doc-title">ETF</h1>
-<div class="doc-note">an Exchange-Traded Fund: a basket of securities, often tracking an index, that you buy and sell on the stock exchange like a single share.</div>
+<div class="doc-note">ETF (Exchange Traded Fund) is a pooled investment fund that holds a basket of securities &mdash; usually tracking an index like the Nifty 50 &mdash; and trades on a stock exchange throughout the day like an ordinary share. In India, an ETF combines the low cost and <a href="/dictionary/diversification/">diversification</a> of an index fund with the real-time, intraday tradability of an <a href="/dictionary/equity-share/">equity share</a>.</div>
 
-<div class="section" id="s1" data-name="What is an ETF">
-<div class="sec-head"><h2>What is an ETF?</h2></div>
-<div class="sec-body">
-<p>An Exchange-Traded Fund (ETF) is a basket of securities, most often designed to track an index like the Nifty 50 or a gold price, that trades on the stock exchange just like a share. Buy one unit and you own a small slice of the whole basket, giving instant diversification.</p><p>Like an index fund, most ETFs are passive and low cost. The key difference is how you buy them: an ETF trades on the exchange throughout the day at a live market price, whereas a mutual fund is bought and sold once a day at its NAV.</p>
-</div>
-</div>
+<div class="section"><div class="sec-head"><h2>What is an ETF?</h2></div><div class="sec-body">
+<p>An <b>ETF</b>, or Exchange Traded Fund, is a basket of securities that you can buy and sell on the <a href="/dictionary/sensex-and-nifty/">NSE or BSE</a> exactly like a single stock. Instead of picking individual companies, one ETF unit gives you a slice of an entire index or theme &mdash; say all 50 Nifty companies at once. Think of it as a ready-made thali: order one plate and you get a balanced spread rather than cooking each dish yourself.</p>
+<p>A practical Indian example: the <b>Nippon India ETF Nifty 50 BeES</b> mirrors the Nifty 50. If the Nifty rises <b>1%</b> on a given day, the ETF's price also moves roughly <b>1%</b>, and you can trade it live during market hours (9:15 am to 3:30 pm) through your Demat and trading account. Because it is passively managed, it charges a fraction of what an actively managed <a href="/dictionary/mutual-fund/">mutual fund</a> does.</p>
+<p>ETFs sit at the intersection of two worlds: they are structured as mutual fund schemes and regulated by <b>SEBI</b>, but they behave like listed shares &mdash; with a live market price, a bid-ask spread, and settlement into your Demat account.</p>
+</div></div>
 
-<div class="section" id="s2" data-name="How it works">
-<div class="sec-head"><h2>How ETFs work</h2></div>
-<div class="sec-body">
-<p>You need a <b>demat and trading account</b> to buy an ETF, and you pay the market price, which stays very close to the fund&#39;s underlying value (its NAV) thanks to market-makers. ETFs cover indices, gold, bonds, and specific sectors. Because they are passive and traded directly, expense ratios are usually very low.</p>
-</div>
-</div>
+<div class="section"><div class="sec-head"><h2>How an ETF works</h2></div><div class="sec-body">
+<p>Every ETF tracks a benchmark. The fund house (AMC) buys and holds the underlying securities in the same weights as the index, so the ETF's value rises and falls with that index. Two prices matter here:</p>
+<p><b>1. NAV / iNAV.</b> The fund's <a href="/dictionary/nav-net-asset-value/">Net Asset Value</a> per unit is the true value of its holdings. During the trading day, exchanges publish a live estimate called the <b>iNAV</b> (indicative NAV).</p>
+<div class="formula"><span data-math="\text{NAV per unit} = \dfrac{\text{Total Assets} - \text{Liabilities}}{\text{Units Outstanding}}"></span></div>
+<p>Here <b>Total Assets</b> is the market value of all shares the ETF holds, <b>Liabilities</b> are fees and payables owed by the fund, and <b>Units Outstanding</b> is the number of ETF units held by all investors.</p>
+<p><b>2. Market price.</b> The price at which the ETF actually trades on the exchange, set by supply and demand. It can sit slightly above (premium) or below (discount) the iNAV.</p>
+<div class="formula"><span data-math="\text{Premium/Discount (\%)} = \dfrac{P_{\text{market}} - \text{iNAV}}{\text{iNAV}} \times 100"></span></div>
+<p>Large investors called <b>Authorised Participants</b> keep the two prices tied together through a "creation and redemption" mechanism: if the ETF trades too expensive, they create new units and sell them, pushing the price back down toward NAV; if it is too cheap, they buy and redeem. This arbitrage is why a good ETF rarely strays far from its NAV.</p>
+<p>How closely an ETF hugs its index is measured by <b>tracking error</b> &mdash; the standard deviation of the difference between the ETF's returns and the index's returns:</p>
+<div class="formula"><span data-math="\sigma_{TE} = \sqrt{\dfrac{\displaystyle\sum_{i=1}^{n}\left(R_{p,i} - R_{b,i}\right)^2}{n-1}}"></span></div>
+<p>where <b>R<sub>p,i</sub></b> is the ETF's return in period i, <b>R<sub>b,i</sub></b> is the benchmark index's return, and <b>n</b> is the number of periods. A lower tracking error means the ETF is doing its one job &mdash; mirroring the index &mdash; well.</p>
+</div></div>
 
-<div class="section collapsed" id="s3" data-name="ETF vs index fund">
-<div class="sec-head"><h2>ETF vs index fund</h2></div>
-<div class="sec-body">
-<p>Both track an index cheaply. An <b>ETF</b> trades intraday and needs a demat account, and its price can differ slightly from NAV. An <b>index fund</b> is a regular mutual fund bought at end-of-day NAV, with no demat account needed and easy SIPs. Pick the ETF for intraday flexibility, the index fund for simple, automated investing.</p>
-</div>
-</div>
+<div class="section"><div class="sec-head"><h2>Types of ETFs in India</h2></div><div class="sec-body">
+<p>SEBI permits several ETF categories on Indian exchanges. They differ by what they hold and why an investor would use them.</p>
+<div class="tbl-scroll"><table class="data">
+<thead><tr><th>Type</th><th>What it tracks</th><th>Indian example</th><th>Typical use</th></tr></thead>
+<tbody>
+<tr><td>Equity index ETF</td><td>Nifty 50, Sensex, Nifty Next 50</td><td>Nifty 50 BeES</td><td>Core, low-cost <a href="/dictionary/equity-share/">equity</a> exposure</td></tr>
+<tr><td>Sectoral / thematic ETF</td><td>Banks, IT, PSU, consumption</td><td>Nifty Bank ETF</td><td>Tactical tilt to one sector</td></tr>
+<tr><td>Gold ETF</td><td>Domestic physical gold price</td><td>Gold BeES</td><td>Gold in Demat form, no storage</td></tr>
+<tr><td>Debt / liquid ETF</td><td>G-Secs, PSU bonds, overnight</td><td>Bharat Bond ETF</td><td>Lower <a href="/dictionary/volatility/">volatility</a>, parking cash</td></tr>
+<tr><td>International ETF</td><td>Nasdaq 100, S&amp;P 500</td><td>Motilal Oswal Nasdaq 100 ETF</td><td>Global diversification</td></tr>
+</tbody>
+</table></div>
+<p>Equity index ETFs are the most popular starting point because they offer broad market exposure at a very low <a href="/dictionary/expense-ratio/">expense ratio</a>, often just <b>0.03%&ndash;0.10%</b> a year.</p>
+</div></div>
 
-<div class="section collapsed" id="takeaways" data-name="Key takeaways">
-<div class="sec-head"><h2>Key takeaways</h2></div>
-<div class="sec-body">
-<ul><li>An ETF is a basket of securities that trades on the exchange like a share.</li><li>Most ETFs passively track an index at very low cost.</li><li>You need a demat account, and you trade at live market prices.</li><li>ETFs suit intraday flexibility; index funds suit simple SIP investing.</li></ul>
-</div>
-</div>
+<div class="section"><div class="sec-head"><h2>ETF vs Index Fund vs Active Fund</h2></div><div class="sec-body">
+<p>An ETF and an <a href="/dictionary/index-fund/">index fund</a> both track an index passively, but the ETF trades intraday on the exchange and needs a Demat account, while an index fund is bought at day-end NAV directly from the AMC and supports a <a href="/dictionary/sip-systematic-investment-plan/">SIP</a> without a broker. Both have lower fees than a typical active fund, which relies on a manager trying to beat the market.</p>
+</div></div>
 
-<div class="section collapsed" id="faqs" data-name="FAQs">
-<div class="sec-head"><h2>Frequently asked questions</h2></div>
-<div class="sec-body">
-<div class="reveal"><div class="reveal-head">What is the difference between an ETF and a mutual fund? <span class="tag"></span></div><div class="reveal-body"><p>A mutual fund is bought and sold once a day at its NAV, directly from the fund house. An ETF trades on the exchange all day at a live market price and needs a demat account. Both can track the same index.</p></div></div>
-<div class="reveal"><div class="reveal-head">Do I need a demat account to buy an ETF? <span class="tag"></span></div><div class="reveal-body"><p>Yes. Because ETFs trade on the stock exchange, you need a demat and trading account to buy and hold them, unlike a regular mutual fund.</p></div></div>
-<div class="reveal"><div class="reveal-head">Are ETFs cheaper than mutual funds? <span class="tag"></span></div><div class="reveal-body"><p>ETFs are usually low cost because most are passive and traded directly, but remember to factor in brokerage and the small gap between price and NAV when you trade.</p></div></div>
+<div class="worked"><div class="w-tag">Worked example</div><div class="w-body">
+<div class="q-stem"><p>Riya, a 30-year-old from Pune, wants to invest a <b>&#8377;5,00,000</b> bonus in the Nifty 50 for <b>10 years</b>. She compares three routes that carry different annual costs: a <b>Nifty 50 ETF</b> (expense ratio 0.05%), a <b>direct index fund</b> (0.20%), and an <b>active large-cap mutual fund</b> (1.50%). Assume each route delivers a gross <b>12% per year</b> before costs for this illustration. What does each route grow to, and how much does cost alone decide her outcome?</p></div>
+<div class="soln">
+<p><b>Step 1 &mdash; Find the net return.</b> Net return = gross return &minus; expense ratio.</p>
+<ul>
+<li>ETF: 12.00% &minus; 0.05% = <b>11.95%</b></li>
+<li>Index fund: 12.00% &minus; 0.20% = <b>11.80%</b></li>
+<li>Active fund: 12.00% &minus; 1.50% = <b>10.50%</b></li>
+</ul>
+<p><b>Step 2 &mdash; Compound the &#8377;5,00,000 for 10 years</b> using future value = P &times; (1 + r)<sup>10</sup>. This is the power of <a href="/dictionary/compound-interest/">compound interest</a> working on the whole corpus.</p>
+<div class="tbl-scroll"><table class="data">
+<thead><tr><th>Route</th><th>Net return</th><th>Growth factor (1+r)<sup>10</sup></th><th>Value after 10 years</th></tr></thead>
+<tbody>
+<tr><td>Nifty 50 ETF</td><td>11.95%</td><td>3.092</td><td>&#8377;15,46,000</td></tr>
+<tr><td>Direct index fund</td><td>11.80%</td><td>3.051</td><td>&#8377;15,25,400</td></tr>
+<tr><td>Active mutual fund</td><td>10.50%</td><td>2.714</td><td>&#8377;13,57,040</td></tr>
+</tbody>
+</table></div>
+<p><b>Step 3 &mdash; Compare.</b> The ETF ends at <b>&#8377;15,46,000</b> while the active fund reaches only <b>&#8377;13,57,040</b>. The gap is:</p>
+<div class="formula"><span data-math="15{,}46{,}000 - 13{,}57{,}040 = 1{,}88{,}960"></span></div>
+<p>That is roughly <b>&#8377;1.89 lakh</b> lost to a higher fee under the illustration's equal-gross-return assumption, over 10 years. Even against the index fund the ETF is about <b>&#8377;20,600</b> ahead, purely on the 0.15% cost edge.</p>
+<p><b>So what?</b> Riya never had to predict a single winning stock. A 1.45% difference in annual cost quietly compounded into nearly two lakh rupees. This is why cost is one of the few reliable levers an ordinary investor controls. One caveat: with an ETF she may also pay brokerage and faces a bid-ask spread on the exchange, whereas the index fund lets her run an automatic SIP with no broker. For a large lump sum held long term, the ETF's lower ongoing fee can help; for small monthly amounts, an index fund SIP is often simpler.</p>
 </div>
-</div>
+</div></div>
 
-<div class="section collapsed" id="related" data-name="Related terms">
-<div class="sec-head"><h2>Related terms</h2></div>
-<div class="sec-body">
-<p><a href="/dictionary/index-fund/">Index Fund</a> · <a href="/dictionary/mutual-fund/">Mutual Fund</a> · <a href="/dictionary/nav-net-asset-value/">NAV (Net Asset Value)</a> · <a href="/dictionary/expense-ratio/">Expense Ratio</a> · <a href="/dictionary/equity-share/">Equity Share</a></p>
-</div>
-</div>
+<div class="selftest"><div class="st-label">Check yourself</div><div class="q"><div class="qt">An ETF's live market price is &#8377;252 while its iNAV is &#8377;250. Is it trading at a premium or a discount, and by how much?</div><button class="show-btn">Show answer</button><div class="qa">It is trading at a <b>premium</b>. Premium/Discount = (252 &minus; 250) / 250 &times; 100 = <b>+0.8%</b>. The market price is 0.8% above the fund's underlying value, so you are paying a small margin over iNAV &mdash; normally arbitrage by Authorised Participants keeps this gap small.</div></div></div>
 
-<div class="end-note">End of entry.</div>
+<div class="section collapsed" id="takeaways" data-name="Key takeaways"><div class="sec-head"><h2>Key takeaways</h2></div><div class="sec-body"><ul>
+<li>An <b>ETF</b> is a basket of securities that tracks an index and trades on the NSE/BSE like a share, needing a Demat account.</li>
+<li>ETFs are passively managed, so their <b>expense ratios</b> can be far below active funds &mdash; and that cost gap compounds heavily over time.</li>
+<li>Two prices matter: the fund's <b>NAV/iNAV</b> and its live <b>market price</b>; arbitrage keeps them close.</li>
+<li><b>Tracking error</b> measures how faithfully an ETF mirrors its index; lower is better.</li>
+<li>India offers equity, sectoral, gold, debt, and international ETFs &mdash; all regulated by <b>SEBI</b>.</li>
+</ul></div></div>
+
+<div class="section collapsed" id="faqs" data-name="FAQs"><div class="sec-head"><h2>Frequently asked questions</h2></div><div class="sec-body">
+<div class="reveal"><div class="reveal-head">Do I need a Demat account to buy an ETF in India? <span class="tag"></span></div><div class="reveal-body"><p>Yes. Because ETFs trade on the stock exchange like shares, you need both a Demat and a trading account with a broker. This is the key difference from an index fund, which can be bought directly from the AMC with just a bank account and KYC.</p></div></div>
+<div class="reveal"><div class="reveal-head">Are ETFs safer than stocks? <span class="tag"></span></div><div class="reveal-body"><p>An ETF spreads your money across many companies, so a single company crashing hurts far less than if you held only that stock &mdash; that is the benefit of <a href="/dictionary/diversification/">diversification</a>. However, an equity ETF still falls when the whole market falls, so it is not risk-free. It reduces company-specific risk, not market risk.</p></div></div>
+<div class="reveal"><div class="reveal-head">Can I do a SIP in an ETF? <span class="tag"></span></div><div class="reveal-body"><p>Some brokers offer ETF SIP features, but ETFs trade at live market prices in whole units, so fixed-rupee monthly buys can be less straightforward than a mutual-fund SIP. For disciplined monthly investing, an index fund SIP may be simpler; ETFs can suit lump sums or investors who prefer exchange trading.</p></div></div>
+<div class="reveal"><div class="reveal-head">How are ETFs taxed in India? <span class="tag"></span></div><div class="reveal-body"><p>Tax treatment depends on the ETF's underlying assets and the applicable holding period. Equity-oriented, gold, debt, and international ETFs may be taxed differently, and tax rules can change. Verify the current rules with the Income Tax Department or a qualified tax adviser.</p></div></div>
+<div class="reveal"><div class="reveal-head">What is the difference between an ETF and a mutual fund? <span class="tag"></span></div><div class="reveal-body"><p>A <a href="/dictionary/mutual-fund/">mutual fund</a> is bought and sold once a day at its closing NAV directly from the fund house. An ETF trades continuously on the exchange at a live price and needs a Demat account. ETFs are also usually cheaper because most are passive index trackers.</p></div></div>
+<div class="reveal"><div class="reveal-head">Do ETFs pay dividends? <span class="tag"></span></div><div class="reveal-body"><p>When underlying companies pay dividends, the ETF receives them. Depending on the scheme's option and distribution policy, that income may be retained in the fund or distributed to investors. Check the scheme documents before investing.</p></div></div>
+</div></div>
+
+<div class="section collapsed" data-name="Related terms"><div class="sec-head"><h2>Related terms</h2></div><div class="sec-body"><ul>
+<li><a href="/dictionary/index-fund/">Index Fund</a></li>
+<li><a href="/dictionary/mutual-fund/">Mutual Fund</a></li>
+<li><a href="/dictionary/nav-net-asset-value/">NAV (Net Asset Value)</a></li>
+<li><a href="/dictionary/expense-ratio/">Expense Ratio</a></li>
+<li><a href="/dictionary/equity-share/">Equity Share</a></li>
+</ul></div></div>
+
+<div class="end-note">Educational information only, not investment advice. Verify current rates with RBI and SEBI. Last reviewed 2026.</div>

@@ -1,54 +1,85 @@
-<!-- FINYAAR DICTIONARY: Derivatives and Risk · Beta -->
-<!-- Paste everything below into the WordPress Text tab or a Custom HTML block. -->
+<!-- FINYAAR DICTIONARY: Derivatives and Risk &middot; Beta -->
 
-<div class="doc-kicker">FINYAAR DICTIONARY · DERIVATIVES AND RISK</div>
+<div class="doc-kicker">FINYAAR DICTIONARY &middot; DERIVATIVES AND RISK</div>
 <h1 class="doc-title">Beta</h1>
-<div class="doc-note">a measure of how much a stock or portfolio tends to move relative to the overall market, used to gauge its market-related (systematic) risk.</div>
+<div class="doc-note">Beta is a measure of how much a stock or portfolio moves relative to the overall market, capturing its systematic (non-diversifiable) risk. Beta of 1 means the asset tends to move in line with the market, above 1 means it swings more sharply, and below 1 means it is steadier than the market.</div>
 
-<div class="section" id="s1" data-name="What is beta">
-<div class="sec-head"><h2>What is beta?</h2></div>
-<div class="sec-body">
-<p>Beta tells you how sensitive an investment is to movements in the broader market. The market itself, represented by an index such as the Nifty 50 or S&amp;P 500, has a beta of exactly 1. A stock&#39;s beta compares its swings to that benchmark.</p><p>A beta above 1 means the stock tends to move more than the market: it rises more in rallies and falls more in downturns. A beta below 1 means it moves less than the market and is generally steadier. A beta near 0 means little relationship with the market, and a negative beta means it tends to move opposite to the market.</p>
-</div>
-</div>
-
-<div class="section" id="s2" data-name="How to read beta">
-<div class="sec-head"><h2>How to read beta values</h2></div>
-<div class="sec-body">
-<p><b>Beta = 1.5:</b> if the market rises 10%, the stock tends to rise about 15%, and fall harder when the market drops. <b>Beta = 0.6:</b> the stock typically moves only 6% for a 10% market move, making it more defensive. High-beta names are often growth or cyclical stocks; low-beta names are often stable sectors like utilities or consumer staples.</p><div class="formula"><span data-math="\beta=\dfrac{\mathrm{Cov}(R_i,\,R_m)}{\mathrm{Var}(R_m)}"></span></div><p>In words, beta is how the stock moves with the market (their covariance), scaled by how much the market itself moves (its variance).</p>
-</div>
-</div>
-
-<div class="section collapsed" id="s3" data-name="Worked example">
-<div class="sec-head"><h2>Example</h2></div>
-<div class="sec-body">
-<div class="worked"><div class="w-tag">Worked example</div><div class="w-body">
-<p>A stock has a beta of <b>1.3</b>. The market falls <b>8%</b> in a week.</p><div class="q-stem">Roughly how much would you expect the stock to move?</div><div class="soln"><b>Solution.</b> Expected move &asymp; 1.3 &times; (&minus;8%) = <b>&minus;10.4%</b>. The higher beta amplified the market&#39;s fall. In a rising market the same beta would amplify the gain, which is the trade-off of holding higher-beta stocks.</div>
+<div class="section"><div class="sec-head"><h2>What is Beta?</h2></div><div class="sec-body">
+<p><b>Beta</b> tells you how sensitive an investment is to broad market moves. If the <a href="/dictionary/sensex-and-nifty/">Nifty</a> rises or falls, beta estimates how far your stock is likely to travel alongside it. A beta of <b>1.0</b> means the stock historically moves roughly one-for-one with the market. A beta of <b>1.5</b> suggests a move about 50% larger than the market, and a beta of <b>0.6</b> suggests a move about 40% smaller.</p>
+<p>Think of a monsoon. The market is the rainfall over all of India. A high-beta stock like a small auto or metal company is a low-lying field that floods fast and dries fast. A low-beta stock like an FMCG or utility name is higher ground that barely notices the same rain. Both feel the monsoon, but not to the same degree.</p>
+<p>Crucially, beta measures only <b>systematic risk</b> &mdash; the risk you cannot remove through <a href="/dictionary/diversification/">diversification</a>. It says nothing about company-specific risk like a fraud or a plant fire. This is why beta sits at the heart of the <a href="/dictionary/risk-vs-return/">risk vs return</a> trade-off.</p>
 </div></div>
-</div>
-</div>
 
-<div class="section collapsed" id="takeaways" data-name="Key takeaways">
-<div class="sec-head"><h2>Key takeaways</h2></div>
-<div class="sec-body">
-<ul><li>Beta measures market risk, not total risk or the quality of a company.</li><li>Beta of 1 moves with the market; above 1 is more volatile, below 1 is more defensive.</li><li>It is central to CAPM, which uses beta to estimate the return a stock should offer.</li><li>Beta is backward-looking and can change over time, so treat it as a guide, not a guarantee.</li></ul>
-</div>
-</div>
+<div class="section"><div class="sec-head"><h2>How Beta is calculated</h2></div><div class="sec-body">
+<p>Beta is the slope of the line you get when you plot a stock's returns against the market's returns. Formally, it is the covariance of the asset's return with the market's return, divided by the variance of the market's return:</p>
+<div class="formula"><span data-math="\beta_i = \dfrac{\operatorname{Cov}(R_i, R_m)}{\operatorname{Var}(R_m)}"></span></div>
+<p>Here <b>R<sub>i</sub></b> is the return on the stock, <b>R<sub>m</sub></b> is the return on the market (a broad index like the Nifty 50), <b>Cov(R<sub>i</sub>, R<sub>m</sub>)</b> measures how the two move together, and <b>Var(R<sub>m</sub>)</b> measures how much the market itself bounces around. An equivalent, often more intuitive form uses correlation and <a href="/dictionary/volatility/">volatility</a>:</p>
+<div class="formula"><span data-math="\beta_i = \rho_{i,m} \cdot \dfrac{\sigma_i}{\sigma_m}"></span></div>
+<p>where <b>&rho;<sub>i,m</sub></b> is the correlation between the stock and the market, <b>&sigma;<sub>i</sub></b> is the standard deviation of the stock's returns, and <b>&sigma;<sub>m</sub></b> is the standard deviation of the market's returns. A stock can be volatile yet have a modest beta if its wild moves are poorly correlated with the index.</p>
+<p>Beta also drives the <b>Capital Asset Pricing Model (CAPM)</b>, which links required return to systematic risk:</p>
+<div class="formula"><span data-math="E(R_i) = R_f + \beta_i\,(R_m - R_f)"></span></div>
+<p>where <b>R<sub>f</sub></b> is the risk-free rate (often the yield on a Government of India bond), and <b>(R<sub>m</sub> &minus; R<sub>f</sub>)</b> is the equity risk premium. Higher beta demands higher expected return to compensate for extra market risk.</p>
+</div></div>
 
-<div class="section collapsed" id="faqs" data-name="FAQs">
-<div class="sec-head"><h2>Frequently asked questions</h2></div>
-<div class="sec-body">
-<div class="reveal"><div class="reveal-head">What does a beta of 1.2 mean? <span class="tag"></span></div><div class="reveal-body"><p>It means the stock has tended to move about 20% more than the market. If the market rises or falls 10%, a beta of 1.2 suggests the stock moves roughly 12% in the same direction, on average.</p></div></div>
-<div class="reveal"><div class="reveal-head">Is a high or low beta better? <span class="tag"></span></div><div class="reveal-body"><p>Neither is universally better. High-beta stocks offer bigger gains in rising markets but bigger losses in falling ones, suiting aggressive investors. Low-beta stocks are steadier and suit those wanting less volatility.</p></div></div>
-<div class="reveal"><div class="reveal-head">Can beta be negative? <span class="tag"></span></div><div class="reveal-body"><p>Yes, though it is rare. A negative beta means the asset tends to move opposite to the market. Gold and certain hedging assets sometimes show this behaviour, which can make them useful for reducing portfolio risk.</p></div></div>
-</div>
-</div>
+<div class="section"><div class="sec-head"><h2>Types of Beta</h2></div><div class="sec-body">
+<p>Not every beta means the same thing. The table below groups the common ranges and what they imply for an Indian equity investor.</p>
+<div class="tbl-scroll"><table class="data">
+<thead><tr><th>Beta value</th><th>Behaviour vs market</th><th>Typical Indian examples</th><th>Investor read</th></tr></thead>
+<tbody>
+<tr><td>&beta; &gt; 1 (aggressive)</td><td>Amplifies market moves</td><td>Metals, real estate, autos, small caps</td><td>Higher upside and higher drawdowns</td></tr>
+<tr><td>&beta; = 1 (market)</td><td>Moves with the index</td><td>An <a href="/dictionary/index-fund/">index fund</a> or Nifty <a href="/dictionary/etf/">ETF</a></td><td>Pure market exposure</td></tr>
+<tr><td>0 &lt; &beta; &lt; 1 (defensive)</td><td>Dampens market moves</td><td>FMCG, pharma, utilities</td><td>Steadier, milder swings</td></tr>
+<tr><td>&beta; = 0</td><td>Uncorrelated with market</td><td>A <a href="/dictionary/fixed-deposit/">fixed deposit</a> (in principle)</td><td>No systematic equity risk</td></tr>
+<tr><td>&beta; &lt; 0 (negative)</td><td>Moves opposite to market</td><td>Rare; some gold plays or hedges</td><td>Can cushion a portfolio</td></tr>
+</tbody>
+</table></div>
+<p>Note that an individual <a href="/dictionary/equity-share/">equity share</a> and a diversified <a href="/dictionary/mutual-fund/">mutual fund</a> can have very different betas even in the same sector, and beta is estimated from history &mdash; it shifts over time as a company's business and leverage change.</p>
+</div></div>
 
-<div class="section collapsed" id="related" data-name="Related terms">
-<div class="sec-head"><h2>Related terms</h2></div>
-<div class="sec-body">
-<p><a href="/dictionary/risk-vs-return/">Risk vs Return</a> · <a href="/dictionary/diversification/">Diversification</a> · <a href="/dictionary/hedging/">Hedging</a> · <a href="/dictionary/volatility/">Volatility</a> · <a href="/dictionary/equity-share/">Equity Share</a></p>
+<div class="worked"><div class="w-tag">Worked example</div><div class="w-body">
+<div class="q-stem">Rohan, an investor in Pune, holds a &#8377;10,00,000 equity portfolio across three stocks. He wants to know his portfolio beta, how much he could lose if the Nifty drops 10%, and what return CAPM says he should demand. Assume a risk-free rate of 7% (10-year G-sec) and an expected market return of 13%.</div>
+<div class="soln">
+<p><b>Step 1 &mdash; List holdings, weights and betas.</b> Portfolio beta is simply the value-weighted average of the individual betas.</p>
+<div class="tbl-scroll"><table class="data">
+<thead><tr><th>Stock</th><th>Amount (&#8377;)</th><th>Weight</th><th>Beta</th><th>Weight &times; Beta</th></tr></thead>
+<tbody>
+<tr><td>HDFC Bank</td><td>4,00,000</td><td>0.40</td><td>0.95</td><td>0.380</td></tr>
+<tr><td>Infosys</td><td>3,00,000</td><td>0.30</td><td>0.80</td><td>0.240</td></tr>
+<tr><td>Tata Motors</td><td>3,00,000</td><td>0.30</td><td>1.60</td><td>0.480</td></tr>
+<tr><td><b>Total</b></td><td><b>10,00,000</b></td><td><b>1.00</b></td><td>&mdash;</td><td><b>1.100</b></td></tr>
+</tbody>
+</table></div>
+<p><b>Step 2 &mdash; Add the weighted betas.</b> 0.380 + 0.240 + 0.480 = <b>1.10</b>. Rohan's portfolio beta is <b>1.10</b>, so it is about 10% more sensitive than the Nifty. The high beta of Tata Motors (1.60) pulls the whole portfolio above 1, even though HDFC Bank and Infosys are defensive.</p>
+<p><b>Step 3 &mdash; Estimate the loss in a 10% market fall.</b> Expected portfolio move = beta &times; market move = 1.10 &times; (&minus;10%) = <b>&minus;11%</b>. On &#8377;10,00,000 that is a fall of 0.11 &times; 10,00,000 = <b>&#8377;1,10,000</b>. If instead the Nifty rose 10%, the portfolio would be expected to gain the same <b>&#8377;1,10,000</b> (a symmetric +11%).</p>
+<p><b>Step 4 &mdash; Apply CAPM for the required return.</b> E(R) = R<sub>f</sub> + &beta;(R<sub>m</sub> &minus; R<sub>f</sub>) = 7% + 1.10 &times; (13% &minus; 7%) = 7% + 1.10 &times; 6% = 7% + <b>6.6%</b> = <b>13.6%</b>. So Rohan should demand at least a <b>13.6%</b> annual return to be compensated for the market risk he is carrying.</p>
+<p><b>So what?</b> Rohan is running a mildly aggressive book. In a sharp correction he should mentally prepare for an <b>11%</b> hit &mdash; a bit worse than the index &mdash; but in rallies he captures more upside. If that &#8377;1,10,000 swing feels too large for his comfort, he can lower portfolio beta by trimming Tata Motors and adding a defensive FMCG name or a Nifty index fund, without needing to time the market. Beta turns a vague fear ("markets are risky") into a concrete rupee figure he can plan around.</p>
 </div>
-</div>
+</div></div>
 
-<div class="end-note">End of entry.</div>
+<div class="selftest"><div class="st-label">Check yourself</div><div class="q"><div class="qt">If a stock has a beta of 0.7 and the Nifty falls 20%, roughly how much is the stock expected to fall, and is it aggressive or defensive?</div><button class="show-btn">Show answer</button><div class="qa">Expected fall &asymp; 0.7 &times; 20% = <b>14%</b>. Because beta is below 1, the stock is <b>defensive</b> &mdash; it drops less than the market. Remember this is only an estimate of systematic risk; company-specific news could push the actual move higher or lower.</div></div></div>
+
+<div class="section collapsed" id="takeaways" data-name="Key takeaways"><div class="sec-head"><h2>Key takeaways</h2></div><div class="sec-body"><ul>
+<li>Beta measures an asset's <b>systematic risk</b> &mdash; its sensitivity to overall market moves &mdash; not its total risk.</li>
+<li>Beta = 1 moves with the market, above 1 is aggressive, below 1 is defensive, and negative beta moves opposite to the market.</li>
+<li>It is calculated as covariance with the market divided by market variance, and it feeds directly into <b>CAPM</b> to set required return.</li>
+<li>Portfolio beta is the <b>value-weighted average</b> of the individual betas.</li>
+<li>Beta ignores diversifiable, company-specific risk and is estimated from past data, so it can drift over time.</li>
+</ul></div></div>
+
+<div class="section collapsed" id="faqs" data-name="FAQs"><div class="sec-head"><h2>FAQs</h2></div><div class="sec-body">
+<div class="reveal"><div class="reveal-head">What is a good beta value for a stock? <span class="tag"></span></div><div class="reveal-body"><p>There is no universally "good" beta &mdash; it depends on your goal. A cautious investor near retirement may prefer defensive stocks with beta below 1 to reduce swings, while a young investor chasing growth may accept beta above 1 for higher potential returns. The right beta is the one that matches your risk tolerance and time horizon.</p></div></div>
+<div class="reveal"><div class="reveal-head">Can beta be negative? <span class="tag"></span></div><div class="reveal-body"><p>Yes, though it is uncommon for equities. A negative beta means the asset tends to move opposite to the market &mdash; rising when the market falls. Gold and certain hedging instruments sometimes behave this way, which is why they can cushion a portfolio during equity downturns.</p></div></div>
+<div class="reveal"><div class="reveal-head">Is a high beta always riskier? <span class="tag"></span></div><div class="reveal-body"><p>High beta means larger swings relative to the market, so more systematic risk &mdash; but "risk" cuts both ways. A high-beta stock falls harder in corrections yet rises more in rallies. It is riskier in the sense of higher volatility, not automatically a bad investment. Beta also ignores company-specific risks entirely.</p></div></div>
+<div class="reveal"><div class="reveal-head">What is the difference between beta and volatility? <span class="tag"></span></div><div class="reveal-body"><p>Volatility (standard deviation) measures how much a stock bounces around on its own, regardless of the market. Beta measures only the portion of that movement explained by the market. A stock can be highly volatile but have a low beta if its swings are unrelated to the index.</p></div></div>
+<div class="reveal"><div class="reveal-head">Where can I find the beta of an Indian stock? <span class="tag"></span></div><div class="reveal-body"><p>Beta is published on stock exchange and broker platforms, financial data sites, and in the fact sheets of many mutual funds and ETFs. Different sources may show slightly different betas because they use different time periods and index benchmarks. Always check the lookback window (for example 1-year vs 3-year) before comparing.</p></div></div>
+<div class="reveal"><div class="reveal-head">Does an index fund have a beta of 1? <span class="tag"></span></div><div class="reveal-body"><p>A fund tracking the same index used to define the market &mdash; such as a Nifty 50 <a href="/dictionary/index-fund/">index fund</a> &mdash; will have a beta very close to 1 by construction, minus small tracking error and <a href="/dictionary/expense-ratio/">expense ratio</a> drag. A fund tracking a different index, like a small-cap benchmark, can have a beta well above or below 1 versus the Nifty.</p></div></div>
+</div></div>
+
+<div class="section collapsed" data-name="Related terms"><div class="sec-head"><h2>Related terms</h2></div><div class="sec-body"><ul>
+<li><a href="/dictionary/risk-vs-return/">Risk vs Return</a></li>
+<li><a href="/dictionary/diversification/">Diversification</a></li>
+<li><a href="/dictionary/volatility/">Volatility</a></li>
+<li><a href="/dictionary/equity-share/">Equity Share</a></li>
+</ul></div></div>
+
+<div class="end-note">Educational information only, not investment advice. Verify current rates with RBI and SEBI. Last reviewed 2026.</div>

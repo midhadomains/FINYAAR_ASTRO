@@ -1,0 +1,117 @@
+<!-- FINYAAR DICTIONARY: Derivatives and Risk · Volatility -->
+<!-- Paste everything below into the WordPress Text tab or a Custom HTML block. -->
+
+<div class="doc-kicker">FINYAAR DICTIONARY · DERIVATIVES AND RISK</div>
+<h1 class="doc-title">Volatility</h1>
+<div class="doc-note">Volatility is the degree to which the price or return of an asset swings up and down over time, usually measured by the standard deviation of its returns. Higher volatility means larger, less predictable moves and therefore greater risk.</div>
+
+<div class="section" id="s1" data-name="What is Volatility">
+<div class="sec-head"><h2>What is Volatility?</h2></div>
+<div class="sec-body">
+<p><b>Volatility</b> measures how much an investment&#39;s returns bounce around their average. A stock that moves <b>3-4% a day</b> is far more volatile than a <a href="/dictionary/fixed-deposit/">Fixed Deposit</a> whose value barely changes. In statistics, volatility is simply the <b>standard deviation</b> of returns: a bigger number means the price is spread out over a wider range, a smaller number means it hugs its average.</p>
+<p>Think of two Indian investors. Rahul puts &#8377;1,00,000 in a bank FD earning a steady <b>7%</b>. Priya puts the same amount in a small-cap <a href="/dictionary/equity-share/">Equity Share</a> that can rise 40% one year and fall 25% the next. Both may end up with similar long-run returns, but Priya&#39;s ride is violent. That jaggedness is volatility, and it is the everyday face of <a href="/dictionary/risk-vs-return/">Risk vs Return</a>.</p>
+<p>Volatility is not the same as loss. A stock can be highly volatile and still trend upward. But high volatility raises the odds of a scary drawdown at exactly the moment you may need the money, which is why it sits at the heart of risk management.</p>
+</div>
+</div>
+
+<div class="section" id="s2" data-name="How volatility is calculated">
+<div class="sec-head"><h2>How volatility is calculated</h2></div>
+<div class="sec-body">
+<p>The standard measure is the <b>standard deviation</b> of periodic returns:</p>
+<div class="formula"><span data-math="\sigma = \sqrt{\dfrac{1}{N-1}\sum_{i=1}^{N}\left(R_i - \bar{R}\right)^2}"></span></div>
+<p>Here <b>&sigma;</b> (sigma) is the volatility, <b>R<sub>i</sub></b> is the return in period i, <b>R&#772;</b> (R-bar) is the average return across all periods, and <b>N</b> is the number of observations. You subtract the mean from each return, square the result so positives and negatives do not cancel, average those squares, and take the square root to return to the original units.</p>
+<p>Volatility is usually quoted on an <b>annual</b> basis. To convert a shorter-period volatility to annual, you scale by the square root of the number of periods in a year:</p>
+<div class="formula"><span data-math="\sigma_{\text{annual}} = \sigma_{\text{period}} \times \sqrt{n}"></span></div>
+<p>Where <b>n</b> is periods per year: use <b>12</b> for monthly data, roughly <b>252</b> for daily trading data. This is why a daily move that looks tiny becomes a meaningful annual number. In India, the forward-looking version of this idea is the <b>India VIX</b>, computed by the NSE from <a href="/dictionary/sensex-and-nifty/">Sensex and Nifty</a> option prices, which shows the market&#39;s expected 30-day volatility.</p>
+</div>
+</div>
+
+<div class="section" id="s3" data-name="Types of volatility">
+<div class="sec-head"><h2>Types of volatility</h2></div>
+<div class="sec-body">
+<p>Not all volatility is measured the same way. The main distinction is between what already happened and what the market expects.</p>
+<div class="tbl-scroll"><table class="data">
+<thead><tr><th>Type</th><th>What it measures</th><th>Based on</th><th>India example</th></tr></thead>
+<tbody>
+<tr><td>Historical (realised)</td><td>Actual past swings in returns</td><td>Past price data</td><td>Nifty 50&#39;s standard deviation over the last year</td></tr>
+<tr><td>Implied</td><td>Expected future swings</td><td>Option prices</td><td>India VIX derived from Nifty options</td></tr>
+<tr><td>Beta (relative)</td><td>Volatility versus the whole market</td><td>Correlation with index</td><td>A high-<a href="/dictionary/beta/">Beta</a> stock moving more than the Nifty</td></tr>
+</tbody>
+</table></div>
+<p>Historical volatility is backward-looking and easy to compute. Implied volatility is forward-looking and spikes during panic, which is why India VIX is nicknamed the "fear gauge". Beta narrows the lens to how much an asset amplifies or dampens broad market moves.</p>
+</div>
+</div>
+
+<div class="section collapsed" id="s4" data-name="Worked example">
+<div class="sec-head"><h2>Example</h2></div>
+<div class="sec-body">
+<div class="worked"><div class="w-tag">Worked example</div><div class="w-body">
+<div class="q-stem">Priya wants to measure the volatility of a mid-cap stock she holds. Its annual returns over the last five years were <b>+25%, -10%, +18%, -5%, and +12%</b>. What is the stock&#39;s annual volatility, and what does it mean for her &#8377;1,00,000 holding?</div>
+<div class="soln">
+<p><b>Step 1 - Find the average return.</b> Add the five returns and divide by five:<br>
+(25 - 10 + 18 - 5 + 12) / 5 = 40 / 5 = <b>8%</b>. So R&#772; = 8%.</p>
+<p><b>Step 2 - Find each deviation from the mean and square it.</b></p>
+<div class="tbl-scroll"><table class="data">
+<thead><tr><th>Year</th><th>Return R<sub>i</sub></th><th>Deviation (R<sub>i</sub> - 8%)</th><th>Squared deviation</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>+25%</td><td>+17</td><td>289</td></tr>
+<tr><td>2</td><td>-10%</td><td>-18</td><td>324</td></tr>
+<tr><td>3</td><td>+18%</td><td>+10</td><td>100</td></tr>
+<tr><td>4</td><td>-5%</td><td>-13</td><td>169</td></tr>
+<tr><td>5</td><td>+12%</td><td>+4</td><td>16</td></tr>
+<tr><td colspan="3"><b>Sum of squared deviations</b></td><td><b>898</b></td></tr>
+</tbody>
+</table></div>
+<p><b>Step 3 - Compute the variance.</b> Because this is a sample, divide by N - 1 = 4:<br>
+Variance = 898 / 4 = <b>224.5</b> (in percent-squared).</p>
+<p><b>Step 4 - Take the square root to get volatility.</b><br>
+&sigma; = &radic;224.5 &asymp; <b>14.98%</b>, so the stock&#39;s annual volatility is about <b>15%</b>.</p>
+<p><b>So what does this mean?</b> With an average return of <b>8%</b> and volatility of <b>15%</b>, a rough one-standard-deviation band runs from <b>8% - 15% = -7%</b> to <b>8% + 15% = +23%</b>. In any typical year Priya&#39;s &#8377;1,00,000 could realistically end anywhere between about <b>&#8377;93,000</b> and <b>&#8377;1,23,000</b> - and roughly one year in three it falls outside even that range. Compare this with a <a href="/dictionary/fixed-deposit/">Fixed Deposit</a> at 7% whose volatility is close to <b>zero</b>: you get &#8377;1,07,000 with near certainty. That gap is exactly what Priya is being paid to bear. If she cannot stomach a &#8377;7,000-plus paper loss without panic-selling, this stock is too volatile for that money, and a <a href="/dictionary/mutual-fund/">Mutual Fund</a> or <a href="/dictionary/index-fund/">Index Fund</a> bought via <a href="/dictionary/sip-systematic-investment-plan/">SIP (Systematic Investment Plan)</a> would smooth the ride.</p>
+</div>
+</div></div>
+</div>
+</div>
+
+<div class="section" id="s5" data-name="Why volatility matters in India">
+<div class="sec-head"><h2>Why volatility matters in India</h2></div>
+<div class="sec-body">
+<p>Volatility drives three practical decisions. First, <b>asset allocation</b>: money needed within 1-3 years belongs in low-volatility instruments, not equities. Second, <b>SIP discipline</b>: a monthly <a href="/dictionary/sip-systematic-investment-plan/">SIP</a> actually turns volatility into an advantage through rupee-cost averaging, buying more units when the <a href="/dictionary/nav-net-asset-value/">NAV (Net Asset Value)</a> is low. Third, <b>diversification</b>: spreading money across uncorrelated assets lowers portfolio volatility without necessarily lowering return, the core insight behind <a href="/dictionary/diversification/">Diversification</a>.</p>
+<p>Remember too that low volatility is not the same as safe. An FD&#39;s stable rupee value can still lose <b>purchasing power</b> if <a href="/dictionary/inflation/">Inflation</a> runs above the return - the RBI targets CPI inflation at <b>4%</b> within a <b>2-6%</b> band. Volatility measures price risk, not inflation risk.</p>
+<div class="selftest"><div class="st-label">Check yourself</div><div class="q"><div class="qt">If a stock has a monthly volatility of 5%, what is its approximate annualised volatility?</div><button class="show-btn">Show answer</button><div class="qa">Multiply by the square root of 12: 5% &times; &radic;12 = 5% &times; 3.46 &asymp; <b>17.3%</b> per year. Volatility scales with the square root of time, not linearly, so you do not simply multiply by 12.</div></div></div>
+</div>
+</div>
+
+<div class="section collapsed" id="takeaways" data-name="Key takeaways">
+<div class="sec-head"><h2>Key takeaways</h2></div>
+<div class="sec-body"><ul>
+<li>Volatility is the standard deviation of returns - it measures how widely an asset&#39;s returns swing around their average.</li>
+<li>Higher volatility means higher risk and a wider range of possible outcomes, though not necessarily a loss.</li>
+<li>Historical volatility looks backward; implied volatility (India VIX) looks forward and spikes during market fear.</li>
+<li>Volatility scales with the square root of time: multiply a periodic figure by &radic;n to annualise.</li>
+<li>SIPs and diversification are the everyday Indian tools for turning volatility from an enemy into a manageable feature.</li>
+</ul></div>
+</div>
+
+<div class="section collapsed" id="faqs" data-name="FAQs">
+<div class="sec-head"><h2>Frequently asked questions</h2></div>
+<div class="sec-body">
+<div class="reveal"><div class="reveal-head">Is high volatility always bad? <span class="tag"></span></div><div class="reveal-body"><p>No. Volatility cuts both ways - it includes big up-moves as well as down-moves. For a long-horizon investor using a SIP, volatility even helps by buying more units when prices dip. It only becomes a real problem when you are forced to sell during a downswing or cannot emotionally handle the swings.</p></div></div>
+<div class="reveal"><div class="reveal-head">What is India VIX? <span class="tag"></span></div><div class="reveal-body"><p>India VIX is the volatility index calculated by the NSE from the prices of Nifty index options. It reflects the market&#39;s expected volatility over the next 30 days. A rising VIX signals fear and uncertainty, while a low, stable VIX suggests calm, complacent markets.</p></div></div>
+<div class="reveal"><div class="reveal-head">How is volatility different from beta? <span class="tag"></span></div><div class="reveal-body"><p>Volatility (standard deviation) measures the total size of an asset&#39;s swings in absolute terms. <a href="/dictionary/beta/">Beta</a> measures only the part of those swings that moves together with the overall market. A stock can have high total volatility but a low beta if much of its movement is company-specific rather than market-driven.</p></div></div>
+<div class="reveal"><div class="reveal-head">Do fixed deposits have volatility? <span class="tag"></span></div><div class="reveal-body"><p>Practically none in rupee terms - your FD balance grows at a fixed rate and never falls, and deposits up to <b>&#8377;5 lakh</b> per bank are insured by DICGC. But zero price volatility does not mean zero risk: FDs still carry inflation risk, since a 7% FD loses real value if inflation exceeds it.</p></div></div>
+<div class="reveal"><div class="reveal-head">How can I reduce the volatility of my portfolio? <span class="tag"></span></div><div class="reveal-body"><p>Spread money across assets that do not move in lockstep - equities, debt, and gold - so gains in one cushion losses in another. This is <a href="/dictionary/diversification/">Diversification</a>. Adding low-volatility instruments like debt funds or FDs, and investing gradually through SIPs rather than a lump sum, also smooths the ride.</p></div></div>
+<div class="reveal"><div class="reveal-head">Which is more volatile: an ETF or a single stock? <span class="tag"></span></div><div class="reveal-body"><p>A broad <a href="/dictionary/etf/">ETF</a> or <a href="/dictionary/index-fund/">Index Fund</a> is almost always less volatile than a single stock, because it holds dozens of companies whose individual swings partly cancel out. A single mid-cap or small-cap share concentrates all its company-specific risk in one place, producing sharper ups and downs.</p></div></div>
+</div>
+</div>
+
+<div class="section collapsed" id="related" data-name="Related terms">
+<div class="sec-head"><h2>Related terms</h2></div>
+<div class="sec-body"><ul>
+<li><a href="/dictionary/beta/">Beta</a></li>
+<li><a href="/dictionary/risk-vs-return/">Risk vs Return</a></li>
+<li><a href="/dictionary/diversification/">Diversification</a></li>
+<li><a href="/dictionary/equity-share/">Equity Share</a></li>
+</ul></div>
+</div>
+
+<div class="end-note">Educational information only, not investment advice. Verify current rates with RBI and SEBI. Last reviewed 2026.</div>

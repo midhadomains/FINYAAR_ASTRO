@@ -4,7 +4,7 @@ import SiteFonts from "../../components/SiteFonts.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import SeoFaq from "../../components/SeoFaq.astro";
-import { terms, categoryMap, getRelatedTerms, getTermCategorySlug, type CategoryKey } from "../../lib/dictionary";
+import { terms, categoryMap, getRelatedTerms, getTermCategorySlug } from "../../lib/dictionary";
 import { getPillarBySlug, getPillarSlugForTerm } from "../../lib/pillars";
 import { buildGenericFaqs, buildMetaDescription, buildSeoTitle, faqSchema, getTermSeo } from "../../lib/seo";
 import "katex/dist/katex.min.css";
@@ -31,15 +31,6 @@ const categoryLabel = term.categoryLabel ?? category.label;
 const related = getRelatedTerms(term, 4);
 const pillar = getPillarBySlug(getPillarSlugForTerm(term));
 
-const REVIEWERS: Record<CategoryKey, { name: string; title: string; initials: string }> = {
-  valuation: { name: "Daniel Reyes", title: "Co-founder — ex-J.P. Morgan, Equity Research", initials: "DR" },
-  accounting: { name: "Daniel Reyes", title: "Co-founder — ex-J.P. Morgan, Equity Research", initials: "DR" },
-  ma: { name: "Ariana Cole", title: "Co-founder — ex-Goldman Sachs, Investment Banking", initials: "AC" },
-  markets: { name: "Daniel Reyes", title: "Co-founder — ex-J.P. Morgan, Equity Research", initials: "DR" },
-  fpa: { name: "Ariana Cole", title: "Co-founder — ex-Goldman Sachs, Investment Banking", initials: "AC" },
-  ai: { name: "Priya Nandan", title: "Head of AI Curriculum — ex-Deloitte Advisory", initials: "PN" },
-};
-const reviewer = REVIEWERS[term.category];
 const canonicalPath = term.url ?? `/dictionary/${term.slug}/`;
 const canonicalUrl = new URL(canonicalPath, Astro.site ?? Astro.url.origin);
 const categoryUrl = new URL(`/dictionary/category/${getTermCategorySlug(term)}/`, canonicalUrl);
@@ -72,11 +63,6 @@ const schemaGraph: Record<string, unknown>[] = [
 ];
 schemaGraph.push(faqSchema(pageFaqs, canonicalUrl));
 const structuredData = JSON.stringify({ "@context": "https://schema.org", "@graph": schemaGraph }).replaceAll("<", "\\u003c");
-
-const lessonWordCount = term.lessonBody?.replace(/<[^>]+>/g, " ").trim().split(/\s+/).length ?? 0;
-const readMinutes = term.lessonBody
-  ? Math.max(3, Math.ceil(lessonWordCount / 200))
-  : 2 + (term.formula ? 1 : 0) + (term.example ? 1 : 0) + (term.comparison ? 1 : 0) + (term.faq?.length ?? 0) + (term.quiz ? 1 : 0);
 
 const toc = term.lessonToc?.length
   ? [...term.lessonToc, { id: "faq", label: "FAQ" }]
@@ -115,6 +101,15 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
       }
     </style>
     <style is:global>
+      :root {
+        --dict-grad: linear-gradient(100deg, var(--color-accent) 0%, var(--color-brand) 52%, var(--color-violet) 100%);
+      }
+      .doc-note {
+        border-left: 3px solid var(--color-brand);
+        background: var(--color-surface);
+        border-radius: 0 14px 14px 0;
+        padding: 1.1rem 1.4rem;
+      }
       .lesson-body {
         display: grid;
         gap: 1.25rem;
@@ -160,27 +155,98 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
         display: none;
       }
       .lesson-body .sec-body ul {
-        list-style: disc;
-        padding-left: 1.4rem;
+        display: grid;
+        gap: 0.6rem;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
       }
-      .lesson-body .sec-body li + li {
-        margin-top: 0.45rem;
+      .lesson-body .sec-body ul li {
+        position: relative;
+        padding-left: 1.85rem;
+      }
+      .lesson-body .sec-body ul li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 0.15rem;
+        display: grid;
+        width: 1.15rem;
+        height: 1.15rem;
+        place-items: center;
+        border-radius: 5px;
+        background: var(--color-brand);
+        color: white;
+        font-size: 0.65rem;
+        font-weight: 700;
       }
       .lesson-body .formula {
         overflow-x: auto;
-        border-radius: 10px;
-        background: var(--color-surface);
-        padding: 1.25rem;
-        color: var(--color-ink);
+        border-radius: 12px;
+        background: var(--color-ink);
+        padding: 1.5rem;
+        color: #f3f1ea;
         text-align: center;
       }
-      .lesson-body .worked {
-        overflow: hidden;
-        border: 1px solid color-mix(in srgb, var(--color-brand) 25%, transparent);
-        border-radius: 12px;
-        background: color-mix(in srgb, var(--color-brand) 5%, white);
+      .lesson-body .formula .katex {
+        font-size: 1.1em;
       }
-      .lesson-body .w-tag,
+      .lesson-body .tbl-scroll {
+        overflow-x: auto;
+        border: 1px solid var(--color-line);
+        border-radius: 10px;
+      }
+      .lesson-body table.data {
+        width: 100%;
+        min-width: 480px;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 0.85rem;
+      }
+      .lesson-body table.data thead {
+        background: var(--color-surface);
+      }
+      .lesson-body table.data th,
+      .lesson-body table.data td {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid var(--color-line);
+      }
+      .lesson-body table.data th {
+        color: var(--color-ink);
+        font-family: var(--font-display);
+        font-weight: 700;
+      }
+      .lesson-body table.data td {
+        color: var(--color-muted);
+      }
+      .lesson-body table.data tbody tr:nth-child(even) td {
+        background: var(--color-surface);
+      }
+      .lesson-body table.data tbody tr:last-child td {
+        border-bottom: none;
+      }
+      .lesson-body table.data td b {
+        color: var(--color-brand);
+      }
+      .lesson-body .worked {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid color-mix(in srgb, var(--color-accent) 45%, transparent);
+        border-radius: 14px;
+        background: linear-gradient(180deg, var(--color-accent-soft) 0%, white 60%);
+      }
+      .lesson-body .w-tag {
+        display: inline-block;
+        border-radius: 0 0 10px 10px;
+        background: var(--dict-grad);
+        padding: 0.5rem 1rem;
+        color: #241606;
+        font-family: var(--font-display);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
       .lesson-body .st-label {
         color: var(--color-brand);
         font-size: 0.72rem;
@@ -188,14 +254,10 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
         letter-spacing: 0.08em;
         text-transform: uppercase;
       }
-      .lesson-body .w-tag {
-        border-bottom: 1px solid color-mix(in srgb, var(--color-brand) 18%, transparent);
-        padding: 0.75rem 1rem;
-      }
       .lesson-body .w-body {
         display: grid;
         gap: 0.9rem;
-        padding: 1rem;
+        padding: 1.25rem 1.25rem 1.5rem;
       }
       .lesson-body .q-stem,
       .lesson-body .qt {
@@ -203,46 +265,53 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
         font-weight: 700;
       }
       .lesson-body .soln {
+        display: grid;
+        gap: 0.75rem;
         border-left: 3px solid var(--color-brand);
         padding-left: 1rem;
       }
       .lesson-body .selftest {
         display: grid;
         gap: 0.65rem;
-        border-radius: 12px;
-        background: var(--color-ink);
-        padding: 1rem;
-        color: white;
-      }
-      .lesson-body .selftest .st-label {
-        color: var(--color-accent-soft);
+        border: 1.5px dashed color-mix(in srgb, var(--color-brand) 55%, transparent);
+        border-radius: 14px;
+        background: color-mix(in srgb, var(--color-brand) 6%, white);
+        padding: 1.25rem 1.4rem;
       }
       .lesson-body .selftest .q {
         display: grid;
         gap: 0.75rem;
       }
-      .lesson-body .selftest .qt {
-        color: white;
-      }
       .lesson-body .show-btn {
         width: fit-content;
         cursor: pointer;
+        border: none;
         border-radius: 10px;
-        background: var(--color-brand);
-        padding: 0.6rem 0.9rem;
-        color: white;
+        background: var(--dict-grad);
+        padding: 0.6rem 1.1rem;
+        color: #241606;
+        font-family: var(--font-display);
         font-size: 0.85rem;
         font-weight: 700;
       }
       .lesson-body .qa {
         display: none;
         border-radius: 10px;
-        background: rgb(255 255 255 / 0.1);
-        padding: 0.9rem;
-        color: rgb(255 255 255 / 0.85);
+        border: 1px solid var(--color-line);
+        background: white;
+        padding: 0.9rem 1.1rem;
+        color: var(--color-muted);
       }
       .lesson-body .q.answer-visible .qa {
         display: block;
+      }
+      .lesson-body .callout {
+        border-left: 3px solid var(--color-accent);
+        background: var(--color-accent-soft);
+        border-radius: 0 10px 10px 0;
+        padding: 0.9rem 1.1rem;
+        color: var(--color-ink);
+        font-size: 0.95rem;
       }
     </style>
   </head>
@@ -263,22 +332,16 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
           {categoryLabel}
         </a>
         <h1 class="text-[clamp(2rem,4vw,3rem)] font-extrabold tracking-[-0.02em] text-ink">{pageH1}</h1>
-        <p class="mt-4 text-lg text-muted">{openingAnswer}</p>
 
-        <div class="mt-8 flex flex-wrap items-center gap-6 border-y border-line py-4">
-          <div class="flex items-center gap-3">
-            <div class="grid h-10 w-10 flex-shrink-0 place-items-center rounded-full bg-gradient-to-br from-brand to-ink text-sm font-bold text-white">{reviewer.initials}</div>
-            <div>
-              <p class="text-sm font-bold text-ink">{reviewer.name}</p>
-              <p class="text-xs text-muted">Reviewed by</p>
-            </div>
-          </div>
-          <div class="hidden h-8 w-px bg-line sm:block"></div>
-          <div class="flex items-center gap-2 text-muted">
-            <span class="material-symbols-outlined text-[18px]">schedule</span>
-            <span class="text-sm font-semibold">{readMinutes} min read</span>
-          </div>
+        <div class="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1.5 text-sm text-muted">
+          <span>By the <b class="font-bold text-ink">FinYaar Editorial Team</b></span>
+          <span aria-hidden="true">&middot;</span>
+          <span>Reviewed for accuracy against RBI and SEBI</span>
+          <span aria-hidden="true">&middot;</span>
+          <span>Last reviewed 2026</span>
         </div>
+
+        <p class="doc-note mt-5 text-lg leading-relaxed text-ink">{openingAnswer}</p>
       </header>
 
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
