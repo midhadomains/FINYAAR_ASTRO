@@ -82,10 +82,13 @@ const guidance = {
     <meta property="og:url" content={canonicalUrl} />
     <meta property="article:tag" content={seo.primaryKeyword} />
     <script is:inline type="application/ld+json" set:html={structuredData} />
+    <script is:inline>
+      try { document.documentElement.dataset.theme = localStorage.getItem("finyaar-theme") === "dark" ? "dark" : "light"; } catch {}
+    </script>
     <SiteFonts />
   </head>
-  <body class="bg-surface">
-    <SiteHeader />
+  <body class="article-theme">
+    <SiteHeader articleTheme />
     <main class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] py-10">
       <nav aria-label="Breadcrumb" class="mb-8 flex flex-wrap items-center gap-2 text-sm text-muted">
         <a href="/" class="hover:text-brand">Home</a>

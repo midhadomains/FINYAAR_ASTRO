@@ -93,6 +93,9 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
     <meta property="article:tag" content={termSeo.primaryKeyword} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <script is:inline type="application/ld+json" set:html={structuredData} />
+    <script is:inline>
+      try { document.documentElement.dataset.theme = localStorage.getItem("finyaar-theme") === "dark" ? "dark" : "light"; } catch {}
+    </script>
     <SiteFonts />
     <style>
       .formula-font {
@@ -119,7 +122,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
         overflow: hidden;
         border: 1px solid var(--color-line);
         border-radius: 14px;
-        background: white;
+        background: var(--theme-panel);
       }
       .lesson-body .sec-head {
         display: flex;
@@ -151,6 +154,26 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
         color: var(--color-muted);
         line-height: 1.75;
       }
+      .lesson-body a,
+      .lesson-body a:visited {
+        border-radius: 4px;
+        background: color-mix(in srgb, var(--color-brand) 9%, transparent);
+        color: var(--color-brand);
+        font-weight: 700;
+        text-decoration-line: underline;
+        text-decoration-color: color-mix(in srgb, var(--color-brand) 55%, transparent);
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 3px;
+        transition: background-color 0.15s ease, text-decoration-color 0.15s ease;
+      }
+      .lesson-body a:hover {
+        background: color-mix(in srgb, var(--color-brand) 16%, transparent);
+        text-decoration-color: currentColor;
+      }
+      .lesson-body a:focus-visible {
+        outline: 3px solid color-mix(in srgb, var(--color-brand) 30%, transparent);
+        outline-offset: 2px;
+      }
       .lesson-body .section.collapsed .sec-body {
         display: none;
       }
@@ -179,14 +202,6 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
         color: white;
         font-size: 0.65rem;
         font-weight: 700;
-      }
-      .lesson-body .formula {
-        overflow-x: auto;
-        border-radius: 12px;
-        background: var(--color-ink);
-        padding: 1.5rem;
-        color: #f3f1ea;
-        text-align: center;
       }
       .lesson-body .formula .katex {
         font-size: 1.1em;
@@ -233,7 +248,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
         overflow: hidden;
         border: 1px solid color-mix(in srgb, var(--color-accent) 45%, transparent);
         border-radius: 14px;
-        background: linear-gradient(180deg, var(--color-accent-soft) 0%, white 60%);
+        background: linear-gradient(180deg, var(--color-accent-soft) 0%, var(--theme-panel) 60%);
       }
       .lesson-body .w-tag {
         display: inline-block;
@@ -275,7 +290,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
         gap: 0.65rem;
         border: 1.5px dashed color-mix(in srgb, var(--color-brand) 55%, transparent);
         border-radius: 14px;
-        background: color-mix(in srgb, var(--color-brand) 6%, white);
+        background: color-mix(in srgb, var(--color-brand) 6%, var(--theme-panel));
         padding: 1.25rem 1.4rem;
       }
       .lesson-body .selftest .q {
@@ -298,7 +313,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
         display: none;
         border-radius: 10px;
         border: 1px solid var(--color-line);
-        background: white;
+        background: var(--theme-panel);
         padding: 0.9rem 1.1rem;
         color: var(--color-muted);
       }
@@ -315,8 +330,8 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
       }
     </style>
   </head>
-  <body class="bg-surface">
-    <SiteHeader />
+  <body class="article-theme">
+    <SiteHeader articleTheme />
     <main class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] py-10">
       <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-sm text-muted">
         <a class="hover:text-brand" href="/dictionary">Dictionary</a>
@@ -362,8 +377,8 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
           {term.formula && (
             <section id="formula" class={`scroll-mt-24 ${card14}`}>
               <h3 class="mb-6 text-lg font-bold text-ink">The Formula</h3>
-              <div class="mb-6 flex justify-center rounded-[10px] bg-surface p-8">
-                <p class="formula-font text-center text-2xl font-bold text-ink">{term.formula.equation}</p>
+              <div class="formula">
+                <p class="formula-font text-center text-2xl font-bold">{term.formula.equation}</p>
               </div>
               <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {term.formula.variables.map((v) => (

@@ -9,6 +9,7 @@ const navLinks = [
 
 const currentPath = Astro.url.pathname;
 const isActive = (href: string) => currentPath === href || currentPath.startsWith(`${href}/`);
+const { articleTheme = false } = Astro.props;
 ---
 <header class="sticky top-0 z-50 border-b border-white/10 bg-[#0b0c10]/85 text-[#f5f2ea] backdrop-blur-xl">
   <div class="relative mx-auto flex h-[68px] w-[calc(100%-2rem)] max-w-[1160px] items-center justify-between gap-6">
@@ -24,9 +25,20 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
       ))}
     </nav>
 
-    <a class="hidden items-center gap-2 rounded-xl bg-[linear-gradient(100deg,#ffc24b,#ff6b5e_48%,#a483ff)] px-[18px] py-[11px] font-display text-sm font-bold text-[#1b110d] shadow-[0_12px_30px_-18px_#ff6b5e] transition-transform hover:-translate-y-0.5 lg:inline-flex" href="/dictionary">
-      Browse A–Z <span aria-hidden="true">→</span>
-    </a>
+    {articleTheme ? (
+      <button class="theme-toggle hidden lg:inline-flex" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false">
+        <span aria-hidden="true">◐</span><span data-theme-label>Dark</span>
+      </button>
+    ) : (
+      <a class="hidden items-center gap-2 rounded-xl bg-[linear-gradient(100deg,#ffc24b,#ff6b5e_48%,#a483ff)] px-[18px] py-[11px] font-display text-sm font-bold text-[#1b110d] shadow-[0_12px_30px_-18px_#ff6b5e] transition-transform hover:-translate-y-0.5 lg:inline-flex" href="/dictionary">
+        Browse A–Z <span aria-hidden="true">→</span>
+      </a>
+    )}
+    {articleTheme && (
+      <button class="theme-toggle ml-auto inline-flex lg:hidden" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false">
+        <span aria-hidden="true">◐</span><span data-theme-label>Dark</span>
+      </button>
+    )}
     <button id="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="grid size-10 place-items-center rounded-xl border border-white/10 text-white lg:hidden">
       <span class="material-symbols-outlined">menu</span>
     </button>
@@ -58,4 +70,25 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
   toggle?.addEventListener("click", () => setOpen(true));
   closeButton?.addEventListener("click", () => setOpen(false));
   menu?.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setOpen(false)));
+
+  const themeButtons = document.querySelectorAll<HTMLElement>("[data-theme-toggle]");
+  const setTheme = (dark: boolean) => {
+    document.body.classList.toggle("dark", dark);
+    document.documentElement.dataset.theme = dark ? "dark" : "light";
+    themeButtons.forEach((button) => {
+      button.setAttribute("aria-pressed", String(dark));
+      button.setAttribute("aria-label", `Switch to ${dark ? "light" : "dark"} mode`);
+      const label = button.querySelector("[data-theme-label]");
+      if (label) label.textContent = dark ? "Light" : "Dark";
+    });
+  };
+
+  if (themeButtons.length) {
+    setTheme(document.documentElement.dataset.theme === "dark");
+    themeButtons.forEach((button) => button.addEventListener("click", () => {
+      const dark = !document.body.classList.contains("dark");
+      setTheme(dark);
+      localStorage.setItem("finyaar-theme", dark ? "dark" : "light");
+    }));
+  }
 </script>

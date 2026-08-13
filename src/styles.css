@@ -15,6 +15,13 @@
   --font-display: "Space Grotesk", Inter, system-ui, sans-serif;
 }
 
+:root {
+  --theme-panel: #ffffff;
+  --formula-bg: #f4efe4;
+  --formula-fg: #14202b;
+  --formula-bd: #e7ddcb;
+}
+
 html {
   color-scheme: light;
 }
@@ -22,6 +29,109 @@ html {
 body {
   @apply bg-[#fbf9f4] text-ink font-sans;
   -webkit-font-smoothing: antialiased;
+}
+
+body.hub-dark {
+  --color-ink: #ffffff;
+  --color-brand: #ff7a63;
+  --color-brand-dark: #ff6658;
+  --color-muted: #9aa4b2;
+  --color-line: #262c38;
+  --color-surface: #1b2029;
+  --color-accent: #ffc24b;
+  --color-accent-soft: #3a3320;
+  --theme-panel: #141821;
+  --formula-bg: #161b24;
+  --formula-fg: #f3f1ea;
+  --formula-bd: rgb(255 255 255 / 0.09);
+  color-scheme: dark;
+}
+
+body.hub-dark {
+  background: #0b0d12;
+  color: #e7e4dc;
+}
+
+body.article-theme {
+  --color-ink: #14202b;
+  --color-brand: #e24a32;
+  --color-brand-dark: #c83d29;
+  --color-muted: #5c6b78;
+  --color-line: #ece4da;
+  --color-surface: #fdf6ec;
+  --theme-panel: #ffffff;
+  background: #eef0f1;
+  color: #28343d;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body.article-theme.dark {
+  --color-ink: #ffffff;
+  --color-brand: #ff7a63;
+  --color-brand-dark: #ff6658;
+  --color-muted: #9aa4b2;
+  --color-line: #262c38;
+  --color-surface: #1b2029;
+  --color-accent: #ffc24b;
+  --color-accent-soft: #3a3320;
+  --theme-panel: #141821;
+  --formula-bg: #161b24;
+  --formula-fg: #f3f1ea;
+  --formula-bd: rgb(255 255 255 / 0.09);
+  background: #07080b;
+  color: #d7d3ca;
+  color-scheme: dark;
+}
+
+body.hub-dark .bg-white,
+body.article-theme.dark .bg-white {
+  background-color: var(--theme-panel);
+}
+
+body.hub-dark .bg-ink,
+body.article-theme.dark .bg-ink {
+  background-color: #141821;
+}
+
+.formula {
+  margin: 18px 0;
+  overflow: visible;
+  padding: 0;
+  text-align: center;
+}
+
+.formula .katex,
+.formula .katex-display > .katex,
+.formula > .formula-font {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--formula-bd);
+  border-radius: 12px;
+  background: var(--formula-bg);
+  color: var(--formula-fg);
+  padding: 13px 22px;
+}
+
+.formula .katex-display {
+  margin: 0;
+}
+
+.theme-toggle {
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgb(255 255 255 / 0.16);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.08);
+  color: #e7e4dc;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: rgb(255 255 255 / 0.14);
 }
 
 h1, h2, h3, h4 {

@@ -396,8 +396,20 @@ function decodeEntities(value: string): string {
 function prepareLesson(html: string): Pick<Term, "lessonBody" | "lessonToc"> {
   const start = html.indexOf('<div class="section"');
   const faqStart = html.indexOf('<div class="section collapsed" id="faqs"');
+  let generatedSectionIndex = 0;
   const lessonBody = html
     .slice(start >= 0 ? start : 0, faqStart >= 0 ? faqStart : html.length)
+    .replace(
+      /<div class="section( collapsed)?"([^>]*)>(\s*<div class="sec-head"><h2>(.*?)<\/h2>)/g,
+      (_, collapsed: string | undefined, attributes: string, headingMarkup: string, heading: string) => {
+        generatedSectionIndex += 1;
+        const existingId = attributes.match(/\bid="([^"]+)"/)?.[1];
+        const existingName = attributes.match(/\bdata-name="([^"]+)"/)?.[1];
+        const id = existingId ?? `lesson-section-${generatedSectionIndex}`;
+        const label = existingName ?? heading.replace(/<[^>]+>/g, "").trim();
+        return `<div class="section${collapsed ?? ""}" id="${id}" data-name="${label}">${headingMarkup}`;
+      },
+    )
     .replace(/<span data-math="([^"]*)"><\/span>/g, (_, expression: string) =>
       katex.renderToString(expression, { displayMode: true, throwOnError: false }),
     )
