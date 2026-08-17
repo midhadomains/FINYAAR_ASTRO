@@ -4,6 +4,7 @@ import SiteFonts from "./SiteFonts.astro";
 import SiteHeader from "./SiteHeader.astro";
 import SiteFooter from "./SiteFooter.astro";
 import SeoFaq from "./SeoFaq.astro";
+import topicContent from "../data/topic-content.json";
 import { terms } from "../lib/dictionary";
 import { getPillarSlugForTerm, type Pillar } from "../lib/pillars";
 import { breadcrumbSchema, buildGenericFaqs, buildMetaDescription, buildSeoTitle, courseSchema, faqSchema, getPillarSeo } from "../lib/seo";
@@ -17,8 +18,12 @@ const seo = getPillarSeo(pillar);
 const seoTitle = buildSeoTitle(seo.primaryKeyword);
 const metaDescription = buildMetaDescription(seo.primaryKeyword, pillar.description);
 const pageH1 = seo.primaryKeyword.charAt(0).toUpperCase() + seo.primaryKeyword.slice(1);
-const openingAnswer = `${pageH1} brings together ${pillar.description.charAt(0).toLowerCase()}${pillar.description.slice(1)}`;
-const faqs = buildGenericFaqs(seo.primaryKeyword, pillar.description);
+const handWrittenContent = topicContent.topics.find((topic) => topic.slug === pillar.slug);
+const openingAnswer = handWrittenContent?.intro
+  ?? `${pageH1} brings together ${pillar.description.charAt(0).toLowerCase()}${pillar.description.slice(1)}`;
+const faqs = handWrittenContent
+  ? handWrittenContent.faqs.map((faq) => ({ question: faq.q, answer: faq.a }))
+  : buildGenericFaqs(seo.primaryKeyword, pillar.description);
 const canonicalUrl = new URL(seo.url, Astro.site ?? Astro.url.origin);
 const examCourse = pillar.slug === "cfa"
   ? courseSchema("CFA Exam Preparation Learning Hub", pillar.description, canonicalUrl, "CFA")

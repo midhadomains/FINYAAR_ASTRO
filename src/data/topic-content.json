@@ -1,0 +1,485 @@
+{
+  "note": "Hand-written topic intros and FAQs. The template should read intro and faqs from here per topic slug, instead of auto-generating from the category name. Replaces the templated boilerplate.",
+  "topics": [
+    {
+      "slug": "personal-finance",
+      "url": "/personal-finance/",
+      "name": "Personal Finance & Money Basics",
+      "intro": "Personal finance is about managing the money you earn: budgeting, saving, and setting goals so your income works for you. This hub covers the everyday foundations, from building an emergency fund to tracking your net worth, with rupee examples for Indian households.",
+      "faqs": [
+        {
+          "q": "How much of my salary should I save every month?",
+          "a": "A common starting point is the 50/30/20 rule: roughly 50% of take-home pay for needs, 30% for wants, and at least 20% towards savings and investments. If 20% is hard at first, start smaller and step it up as your income grows; consistency matters more than the exact figure."
+        },
+        {
+          "q": "What is an emergency fund and how big should it be?",
+          "a": "An emergency fund is money set aside for unexpected costs like a medical bill or job loss, kept somewhere safe and liquid such as a savings account or liquid fund. A common target is three to six months of essential expenses, built up gradually."
+        },
+        {
+          "q": "What is the difference between saving and investing?",
+          "a": "Saving keeps money safe and accessible, usually at low returns, for short-term needs. Investing puts money into assets like mutual funds or stocks to grow it over the long term, accepting some risk. You need both: savings for safety, investing to beat inflation."
+        },
+        {
+          "q": "How do I start budgeting if I have never done it?",
+          "a": "List your monthly income, then track where it goes for a month across needs, wants and savings. Even a simple split like the 50/30/20 rule gives you control. The goal is to spend with intention rather than wondering where the money went."
+        }
+      ]
+    },
+    {
+      "slug": "banking-savings-deposits",
+      "url": "/banking-savings-deposits/",
+      "name": "Banking, Savings & Deposits",
+      "intro": "Banking is where most people's money lives day to day. This hub explains savings and current accounts, fixed and recurring deposits, and the payment rails like UPI, NEFT and RTGS that move money across India.",
+      "faqs": [
+        {
+          "q": "What is the difference between a fixed deposit and a recurring deposit?",
+          "a": "A fixed deposit (FD) locks a single lump sum for a chosen term at a fixed rate. A recurring deposit (RD) lets you deposit a fixed amount every month instead of all at once. An FD suits money you already have; an RD suits building a corpus from monthly savings."
+        },
+        {
+          "q": "Is my money in a bank safe?",
+          "a": "Bank deposits in India are insured up to 5 lakh rupees per depositor per bank by the DICGC, an RBI subsidiary, covering savings, current, FD and RD balances together. Spreading very large sums across banks keeps more of it within the insured limit."
+        },
+        {
+          "q": "What is the difference between NEFT, RTGS and IMPS?",
+          "a": "All three move money between bank accounts. NEFT settles in batches and suits most transfers; RTGS is for large amounts and settles in real time; IMPS is instant and works 24x7. UPI now handles most small everyday transfers instantly."
+        },
+        {
+          "q": "Should I keep money in a savings account or a fixed deposit?",
+          "a": "A savings account gives easy access but a low interest rate, so it suits spending money and a small buffer. A fixed deposit pays more but locks the money in, so it suits amounts you will not need for months. Many people keep an emergency buffer in savings and park the rest in FDs."
+        }
+      ]
+    },
+    {
+      "slug": "loans-credit-debt",
+      "url": "/loans-credit-debt/",
+      "name": "Loans, Credit & Debt",
+      "intro": "Borrowing well can help you buy a home or fund an education; borrowing badly can trap you. This hub covers loan types, EMIs, credit scores (CIBIL) and how to manage debt sensibly in India.",
+      "faqs": [
+        {
+          "q": "What is a good CIBIL score and how do I improve it?",
+          "a": "CIBIL scores range from 300 to 900, and 750 or above is generally considered good and improves your chances of loan approval at better rates. To improve it, pay every EMI and credit-card bill on time, keep card usage low, and avoid applying for many loans at once."
+        },
+        {
+          "q": "How is an EMI calculated?",
+          "a": "An EMI (equated monthly instalment) depends on the loan amount, the interest rate and the tenure. Early EMIs are mostly interest and later ones mostly principal. A longer tenure lowers the monthly EMI but increases the total interest you pay over the life of the loan."
+        },
+        {
+          "q": "Should I prepay my loan or invest the money instead?",
+          "a": "If your loan rate is higher than the return you can reliably earn after tax, prepaying usually wins and also reduces risk. If a low-rate loan costs less than your expected investment return, investing may make more sense. Compare the rates, not just the wish to be debt-free."
+        },
+        {
+          "q": "Does checking my own credit score lower it?",
+          "a": "No. Checking your own score is a soft enquiry and does not affect it. Only hard enquiries, when a lender checks your score because you applied for credit, can cause a small, temporary dip."
+        }
+      ]
+    },
+    {
+      "slug": "investing-basics",
+      "url": "/investing-basics/",
+      "name": "Investing Basics",
+      "intro": "Investing basics are the ideas every investor needs before picking any product: how compounding grows money, how risk and return are linked, and why diversification matters. This hub builds that foundation with Indian examples.",
+      "faqs": [
+        {
+          "q": "How does compound interest help my investments grow?",
+          "a": "Compounding means your returns earn returns of their own, so growth accelerates over time. A one-time 1 lakh rupees at 12% becomes about 3 lakh in 10 years and about 9 lakh in 20, without adding anything. Starting early matters far more than investing large amounts late."
+        },
+        {
+          "q": "What is the relationship between risk and return?",
+          "a": "Higher potential returns come with higher risk of loss, and safer assets pay less. The skill is matching risk to your time horizon: equities suit long horizons where you can ride out swings, while short-term money belongs in safer places."
+        },
+        {
+          "q": "What is diversification and why does it matter?",
+          "a": "Diversification means spreading money across different assets so one bad outcome does not sink your whole portfolio. It reduces risk without necessarily reducing expected return, which is why it is often called the only free lunch in investing."
+        },
+        {
+          "q": "How much money do I need to start investing?",
+          "a": "Very little. You can start a mutual fund SIP with as little as 500 rupees a month. What matters is starting early and staying consistent, because time in the market does more work than the amount you begin with."
+        }
+      ]
+    },
+    {
+      "slug": "stock-market-equities",
+      "url": "/stock-market-equities/",
+      "name": "Stock Market & Equities",
+      "intro": "The stock market is where shares of companies are bought and sold. This hub explains equity shares, IPOs, indices like the Sensex and Nifty, market capitalisation and dividends, with the Indian market in mind.",
+      "faqs": [
+        {
+          "q": "How do I start investing in the stock market in India?",
+          "a": "You need a demat account and a trading account, usually opened together with a broker, plus a linked bank account and completed KYC. Once set up you can buy shares or, for a simpler start, invest in an index fund or ETF that tracks the Nifty."
+        },
+        {
+          "q": "What are the Sensex and the Nifty?",
+          "a": "They are India's two main stock indices. The Sensex tracks 30 large companies on the BSE, and the Nifty 50 tracks 50 large companies on the NSE. They act as a barometer for the overall market: when people say the market is up, they usually mean these."
+        },
+        {
+          "q": "What is the difference between the primary and secondary market?",
+          "a": "In the primary market a company sells new shares to the public for the first time through an IPO. In the secondary market, investors then trade those existing shares among themselves on the exchange. Most day-to-day trading happens in the secondary market."
+        },
+        {
+          "q": "What is market capitalisation and why does it matter?",
+          "a": "Market capitalisation is a company's share price multiplied by its number of shares, that is, the market value of the whole company. It is used to group companies into large-cap, mid-cap and small-cap, which differ in risk and growth potential."
+        }
+      ]
+    },
+    {
+      "slug": "mutual-funds-sip-etfs",
+      "url": "/mutual-funds-sip-etfs/",
+      "name": "Mutual Funds, SIP & ETFs",
+      "intro": "Mutual funds let you invest in a professionally managed, diversified basket of assets, and a SIP makes it a monthly habit. This hub covers fund types, SIPs, NAV, costs, index funds and ETFs, with Indian tax and rupee context.",
+      "faqs": [
+        {
+          "q": "Is a SIP better than investing a lump sum?",
+          "a": "For most salaried investors a SIP is better, because it matches monthly income, averages your purchase cost, and removes the need to time the market. A lump sum can do better if invested at a market low, but few people can identify that moment reliably."
+        },
+        {
+          "q": "How are mutual funds taxed in India?",
+          "a": "For equity funds, gains on units held over a year are long-term and taxed at 12.5% above a 1.25 lakh rupee yearly exemption; held under a year, at 20%. Debt fund gains, for units bought on or after 1 April 2023, are taxed at your income-tax slab regardless of holding period."
+        },
+        {
+          "q": "What is the difference between an index fund and an ETF?",
+          "a": "Both track an index at low cost. An index fund is bought from the fund house at the day-end NAV and works smoothly with a SIP. An ETF trades on the exchange like a share, so it needs a demat account and its price moves through the day."
+        },
+        {
+          "q": "Why does the expense ratio matter so much?",
+          "a": "The expense ratio is the annual fee a fund charges, quietly deducted from returns. Over decades even a 1% difference can cost lakhs, which is why low-cost index funds and Direct plans (no distributor commission) often leave you with more."
+        }
+      ]
+    },
+    {
+      "slug": "fixed-income-bonds",
+      "url": "/fixed-income-bonds/",
+      "name": "Fixed Income & Bonds",
+      "intro": "Fixed income is the steadier side of investing, where you lend money in return for regular interest. This hub covers bonds, yields, government securities and the risks behind that steady coupon.",
+      "faqs": [
+        {
+          "q": "What is a bond and how does it work?",
+          "a": "A bond is a loan you give to a government or company. In return they pay you periodic interest (the coupon) and repay the face value at maturity. Bonds are generally steadier than stocks, but their prices still move with interest rates."
+        },
+        {
+          "q": "Why do bond prices fall when interest rates rise?",
+          "a": "When new bonds start paying higher interest, existing bonds paying less become less attractive, so their market price drops until their yield matches. The reverse also holds: when rates fall, existing higher-paying bonds rise in price."
+        },
+        {
+          "q": "What is yield to maturity (YTM)?",
+          "a": "YTM is the total annual return you earn if you buy a bond today and hold it to maturity, accounting for its price, coupon and time left. It lets you compare bonds on a like-for-like basis rather than by coupon alone."
+        },
+        {
+          "q": "Are government bonds safe?",
+          "a": "Indian government securities (G-secs) carry sovereign backing and negligible default risk, which makes them among the safest rupee investments. They still carry interest-rate risk, so their price can fall if you sell before maturity when rates have risen."
+        }
+      ]
+    },
+    {
+      "slug": "derivatives-risk",
+      "url": "/derivatives-risk/",
+      "name": "Derivatives & Risk",
+      "intro": "Derivatives are contracts whose value comes from an underlying asset, and risk is the discipline of measuring what could go wrong. This hub covers futures, options and hedging alongside the tools that quantify market risk, beta, volatility and Value at Risk, all with Indian examples.",
+      "faqs": [
+        {
+          "q": "What is the difference between futures and options?",
+          "a": "A futures contract obligates both sides to trade at a set price on a future date. An option gives the buyer the right, but not the obligation, to buy (call) or sell (put) at a set price, for a premium. An option buyer can lose only the premium; futures cut both ways."
+        },
+        {
+          "q": "Is trading in derivatives risky for beginners?",
+          "a": "Yes. Derivatives use leverage, so small market moves create large gains or losses, and SEBI studies show the large majority of individual F&O traders in India lose money. Beginners are usually better off learning the concepts first and, if at all, using derivatives only to hedge rather than to speculate."
+        },
+        {
+          "q": "How is risk measured in finance?",
+          "a": "Common measures are volatility (the standard deviation of returns), beta (sensitivity to the market) and Value at Risk (the maximum expected loss over a period at a given confidence level). Each captures a different angle, so they are usually used together."
+        },
+        {
+          "q": "What does beta tell you about a stock?",
+          "a": "Beta measures how much a stock moves relative to the market: above 1 is aggressive, below 1 is defensive, and around 1 moves in line with the index. It captures only systematic, market-related risk, not company-specific risk."
+        }
+      ]
+    },
+    {
+      "slug": "accounting-financial-statements",
+      "url": "/accounting-financial-statements/",
+      "name": "Accounting & Financial Statements",
+      "intro": "Financial statements are how a company reports what it owns, earns and spends. This hub explains the balance sheet, income statement and cash-flow statement, plus the accounting ideas that make them make sense.",
+      "faqs": [
+        {
+          "q": "What are the three main financial statements?",
+          "a": "The balance sheet shows what a company owns and owes at a point in time. The income statement (profit and loss) shows revenue and profit over a period. The cash-flow statement shows the actual cash moving in and out. Together they give a full picture of financial health."
+        },
+        {
+          "q": "What is the difference between profit and cash flow?",
+          "a": "Profit is revenue minus expenses on paper and can include sales not yet paid for. Cash flow is the actual money in and out. A company can be profitable yet run short of cash, which is why investors watch both."
+        },
+        {
+          "q": "What is the difference between assets and liabilities?",
+          "a": "Assets are what a company owns or is owed, such as cash, inventory and buildings. Liabilities are what it owes to others, such as loans and unpaid bills. The difference between them is shareholders' equity, the owners' stake in the business."
+        },
+        {
+          "q": "What is EBITDA and why do investors use it?",
+          "a": "EBITDA is earnings before interest, taxes, depreciation and amortisation. It strips out financing and accounting choices to show the profit from core operations, which helps compare companies. It also ignores real costs like debt and capital spending, so it is not the full story."
+        }
+      ]
+    },
+    {
+      "slug": "ratios-valuation-analysis",
+      "url": "/ratios-valuation-analysis/",
+      "name": "Ratios, Valuation & Analysis",
+      "intro": "Ratios turn a company's raw numbers into signals you can compare: how profitable it is, how much debt it carries, and whether its share price looks cheap or expensive. This hub covers the key ratios and valuation methods.",
+      "faqs": [
+        {
+          "q": "What does the P/E ratio tell you?",
+          "a": "The price-to-earnings ratio compares a company's share price to its earnings per share, showing how much investors pay for each rupee of profit. A high P/E can mean high growth expectations or an overpriced stock; it is most useful compared against peers and the company's own history."
+        },
+        {
+          "q": "What is a good return on equity (ROE)?",
+          "a": "ROE measures profit generated on shareholders' money. There is no single good number, but consistently high ROE, often 15% or more, with low debt, signals a quality business. Always check whether high ROE comes from genuine profitability or simply from heavy borrowing."
+        },
+        {
+          "q": "How do you value a stock?",
+          "a": "Two broad approaches: relative valuation compares multiples like P/E or P/B against peers, and intrinsic valuation, such as discounted cash flow, estimates the present value of future cash flows. Both rely on assumptions, so a range of value is more honest than a single precise figure."
+        },
+        {
+          "q": "What is the debt-to-equity ratio and why does it matter?",
+          "a": "It compares how much a company funds itself with borrowed money versus owners' money. A high ratio means more financial risk, since debt must be serviced in good times and bad. Acceptable levels vary by industry, so compare within a sector."
+        }
+      ]
+    },
+    {
+      "slug": "economics-macro",
+      "url": "/economics-macro/",
+      "name": "Economics & Macro",
+      "intro": "The big economic forces, inflation, growth, interest rates and government budgets, shape every investment. This hub explains the indicators and policies that move markets, with a focus on India and the RBI.",
+      "faqs": [
+        {
+          "q": "What is inflation and why does it matter for my money?",
+          "a": "Inflation is the rate at which prices rise over time, so each rupee buys a little less. It matters because any investment must beat inflation just to preserve your purchasing power; money left idle in cash quietly loses value every year."
+        },
+        {
+          "q": "What is the repo rate and how does it affect me?",
+          "a": "The repo rate is the rate at which the RBI lends to banks. When the RBI raises it to control inflation, loan EMIs tend to rise and deposit rates improve; when it cuts, borrowing gets cheaper. It is the main lever of monetary policy."
+        },
+        {
+          "q": "What is GDP and what does it tell us?",
+          "a": "GDP (gross domestic product) is the total value of goods and services an economy produces in a period. Rising GDP signals growth and usually supports jobs and corporate profits; a sustained fall signals a slowdown or recession."
+        },
+        {
+          "q": "What is the difference between fiscal policy and monetary policy?",
+          "a": "Fiscal policy is the government's use of taxes and spending, set in the Union Budget. Monetary policy is the RBI's control of interest rates and money supply. Both aim to keep growth and inflation in balance, but through different tools."
+        }
+      ]
+    },
+    {
+      "slug": "taxation-india",
+      "url": "/taxation-india/",
+      "name": "Taxation (India)",
+      "intro": "Tax quietly decides how much of your income and returns you actually keep. This hub explains India's income-tax basics, capital gains, key deductions and TDS in plain language, so you can plan rather than react.",
+      "faqs": [
+        {
+          "q": "Should I choose the old or the new tax regime?",
+          "a": "The new regime has lower slab rates but removes most deductions; the old regime has higher rates but lets you claim exemptions like 80C, 80D and HRA. Broadly, if you use large deductions the old regime can win, and if you do not, the new regime is often simpler and cheaper. Compare both on your actual numbers each year."
+        },
+        {
+          "q": "How are capital gains taxed in India?",
+          "a": "It depends on the asset and holding period. For listed equity and equity funds, gains over a year are taxed at 12.5% above a 1.25 lakh rupee yearly exemption, and under a year at 20%. Other assets and debt funds follow different rules, so check the category before you sell."
+        },
+        {
+          "q": "What is Section 80C and what does it cover?",
+          "a": "Section 80C lets you reduce taxable income by up to 1.5 lakh rupees a year, under the old regime, through investments and expenses like PPF, ELSS, life-insurance premiums, EPF and home-loan principal. It is one of the most used tax-saving tools in India."
+        },
+        {
+          "q": "What is TDS?",
+          "a": "TDS (tax deducted at source) is tax the payer withholds before paying you, for example a bank on large FD interest, and deposits with the government against your PAN. It is an advance towards your tax; you adjust it when filing your return and claim a refund if excess was cut."
+        }
+      ]
+    },
+    {
+      "slug": "insurance",
+      "url": "/insurance/",
+      "name": "Insurance",
+      "intro": "Insurance protects your finances from shocks you cannot afford to absorb, from a hospital bill to the loss of an earning member. This hub explains life, health and general insurance and how to buy cover sensibly in India.",
+      "faqs": [
+        {
+          "q": "What is the difference between term and endowment insurance?",
+          "a": "Term insurance is pure protection: it pays your family a large sum if you die during the term, at a low premium, with nothing back if you survive. Endowment plans mix insurance with savings, so premiums are far higher for much smaller cover. For most people, term insurance plus separate investing gives better value."
+        },
+        {
+          "q": "How much life insurance cover do I need?",
+          "a": "A common guide is 10 to 15 times your annual income, adjusted for loans and dependants, so your family can maintain their lifestyle and clear debts if you are gone. Term insurance makes large cover affordable."
+        },
+        {
+          "q": "What is a claim settlement ratio and why does it matter?",
+          "a": "It is the percentage of claims an insurer paid out of those received in a year. A consistently high ratio suggests the insurer reliably honours claims, which is the whole point of buying cover, so check it before choosing an insurer."
+        },
+        {
+          "q": "Do I need health insurance if my employer already provides it?",
+          "a": "Usually yes. Employer cover ends when the job does and may be too small for a serious illness. A personal health policy stays with you across jobs and can top up the workplace cover."
+        }
+      ]
+    },
+    {
+      "slug": "retirement-planning",
+      "url": "/retirement-planning/",
+      "name": "Retirement & Planning",
+      "intro": "Retirement planning is about building enough today so your income does not stop when your salary does. This hub covers EPF, PPF, NPS and how to size and reach a retirement corpus in India.",
+      "faqs": [
+        {
+          "q": "How much do I need to retire?",
+          "a": "A rough guide is a corpus of about 25 to 30 times your annual expenses at retirement, so withdrawals plus growth can last decades. The earlier you start, the more compounding does the work and the less you need to set aside each month."
+        },
+        {
+          "q": "What is the difference between EPF, PPF and NPS?",
+          "a": "EPF is a workplace retirement fund built from salary contributions. PPF is a government-backed long-term savings scheme open to anyone, with tax-free interest. NPS is a market-linked pension account mixing equity and debt. Many people use a combination of the three."
+        },
+        {
+          "q": "Is PPF or NPS better for retirement?",
+          "a": "PPF offers safe, fixed, tax-free returns and full capital safety, suiting the conservative part of your plan. NPS is market-linked, so it can grow faster over long horizons but carries more risk and has rules on withdrawal and annuities. They complement each other rather than compete."
+        },
+        {
+          "q": "When should I start planning for retirement?",
+          "a": "As early as possible, ideally with your first salary. Because of compounding, money invested in your twenties does far more than the same amount invested in your forties. Starting early lets small, comfortable contributions grow into a large corpus."
+        }
+      ]
+    },
+    {
+      "slug": "forex-commodities-global-markets",
+      "url": "/forex-commodities-global-markets/",
+      "name": "Forex, Commodities & Global Markets",
+      "intro": "Currencies, gold, oil and global indices affect Indian investors even when they never leave the domestic market. This hub explains exchange rates, commodities and how global markets connect to your portfolio.",
+      "faqs": [
+        {
+          "q": "Why does the rupee rise and fall against the dollar?",
+          "a": "Exchange rates move with demand and supply for each currency, driven by trade flows, foreign investment, interest-rate differences and oil prices, since India imports most of its oil. A weaker rupee makes imports and foreign travel costlier and can help exporters."
+        },
+        {
+          "q": "Is gold a good investment in India?",
+          "a": "Gold holds value over the long run and tends to do well when markets are fearful or inflation is high, which makes it a useful diversifier. It earns no income, so it is usually a portion of a portfolio rather than the core. Sovereign Gold Bonds add interest and avoid storage worries."
+        },
+        {
+          "q": "How can an Indian investor invest in US or global stocks?",
+          "a": "Options include international mutual funds and ETFs available in India, or investing directly through platforms under the RBI's Liberalised Remittance Scheme. Global exposure adds diversification but brings currency risk and different tax treatment."
+        },
+        {
+          "q": "What moves commodity prices like crude oil?",
+          "a": "Commodity prices respond to global supply and demand, geopolitics, production decisions by major exporters, and the strength of the dollar. For India, crude oil matters especially because it feeds into inflation, the rupee and government finances."
+        }
+      ]
+    },
+    {
+      "slug": "crypto-fintech-digital-assets",
+      "url": "/crypto-fintech-digital-assets/",
+      "name": "Crypto, Fintech & Digital Assets",
+      "intro": "Crypto and fintech are reshaping how money is stored and moved. This hub explains cryptocurrencies, blockchain and digital assets in plain terms, including how they are taxed in India, without the hype.",
+      "faqs": [
+        {
+          "q": "How is cryptocurrency taxed in India?",
+          "a": "Gains on virtual digital assets are taxed at a flat 30%, with no deduction except the cost of acquisition and no setting off of losses against other income. A 1% TDS also applies on transfers above set thresholds. The rules are strict, so keep clean records."
+        },
+        {
+          "q": "What is blockchain, in simple terms?",
+          "a": "A blockchain is a shared digital ledger, copied across many computers, where records are grouped into blocks and linked so they are very hard to alter. This lets a network agree on who owns what without a central authority, which is the technology behind most cryptocurrencies."
+        },
+        {
+          "q": "Is investing in cryptocurrency safe?",
+          "a": "Crypto is highly volatile and lightly regulated as an investment in India, so prices can swing sharply and there is little recourse if something goes wrong. If you invest at all, treat it as a small, high-risk part of a portfolio and never money you cannot afford to lose."
+        },
+        {
+          "q": "What is the difference between a cryptocurrency and a stablecoin?",
+          "a": "A cryptocurrency like Bitcoin has a price that floats freely and can be very volatile. A stablecoin is designed to hold a steady value by tracking an asset such as the US dollar, so it is used more for moving money than for speculation."
+        }
+      ]
+    },
+    {
+      "slug": "corporate-finance",
+      "url": "/corporate-finance/",
+      "name": "Corporate Finance",
+      "intro": "Corporate finance is how companies raise money, invest it and decide what to return to owners. This hub covers capital structure, the cost of capital, project decisions and the tools finance teams use.",
+      "faqs": [
+        {
+          "q": "What is corporate finance?",
+          "a": "Corporate finance is the study of how companies fund themselves, through debt or equity, which projects to invest in, and how to manage cash and returns to shareholders. The goal is to allocate capital in ways that increase the value of the business."
+        },
+        {
+          "q": "What is WACC and why does it matter?",
+          "a": "WACC (weighted average cost of capital) is the blended cost of a company's debt and equity, weighted by how much of each it uses. It is the minimum return a project must clear to be worth doing, so it serves as the hurdle rate for investment decisions."
+        },
+        {
+          "q": "What is the difference between NPV and IRR?",
+          "a": "Both judge whether a project is worthwhile. NPV (net present value) is the value a project adds in today's rupees; a positive NPV means it creates value. IRR (internal rate of return) is the return the project earns; you accept it if the IRR beats the cost of capital."
+        },
+        {
+          "q": "How does a company decide between debt and equity?",
+          "a": "Debt is cheaper and keeps ownership intact but must be repaid with interest, adding risk. Equity does not have to be repaid but dilutes ownership and is costlier. Firms balance the two to lower their overall cost of capital without taking on too much financial risk."
+        }
+      ]
+    },
+    {
+      "slug": "cfa",
+      "url": "/cfa/",
+      "name": "Exam Prep: CFA",
+      "intro": "The CFA Program is a global qualification in investment management, valued across research, asset management and banking. This hub explains the exam structure, topics and how to prepare, from educators who teach it.",
+      "faqs": [
+        {
+          "q": "What is the CFA Program and who is it for?",
+          "a": "The CFA (Chartered Financial Analyst) charter is a globally recognised qualification in investment analysis and portfolio management, awarded by the CFA Institute. It suits anyone aiming for roles in research, asset or wealth management, and investment banking."
+        },
+        {
+          "q": "How many levels does the CFA have and how long does it take?",
+          "a": "There are three levels, I, II and III, each with its own exam taken in order. Most candidates take two to four years to complete all three, since each level needs substantial study time and the levels build on one another."
+        },
+        {
+          "q": "What are the main topics in the CFA curriculum?",
+          "a": "The curriculum spans ethics, quantitative methods, economics, financial reporting and analysis, corporate issuers, equity, fixed income, derivatives, alternative investments and portfolio management. The weightings shift across levels, moving from tools at Level I to portfolio management at Level III."
+        },
+        {
+          "q": "Is the CFA worth it in India?",
+          "a": "For careers in investment research, asset management and related finance roles, the CFA is well regarded and can open doors, especially combined with relevant experience. Whether it pays off depends on your target role, so match it to your career goal."
+        }
+      ]
+    },
+    {
+      "slug": "frm",
+      "url": "/frm/",
+      "name": "Exam Prep: FRM",
+      "intro": "The FRM (Financial Risk Manager) is the leading global certification in risk management. This hub explains its structure, topics and how to prepare, from educators who teach the exam.",
+      "faqs": [
+        {
+          "q": "What is the FRM certification?",
+          "a": "The FRM (Financial Risk Manager) is a globally recognised certification awarded by GARP for professionals in risk management. It focuses on measuring and managing market, credit, operational and other financial risks."
+        },
+        {
+          "q": "How is the FRM exam structured?",
+          "a": "The FRM has two parts. Part 1 covers the tools: risk foundations, quantitative analysis, financial markets and products, and valuation and risk models. Part 2 applies them to market, credit, operational and liquidity risk, investment management and current issues."
+        },
+        {
+          "q": "How long does it take to complete the FRM?",
+          "a": "Candidates must pass both parts and complete two years of relevant work experience. Many finish the exams within about a year, taking the two parts in separate sittings, though the pace depends on preparation time."
+        },
+        {
+          "q": "Who should consider the FRM?",
+          "a": "It suits people working in or aiming for risk management, treasury and related roles at banks, asset managers and financial institutions. It pairs well with a finance background and is especially valued where measuring risk is central to the job."
+        }
+      ]
+    },
+    {
+      "slug": "finance-exam-prep",
+      "url": "/finance-exam-prep/",
+      "name": "Exam Prep: Other",
+      "intro": "Beyond the CFA and FRM, several qualifications build finance and modelling skills. This hub covers certifications like NISM, CFP and financial modelling programs, and who each one suits.",
+      "faqs": [
+        {
+          "q": "What are NISM certifications and who needs them?",
+          "a": "NISM (National Institute of Securities Markets) certifications are set under SEBI and are often mandatory for professionals in the Indian securities industry, such as mutual fund distributors and research analysts. They certify baseline knowledge for specific market roles."
+        },
+        {
+          "q": "What is the CFP certification?",
+          "a": "The CFP (Certified Financial Planner) is a global qualification for personal financial planning, covering investments, insurance, tax and retirement. It suits those who want to advise individuals on managing their money holistically."
+        },
+        {
+          "q": "Is learning financial modelling worth it?",
+          "a": "Yes, for many finance roles. Financial modelling, building forecasts and valuations in a spreadsheet, is a practical, in-demand skill in investment banking, equity research and corporate finance. It complements exams like the CFA by turning theory into usable outputs."
+        },
+        {
+          "q": "Which finance certification should I choose?",
+          "a": "It depends on your goal: the CFA for investment analysis, the FRM for risk, NISM for regulated Indian market roles, CFP for personal financial planning, and financial modelling for hands-on analytical work. Pick the one that matches the job you want."
+        }
+      ]
+    }
+  ]
+}
