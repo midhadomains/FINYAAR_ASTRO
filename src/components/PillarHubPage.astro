@@ -4,6 +4,7 @@ import SiteFonts from "./SiteFonts.astro";
 import SiteHeader from "./SiteHeader.astro";
 import SiteFooter from "./SiteFooter.astro";
 import SeoFaq from "./SeoFaq.astro";
+import SocialMeta from "./SocialMeta.astro";
 import topicContent from "../data/topic-content.json";
 import { terms } from "../lib/dictionary";
 import { getPillarSlugForTerm, type Pillar } from "../lib/pillars";
@@ -65,10 +66,7 @@ const kindLabels = {
     <meta name="description" content={metaDescription} />
     <meta name="keywords" content={seo.primaryKeyword} />
     <link rel="canonical" href={canonicalUrl} />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content={seoTitle} />
-    <meta property="og:description" content={metaDescription} />
-    <meta property="og:url" content={canonicalUrl} />
+    <SocialMeta title={seoTitle} description={metaDescription} canonicalUrl={canonicalUrl} />
     <script is:inline type="application/ld+json" set:html={structuredData} />
     <SiteFonts />
   </head>
@@ -80,7 +78,7 @@ const kindLabels = {
           <nav aria-label="Breadcrumb" class="mb-7 flex items-center gap-2 text-sm text-muted">
             <a href="/" class="hover:text-brand">Home</a>
             <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-            <a href="/topics" class="hover:text-brand">Topics</a>
+            <a href="/topics/" class="hover:text-brand">Topics</a>
             <span class="material-symbols-outlined text-[16px]">chevron_right</span>
             <span class="text-ink">{pillar.title}</span>
           </nav>
@@ -133,7 +131,7 @@ const kindLabels = {
               <p class="text-xs font-bold uppercase tracking-[0.16em] text-brand">Foundation layer</p>
               <div class="mt-2 flex flex-wrap items-end justify-between gap-4">
                 <h2 class="text-2xl font-extrabold text-ink">Dictionary terms in this pillar</h2>
-                <a href="/dictionary" class="text-sm font-bold text-brand hover:underline">Browse the full dictionary</a>
+                <a href="/dictionary/" class="text-sm font-bold text-brand hover:underline">Browse the full dictionary</a>
               </div>
               <div class="mt-6 grid gap-3 sm:grid-cols-2">
                 {dictionaryTerms.map((term) => (
@@ -158,7 +156,7 @@ const kindLabels = {
               <li><b class="text-white">3. Explore:</b> continue through related cluster pages.</li>
             </ol>
           </div>
-          <a href="/topics" class="flex items-center justify-between rounded-[14px] border border-line bg-white p-5 font-bold text-ink hover:border-brand hover:text-brand">
+          <a href="/topics/" class="flex items-center justify-between rounded-[14px] border border-line bg-white p-5 font-bold text-ink hover:border-brand hover:text-brand">
             Explore all finance pillars
             <span class="material-symbols-outlined">apps</span>
           </a>

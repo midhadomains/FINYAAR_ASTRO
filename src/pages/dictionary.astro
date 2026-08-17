@@ -4,6 +4,7 @@ import SiteFonts from "../components/SiteFonts.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import SeoFaq from "../components/SeoFaq.astro";
+import SocialMeta from "../components/SocialMeta.astro";
 import { categories, dictionaryCategories, terms, getTermBySlug, getTermCategorySlug } from "../lib/dictionary";
 import { buildGenericFaqs, buildMetaDescription, buildSeoTitle, faqSchema, getKeywordTargetByUrl } from "../lib/seo";
 
@@ -62,10 +63,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-bran
     <meta name="description" content={metaDescription} />
     <meta name="keywords" content={seo.primaryKeyword} />
     <link rel="canonical" href={canonicalUrl} />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content={seoTitle} />
-    <meta property="og:description" content={metaDescription} />
-    <meta property="og:url" content={canonicalUrl} />
+    <SocialMeta title={seoTitle} description={metaDescription} canonicalUrl={canonicalUrl} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <script is:inline type="application/ld+json" set:html={structuredData} />
     <SiteFonts />
@@ -159,7 +157,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-bran
                 <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                   {groups.get(l)!.map((t) => (
                     <a
-                      href={`/dictionary/${t.slug}`}
+                      href={`/dictionary/${t.slug}/`}
                       class={`term-card group block ${card14}`}
                       data-category={getTermCategorySlug(t)}
                       data-search={`${t.term} ${t.definition}`.toLowerCase()}
@@ -188,7 +186,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-bran
           <div class="rounded-[14px] border border-[#6b2428] bg-[linear-gradient(135deg,#090a0e_0%,#171015_48%,#4a151b_100%)] p-6 text-white shadow-[0_12px_32px_rgba(72,14,20,0.28)]">
             <h4 class="text-lg font-bold">Master Financial Modeling</h4>
             <p class="mt-2 text-sm text-white/85">Turn these definitions into practice with the Netflix DCF case and live analyst workflows.</p>
-            <a href="/courses" class="mt-4 inline-flex items-center gap-1 rounded-[10px] !bg-white px-4 py-2 text-sm font-bold !text-[#14202b] transition-transform hover:-translate-y-px hover:shadow-[0_6px_18px_rgba(0,0,0,0.24)]">
+            <a href="/courses/" class="mt-4 inline-flex items-center gap-1 rounded-[10px] !bg-white px-4 py-2 text-sm font-bold !text-[#14202b] transition-transform hover:-translate-y-px hover:shadow-[0_6px_18px_rgba(0,0,0,0.24)]">
               Explore Courses
               <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
             </a>
@@ -198,7 +196,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-bran
             <ul class="space-y-2.5">
               {trending.map((t) => t && (
                 <li>
-                  <a href={`/dictionary/${t.slug}`} class="text-sm font-semibold text-brand hover:underline">{t.term}</a>
+                  <a href={`/dictionary/${t.slug}/`} class="text-sm font-semibold text-brand hover:underline">{t.term}</a>
                 </li>
               ))}
             </ul>

@@ -4,6 +4,7 @@ import SiteFonts from "../../components/SiteFonts.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import SeoFaq from "../../components/SeoFaq.astro";
+import SocialMeta from "../../components/SocialMeta.astro";
 import { terms, categoryMap, getRelatedTerms, getTermCategorySlug } from "../../lib/dictionary";
 import { getPillarBySlug, getPillarSlugForTerm } from "../../lib/pillars";
 import { buildGenericFaqs, buildMetaDescription, buildSeoTitle, faqSchema, getTermSeo } from "../../lib/seo";
@@ -86,10 +87,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
     <meta name="description" content={metaDescription} />
     <meta name="keywords" content={termSeo.primaryKeyword} />
     <link rel="canonical" href={canonicalUrl} />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content={seoTitle} />
-    <meta property="og:description" content={metaDescription} />
-    <meta property="og:url" content={canonicalUrl} />
+    <SocialMeta title={seoTitle} description={metaDescription} canonicalUrl={canonicalUrl} type="article" />
     <meta property="article:tag" content={termSeo.primaryKeyword} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <script is:inline type="application/ld+json" set:html={structuredData} />
@@ -334,7 +332,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
     <SiteHeader articleTheme />
     <main class="mx-auto w-[calc(100%-2rem)] max-w-[1160px] py-10">
       <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-sm text-muted">
-        <a class="hover:text-brand" href="/dictionary">Dictionary</a>
+        <a class="hover:text-brand" href="/dictionary/">Dictionary</a>
         <span class="material-symbols-outlined text-[16px]">chevron_right</span>
         <a href={`/dictionary/category/${getTermCategorySlug(term)}/`} class="hover:text-brand">{categoryLabel}</a>
         <span class="material-symbols-outlined text-[16px]">chevron_right</span>
@@ -342,7 +340,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
       </nav>
 
       <header class="mb-10 max-w-[760px]">
-        <a href={pillar ? `/${pillar.slug}/` : "/topics"} class="mb-4 inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-brand hover:bg-brand/15">
+        <a href={pillar ? `/${pillar.slug}/` : "/topics/"} class="mb-4 inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-brand hover:bg-brand/15">
           <span class="material-symbols-outlined text-[16px]">{category.icon}</span>
           {categoryLabel}
         </a>
@@ -418,6 +416,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
               <h3 class="mb-4 text-lg font-bold text-ink">{term.comparison.title}</h3>
               <div class="overflow-x-auto rounded-[14px] border border-line bg-white">
                 <table class="w-full min-w-[480px] border-collapse text-left">
+                  <caption class="sr-only">{term.comparison.title}</caption>
                   <thead class="bg-surface text-sm font-bold text-ink">
                     <tr>
                       <th class="p-4">Feature</th>
@@ -494,7 +493,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
             <p class="mb-3 text-xs font-bold uppercase tracking-wide text-muted">Related Terms</p>
             <div class="space-y-3">
               {related.map((r) => (
-                <a href={`/dictionary/${r.slug}`} data-related-term class="group block rounded-[10px] border border-line bg-white p-3 transition-colors hover:border-brand">
+                <a href={`/dictionary/${r.slug}/`} data-related-term class="group block rounded-[10px] border border-line bg-white p-3 transition-colors hover:border-brand">
                   <p class="text-sm font-bold text-ink group-hover:text-brand">{r.term}</p>
                   <p class="mt-1 line-clamp-1 text-xs text-muted">{r.definition}</p>
                 </a>

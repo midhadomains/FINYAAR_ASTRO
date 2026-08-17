@@ -1,14 +1,14 @@
 ---
 const navLinks = [
-  { href: "/dictionary", label: "Dictionary" },
-  { href: "/topics", label: "Topics" },
-  { href: "/courses", label: "Courses" },
-  { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About" },
+  { href: "/dictionary/", label: "Dictionary" },
+  { href: "/topics/", label: "Topics" },
+  { href: "/courses/", label: "Courses" },
+  { href: "/blog/", label: "Blog" },
+  { href: "/about/", label: "About" },
 ];
 
 const currentPath = Astro.url.pathname;
-const isActive = (href: string) => currentPath === href || currentPath.startsWith(`${href}/`);
+const isActive = (href: string) => currentPath === href || currentPath.startsWith(href);
 const { articleTheme = false } = Astro.props;
 ---
 <header class="sticky top-0 z-50 border-b border-white/10 bg-[#0b0c10]/85 text-[#f5f2ea] backdrop-blur-xl">
@@ -30,7 +30,7 @@ const { articleTheme = false } = Astro.props;
         <span aria-hidden="true">◐</span><span data-theme-label>Dark</span>
       </button>
     ) : (
-      <a class="hidden items-center gap-2 rounded-xl bg-[linear-gradient(100deg,#ffc24b,#ff6b5e_48%,#a483ff)] px-[18px] py-[11px] font-display text-sm font-bold text-[#1b110d] shadow-[0_12px_30px_-18px_#ff6b5e] transition-transform hover:-translate-y-0.5 lg:inline-flex" href="/dictionary">
+    <a class="hidden items-center gap-2 rounded-xl bg-[linear-gradient(100deg,#ffc24b,#ff6b5e_48%,#a483ff)] px-[18px] py-[11px] font-display text-sm font-bold text-[#1b110d] shadow-[0_12px_30px_-18px_#ff6b5e] transition-transform hover:-translate-y-0.5 lg:inline-flex" href="/dictionary/">
         Browse A–Z <span aria-hidden="true">→</span>
       </a>
     )}
@@ -52,9 +52,9 @@ const { articleTheme = false } = Astro.props;
   </div>
   <nav class="mt-9 flex flex-col gap-1">
     {navLinks.map((link) => <a href={link.href} class={`rounded-xl px-4 py-3 font-display text-xl font-bold ${isActive(link.href) ? "bg-white/10 text-[#ffc24b]" : "text-[#f5f2ea]"}`}>{link.label}</a>)}
-    <a href="/contact" class={`rounded-xl px-4 py-3 font-display text-xl font-bold ${isActive("/contact") ? "bg-white/10 text-[#ffc24b]" : "text-[#f5f2ea]"}`}>Contact</a>
+    <a href="/contact/" class={`rounded-xl px-4 py-3 font-display text-xl font-bold ${isActive("/contact/") ? "bg-white/10 text-[#ffc24b]" : "text-[#f5f2ea]"}`}>Contact</a>
   </nav>
-  <a href="/dictionary" class="mt-8 rounded-xl bg-[linear-gradient(100deg,#ffc24b,#ff6b5e_48%,#a483ff)] px-5 py-3.5 text-center font-display font-bold text-[#1b110d]">Browse the dictionary</a>
+  <a href="/dictionary/" class="mt-8 rounded-xl bg-[linear-gradient(100deg,#ffc24b,#ff6b5e_48%,#a483ff)] px-5 py-3.5 text-center font-display font-bold text-[#1b110d]">Browse the dictionary</a>
 </div>
 
 <script>

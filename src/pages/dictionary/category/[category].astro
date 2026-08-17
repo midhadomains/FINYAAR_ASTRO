@@ -4,6 +4,7 @@ import SiteFonts from "../../../components/SiteFonts.astro";
 import SiteHeader from "../../../components/SiteHeader.astro";
 import SiteFooter from "../../../components/SiteFooter.astro";
 import SeoFaq from "../../../components/SeoFaq.astro";
+import SocialMeta from "../../../components/SocialMeta.astro";
 import {
   dictionaryCategories,
   getTermsByDictionaryCategory,
@@ -70,10 +71,7 @@ const schema = JSON.stringify({
     <meta name="description" content={metaDescription} />
     <meta name="keywords" content={seo.primaryKeyword} />
     <link rel="canonical" href={canonicalUrl} />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content={seoTitle} />
-    <meta property="og:description" content={metaDescription} />
-    <meta property="og:url" content={canonicalUrl} />
+    <SocialMeta title={seoTitle} description={metaDescription} canonicalUrl={canonicalUrl} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <script is:inline type="application/ld+json" set:html={schema} />
     <SiteFonts />

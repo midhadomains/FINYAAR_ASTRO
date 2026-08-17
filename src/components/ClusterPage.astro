@@ -5,6 +5,7 @@ import SiteHeader from "./SiteHeader.astro";
 import SiteFooter from "./SiteFooter.astro";
 import FinanceCalculator from "./FinanceCalculator.astro";
 import SeoFaq from "./SeoFaq.astro";
+import SocialMeta from "./SocialMeta.astro";
 import { getTermBySlug } from "../lib/dictionary";
 import type { ClusterPage, Pillar } from "../lib/pillars";
 import { buildGenericFaqs, buildMetaDescription, buildSeoTitle, faqSchema, getClusterSeo } from "../lib/seo";
@@ -76,10 +77,7 @@ const guidance = {
     <meta name="description" content={metaDescription} />
     <meta name="keywords" content={seo.primaryKeyword} />
     <link rel="canonical" href={canonicalUrl} />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content={seoTitle} />
-    <meta property="og:description" content={metaDescription} />
-    <meta property="og:url" content={canonicalUrl} />
+    <SocialMeta title={seoTitle} description={metaDescription} canonicalUrl={canonicalUrl} type="article" />
     <meta property="article:tag" content={seo.primaryKeyword} />
     <script is:inline type="application/ld+json" set:html={structuredData} />
     <script is:inline>
@@ -112,7 +110,9 @@ const guidance = {
           {dictionaryTerm && (
             <section class="rounded-r-[14px] border-l-4 border-brand bg-brand/5 p-6">
               <p class="text-xs font-bold uppercase tracking-wide text-brand">Dictionary foundation</p>
-              <h2 class="mt-2 text-xl font-bold text-ink">{dictionaryTerm.term}</h2>
+              <h2 class="mt-2 text-xl font-bold text-ink">
+                {cluster.kind === "calculator" ? "Concept behind this calculation" : dictionaryTerm.term}
+              </h2>
               <p class="mt-2 leading-relaxed text-muted">{dictionaryTerm.definition}</p>
               <a href={`/dictionary/${dictionaryTerm.slug}/`} class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-brand hover:underline">
                 Read the complete dictionary lesson
@@ -166,11 +166,11 @@ const guidance = {
             <h2 class="mt-1 text-xl font-bold">{pillar.title}</h2>
             <p class="mt-2 text-sm text-white/75">See every guide, comparison, calculator, and dictionary term in this topic.</p>
           </a>
-          <a href="/dictionary" class="flex items-center justify-between rounded-[14px] border border-line bg-white p-5 font-bold text-ink hover:border-brand hover:text-brand">
+          <a href="/dictionary/" class="flex items-center justify-between rounded-[14px] border border-line bg-white p-5 font-bold text-ink hover:border-brand hover:text-brand">
             Finance Dictionary
             <span class="material-symbols-outlined">menu_book</span>
           </a>
-          <a href="/topics" class="flex items-center justify-between rounded-[14px] border border-line bg-white p-5 font-bold text-ink hover:border-brand hover:text-brand">
+          <a href="/topics/" class="flex items-center justify-between rounded-[14px] border border-line bg-white p-5 font-bold text-ink hover:border-brand hover:text-brand">
             All finance pillars
             <span class="material-symbols-outlined">apps</span>
           </a>

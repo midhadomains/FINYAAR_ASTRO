@@ -1,5 +1,6 @@
 ---
 import { breadcrumbSchema, buildMetaDescription, buildSeoTitle, faqSchema, type BreadcrumbItem, type PageKeywordTarget, type SeoFaq } from "../lib/seo";
+import SocialMeta from "./SocialMeta.astro";
 
 interface Props {
   target: PageKeywordTarget;
@@ -26,8 +27,5 @@ const schema = JSON.stringify({ "@context": "https://schema.org", "@graph": [
 <meta name="description" content={description} />
 <meta name="keywords" content={target.primaryKeyword} />
 <link rel="canonical" href={canonicalUrl} />
-<meta property="og:type" content="website" />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
-<meta property="og:url" content={canonicalUrl} />
+<SocialMeta title={title} description={description} canonicalUrl={canonicalUrl} />
 <script is:inline type="application/ld+json" set:html={schema} />

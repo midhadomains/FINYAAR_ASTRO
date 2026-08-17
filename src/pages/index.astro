@@ -48,17 +48,17 @@ const featuredTerms = [
       <div class="wrap nav-inner">
         <a class="logo" href="/" aria-label="FinYaar home"><strong>Fin</strong><span>Yaar</span><i></i></a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="/dictionary">Dictionary</a>
-          <a href="/topics">Topics</a>
-          <a href="/courses">Courses</a>
-          <a href="/blog">Blog</a>
-          <a href="/about">About</a>
+          <a href="/dictionary/">Dictionary</a>
+          <a href="/topics/">Topics</a>
+          <a href="/courses/">Courses</a>
+          <a href="/blog/">Blog</a>
+          <a href="/about/">About</a>
         </nav>
-        <a class="button primary nav-cta" href="/dictionary">Browse A–Z <span aria-hidden="true">→</span></a>
+        <a class="button primary nav-cta" href="/dictionary/">Browse A–Z <span aria-hidden="true">→</span></a>
         <details class="mobile-menu">
           <summary aria-label="Open navigation"><span></span><span></span><span></span></summary>
           <nav>
-            <a href="/dictionary">Dictionary</a><a href="/topics">Topics</a><a href="/courses">Courses</a><a href="/blog">Blog</a><a href="/about">About</a>
+            <a href="/dictionary/">Dictionary</a><a href="/topics/">Topics</a><a href="/courses/">Courses</a><a href="/blog/">Blog</a><a href="/about/">About</a>
           </nav>
         </details>
       </div>
@@ -73,7 +73,7 @@ const featuredTerms = [
             <span class="card-kicker">Aaj ka shabd</span>
             <h2>SIP</h2>
             <p>Investing a fixed amount every month instead of one big lump sum. Chhote kadam, badi wealth.</p>
-            <a href="/dictionary/sip-systematic-investment-plan">Mutual Funds & SIP →</a>
+            <a href="/dictionary/sip-systematic-investment-plan/">Mutual Funds & SIP →</a>
           </aside>
           <div class="hero-copy">
             <p class="status-chip"><span></span> India's finance dictionary — free, forever</p>
@@ -86,8 +86,8 @@ const featuredTerms = [
               <button class="button primary" type="submit">Samjhao</button>
             </form>
             <div class="hero-actions">
-              <a class="button ghost" href="/topics">Pick a topic <span aria-hidden="true">→</span></a>
-              <a class="button ghost" href="/courses">Build career skills <span aria-hidden="true">→</span></a>
+              <a class="button ghost" href="/topics/">Pick a topic <span aria-hidden="true">→</span></a>
+              <a class="button ghost" href="/courses/">Build career skills <span aria-hidden="true">→</span></a>
             </div>
             <p class="hero-note">{terms.length}+ terms live and growing · rupees, not dollars · India-focused</p>
           </div>
@@ -142,7 +142,7 @@ const featuredTerms = [
               </a>
             ))}
           </div>
-          <a class="button ink-outline" href="/topics">See all topics <span aria-hidden="true">→</span></a>
+          <a class="button ink-outline" href="/topics/">See all topics <span aria-hidden="true">→</span></a>
         </div>
       </section>
 
@@ -150,7 +150,7 @@ const featuredTerms = [
         <div class="wrap">
           <div class="section-heading compact"><p class="eyebrow">Sabse zyada poocha gaya</p><h2>The words India keeps Googling.</h2></div>
           <div class="term-cloud">
-            {featuredTerms.map(([label, slug, note]) => <a href={`/dictionary/${slug}`}>{label}{note && <span> · {note}</span>}</a>)}
+            {featuredTerms.map(([label, slug, note]) => <a href={`/dictionary/${slug}/`}>{label}{note && <span> · {note}</span>}</a>)}
           </div>
         </div>
       </section>
@@ -160,7 +160,7 @@ const featuredTerms = [
           <div class="career-band">
             <div class="glow glow-coral"></div>
             <div class="career-copy"><p class="eyebrow amber">Serious mode</p><h2>Finance career? We speak that language too.</h2><p>Take the same clarity into modeling, valuation, banking, FP&A, and AI-enabled finance workflows—with practical, case-based learning.</p>
-              <div class="career-pills"><a href="/courses">Financial Modeling<small>Cases, formulas, Excel</small></a><a href="/courses">Investment Banking<small>Deals, comps, pitchbooks</small></a><a href="/vault">AI Finance Vault<small>Prompts and workflows</small></a></div>
+              <div class="career-pills"><a href="/courses/">Financial Modeling<small>Cases, formulas, Excel</small></a><a href="/courses/">Investment Banking<small>Deals, comps, pitchbooks</small></a><a href="/vault/">AI Finance Vault<small>Prompts and workflows</small></a></div>
             </div>
           </div>
         </div>
@@ -188,13 +188,13 @@ const featuredTerms = [
     <footer class="site-footer">
       <div class="wrap">
         <section class="newsletter">
-          <div class="glow glow-violet"></div><div class="newsletter-inner"><p class="eyebrow amber">Learn in small bites</p><h2>One useful word at a time.</h2><p>Start with the dictionary, follow the related terms, and make finance make sense.</p><a class="button primary" href="/dictionary">Start exploring <span aria-hidden="true">→</span></a></div>
+          <div class="glow glow-violet"></div><div class="newsletter-inner"><p class="eyebrow amber">Learn in small bites</p><h2>One useful word at a time.</h2><p>Start with the dictionary, follow the related terms, and make finance make sense.</p><a class="button primary" href="/dictionary/">Start exploring <span aria-hidden="true">→</span></a></div>
         </section>
         <div class="footer-grid">
           <div class="footer-brand"><a class="logo" href="/"><strong>Fin</strong><span>Yaar</span><i></i></a><p>The friend who finally makes money make sense. Plain-English finance definitions, guides, and practical learning.</p></div>
-          <div><h3>Dictionary</h3><a href="/dictionary">A–Z index</a><a href="/dictionary">Popular terms</a><a href="/topics">Topic hubs</a></div>
-          <div><h3>Learn</h3><a href="/topics">Topics</a><a href="/courses">Courses</a><a href="/vault">AI Finance Vault</a><a href="/blog">Blog</a></div>
-          <div><h3>FinYaar</h3><a href="/about">About</a><a href="/contact">Contact</a><a href="/about">Editorial standards</a></div>
+          <div><h3>Dictionary</h3><a href="/dictionary/">A–Z index</a><a href="/dictionary/">Popular terms</a><a href="/topics/">Topic hubs</a></div>
+          <div><h3>Learn</h3><a href="/topics/">Topics</a><a href="/courses/">Courses</a><a href="/vault/">AI Finance Vault</a><a href="/blog/">Blog</a></div>
+          <div><h3>FinYaar</h3><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/about/">Editorial standards</a></div>
         </div>
         <div class="footer-bottom"><span>© {new Date().getFullYear()} FinYaar. Made in India, for India.</span><span><a href="/">Privacy</a><a href="/">Terms</a><a href="/">Disclaimer</a></span></div>
       </div>

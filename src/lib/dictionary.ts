@@ -393,11 +393,27 @@ function decodeEntities(value: string): string {
   return value.replaceAll("&#39;", "'").replaceAll("&#8377;", "₹");
 }
 
+function addTableCaptions(html: string): string {
+  return html.replace(/(<table\b[^>]*>)([\s\S]*?<\/table>)/gi, (table, openingTag: string, contents: string) => {
+    if (/<caption\b/i.test(contents)) return table;
+
+    const columnLabels = Array.from(
+      contents.matchAll(/<th\b[^>]*>([\s\S]*?)<\/th>/gi),
+      ([, heading]) => heading.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim(),
+    ).filter(Boolean);
+    const caption = columnLabels.length
+      ? `Table columns: ${columnLabels.join("; ")}.`
+      : "Financial data table.";
+
+    return `${openingTag}<caption class="sr-only">${caption}</caption>${contents}`;
+  });
+}
+
 function prepareLesson(html: string): Pick<Term, "lessonBody" | "lessonToc"> {
   const start = html.indexOf('<div class="section"');
   const faqStart = html.indexOf('<div class="section collapsed" id="faqs"');
   let generatedSectionIndex = 0;
-  const lessonBody = html
+  const lessonBody = addTableCaptions(html
     .slice(start >= 0 ? start : 0, faqStart >= 0 ? faqStart : html.length)
     .replace(
       /<div class="section( collapsed)?"([^>]*)>(\s*<div class="sec-head"><h2>(.*?)<\/h2>)/g,
@@ -412,7 +428,7 @@ function prepareLesson(html: string): Pick<Term, "lessonBody" | "lessonToc"> {
     )
     .replace(/<span data-math="([^"]*)"><\/span>/g, (_, expression: string) =>
       katex.renderToString(expression, { displayMode: true, throwOnError: false }),
-    )
+    ))
     .trim();
   const lessonToc = Array.from(
     lessonBody.matchAll(/<div class="section(?: collapsed)?" id="([^"]+)" data-name="([^"]+)">/g),
