@@ -16,8 +16,20 @@ const faqs = [
 const canonical = new URL("/", Astro.site ?? Astro.url.origin);
 const schemas = [organizationSchema(canonical), websiteSchema(canonical)];
 
-const topicCards = pillars.slice(0, 6);
-const topicEmoji = ["₹", "🏦", "💳", "🌱", "📈", "🧺"];
+const homepageTopicSlugs = [
+  "personal-finance",
+  "banking-savings-deposits",
+  "loans-credit-debt",
+  "investing-basics",
+  "stock-market-equities",
+  "mutual-funds-sip-etfs",
+  "economics-macro",
+  "taxation-india",
+];
+const topicCards = homepageTopicSlugs
+  .map((slug) => pillars.find((pillar) => pillar.slug === slug))
+  .filter((pillar) => pillar !== undefined);
+const topicEmoji = ["₹", "🏦", "💳", "🌱", "📈", "🧺", "🌍", "%"];
 const featuredTerms = [
   ["SIP", "sip-systematic-investment-plan", "systematic investment plan"],
   ["Mutual Fund", "mutual-fund", ""],

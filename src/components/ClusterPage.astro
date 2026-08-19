@@ -51,7 +51,11 @@ const structuredData = JSON.stringify({
   ],
 }).replaceAll("<", "\\u003c");
 const dictionaryTerm = cluster.dictionarySlug ? getTermBySlug(cluster.dictionarySlug) : undefined;
-const related = pillar.clusters.filter((item) => item.slug !== cluster.slug).slice(0, 4);
+const clusterIndex = pillar.clusters.findIndex((item) => item.slug === cluster.slug);
+const related = Array.from(
+  { length: Math.min(4, Math.max(0, pillar.clusters.length - 1)) },
+  (_, offset) => pillar.clusters[(clusterIndex + offset + 1) % pillar.clusters.length],
+);
 const kindLabel = {
   explainer: "Explainer",
   "how-to": "How-to guide",

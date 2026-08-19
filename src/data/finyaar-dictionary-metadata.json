@@ -655,6 +655,614 @@
         { "term": "Market Capitalization", "slug": "market-capitalization" },
         { "term": "Sensex and Nifty", "slug": "sensex-and-nifty" }
       ]
+    },
+    {
+      "slug": "home-loan",
+      "term": "Home Loan",
+      "category": "Loans Credit and Debt",
+      "url": "/dictionary/home-loan/",
+      "focus_keyword": "home loan interest rate",
+      "seo_title": "Home Loan: Meaning, EMI, Tax Benefits & Prepayment | FinYaar",
+      "meta_description": "Home Loan is a secured, long-tenure loan that a bank or housing finance company gives you to buy, build, or renovate a residential property, where the proper...",
+      "definition": "Home Loan is a secured, long-tenure loan that a bank or housing finance company gives you to buy, build, or renovate a residential property, where the property itself is pledged as collateral and you repay the amount, plus interest, through monthly instalments over a period that often runs from 10 to 30 years.",
+      "related": [
+        { "slug": "emi", "url": "/dictionary/emi/" },
+        { "slug": "credit-score-cibil", "url": "/dictionary/credit-score-cibil/" },
+        { "slug": "section-80c", "url": "/dictionary/section-80c/" },
+        { "slug": "repo-rate", "url": "/dictionary/repo-rate/" }
+      ]
+    },
+    {
+      "slug": "credit-card",
+      "term": "Credit Card",
+      "category": "Loans Credit and Debt",
+      "url": "/dictionary/credit-card/",
+      "focus_keyword": "credit card",
+      "seo_title": "Credit Card: How It Works, Interest & the Minimum-Due Trap | FinYaar",
+      "meta_description": "Credit Card is a revolving line of unsecured credit issued by a bank that lets you spend up to a preset limit and repay later. If you clear the full statemen...",
+      "definition": "Credit Card is a revolving line of unsecured credit issued by a bank that lets you spend up to a preset limit and repay later. If you clear the full statement balance by the due date, you pay no interest and enjoy a short interest-free period. If you carry an unpaid balance, the card charges very high interest, commonly about 3% to 3.75% per month, which works out to roughly 36% to 45% a year. It is a powerful payment and short-term convenience tool that becomes an expensive debt trap the moment you stop paying in full.",
+      "related": [
+        { "slug": "credit-score-cibil", "url": "/dictionary/credit-score-cibil/" },
+        { "slug": "emi", "url": "/dictionary/emi/" },
+        { "slug": "home-loan", "url": "/dictionary/home-loan/" },
+        { "slug": "compound-interest", "url": "/dictionary/compound-interest/" }
+      ]
+    },
+    {
+      "slug": "capital-gains-tax",
+      "term": "Capital Gains Tax",
+      "category": "Taxation",
+      "url": "/dictionary/capital-gains-tax/",
+      "focus_keyword": "capital gains tax India",
+      "seo_title": "Capital Gains Tax in India: STCG, LTCG Rates & Example | FinYaar",
+      "meta_description": "Capital Gains Tax is the tax you pay in India on the profit you make when you sell a capital asset - such as equity shares, mutual fund units, or property - ...",
+      "definition": "Capital Gains Tax is the tax you pay in India on the profit you make when you sell a capital asset - such as equity shares, mutual fund units, or property - for more than you paid for it. The tax applies only to the gain, not the full sale value, and the rate depends on the type of asset and how long you held it before selling. It is a central government tax charged under the head \"Capital Gains\" of the Income Tax Act.",
+      "faqs": [
+        { "q": "Is capital gains tax the same as income tax?", "a": "Capital gains tax forms part of income tax, but capital gains are computed under their own head and may use special rates rather than the slab rates that apply to salary or business income." },
+        { "q": "Do I pay capital gains tax if I have not sold my shares?", "a": "Generally, capital gains tax arises on a transfer or sale. An increase in the market value of shares or units you continue to hold is normally an unrealised gain and is not taxed merely because the quoted price increased." },
+        { "q": "What is the ₹1.25 lakh exemption exactly?", "a": "It is an aggregate annual threshold for qualifying long-term gains covered by Section 112A, including listed equity shares and equity-oriented fund units when the applicable conditions are met. The qualifying long-term gain above ₹1.25 lakh in a financial year is generally taxed at 12.5 percent." },
+        { "q": "How are debt mutual funds taxed now?", "a": "Specified mutual-fund units acquired on or after 1 April 2023 generally do not receive the former long-term indexation treatment. Their gains are commonly treated as short-term and taxed at the investor’s applicable slab rate, subject to the fund and transaction meeting the statutory definition." },
+        { "q": "Can I set off a capital loss?", "a": "Yes, subject to the rules. A short-term capital loss can generally be set off against short- or long-term capital gains, while a long-term capital loss can generally be set off only against long-term capital gains. Eligible unabsorbed losses may be carried forward for eight assessment years when return-filing conditions are met." },
+        { "q": "Will capital gains tax rates stay the same?", "a": "Not necessarily. Rates, holding periods, thresholds and exemptions can change through the Union Budget and Finance Act, so verify the rules for the relevant financial year before selling." }
+      ],
+      "related": [
+        { "slug": "mutual-fund", "url": "/dictionary/mutual-fund/" },
+        { "slug": "equity-share", "url": "/dictionary/equity-share/" },
+        { "slug": "section-80c", "url": "/dictionary/section-80c/" },
+        { "slug": "index-fund", "url": "/dictionary/index-fund/" }
+      ]
+    },
+    {
+      "slug": "section-80c",
+      "term": "Section 80C",
+      "category": "Taxation",
+      "url": "/dictionary/section-80c/",
+      "focus_keyword": "section 80C deductions",
+      "seo_title": "Section 80C: Deductions, Limit & Old vs New Regime | FinYaar",
+      "meta_description": "Section 80C is a provision of the Income Tax Act that lets an individual or Hindu Undivided Family reduce taxable income by up to Rs 1.5 lakh in a financial ...",
+      "definition": "Section 80C is a provision of the Income Tax Act that lets an individual or Hindu Undivided Family reduce taxable income by up to Rs 1.5 lakh in a financial year through approved investments and expenses. It is one of the most widely used tax breaks in India, but it applies only under the old tax regime. Popular Section 80C deductions include the Public Provident Fund, ELSS mutual funds, employee provident fund contributions, life-insurance premiums, and home-loan principal repayment.",
+      "faqs": [
+        { "q": "Is Section 80C available under the new tax regime?", "a": "No. Section 80C deductions apply only under the old tax regime. If you opt for the new regime, you forgo the ₹1.5 lakh benefit in exchange for the new regime’s slab structure." },
+        { "q": "What is the maximum I can claim under Section 80C?", "a": "The ceiling is ₹1.5 lakh per financial year. This is a combined cap that also covers Sections 80CCC and 80CCD(1), so these limits cannot be claimed separately on top of it." },
+        { "q": "Does home-loan repayment qualify under Section 80C?", "a": "The eligible principal portion of a home-loan repayment can qualify under Section 80C, subject to the applicable conditions. The interest portion is claimed separately under Section 24, not under Section 80C." },
+        { "q": "Can I claim NPS in addition to the ₹1.5 lakh?", "a": "Yes, if you meet the applicable conditions. A contribution of up to ₹50,000 to NPS can be deductible under Section 80CCD(1B), over and above the combined ₹1.5 lakh limit." },
+        { "q": "Which Section 80C option has the shortest lock-in?", "a": "ELSS mutual funds have the shortest statutory lock-in among common Section 80C investment options, at three years. PPF has a fifteen-year tenure, subject to its withdrawal rules." },
+        { "q": "Do I need to invest fresh money to use Section 80C?", "a": "Not always. Existing eligible commitments such as EPF contributions, life-insurance premiums, home-loan principal and children’s tuition fees may already count. Check these first, then invest only for any remaining gap." }
+      ],
+      "related": [
+        { "slug": "ppf", "url": "/dictionary/ppf/" },
+        { "slug": "nps", "url": "/dictionary/nps/" },
+        { "slug": "home-loan", "url": "/dictionary/home-loan/" },
+        { "slug": "capital-gains-tax", "url": "/dictionary/capital-gains-tax/" }
+      ]
+    },
+    {
+      "slug": "ppf",
+      "term": "PPF (Public Provident Fund)",
+      "category": "Retirement and Planning",
+      "url": "/dictionary/ppf/",
+      "focus_keyword": "PPF account",
+      "seo_title": "PPF Account: Interest, Tax Benefits & Maturity | FinYaar",
+      "meta_description": "PPF (Public Provident Fund) is a 15-year, government-backed small-savings scheme in India that lets you invest a small amount each year, earn a government-se...",
+      "definition": "PPF (Public Provident Fund) is a 15-year, government-backed small-savings scheme in India that lets you invest a small amount each year, earn a government-set rate of compound interest, and receive the entire maturity amount completely tax-free. It carries EEE (Exempt-Exempt-Exempt) tax status: your yearly deposit qualifies for a deduction under Section 80C, the interest that accrues is exempt, and the final corpus is exempt too. You can deposit between Rs 500 and Rs 1.5 lakh in each financial year, making it one of the most trusted long-horizon savings tools for ordinary Indian households.",
+      "faqs": [
+        { "q": "Can I have more than one PPF account?", "a": "An individual may maintain one PPF account in their own name. A guardian may open one account for a minor, but the ₹1.5 lakh annual deposit ceiling is inclusive of deposits made by the individual in their own account and in accounts opened on behalf of minors." },
+        { "q": "What happens if I miss the minimum PPF deposit in a year?", "a": "The account becomes discontinued if the ₹500 annual minimum is not deposited. It can generally be revived during the maturity period by paying the prescribed ₹50 fee and ₹500 arrears for each default year. A discontinued account continues to earn applicable interest, but some facilities remain restricted until revival." },
+        { "q": "Is the PPF interest rate fixed for 15 years?", "a": "No. The government notifies the rate periodically, currently by quarter. The rate can change during the account’s life, so a long-term projection using today’s rate is only an illustration." },
+        { "q": "Can I withdraw all my PPF money before maturity?", "a": "Premature closure is allowed only after the prescribed period and for specified grounds such as serious illness, higher education or change in residency status, subject to documentation and an interest-rate reduction. Otherwise, partial withdrawals are available under the scheme rules." },
+        { "q": "How is PPF different from a fixed deposit?", "a": "A fixed deposit offers selectable tenures and generally pays taxable interest. PPF has a much longer maturity period, a government-notified variable rate and tax-exempt interest and qualifying maturity proceeds under current rules." },
+        { "q": "Does the ₹1.5 lakh PPF limit include my other Section 80C investments?", "a": "The PPF scheme limits aggregate eligible deposits to ₹1.5 lakh per financial year under its own rules. Separately, the total deduction across PPF and all other eligible Sections 80C, 80CCC and 80CCD(1) items is capped at ₹1.5 lakh under the old tax regime." }
+      ],
+      "related": [
+        { "slug": "section-80c", "url": "/dictionary/section-80c/" },
+        { "slug": "nps", "url": "/dictionary/nps/" },
+        { "slug": "fixed-deposit", "url": "/dictionary/fixed-deposit/" },
+        { "slug": "compound-interest", "url": "/dictionary/compound-interest/" }
+      ]
+    },
+    {
+      "slug": "nps",
+      "term": "NPS (National Pension System)",
+      "category": "Retirement and Planning",
+      "url": "/dictionary/nps/",
+      "focus_keyword": "national pension system",
+      "seo_title": "NPS: Tax Benefits, Tiers & Annuity Rules Explained | FinYaar",
+      "meta_description": "NPS (National Pension System) is a voluntary, market-linked retirement scheme regulated by the Pension Fund Regulatory and Development Authority (PFRDA) that...",
+      "definition": "NPS (National Pension System) is a voluntary, market-linked retirement scheme regulated by the Pension Fund Regulatory and Development Authority (PFRDA) that lets an Indian saver build a retirement corpus by investing regularly across equity and debt. Your money grows based on the assets you choose, so returns are not guaranteed. At retirement you take part of the corpus as a lump sum and convert the rest into a lifelong pension through an annuity.",
+      "faqs": [
+        { "q": "Is the NPS return guaranteed?", "a": "No. NPS is market-linked and invests across equity, government securities, corporate debt and permitted alternatives. The account value changes with investment performance, and no future return is guaranteed." },
+        { "q": "How is NPS different from PPF?", "a": "PPF earns a government-set rate and follows its own maturity and withdrawal rules. NPS is market-linked and uses pension-specific exit rules that can require part of the corpus to fund an annuity. NPS may offer higher growth potential but carries market and annuity-rate risk." },
+        { "q": "Can I claim both Section 80C and the additional NPS deduction?", "a": "Under the old tax regime, an eligible personal NPS contribution of up to ₹50,000 can be claimed under Section 80CCD(1B) over and above the combined ₹1.5 lakh limit. Employer contributions under Section 80CCD(2) follow separate rules and can remain available under the new regime." },
+        { "q": "What is the difference between NPS Tier 1 and Tier 2?", "a": "Tier 1 is the retirement account and follows restricted withdrawal and exit rules. Tier 2 is generally a flexible voluntary account, although the special Tier II Tax Saver Scheme for eligible Central Government subscribers has a three-year lock-in and Section 80C treatment." },
+        { "q": "How much NPS corpus must be used for an annuity at normal exit?", "a": "For the All Citizen and Corporate models under the 2026 rules, a normal exit with accumulated pension wealth above ₹12 lakh generally requires at least 20 percent for annuity and permits up to 80 percent as lump sum or approved payouts. Government-sector and smaller-corpus rules differ." },
+        { "q": "Can I exit NPS early?", "a": "Premature exit is allowed under the applicable rules, but for a corpus above the small-corpus threshold it generally permits only up to 20 percent as lump sum and requires at least 80 percent for annuity. Sector, tenure and corpus size affect the result." }
+      ],
+      "related": [
+        { "slug": "ppf", "url": "/dictionary/ppf/" },
+        { "slug": "section-80c", "url": "/dictionary/section-80c/" },
+        { "slug": "mutual-fund", "url": "/dictionary/mutual-fund/" },
+        { "slug": "risk-vs-return", "url": "/dictionary/risk-vs-return/" }
+      ]
+    },
+    {
+      "slug": "term-insurance",
+      "term": "Term Insurance",
+      "category": "Insurance",
+      "url": "/dictionary/term-insurance/",
+      "focus_keyword": "term insurance",
+      "seo_title": "Term Insurance: Cover, Premiums & Term vs Endowment | FinYaar",
+      "meta_description": "Term Insurance is a pure life-protection policy that pays your nominee a large lump sum, called the sum assured, if you die during a fixed policy term, in ex...",
+      "definition": "Term Insurance is a pure life-protection policy that pays your nominee a large lump sum, called the sum assured, if you die during a fixed policy term, in exchange for a low yearly premium. It carries no maturity payout if you survive the term, unless you choose a return-of-premium variant. Because it strips out any savings or investment element, term insurance buys the most cover for the least money, which is exactly what a family with dependants needs. A common rule of thumb is to hold cover worth 10 to 15 times your annual income.",
+      "faqs": [
+        { "q": "Do I get my money back at the end of a term plan?", "a": "A standard term policy generally has no maturity payout if the insured survives the term. Return-of-premium variants cost more and refund only the amounts defined by the contract, which may exclude taxes, rider charges and other components." },
+        { "q": "How much term-insurance cover should I buy?", "a": "There is no universal multiple. Estimate the present value of income your dependants need, debts, education and other goals, final expenses and inflation, then subtract suitable assets and existing life cover. Revisit the calculation after major life changes." },
+        { "q": "What does the death-claims-paid ratio tell me?", "a": "It shows the proportion of reported death claims paid during a period using the stated measurement basis. It is useful context but not a complete quality score. Also review claims by amount, repudiated and pending claims, servicing, solvency, exclusions and the policy wording." },
+        { "q": "Does term insurance receive a tax benefit?", "a": "Eligible premiums can fall within the combined Section 80C deduction under the old tax regime, subject to statutory conditions. A qualifying death benefit is generally exempt under Section 10(10D), but current tax rules should be checked." },
+        { "q": "When should I buy term insurance?", "a": "Buy when someone would suffer financially from your death. Applying earlier can mean lower quoted premiums because age and health affect underwriting, but the actual premium guarantee, review clauses and payment term depend on the policy." },
+        { "q": "Is term insurance enough on its own?", "a": "No. It addresses the financial effect of the insured person’s death. It does not replace health insurance, disability or income-protection planning, an emergency fund, retirement savings or a current nomination and estate plan." }
+      ],
+      "related": [
+        { "slug": "health-insurance", "url": "/dictionary/health-insurance/" },
+        { "slug": "section-80c", "url": "/dictionary/section-80c/" },
+        { "slug": "mutual-fund", "url": "/dictionary/mutual-fund/" },
+        { "slug": "risk-vs-return", "url": "/dictionary/risk-vs-return/" }
+      ]
+    },
+    {
+      "slug": "health-insurance",
+      "term": "Health Insurance",
+      "category": "Insurance",
+      "url": "/dictionary/health-insurance/",
+      "focus_keyword": "health insurance India",
+      "seo_title": "Health Insurance in India: Sum Insured, Co-pay & Claims | FinYaar",
+      "meta_description": "Health Insurance is a contract in which an insurer agrees to pay for your hospitalisation and related medical costs, up to a fixed yearly limit, in return fo...",
+      "definition": "Health Insurance is a contract in which an insurer agrees to pay for your hospitalisation and related medical costs, up to a fixed yearly limit, in return for a regular premium. In India it protects your savings from being wiped out by a single serious illness or accident, since a multi-day hospital stay can easily cross Rs 5,00,000. The insurer settles the bill either directly with a network hospital (cashless) or by reimbursing you later, subject to the policy terms.",
+      "faqs": [
+        { "q": "What is the difference between a deductible and a co-pay?", "a": "A deductible is an amount the insured must bear before or alongside the policy’s payment obligation as defined in the contract. A co-pay is a percentage of an admissible claim that remains payable by the insured. A policy can contain both." },
+        { "q": "Does health insurance cover pre-existing diseases?", "a": "It can, after the waiting period stated in the policy and subject to disclosure and other terms. Under IRDAI’s current framework, waiting periods, including pre-existing-disease waiting periods, cannot exceed 36 months." },
+        { "q": "Is cashless treatment always available?", "a": "No. Cashless treatment requires the insurer or TPA to approve pre-authorisation and is ordinarily available through eligible network providers under the policy process. The patient may still pay deductibles, co-payments, exclusions, non-admissible expenses or hospital deposits." },
+        { "q": "Is employer health cover enough on its own?", "a": "It may not be. The sum insured, covered relatives and benefits can be limited, and coverage may end or change when employment ends. A separate personal policy can provide continuity, but the right amount depends on your family, location, medical needs and finances." },
+        { "q": "How much health-insurance cover should I take?", "a": "There is no universal amount. Consider local hospital costs, family size and ages, existing conditions, employer cover, room eligibility, co-payments, deductibles and your emergency savings. Compare base policies and super top-ups rather than relying on one rule of thumb." },
+        { "q": "Do health-insurance premiums receive a tax benefit?", "a": "Eligible premiums can qualify for a deduction under Section 80D when the old tax regime is used, subject to the payer, insured persons, payment mode and statutory limits. The deduction is separate from Section 80C." }
+      ],
+      "related": [
+        { "slug": "term-insurance", "url": "/dictionary/term-insurance/" },
+        { "slug": "section-80c", "url": "/dictionary/section-80c/" },
+        { "slug": "risk-vs-return", "url": "/dictionary/risk-vs-return/" },
+        { "slug": "inflation", "url": "/dictionary/inflation/" }
+      ]
+    },
+    {
+      "slug": "bond",
+      "term": "Bond",
+      "category": "Fixed Income and Bonds",
+      "url": "/dictionary/bond/",
+      "focus_keyword": "what is a bond",
+      "seo_title": "Bond: Meaning, Coupon, Yield & Price Explained | FinYaar",
+      "meta_description": "Bond is a loan that an investor makes to a government or a company in exchange for regular interest and the return of the original amount on a fixed future d...",
+      "definition": "Bond is a loan that an investor makes to a government or a company in exchange for regular interest and the return of the original amount on a fixed future date. The borrower (the issuer) sells the bond to raise money, promises to pay a stated interest rate (the coupon) at set intervals, and repays the face value when the bond reaches its maturity. In India, bonds range from ultra-safe government securities to higher-paying corporate bonds, so a bond sits between a bank deposit and a share in the risk-and-return ladder.",
+      "faqs": [
+        { "q": "Is a bond safer than a share?", "a": "Often, but not automatically. Bondholders rank ahead of shareholders if an issuer is liquidated, and Indian government securities carry no domestic credit risk according to RBI. Corporate bonds can still default, and all traded fixed-rate bonds can lose market value when yields rise." },
+        { "q": "How is a bond different from a fixed deposit?", "a": "A bond is a marketable security issued by a government or company, so its price can change before maturity and its credit and liquidity risks depend on the issuer and issue. A bank fixed deposit is not exchange-traded and usually permits early closure subject to its terms and a penalty. Tax and protection arrangements can also differ." },
+        { "q": "Can I lose money on a government bond?", "a": "An Indian central-government security held to maturity is treated as carrying no domestic credit risk, but its market price can fall. Selling before maturity when yields have risen can crystallise a loss, while inflation and reinvestment rates can reduce the real or realised return." },
+        { "q": "What does a bond credit rating mean?", "a": "A credit rating is an agency opinion about the issuer’s relative ability to meet its obligations. It is not a guarantee, can change, and does not measure every risk such as interest-rate or liquidity risk." },
+        { "q": "How can a retail investor in India buy government bonds?", "a": "Eligible individuals can use RBI Retail Direct to access Treasury Bills, dated Government of India securities and State Development Loans in the primary and secondary markets. Government and corporate securities may also be available through recognised exchanges, brokers and regulated platforms." },
+        { "q": "Why does a fixed bond’s coupon stay the same when its price changes?", "a": "The coupon amount is fixed by the bond’s contractual terms and is normally calculated on face value. Market yield adjusts through the price investors are willing to pay for those fixed cash flows, so coupon and market yield can differ." }
+      ],
+      "related": [
+        { "slug": "yield-to-maturity", "url": "/dictionary/yield-to-maturity/" },
+        { "slug": "repo-rate", "url": "/dictionary/repo-rate/" },
+        { "slug": "fixed-deposit", "url": "/dictionary/fixed-deposit/" },
+        { "slug": "risk-vs-return", "url": "/dictionary/risk-vs-return/" }
+      ]
+    },
+    {
+      "slug": "yield-to-maturity",
+      "term": "Yield to Maturity (YTM)",
+      "category": "Fixed Income and Bonds",
+      "url": "/dictionary/yield-to-maturity/",
+      "focus_keyword": "yield to maturity",
+      "seo_title": "Yield to Maturity (YTM): Formula & Worked Example | FinYaar",
+      "meta_description": "Yield to Maturity (YTM) is the total annualised return an investor earns on a bond if it is bought at today's market price and held until maturity, assuming ...",
+      "definition": "Yield to Maturity (YTM) is the total annualised return an investor earns on a bond if it is bought at today's market price and held until maturity, assuming every coupon is received on time and reinvested at the same rate. It rolls the purchase price, the coupon income, the face value repaid at maturity and the time remaining into a single percentage, so bonds of different prices and tenors can be compared like-for-like. YTM moves inversely to price: when a bond's price falls, its YTM rises, and when its price rises, its YTM falls.",
+      "faqs": [
+        { "q": "Is a higher YTM always better?", "a": "No. A higher quoted YTM can compensate for greater credit, liquidity, call, duration or other risk. Compare securities with similar risk, cash-flow structure and tax treatment rather than choosing the highest number." },
+        { "q": "Does YTM assume I reinvest the coupons?", "a": "Yes. Standard YTM assumes coupon cash flows can be reinvested at the calculated yield and that the bond is held to maturity without default. Different reinvestment rates produce a different realised return." },
+        { "q": "How is YTM different from current yield?", "a": "Current yield divides the annual coupon by the bond’s market price. YTM discounts every remaining coupon and redemption payment and therefore includes the pull from purchase price toward the maturity value." },
+        { "q": "Why does a bond’s price fall when market yields rise?", "a": "A bond’s fixed cash flows become less attractive when comparable new securities offer higher yields. Its market price must fall so those fixed cash flows produce a competitive yield, all else equal." },
+        { "q": "Can I compare a bond’s YTM with a fixed-deposit rate?", "a": "They can be an initial comparison, but they are not automatically equivalent. Adjust for compounding convention, tax, credit risk, liquidity, early-sale price risk, call features and deposit insurance before deciding." },
+        { "q": "Where can I find a bond’s YTM?", "a": "Recognised exchanges, trading platforms and broker interfaces may display indicative price and yield data. RBI Retail Direct and related market sources provide information for government securities. Verify settlement date, accrued interest, coupon frequency and day-count convention." }
+      ],
+      "related": [
+        { "slug": "bond", "url": "/dictionary/bond/" },
+        { "slug": "repo-rate", "url": "/dictionary/repo-rate/" },
+        { "slug": "risk-vs-return", "url": "/dictionary/risk-vs-return/" },
+        { "slug": "fixed-deposit", "url": "/dictionary/fixed-deposit/" }
+      ]
+    },
+    {
+      "slug": "options",
+      "term": "Options",
+      "category": "Derivatives and Risk",
+      "url": "/dictionary/options/",
+      "focus_keyword": "options trading",
+      "seo_title": "Options Trading: Calls, Puts, Payoff & Risk | FinYaar",
+      "meta_description": "Options are contracts that give the buyer the right, but not the obligation, to buy or sell an underlying asset at a fixed strike price on or before a set ex...",
+      "definition": "Options are contracts that give the buyer the right, but not the obligation, to buy or sell an underlying asset at a fixed strike price on or before a set expiry date, in return for an upfront payment called the premium. A call option is the right to buy; a put option is the right to sell. The buyer risks only the premium paid, while the seller collects that premium but accepts far larger risk. In India, index and stock options trade on the NSE, and options trading is often described as the most misunderstood corner of the market.",
+      "related": [
+        { "slug": "volatility", "url": "/dictionary/volatility/" },
+        { "slug": "beta", "url": "/dictionary/beta/" },
+        { "slug": "risk-vs-return", "url": "/dictionary/risk-vs-return/" },
+        { "slug": "equity-share", "url": "/dictionary/equity-share/" }
+      ]
+    },
+    {
+      "slug": "balance-sheet",
+      "term": "Balance Sheet",
+      "category": "Accounting and Financial Statements",
+      "url": "/dictionary/balance-sheet/",
+      "focus_keyword": "balance sheet",
+      "seo_title": "Balance Sheet: Meaning, Format & How to Read It | FinYaar",
+      "meta_description": "Balance Sheet is a financial statement that reports what a company owns and what it owes at a single point in time, together with the residual value belongin...",
+      "definition": "Balance Sheet is a financial statement that reports what a company owns and what it owes at a single point in time, together with the residual value belonging to its owners. It is built on one unbreakable rule: total assets must equal total liabilities plus shareholders' equity. Unlike the income statement, which covers a period, the balance sheet is a snapshot taken on one specific date, such as 31 March. It tells you how a business is financed, how liquid it is, and how much of it truly belongs to the shareholders.",
+      "related": [
+        { "slug": "roe", "url": "/dictionary/roe/" },
+        { "slug": "ebitda", "url": "/dictionary/ebitda/" },
+        { "slug": "eps", "url": "/dictionary/eps/" },
+        { "slug": "equity-share", "url": "/dictionary/equity-share/" }
+      ]
+    },
+    {
+      "slug": "roe",
+      "term": "ROE (Return on Equity)",
+      "category": "Ratios and Valuation",
+      "url": "/dictionary/roe/",
+      "focus_keyword": "return on equity",
+      "seo_title": "ROE (Return on Equity): Formula, DuPont & Debt Caveat | FinYaar",
+      "meta_description": "ROE (Return on Equity) is a profitability ratio that measures how much net profit a company generates for every rupee of shareholders' equity it holds. Expre...",
+      "definition": "ROE (Return on Equity) is a profitability ratio that measures how much net profit a company generates for every rupee of shareholders' equity it holds. Expressed as a percentage, it answers a simple owner question: how hard is the money that belongs to the shareholders actually working? A company with net profit of Rs 15 crore on shareholders' equity of Rs 100 crore has an ROE of 15 percent. Higher is generally better, but ROE must always be read together with how much debt the company carries, because borrowing can push the number up without the underlying business improving at all.",
+      "related": [
+        { "slug": "eps", "url": "/dictionary/eps/" },
+        { "slug": "pe-ratio", "url": "/dictionary/pe-ratio/" },
+        { "slug": "balance-sheet", "url": "/dictionary/balance-sheet/" },
+        { "slug": "dividend-yield", "url": "/dictionary/dividend-yield/" }
+      ]
+    },
+    {
+      "slug": "gdp",
+      "term": "GDP (Gross Domestic Product)",
+      "category": "Economics and Macro",
+      "url": "/dictionary/gdp/",
+      "focus_keyword": "what is GDP",
+      "seo_title": "GDP: Meaning, Formula, Nominal vs Real Explained | FinYaar",
+      "meta_description": "GDP measures the value of final goods and services produced within a country. Learn nominal vs real GDP, the expenditure formula and an example.",
+      "definition": "GDP (Gross Domestic Product) is the monetary value of final goods and services produced within a country during a specified period. It measures domestic production rather than nationality: output produced in India counts even when the producer is foreign-owned. India’s National Statistical Office releases annual and quarterly GDP estimates at current and constant prices; the current series uses 2022–23 as its base year.",
+      "faqs": [
+        { "q": "What is GDP in simple terms?", "a": "GDP is a measure of the value of final goods and services produced inside a country during a specified period. It measures production, not the total wealth of residents or the value of every financial transaction." },
+        { "q": "What is the difference between nominal and real GDP?", "a": "Nominal GDP values output at current prices, so it reflects changes in both quantities and prices. Real GDP uses constant-price or volume measures to remove price effects, allowing output across periods to be compared more meaningfully." },
+        { "q": "What are the four components in the simplified expenditure formula?", "a": "They are consumption, investment, government final consumption and net exports. Official national accounts use more detailed categories, including capital formation, inventory changes, valuables and statistical discrepancies." },
+        { "q": "Why are imports subtracted when calculating GDP?", "a": "Consumption, investment and government-spending totals can include imported products. Subtracting imports removes foreign production so the result measures output produced domestically." },
+        { "q": "Does rising GDP mean everyone is better off?", "a": "No. Aggregate GDP does not show income distribution, unpaid household work, environmental costs, leisure, health or many other aspects of welfare. Real GDP per person and broader social and environmental indicators provide additional context." },
+        { "q": "Who calculates GDP in India and what is the current base year?", "a": "The National Statistical Office under the Ministry of Statistics and Programme Implementation compiles India’s national accounts. In February 2026, MoSPI introduced the new annual and quarterly GDP series with base year 2022–23, replacing 2011–12." }
+      ],
+      "related": [
+        { "slug": "inflation", "url": "/dictionary/inflation/" },
+        { "slug": "repo-rate", "url": "/dictionary/repo-rate/" },
+        { "slug": "sensex-and-nifty", "url": "/dictionary/sensex-and-nifty/" },
+        { "slug": "risk-vs-return", "url": "/dictionary/risk-vs-return/" }
+      ]
+    },
+    {
+      "slug": "repo-rate",
+      "term": "Repo Rate",
+      "category": "Economics and Macro",
+      "url": "/dictionary/repo-rate/",
+      "focus_keyword": "repo rate",
+      "seo_title": "Repo Rate: Meaning, How It Affects Your EMI | FinYaar",
+      "meta_description": "Repo Rate is the interest rate at which the Reserve Bank of India (RBI) lends short-term money to commercial banks against government securities, and it is t...",
+      "definition": "Repo Rate is the interest rate at which the Reserve Bank of India (RBI) lends short-term money to commercial banks against government securities, and it is the single most important lever the RBI uses to steer borrowing costs across the economy. When the RBI raises the repo rate, funds become costlier for banks, so floating loan rates and EMIs tend to climb while deposit rates improve; when it cuts the rate, borrowing becomes cheaper. It is the headline tool of monetary policy in India.",
+      "faqs": [
+        { "q": "Who decides the repo rate in India?", "a": "The Reserve Bank of India’s six-member Monetary Policy Committee decides the policy repo rate by majority vote. Its statutory primary objective is price stability while keeping the objective of growth in mind." },
+        { "q": "Why does the RBI change the repo rate?", "a": "The MPC changes or maintains the policy repo rate after assessing inflation, growth, liquidity, financial conditions and the outlook. Higher rates generally restrain demand and inflation; lower rates generally support credit and activity, but transmission is neither immediate nor one-for-one." },
+        { "q": "How does the repo rate affect my home-loan EMI?", "a": "If a floating loan uses the RBI policy repo rate as its external benchmark, a benchmark reset changes the loan rate unless another contractual feature offsets it. The lender may adjust the EMI, tenure or both according to the loan terms and applicable rules." },
+        { "q": "What is the difference between the repo rate and reverse repo?", "a": "A repo injects liquidity when RBI lends against eligible collateral; a reverse repo absorbs liquidity. Since 2022, the Standing Deposit Facility is the standing floor of the liquidity corridor, while fixed-rate reverse repo remains in RBI’s toolkit rather than serving as that floor." },
+        { "q": "Does a repo-rate cut always lower deposit rates?", "a": "No. Deposit rates often move in the same broad direction, but banks also consider their liquidity, funding needs, competition and deposit mix. The timing and size of any change can therefore differ by bank and product." },
+        { "q": "What is the current repo rate?", "a": "It can change at an MPC decision, so verify the current policy repo rate on RBI’s official website and note the effective date. This educational page deliberately does not hard-code a live rate." }
+      ],
+      "related": [
+        { "slug": "inflation", "url": "/dictionary/inflation/" },
+        { "slug": "home-loan", "url": "/dictionary/home-loan/" },
+        { "slug": "emi", "url": "/dictionary/emi/" },
+        { "slug": "bond", "url": "/dictionary/bond/" }
+      ]
+    },
+    {
+      "slug": "budgeting",
+      "term": "Budgeting",
+      "category": "Personal Finance and Money Basics",
+      "url": "/dictionary/budgeting/",
+      "focus_keyword": "budgeting",
+      "seo_title": "Budgeting: Meaning, Methods and Example (India Guide) | FinYaar",
+      "meta_description": "What budgeting means, why it matters, popular methods like 50-30-20, and a worked India example. Learn to plan income and expenses simply.",
+      "definition": "Budgeting is the process of planning and monitoring how available income will be used for expenses, savings and debt goals over a period. A useful budget includes irregular costs, compares actual spending with the plan and is adjusted as circumstances change.",
+      "faqs": [
+        { "q": "What is the easiest budgeting rule for a beginner?", "a": "The 50/30/20 framework is a simple starting point: roughly 50% of available income for needs, 30% for wants and 20% for savings and extra debt repayment. It is a flexible guide, not a compulsory split, so adjust it to your housing costs, income and goals." },
+        { "q": "Should I budget using gross salary or take-home pay?", "a": "Build the spending plan around cash actually available after tax and payroll deductions. When measuring your overall saving rate, separately include mandatory savings such as employee EPF contributions so that the budget does not understate how much you save." },
+        { "q": "What does zero-based budgeting mean?", "a": "It means assigning all available income to expenses, savings, investments or debt goals until nothing is left unallocated. It does not mean spending everything or reducing your bank balance to zero." },
+        { "q": "How can a budget help stop overspending?", "a": "Set realistic category limits, record spending across bank accounts, cards, UPI and cash, and compare actual totals with the plan every week. A short cooling-off period for non-essential purchases can also help, but avoid carrying a credit-card balance merely to stay within a category." },
+        { "q": "Where should the savings portion of a budget go?", "a": "Priorities depend on the household. A starter emergency reserve and expensive debt often come before long-term investing; after that, divide money among near-term goals and suitable investments. Mandatory payroll savings should be included when reviewing the total." },
+        { "q": "How often should I review my budget?", "a": "A brief weekly check and a fuller month-end reconciliation work well for many people. Update the plan after a material change in income, rent, EMIs or family needs, and set aside monthly amounts for predictable annual costs." }
+      ],
+      "related": [
+        { "slug": "emergency-fund", "url": "/dictionary/emergency-fund/" },
+        { "slug": "net-worth", "url": "/dictionary/net-worth/" },
+        { "slug": "sip-systematic-investment-plan", "url": "/dictionary/sip-systematic-investment-plan/" },
+        { "slug": "credit-card", "url": "/dictionary/credit-card/" }
+      ]
+    },
+    {
+      "slug": "emergency-fund",
+      "term": "Emergency Fund",
+      "category": "Personal Finance and Money Basics",
+      "url": "/dictionary/emergency-fund/",
+      "focus_keyword": "emergency fund",
+      "seo_title": "Emergency Fund: How Much You Need and Where to Keep It | FinYaar",
+      "meta_description": "What an emergency fund is, how many months of expenses to save, where to park it, and a worked India example to size yours correctly.",
+      "definition": "Emergency Fund is money reserved for urgent, unplanned expenses or a temporary loss of income. It should emphasise accessibility and capital stability rather than high returns. A common starting target is three to six months of essential expenses, adjusted for income stability, dependants, insurance, health needs and fixed commitments.",
+      "faqs": [
+        { "q": "How do I build an emergency fund from scratch?", "a": "Start with a small first milestone, such as one month of essential expenses, and automate transfers after each payday. Direct bonuses or other irregular inflows to it, then replenish the fund after any genuine emergency." },
+        { "q": "Should I keep my emergency fund in the stock market?", "a": "Generally no. Equity can decline sharply and settlement takes time, so it is unsuitable for money that may be needed immediately. Emergency reserves should prioritise access and capital stability." },
+        { "q": "Is a fixed deposit suitable for an emergency fund?", "a": "A callable or sweep-in bank fixed deposit can hold part of the fund, provided you understand premature-withdrawal access and penalties. Keep enough in an immediately accessible account because banking outages or closure processes can delay access." },
+        { "q": "How many months of expenses should the fund cover?", "a": "Three to six months is a common starting range, not a rule. A household with one income, variable earnings, dependants, health concerns or high fixed commitments may reasonably hold six to twelve months or more." },
+        { "q": "Does an emergency fund replace insurance?", "a": "No. Insurance transfers specified large risks, subject to deductibles, exclusions and claim terms. Emergency cash handles income gaps, deductibles, excluded costs and urgent expenses while a claim is processed." },
+        { "q": "Are liquid mutual funds guaranteed or instantly available?", "a": "No. Liquid funds are market-linked, their NAV can fluctuate, and ordinary redemption commonly pays on the next business day. Any instant-redemption facility is scheme-specific and limited, so read the current scheme documents." }
+      ],
+      "related": [
+        { "slug": "budgeting", "url": "/dictionary/budgeting/" },
+        { "slug": "savings-account", "url": "/dictionary/savings-account/" },
+        { "slug": "fixed-deposit", "url": "/dictionary/fixed-deposit/" },
+        { "slug": "term-insurance", "url": "/dictionary/term-insurance/" }
+      ]
+    },
+    {
+      "slug": "net-worth",
+      "term": "Net Worth",
+      "category": "Personal Finance and Money Basics",
+      "url": "/dictionary/net-worth/",
+      "focus_keyword": "net worth",
+      "seo_title": "Net Worth: Meaning, Formula and How to Calculate It | FinYaar",
+      "meta_description": "Net worth is total assets minus total liabilities. Learn the formula, how to calculate yours, and why the trend matters, with an India example.",
+      "definition": "Net Worth is the value of your assets minus your liabilities on a particular date. Assets are recorded at a reasonable current value and debts at the amount still outstanding. The result can be positive or negative and is a useful measure of financial position, although it should be read alongside liquidity, cash flow, insurance and progress toward your goals.",
+      "faqs": [
+        { "q": "Does salary count in net worth?", "a": "No. Salary is income earned over a period, while net worth is a snapshot on one date. Salary affects net worth only when it is retained as cash or used to acquire assets, repay costs or reduce debt." },
+        { "q": "Should I include my home in net worth?", "a": "Usually yes: include a conservative current sale value as an asset and the outstanding home loan as a liability. Because a primary home is illiquid, it is also useful to track liquid or investable net worth separately." },
+        { "q": "Can net worth be negative?", "a": "Yes. Net worth is negative when liabilities exceed assets, which can happen early in a career or after taking a large education or business loan. The cause, affordability of repayments and direction of the trend matter more than the sign alone." },
+        { "q": "How often should I calculate net worth?", "a": "Quarterly or annually is enough for many households. Use a consistent date and valuation method so changes reflect real progress rather than inconsistent estimates." },
+        { "q": "What is a good net worth in India?", "a": "There is no universal target because age, dependants, income, location, goals and pension arrangements differ. Compare progress with your own plan and also check liquidity, debt costs and retirement readiness." },
+        { "q": "Does repaying debt immediately increase net worth?", "a": "Not when existing cash is used: cash and debt fall by the same amount, leaving net worth unchanged at that moment. Repaying expensive debt can improve future net worth by preventing interest and reducing risk." }
+      ],
+      "related": [
+        { "slug": "budgeting", "url": "/dictionary/budgeting/" },
+        { "slug": "balance-sheet", "url": "/dictionary/balance-sheet/" },
+        { "slug": "home-loan", "url": "/dictionary/home-loan/" },
+        { "slug": "emergency-fund", "url": "/dictionary/emergency-fund/" }
+      ]
+    },
+    {
+      "slug": "savings-account",
+      "term": "Savings Account",
+      "category": "Banking Savings and Deposits",
+      "url": "/dictionary/savings-account/",
+      "focus_keyword": "savings account",
+      "seo_title": "Savings Account: Meaning, Interest and Features (India) | FinYaar",
+      "meta_description": "What a savings account is, how interest and DICGC cover work, types and features, and a worked India example. A clear beginner guide.",
+      "definition": "Savings Account is a deposit account held with a bank or post office that keeps your money safe, lets you withdraw it on demand, and pays interest on the daily closing balance.",
+      "related": [
+        { "slug": "fixed-deposit", "url": "/dictionary/fixed-deposit/" },
+        { "slug": "recurring-deposit", "url": "/dictionary/recurring-deposit/" },
+        { "slug": "upi", "url": "/dictionary/upi/" },
+        { "slug": "emergency-fund", "url": "/dictionary/emergency-fund/" }
+      ]
+    },
+    {
+      "slug": "upi",
+      "term": "UPI (Unified Payments Interface)",
+      "category": "Banking Savings and Deposits",
+      "url": "/dictionary/upi/",
+      "focus_keyword": "upi",
+      "seo_title": "UPI: What It Is and How It Works in India | FinYaar",
+      "meta_description": "What UPI is, how instant payments work, VPA and safety basics, plus a worked India example. Understand India's real-time payment system.",
+      "definition": "UPI (Unified Payments Interface) is India's instant, round-the-clock payment system that lets you move money directly between two bank accounts using a mobile phone.",
+      "related": [
+        { "slug": "savings-account", "url": "/dictionary/savings-account/" },
+        { "slug": "credit-card", "url": "/dictionary/credit-card/" },
+        { "slug": "budgeting", "url": "/dictionary/budgeting/" },
+        { "slug": "emi", "url": "/dictionary/emi/" }
+      ]
+    },
+    {
+      "slug": "futures",
+      "term": "Futures",
+      "category": "Derivatives and Risk",
+      "url": "/dictionary/futures/",
+      "focus_keyword": "futures",
+      "seo_title": "Futures: Meaning, How They Work and Example | FinYaar",
+      "meta_description": "What a futures contract is, how margins and settlement work, hedging vs speculation, and a worked India example. A clear derivatives guide.",
+      "definition": "Futures are exchange-traded contracts that bind both the buyer and the seller to trade a standardised quantity of an underlying asset &mdash; an index, a stock, a currency or a commodity &mdash; at a price fixed today, for settlement on a set future date.",
+      "related": [
+        { "slug": "options", "url": "/dictionary/options/" },
+        { "slug": "hedging", "url": "/dictionary/hedging/" },
+        { "slug": "beta", "url": "/dictionary/beta/" },
+        { "slug": "volatility", "url": "/dictionary/volatility/" }
+      ]
+    },
+    {
+      "slug": "call-option",
+      "term": "Call Option",
+      "category": "Derivatives and Risk",
+      "url": "/dictionary/call-option/",
+      "focus_keyword": "call option",
+      "seo_title": "Call Option: Meaning, Payoff and Example (India) | FinYaar",
+      "meta_description": "What a call option is, strike, premium and payoff, when buyers profit, and a worked India example. Learn options the simple way.",
+      "definition": "Call Option is a contract that gives its buyer the right, but not the obligation, to buy an underlying asset at a fixed strike price on or before a set expiry date, in exchange for an upfront premium paid to the seller.",
+      "related": [
+        { "slug": "options", "url": "/dictionary/options/" },
+        { "slug": "put-option", "url": "/dictionary/put-option/" },
+        { "slug": "futures", "url": "/dictionary/futures/" },
+        { "slug": "hedging", "url": "/dictionary/hedging/" }
+      ]
+    },
+    {
+      "slug": "put-option",
+      "term": "Put Option",
+      "category": "Derivatives and Risk",
+      "url": "/dictionary/put-option/",
+      "focus_keyword": "put option",
+      "seo_title": "Put Option: Meaning, Payoff and Example (India) | FinYaar",
+      "meta_description": "What a put option is, how it protects against falling prices, payoff and premium, and a worked India example. A clear beginner guide.",
+      "definition": "Put Option is a contract that gives its buyer the right, but not the obligation, to sell a fixed quantity of an underlying asset at a pre-agreed price, called the strike, on or before a set expiry date, in return for an upfront premium.",
+      "related": [
+        { "slug": "options", "url": "/dictionary/options/" },
+        { "slug": "call-option", "url": "/dictionary/call-option/" },
+        { "slug": "hedging", "url": "/dictionary/hedging/" },
+        { "slug": "volatility", "url": "/dictionary/volatility/" }
+      ]
+    },
+    {
+      "slug": "hedging",
+      "term": "Hedging",
+      "category": "Derivatives and Risk",
+      "url": "/dictionary/hedging/",
+      "focus_keyword": "hedging",
+      "seo_title": "Hedging: Meaning, How It Works and Example | FinYaar",
+      "meta_description": "What hedging is, how it reduces risk using derivatives, its cost and trade-offs, and a worked India example. Understand risk management.",
+      "definition": "Hedging is the practice of taking an offsetting position in order to reduce the risk of an existing exposure, so that a loss on one holding is partly or fully cancelled by a gain elsewhere.",
+      "related": [
+        { "slug": "options", "url": "/dictionary/options/" },
+        { "slug": "put-option", "url": "/dictionary/put-option/" },
+        { "slug": "futures", "url": "/dictionary/futures/" },
+        { "slug": "diversification", "url": "/dictionary/diversification/" }
+      ]
+    },
+    {
+      "slug": "income-statement",
+      "term": "Income Statement",
+      "category": "Accounting and Financial Statements",
+      "url": "/dictionary/income-statement/",
+      "focus_keyword": "income statement",
+      "seo_title": "Income Statement: Meaning, Format and Example | FinYaar",
+      "meta_description": "What an income statement (P&L) is, the revenue-to-net-profit flow, margins, and a worked India example. Learn to read company profits.",
+      "definition": "Income Statement is a financial statement that reports how much revenue a business earned over a period and what it spent to earn that revenue, arriving at the net profit or loss for the period.",
+      "related": [
+        { "slug": "balance-sheet", "url": "/dictionary/balance-sheet/" },
+        { "slug": "cash-flow-statement", "url": "/dictionary/cash-flow-statement/" },
+        { "slug": "depreciation", "url": "/dictionary/depreciation/" },
+        { "slug": "roe", "url": "/dictionary/roe/" }
+      ]
+    },
+    {
+      "slug": "cash-flow-statement",
+      "term": "Cash Flow Statement",
+      "category": "Accounting and Financial Statements",
+      "url": "/dictionary/cash-flow-statement/",
+      "focus_keyword": "cash flow statement",
+      "seo_title": "Cash Flow Statement: Meaning, Sections and Example | FinYaar",
+      "meta_description": "What a cash flow statement is, its three sections, why profit differs from cash, and a worked India example. Read cash the right way.",
+      "definition": "Cash Flow Statement is a financial statement that tracks the actual cash moving into and out of a business over a period, sorted into operating, investing and financing activities, so that a reader can see how a company generated and used real money rather than accounting profit.",
+      "related": [
+        { "slug": "balance-sheet", "url": "/dictionary/balance-sheet/" },
+        { "slug": "income-statement", "url": "/dictionary/income-statement/" },
+        { "slug": "depreciation", "url": "/dictionary/depreciation/" },
+        { "slug": "budgeting", "url": "/dictionary/budgeting/" }
+      ]
+    },
+    {
+      "slug": "depreciation",
+      "term": "Depreciation",
+      "category": "Accounting and Financial Statements",
+      "url": "/dictionary/depreciation/",
+      "focus_keyword": "depreciation",
+      "seo_title": "Depreciation: Meaning, Methods (SLM vs WDV) and Example | FinYaar",
+      "meta_description": "What depreciation is, straight-line vs written-down value, its effect on accounts, and a worked India example. A clear accounting guide.",
+      "definition": "Depreciation is the accounting method of spreading the cost of a long-lived physical asset over the years it is expected to be useful, so that each year carries a fair share of the asset&rsquo;s wear and tear rather than the whole cost hitting the books in the year of purchase.",
+      "related": [
+        { "slug": "income-statement", "url": "/dictionary/income-statement/" },
+        { "slug": "balance-sheet", "url": "/dictionary/balance-sheet/" },
+        { "slug": "cash-flow-statement", "url": "/dictionary/cash-flow-statement/" },
+        { "slug": "net-worth", "url": "/dictionary/net-worth/" }
+      ]
+    },
+    {
+      "slug": "tds",
+      "term": "TDS (Tax Deducted at Source)",
+      "category": "Taxation",
+      "url": "/dictionary/tds/",
+      "focus_keyword": "tds",
+      "seo_title": "TDS (Tax Deducted at Source): Meaning and How It Works | FinYaar",
+      "meta_description": "What TDS is, common cases like salary and FD interest, Form 26AS and refunds, and a worked India example. Understand tax deducted at source.",
+      "definition": "TDS (Tax Deducted at Source) is a mechanism under the Income Tax Act, 1961 by which the person making certain payments &mdash; salary, interest, rent, professional fees and more &mdash; deducts a small slice of tax before handing over the money, and deposits it with the government against the recipient&rsquo;s PAN.",
+      "faqs": [
+        { "q": "Is TDS an extra tax on top of income tax?", "a": "No. TDS is a part-payment of the very income tax you owe. It is deducted early and adjusted against your final liability when you file your return, so it never adds to your total tax." },
+        { "q": "The bank deducted TDS on my FD but my income is below the taxable limit—what now?", "a": "You may be able to submit Form 15G, or Form 15H if you are a senior citizen, to the bank at the start of the year to stop deduction if you meet the applicable conditions. If TDS was already deducted, file your ITR and claim the eligible amount back as a refund." },
+        { "q": "Where do I check how much TDS has been deducted against my PAN?", "a": "Log in to the income tax e-filing portal and view your Form 26AS and Annual Information Statement (AIS). Both consolidate TDS entries reported against your PAN across employers, banks and other deductors." },
+        { "q": "What is the difference between Form 16 and Form 16A?", "a": "Form 16 is the TDS certificate for salary, issued by your employer under Section 192. Form 16A covers non-salary TDS—interest, rent, professional fees and similar payments—and is issued by the respective deductor. Both document tax paid on your behalf." },
+        { "q": "Why was TDS deducted at 20 percent on my interest?", "a": "This can happen when a valid PAN was not provided or accepted for the account. Deduction without PAN can attract a higher rate, commonly 20 percent for interest. Update your PAN with the deductor and reconcile the credit through your ITR." },
+        { "q": "If too much TDS was deducted, how do I get the excess back?", "a": "File your Income Tax Return, report all your income and verify the TDS shown in Form 26AS and AIS. If the tax you owe is less than the eligible TDS credit, the difference is refunded to your bank account after the return is processed." }
+      ],
+      "related": [
+        { "slug": "old-vs-new-tax-regime", "url": "/dictionary/old-vs-new-tax-regime/" },
+        { "slug": "section-80c", "url": "/dictionary/section-80c/" },
+        { "slug": "fixed-deposit", "url": "/dictionary/fixed-deposit/" },
+        { "slug": "epf", "url": "/dictionary/epf/" }
+      ]
+    },
+    {
+      "slug": "old-vs-new-tax-regime",
+      "term": "Old vs New Tax Regime",
+      "category": "Taxation",
+      "url": "/dictionary/old-vs-new-tax-regime/",
+      "focus_keyword": "old vs new tax regime",
+      "seo_title": "Old vs New Tax Regime: Which Is Better for You? | FinYaar",
+      "meta_description": "How the old and new tax regimes differ, which deductions each allows, and a worked India comparison to help you choose the cheaper one.",
+      "definition": "Old vs New Tax Regime is the choice every Indian income-tax payer makes between two parallel systems of slabs under the Income Tax Act: the older regime that keeps higher slab rates but lets you claim a long list of deductions and exemptions, and the newer regime that offers lower slab rates but strips away most of those deductions.",
+      "faqs": [
+        { "q": "If I do nothing when filing, which regime applies to me?", "a": "The new regime applies automatically, because it is the default. To be taxed under the old regime you must actively choose it—typically by informing your employer at the start of the year and confirming the choice when you file your return." },
+        { "q": "Can I claim my Section 80C investments under the new regime?", "a": "No. Section 80C is one of the deductions the new regime removes, so your PPF, EPF, ELSS or life-insurance contributions do not reduce your taxable income there. They remain useful savings, but the tax benefit for the amount invested is only available under the old regime." },
+        { "q": "I have a home loan on my self-occupied flat. Does that change my choice?", "a": "It often does. Home-loan interest on a self-occupied property is deductible under Section 24(b) only in the old regime. A large annual interest amount can substantially shrink your old-regime taxable income and tip the comparison in the old regime’s favour, so run both calculations before deciding." },
+        { "q": "Can salaried people switch between the two regimes every year?", "a": "Generally yes. Salaried taxpayers can usually reassess each financial year and pick whichever regime suits their current situation. Taxpayers with business or professional income face stricter rules on switching, so they should plan carefully before opting out of the new regime." },
+        { "q": "Does the standard deduction exist in both regimes?", "a": "Yes. A standard deduction for salaried individuals is available under both the old and the new regime and is applied without any proof or investment. It is one of the few benefits the new regime retains, but its exact amount is set in the Union Budget and should be checked for the relevant year." },
+        { "q": "Why do people say no tax is payable up to a certain income under the new regime?", "a": "Because the new regime offers a fuller rebate under Section 87A, structured so that a resident individual whose income stays below a specified threshold ends up with zero tax. That threshold has been raised in recent Budgets, which is a major reason the new regime appeals to middle-income earners. The exact limit changes each year, so confirm the current figure." }
+      ],
+      "related": [
+        { "slug": "section-80c", "url": "/dictionary/section-80c/" },
+        { "slug": "home-loan", "url": "/dictionary/home-loan/" },
+        { "slug": "health-insurance", "url": "/dictionary/health-insurance/" },
+        { "slug": "ppf", "url": "/dictionary/ppf/" }
+      ]
+    },
+    {
+      "slug": "epf",
+      "term": "EPF (Employees Provident Fund)",
+      "category": "Retirement and Planning",
+      "url": "/dictionary/epf/",
+      "focus_keyword": "epf",
+      "seo_title": "EPF (Employees Provident Fund): Meaning and How It Works | FinYaar",
+      "meta_description": "What EPF is, employee and employer contributions, the EPS split, UAN, tax and withdrawal rules, plus a worked India example.",
+      "definition": "EPF (Employees Provident Fund) is a government-backed retirement savings scheme for salaried employees in India, managed by the Employees Provident Fund Organisation (EPFO), in which both the employee and the employer contribute a fixed share of wages every month, the balance earns an annually declared rate of interest, and the accumulated corpus is paid out at retirement or on exit.",
+      "faqs": [
+        { "q": "Is EPS the same as EPF?", "a": "No. EPF is an accumulated savings balance generally available as a lump sum under the withdrawal rules. EPS is a separate pension scheme funded from the employer contribution on capped pensionable wages and can provide a monthly pension when its eligibility conditions are met." },
+        { "q": "Can I contribute more than 12 percent to EPF?", "a": "An eligible member may contribute more through the Voluntary Provident Fund, subject to payroll and scheme processes. VPF generally earns the notified EPF rate, but interest attributable to employee contributions above the applicable annual tax threshold is taxable." },
+        { "q": "What happens to my EPF when I change jobs?", "a": "Keep the same UAN and transfer or link the previous member account through the prescribed EPFO process rather than treating every job change as a final withdrawal. This preserves the accumulated balance and helps maintain service continuity." },
+        { "q": "Is EPF withdrawal always tax-free?", "a": "No. A qualifying withdrawal after at least five years of continuous service is generally tax-free, with transferred service normally counted. Earlier withdrawals can be taxable or subject to TDS unless an exception applies." },
+        { "q": "How is the EPF interest rate decided?", "a": "The EPFO’s Central Board recommends a rate for each year and the government approves or notifies it through the applicable process. Interest is credited annually according to scheme rules, so the rate can change from year to year." },
+        { "q": "Can I withdraw EPF before retirement for emergencies?", "a": "EPFO permits partial advances for specified purposes such as housing, medical treatment, marriage and education, subject to the purpose-specific service requirements, limits and documentation." }
+      ],
+      "related": [
+        { "slug": "ppf", "url": "/dictionary/ppf/" },
+        { "slug": "nps", "url": "/dictionary/nps/" },
+        { "slug": "section-80c", "url": "/dictionary/section-80c/" },
+        { "slug": "old-vs-new-tax-regime", "url": "/dictionary/old-vs-new-tax-regime/" }
+      ]
     }
   ]
 }

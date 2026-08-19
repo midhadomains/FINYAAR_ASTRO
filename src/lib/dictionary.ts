@@ -374,8 +374,8 @@ interface MetadataTerm {
   seo_title: string;
   meta_description: string;
   focus_keyword: string;
-  faqs: { q: string; a: string }[];
-  related: { term: string; slug: string }[];
+  faqs?: { q: string; a: string }[];
+  related: { term?: string; slug: string; url?: string }[];
 }
 
 const metadataCategoryMap: Record<string, CategoryKey> = {
@@ -387,10 +387,21 @@ const metadataCategoryMap: Record<string, CategoryKey> = {
   "Banking Savings and Deposits": "fpa",
   "Loans Credit and Debt": "fpa",
   "Stock Market and Equities": "markets",
+  "Personal Finance and Money Basics": "fpa",
+  "Taxation": "fpa",
+  "Retirement and Planning": "fpa",
+  "Insurance": "fpa",
+  "Fixed Income and Bonds": "markets",
+  "Economics and Macro": "markets",
 };
 
 function decodeEntities(value: string): string {
-  return value.replaceAll("&#39;", "'").replaceAll("&#8377;", "₹");
+  return value
+    .replaceAll("&#39;", "'")
+    .replaceAll("&#8377;", "₹")
+    .replaceAll("&mdash;", "—")
+    .replaceAll("&rsquo;", "’")
+    .replaceAll("&amp;", "&");
 }
 
 function addTableCaptions(html: string): string {
@@ -451,15 +462,13 @@ const duplicateMetadataSlugs = metadataSourceTerms
   .filter((slug, index, slugs) => slugs.indexOf(slug) !== index);
 const metadataSlugs = new Set(metadataSourceTerms.map(({ slug }) => slug));
 const lessonsWithoutMetadata = [...lessonsBySlug.keys()].filter((slug) => !metadataSlugs.has(slug));
-const metadataWithoutLessons = metadataSourceTerms
-  .map(({ slug }) => slug)
-  .filter((slug) => !lessonsBySlug.has(slug));
 
-if (duplicateMetadataSlugs.length || lessonsWithoutMetadata.length || metadataWithoutLessons.length) {
+// Metadata may be staged before its lesson arrives. A lesson without metadata is
+// still an error, while metadata without a lesson remains unpublished below.
+if (duplicateMetadataSlugs.length || lessonsWithoutMetadata.length) {
   throw new Error([
     duplicateMetadataSlugs.length ? `Duplicate dictionary metadata slugs: ${duplicateMetadataSlugs.join(", ")}` : "",
     lessonsWithoutMetadata.length ? `Lesson fragments missing metadata: ${lessonsWithoutMetadata.join(", ")}` : "",
-    metadataWithoutLessons.length ? `Dictionary metadata missing lesson fragments: ${metadataWithoutLessons.join(", ")}` : "",
   ].filter(Boolean).join("\n"));
 }
 
@@ -474,7 +483,7 @@ function fromMetadata(item: MetadataTerm): Term {
     seoTitle: decodeEntities(item.seo_title),
     metaDescription: decodeEntities(item.meta_description),
     focusKeyword: item.focus_keyword,
-    faq: item.faqs.map(({ q, a }) => ({ question: decodeEntities(q), answer: decodeEntities(a) })),
+    faq: (item.faqs ?? []).map(({ q, a }) => ({ question: decodeEntities(q), answer: decodeEntities(a) })),
     relatedSlugs: item.related.map(({ slug }) => slug),
     ...lessonsBySlug.get(item.slug),
   };
@@ -506,6 +515,7 @@ export function getTermCategorySlug(term: Term): string {
 
 function getCategoryIcon(label: string, fallback: string): string {
   const normalized = label.toLowerCase();
+  if (normalized.includes("personal finance") || normalized.includes("money basics")) return "account_balance_wallet";
   if (normalized.includes("banking") || normalized.includes("deposit")) return "account_balance";
   if (normalized.includes("mutual") || normalized.includes("sip")) return "donut_large";
   if (normalized.includes("loan") || normalized.includes("credit")) return "credit_score";
@@ -513,6 +523,10 @@ function getCategoryIcon(label: string, fallback: string): string {
   if (normalized.includes("ratio") || normalized.includes("valuation")) return "calculate";
   if (normalized.includes("stock") || normalized.includes("market")) return "candlestick_chart";
   if (normalized.includes("derivative") || normalized.includes("risk")) return "shield";
+  if (normalized.includes("tax")) return "request_quote";
+  if (normalized.includes("retirement")) return "elderly";
+  if (normalized.includes("insurance")) return "health_and_safety";
+  if (normalized.includes("fixed income") || normalized.includes("bond")) return "payments";
   if (normalized.includes("investing")) return "trending_up";
   if (normalized.includes("economic") || normalized.includes("macro")) return "public";
   return fallback;
