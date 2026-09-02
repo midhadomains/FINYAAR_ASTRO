@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 const { term } = Astro.props;
 const termSeo = getTermSeo(term);
 const pageH1 = termSeo.primaryKeyword.charAt(0).toUpperCase() + termSeo.primaryKeyword.slice(1);
-const openingAnswer = `${pageH1} is ${term.definition.replace(/^[A-Z]/, (letter) => letter.toLowerCase())}`;
+const openingAnswer = term.definition;
 const seoTitle = term.seoTitle && term.seoTitle.length <= 60 && term.seoTitle.toLowerCase().includes(termSeo.primaryKeyword.toLowerCase())
   ? term.seoTitle
   : buildSeoTitle(termSeo.primaryKeyword);
