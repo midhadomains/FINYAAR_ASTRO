@@ -7,7 +7,7 @@ import SeoFaq from "../../components/SeoFaq.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
 import { terms, categoryMap, getRelatedTerms, getTermCategorySlug } from "../../lib/dictionary";
 import { getPillarBySlug, getPillarSlugForTerm } from "../../lib/pillars";
-import { buildGenericFaqs, buildMetaDescription, buildSeoTitle, faqSchema, getTermSeo } from "../../lib/seo";
+import { buildGenericFaqs, buildMetaDescription, buildSeoTitle, faqSchema, getTermSeo, formatTermName } from "../../lib/seo";
 import "katex/dist/katex.min.css";
 
 export async function getStaticPaths() {
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 
 const { term } = Astro.props;
 const termSeo = getTermSeo(term);
-const pageH1 = termSeo.primaryKeyword.charAt(0).toUpperCase() + termSeo.primaryKeyword.slice(1);
+const pageH1 = formatTermName(term.term);
 const openingAnswer = term.definition;
 const seoTitle = term.seoTitle && term.seoTitle.length <= 60 && term.seoTitle.toLowerCase().includes(termSeo.primaryKeyword.toLowerCase())
   ? term.seoTitle

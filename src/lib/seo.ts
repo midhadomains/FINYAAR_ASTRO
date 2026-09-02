@@ -41,6 +41,31 @@ function sentence(value: string): string {
   return clean ? `${clean}.` : "";
 }
 
+const ACRONYM_MAP: Record<string, string> = {
+  sip: "SIP",
+  epf: "EPF",
+  tds: "TDS",
+  gdp: "GDP",
+  ppf: "PPF",
+  cfa: "CFA",
+  frm: "FRM",
+  nps: "NPS",
+  eps: "EPS",
+  etf: "ETF",
+  nav: "NAV",
+  ipo: "IPO",
+  emi: "EMI",
+  upi: "UPI",
+  ebitda: "EBITDA",
+};
+
+export function formatTermName(name: string): string {
+  return name.replace(/\b(\w+)\b/g, (word) => {
+    const lower = word.toLowerCase();
+    return ACRONYM_MAP[lower] ?? word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+  });
+}
+
 export function buildSeoTitle(primaryKeyword: string): string {
   const keyword = primaryKeyword.trim();
   const withBrand = `${keyword.charAt(0).toUpperCase()}${keyword.slice(1)} | FinYaar`;
