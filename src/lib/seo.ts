@@ -340,6 +340,7 @@ const siteTargets: PageKeywordTarget[] = [
   ["/blog/", "site", "finance learning articles", "Informational navigation", "Global", "supporting", "P3", "Read practical finance, markets, modelling, and career articles."],
   ["/about/", "site", "about FinYaar Finance", "Navigational", "Global", "supporting", "P3", "Learn about FinYaar Finance, its practical teaching approach, editorial standards, and finance education mission."],
   ["/contact/", "site", "contact FinYaar Finance", "Navigational", "Global", "supporting", "P3", "Contact the FinYaar Finance team."],
+  ["/sitemap/", "site", "FinYaar sitemap", "Navigational", "Global", "supporting", "P3", "Browse every public FinYaar page, topic hub, finance dictionary category, and lesson."],
 ].map(([url, pageType, primaryKeyword, searchIntent, market, stage, priority, snippetAnswer]) => ({
   url,
   pageType,
