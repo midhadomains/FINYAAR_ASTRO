@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/create-sitemap-alias.mjs",
     "deploy": "npm run build && wrangler deploy",
     "seo:audit": "node scripts/audit-seo.mjs",
     "preview": "astro preview",

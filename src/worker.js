@@ -4,6 +4,14 @@ export default {
     const forwardedProtocol = request.headers.get("x-forwarded-proto");
     const isLocalDevelopment = url.hostname === "localhost" || url.hostname === "127.0.0.1";
 
+    // Preserve previously submitted sitemap URLs after moving to a single urlset.
+    if (url.pathname === "/sitemap-index.xml" || url.pathname === "/sitemap-0.xml") {
+      url.pathname = "/sitemap.xml";
+      url.search = "";
+      if (!isLocalDevelopment) url.protocol = "https:";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (!isLocalDevelopment && (url.protocol === "http:" || forwardedProtocol === "http")) {
       url.protocol = "https:";
       return Response.redirect(url.toString(), 301);

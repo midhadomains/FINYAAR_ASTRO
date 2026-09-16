@@ -3,8 +3,8 @@ import type { APIRoute } from "astro";
 export const prerender = true;
 
 export const GET: APIRoute = ({ site }) => {
-  const origin = site ?? new URL("https://finyaar.com");
-  const sitemapUrl = new URL("sitemap-index.xml", origin);
+  const origin = site ?? new URL("https://www.finyaar.com");
+  const sitemapUrl = new URL("sitemap.xml", origin);
   const body = [
     "User-agent: *",
     "Allow: /",

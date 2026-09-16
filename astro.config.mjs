@@ -15,7 +15,12 @@ export default defineConfig({
   site: SITE_URL || 'https://www.finyaar.com',
   integrations: [sitemap({
     filter: (page) => !page.includes('/internal/'),
-    serialize: (item) => ({ ...item, lastmod: getLastmod(item.url) }),
+    serialize: (item) => ({
+      ...item,
+      lastmod: getLastmod(item.url),
+      changefreq: 'weekly',
+      priority: new URL(item.url).pathname === '/' ? 1 : 0.7,
+    }),
   })],
   vite: {
     plugins: [tailwindcss()]
