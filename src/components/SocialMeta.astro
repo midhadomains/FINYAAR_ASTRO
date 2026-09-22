@@ -10,6 +10,8 @@ const { title, description, canonicalUrl, type = "website" } = Astro.props;
 const imageUrl = new URL("/og-finyaar.png", canonicalUrl);
 const imageAlt = "FinYaar finance education with rupee, learning, and growth illustrations";
 ---
+<link rel="icon" href="/favicon.ico?v=f1" sizes="16x16 32x32 48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=f1" sizes="any" />
 <meta property="og:type" content={type} />
 <meta property="og:site_name" content="FinYaar" />
 <meta property="og:locale" content="en_IN" />
