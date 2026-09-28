@@ -13,7 +13,9 @@ interface Props {
 const { target, benefit, faqs, breadcrumbs = target.url === "/"
   ? [{ label: "Home", href: "/" }]
   : [{ label: "Home", href: "/" }, { label: target.primaryKeyword, href: target.url }], additionalSchema = [] } = Astro.props;
-const title = buildSeoTitle(target.primaryKeyword);
+const title = target.url === "/"
+  ? "FinYaar: Finance courses and dictionary India"
+  : buildSeoTitle(target.primaryKeyword);
 const description = buildMetaDescription(target.primaryKeyword, benefit);
 const canonicalUrl = new URL(target.url, Astro.site ?? Astro.url.origin);
 const schema = JSON.stringify({ "@context": "https://schema.org", "@graph": [

@@ -153,7 +153,7 @@ export function organizationSchema(siteUrl: URL): Record<string, unknown> {
   return {
     "@type": "Organization",
     "@id": `${new URL("/", siteUrl).href}#organization`,
-    name: "FinYaar Finance",
+    name: "FinYaar",
     url: new URL("/", siteUrl).href,
     description: "Practical finance education, dictionary lessons, calculators and professional exam preparation.",
   };
@@ -164,7 +164,8 @@ export function websiteSchema(siteUrl: URL): Record<string, unknown> {
   return {
     "@type": "WebSite",
     "@id": `${homeUrl.href}#website`,
-    name: "FinYaar Finance",
+    name: "FinYaar",
+    alternateName: "Fin Yaar",
     url: homeUrl.href,
     publisher: { "@id": `${homeUrl.href}#organization` },
     potentialAction: {
