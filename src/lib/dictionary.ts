@@ -48,6 +48,7 @@ export interface QuizBlock {
 export interface Term {
   term: string;
   heading?: string;
+  subCluster?: string;
   slug: string;
   category: CategoryKey;
   categoryLabel?: string;
@@ -370,6 +371,7 @@ interface MetadataTerm {
   slug: string;
   term: string;
   heading?: string;
+  sub_cluster?: string;
   category: string;
   url: string;
   definition: string;
@@ -478,6 +480,7 @@ function fromMetadata(item: MetadataTerm): Term {
   return {
     term: item.term,
     heading: item.heading,
+    subCluster: item.sub_cluster,
     slug: item.slug,
     category: metadataCategoryMap[item.category] ?? "markets",
     categoryLabel: item.category,

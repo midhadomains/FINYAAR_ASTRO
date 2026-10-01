@@ -1004,10 +1004,11 @@
     {
       "slug": "emergency-fund",
       "term": "Emergency Fund",
+      "sub_cluster": "Emergency planning",
       "category": "Personal Finance and Money Basics",
       "url": "/dictionary/emergency-fund/",
       "focus_keyword": "emergency fund",
-      "seo_title": "Emergency Fund: How Much You Need and Where to Keep It | FinYaar",
+      "seo_title": "Emergency Fund: How Much to Save & Where to Keep It | FinYaar",
       "meta_description": "What an emergency fund is, how many months of expenses to save, where to park it, and a worked India example to size yours correctly.",
       "definition": "Emergency Fund is money reserved for urgent, unplanned expenses or a temporary loss of income. It should emphasise accessibility and capital stability rather than high returns. A common starting target is three to six months of essential expenses, adjusted for income stability, dependants, insurance, health needs and fixed commitments.",
       "faqs": [
@@ -1028,12 +1029,14 @@
     {
       "slug": "net-worth",
       "term": "Net Worth",
+      "heading": "How to Calculate Net Worth",
+      "sub_cluster": "Cash-flow & net worth",
       "category": "Personal Finance and Money Basics",
       "url": "/dictionary/net-worth/",
-      "focus_keyword": "net worth",
-      "seo_title": "Net Worth: Meaning, Formula and How to Calculate It | FinYaar",
-      "meta_description": "Net worth is total assets minus total liabilities. Learn the formula, how to calculate yours, and why the trend matters, with an India example.",
-      "definition": "Net Worth is the value of your assets minus your liabilities on a particular date. Assets are recorded at a reasonable current value and debts at the amount still outstanding. The result can be positive or negative and is a useful measure of financial position, although it should be read alongside liquidity, cash flow, insurance and progress toward your goals.",
+      "focus_keyword": "how to calculate net worth",
+      "seo_title": "How to Calculate Net Worth: Formula & Example | FinYaar",
+      "meta_description": "Learn how to calculate net worth by subtracting liabilities from assets. Explore the formula, an Indian household example, and ways to track your progress.",
+      "definition": "Net worth is your total assets minus your total liabilities on a particular date. To learn how to calculate net worth, list assets at their current value and subtract outstanding debts. Track the result alongside liquidity, cash flow and progress toward your goals.",
       "faqs": [
         { "q": "Does salary count in net worth?", "a": "No. Salary is income earned over a period, while net worth is a snapshot on one date. Salary affects net worth only when it is retained as cash or used to acquire assets, repay costs or reduce debt." },
         { "q": "Should I include my home in net worth?", "a": "Usually yes: include a conservative current sale value as an asset and the outstanding home loan as a liability. Because a primary home is illiquid, it is also useful to track liquid or investable net worth separately." },
@@ -1054,15 +1057,55 @@
       "term": "Savings Account",
       "category": "Banking Savings and Deposits",
       "url": "/dictionary/savings-account/",
-      "focus_keyword": "savings account",
-      "seo_title": "Savings Account: Meaning, Interest and Features (India) | FinYaar",
-      "meta_description": "What a savings account is, how interest and DICGC cover work, types and features, and a worked India example. A clear beginner guide.",
-      "definition": "Savings Account is a deposit account held with a bank or post office that keeps your money safe, lets you withdraw it on demand, and pays interest on the daily closing balance.",
+      "focus_keyword": "savings account interest rate",
+      "seo_title": "Savings Account Interest Rate: Guide & Example | FinYaar",
+      "meta_description": "Understand the savings account interest rate, daily balance calculations, account types, deposit insurance and a worked Indian example for everyday banking.",
+      "definition": "A savings account is a bank deposit account for everyday payments and accessible savings. The savings account interest rate determines what your balance earns and can vary by bank, balance tier and account terms.",
       "related": [
-        { "slug": "fixed-deposit", "url": "/dictionary/fixed-deposit/" },
-        { "slug": "recurring-deposit", "url": "/dictionary/recurring-deposit/" },
-        { "slug": "upi", "url": "/dictionary/upi/" },
-        { "slug": "emergency-fund", "url": "/dictionary/emergency-fund/" }
+        {
+          "slug": "fixed-deposit",
+          "url": "/dictionary/fixed-deposit/"
+        },
+        {
+          "slug": "recurring-deposit",
+          "url": "/dictionary/recurring-deposit/"
+        },
+        {
+          "slug": "upi",
+          "url": "/dictionary/upi/"
+        },
+        {
+          "slug": "emergency-fund",
+          "url": "/dictionary/emergency-fund/"
+        }
+      ],
+      "heading": "Savings Account Interest Rate: How It Works",
+      "sub_cluster": "Account types",
+      "faqs": [
+        {
+          "q": "What is the current savings account interest rate in India?",
+          "a": "It varies by bank and balance, commonly between 2.5 and 7 percent a year. Each bank sets its own rate and may change it, so confirm the latest figure with your bank or the RBI."
+        },
+        {
+          "q": "How often is savings interest paid?",
+          "a": "Interest accrues daily on the closing balance and is credited to your account once every quarter."
+        },
+        {
+          "q": "Is my money in a savings account safe?",
+          "a": "Yes, deposits are insured by the DICGC up to &#8377;5 lakh per depositor per bank, covering principal and interest together."
+        },
+        {
+          "q": "Do I pay tax on savings account interest?",
+          "a": "Yes, it is taxable as income. You may deduct up to &#8377;10,000 under Section 80TTA if below 60, or up to &#8377;50,000 under Section 80TTB if a senior citizen."
+        },
+        {
+          "q": "What is a minimum average balance?",
+          "a": "It is the average balance a regular account must maintain over a month or quarter. Falling below it usually attracts a penalty, though zero-balance accounts avoid this."
+        },
+        {
+          "q": "Should I keep all my savings here?",
+          "a": "Keep an emergency buffer and monthly spending in it, but move surplus you will not need soon to a fixed deposit, recurring deposit, or investments that earn more."
+        }
       ]
     },
     {

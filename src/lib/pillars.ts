@@ -46,7 +46,8 @@ const pillarDefinitions: Pillar[] = [
     description: "Build strong money habits through practical guidance on cash flow, saving, investing, and financial goals.",
     clusters: [
       cluster("Budgeting", "how-to", "budgeting"),
-      cluster("Emergency Fund", "how-to"),
+      cluster("Emergency planning", "how-to", "emergency-fund"),
+      cluster("Cash-flow & net worth", "how-to", "net-worth"),
       cluster("Saving vs Investing", "comparison"),
       cluster("Financial Goals", "how-to"),
       cluster("Net Worth Calculator", "calculator"),
@@ -61,7 +62,7 @@ const pillarDefinitions: Pillar[] = [
     clusters: [
       cluster("Fixed Deposit", "explainer", "fixed-deposit"),
       cluster("Recurring Deposit"),
-      cluster("Savings Account"),
+      cluster("Account types", "explainer", "savings-account"),
       cluster("NEFT, IMPS and UPI", "comparison"),
       cluster("FD Maturity Calculator", "calculator", "fixed-deposit"),
     ],
