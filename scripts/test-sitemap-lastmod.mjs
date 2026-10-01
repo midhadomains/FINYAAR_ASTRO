@@ -40,11 +40,16 @@ assert.equal(createSitemapLastmod({ root })(url('/dictionary/alpha/')), '2025-04
 assert.throws(() => createSitemapLastmod({ root })(url('/about/')), /No content change date/);
 const xml = readFileSync('dist/sitemap.xml', 'utf8');
 const actual = createSitemapLastmod();
+// Verify every emitted URL also builds with the checked-in dates in a shallow clone.
+const editorialDates = JSON.parse(readFileSync('src/data/content-dates.json', 'utf8'));
+write('src/data/content-dates.json', JSON.stringify(editorialDates));
+const shallowDate = createSitemapLastmod({ root });
 let count = 0;
 for (const match of xml.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
   const loc = match[1].match(/<loc>(.*?)<\/loc>/)[1];
   const lastmod = match[1].match(/<lastmod>(.*?)<\/lastmod>/)[1];
   assert.equal(lastmod, actual(loc), loc);
+  assert.equal(shallowDate(loc), new Date(editorialDates[new URL(loc).pathname].dateModified).toISOString(), `Shallow-history fallback: ${loc}`);
   count++;
 }
 assert.ok(count > 0);
