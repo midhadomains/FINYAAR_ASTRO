@@ -47,6 +47,7 @@ export interface QuizBlock {
 
 export interface Term {
   term: string;
+  heading?: string;
   slug: string;
   category: CategoryKey;
   categoryLabel?: string;
@@ -368,6 +369,7 @@ void _unpublishedTerms;
 interface MetadataTerm {
   slug: string;
   term: string;
+  heading?: string;
   category: string;
   url: string;
   definition: string;
@@ -475,6 +477,7 @@ if (duplicateMetadataSlugs.length || lessonsWithoutMetadata.length) {
 function fromMetadata(item: MetadataTerm): Term {
   return {
     term: item.term,
+    heading: item.heading,
     slug: item.slug,
     category: metadataCategoryMap[item.category] ?? "markets",
     categoryLabel: item.category,

@@ -979,12 +979,13 @@
     {
       "slug": "budgeting",
       "term": "Budgeting",
+      "heading": "Budgeting: How to Make a Budget",
       "category": "Personal Finance and Money Basics",
       "url": "/dictionary/budgeting/",
-      "focus_keyword": "budgeting",
-      "seo_title": "Budgeting: Meaning, Methods and Example (India Guide) | FinYaar",
-      "meta_description": "What budgeting means, why it matters, popular methods like 50-30-20, and a worked India example. Learn to plan income and expenses simply.",
-      "definition": "Budgeting is the process of planning and monitoring how available income will be used for expenses, savings and debt goals over a period. A useful budget includes irregular costs, compares actual spending with the plan and is adjusted as circumstances change.",
+      "focus_keyword": "how to make a budget",
+      "seo_title": "How to Make a Budget: Methods & Example | FinYaar",
+      "meta_description": "Learn how to make a budget with the 50/30/20 rule, zero-based budgeting, and a worked Indian salary example. Plan your spending and savings.",
+      "definition": "Budgeting is planning how to use your income for expenses, savings and debt goals. To learn how to make a budget, list your take-home income, group your expenses, and set realistic limits. Include irregular costs, compare actual spending with your plan, and adjust as circumstances change.",
       "faqs": [
         { "q": "What is the easiest budgeting rule for a beginner?", "a": "The 50/30/20 framework is a simple starting point: roughly 50% of available income for needs, 30% for wants and 20% for savings and extra debt repayment. It is a flexible guide, not a compulsory split, so adjust it to your housing costs, income and goals." },
         { "q": "Should I budget using gross salary or take-home pay?", "a": "Build the spending plan around cash actually available after tax and payroll deductions. When measuring your overall saving rate, separately include mandatory savings such as employee EPF contributions so that the budget does not understate how much you save." },

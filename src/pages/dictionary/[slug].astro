@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 
 const { term } = Astro.props;
 const termSeo = getTermSeo(term);
-const pageH1 = formatTermName(term.term);
+const pageH1 = term.heading ?? formatTermName(term.term);
 const openingAnswer = term.definition;
 const seoTitle = term.seoTitle && term.seoTitle.length <= 60 && term.seoTitle.toLowerCase().includes(termSeo.primaryKeyword.toLowerCase())
   ? term.seoTitle
