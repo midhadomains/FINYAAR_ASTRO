@@ -14,7 +14,7 @@ const getLastmod = createSitemapLastmod();
 export default defineConfig({
   site: SITE_URL || 'https://www.finyaar.com',
   integrations: [sitemap({
-    filter: (page) => !page.includes('/internal/'),
+    filter: (page) => !page.includes('/internal/') && !/\/404(?:\/|\.html)?$/.test(new URL(page).pathname),
     serialize: (item) => ({
       ...item,
       lastmod: getLastmod(item.url),

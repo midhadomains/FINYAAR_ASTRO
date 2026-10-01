@@ -1,0 +1,322 @@
+{
+  "/": {
+    "datePublished": "2026-07-18T17:50:13+05:30",
+    "dateModified": "2026-09-21T17:48:25+05:30"
+  },
+  "/about/": {
+    "datePublished": "2026-07-30T16:22:45+05:30",
+    "dateModified": "2026-09-21T17:48:25+05:30"
+  },
+  "/accounting-financial-statements/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/banking-savings-deposits/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/banking-savings-deposits/fd-maturity-calculator/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-03T18:01:31+05:30"
+  },
+  "/blog/": {
+    "datePublished": "2026-07-30T16:22:45+05:30",
+    "dateModified": "2026-09-28T16:24:19+05:30"
+  },
+  "/cfa/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/contact/": {
+    "datePublished": "2026-07-30T16:22:45+05:30",
+    "dateModified": "2026-09-21T17:48:25+05:30"
+  },
+  "/corporate-finance/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/courses/": {
+    "datePublished": "2026-07-30T16:22:45+05:30",
+    "dateModified": "2026-09-21T17:48:25+05:30"
+  },
+  "/crypto-fintech-digital-assets/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/derivatives-risk/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/dictionary/": {
+    "datePublished": "2026-07-31T17:47:06+05:30",
+    "dateModified": "2026-09-21T17:48:25+05:30"
+  },
+  "/dictionary/beta/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/bond/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/budgeting/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/capital-gains-tax/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/compound-interest/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/credit-score-cibil/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/diversification/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/dividend-yield/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/dividend/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/ebitda/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/emergency-fund/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/emi/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/epf/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/eps/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/equity-share/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/etf/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/expense-ratio/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/fixed-deposit/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/gdp/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/health-insurance/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/index-fund/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/inflation/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/ipo/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/market-capitalization/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/mutual-fund/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/nav-net-asset-value/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/net-worth/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/nps/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/old-vs-new-tax-regime/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/pe-ratio/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/ppf/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/recurring-deposit/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/repo-rate/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/risk-vs-return/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/rule-of-72/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/section-80c/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/sensex-and-nifty/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/simple-interest/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/sip-systematic-investment-plan/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/tds/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/term-insurance/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/volatility/": {
+    "datePublished": "2026-08-12T17:27:08+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/dictionary/yield-to-maturity/": {
+    "datePublished": "2026-08-19T18:12:58+05:30",
+    "dateModified": "2026-09-02T13:07:23+05:30"
+  },
+  "/economics-macro/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/finance-exam-prep/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/fixed-income-bonds/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/fixed-income-bonds/bond-yield-calculator/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-03T18:01:31+05:30"
+  },
+  "/forex-commodities-global-markets/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/forex-commodities-global-markets/currency-converter/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-03T18:01:31+05:30"
+  },
+  "/frm/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/insurance/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/insurance/life-cover-calculator/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-03T18:01:31+05:30"
+  },
+  "/investing-basics/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/investing-basics/investment-growth-calculator/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-03T18:01:31+05:30"
+  },
+  "/loans-credit-debt/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/loans-credit-debt/emi-calculator/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-03T18:01:31+05:30"
+  },
+  "/mutual-funds-sip-etfs/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/personal-finance/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/personal-finance/net-worth-calculator/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-03T18:01:31+05:30"
+  },
+  "/ratios-valuation-analysis/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/retirement-planning/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/retirement-planning/retirement-calculator/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-03T18:01:31+05:30"
+  },
+  "/stock-market-equities/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/taxation-india/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-17T13:39:13+05:30"
+  },
+  "/taxation-india/income-tax-calculator/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-08-03T18:01:31+05:30"
+  },
+  "/topics/": {
+    "datePublished": "2026-08-03T18:01:31+05:30",
+    "dateModified": "2026-09-21T17:48:25+05:30"
+  },
+  "/vault/": {
+    "datePublished": "2026-07-30T16:22:45+05:30",
+    "dateModified": "2026-09-21T17:48:25+05:30"
+  }
+}

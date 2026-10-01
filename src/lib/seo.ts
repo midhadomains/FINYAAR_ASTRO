@@ -1,11 +1,8 @@
 import {
-  dictionaryCategories,
-  getTermCategorySlug,
   terms,
-  type DictionaryCategory,
   type Term,
 } from "./dictionary";
-import { pillars, type ClusterPage, type Pillar } from "./pillars";
+import { getPillarSlugForTerm, pillars, type ClusterPage, type Pillar } from "./pillars";
 
 export type KeywordStage = "long-tail" | "supporting" | "head-term";
 export type KeywordMarket = "India" | "Global";
@@ -315,22 +312,6 @@ export function getTermSeo(term: Term): PageKeywordTarget {
   };
 }
 
-export function getCategorySeo(category: DictionaryCategory): PageKeywordTarget {
-  return {
-    url: `/dictionary/category/${category.slug}/`,
-    pageType: "dictionary-category",
-    primaryKeyword: `${category.label.toLowerCase()} glossary`,
-    searchIntent: "Informational navigation",
-    market: "Global",
-    stage: "supporting",
-    priority: category.hasLessonContent ? "P2" : "P3",
-    snippetAnswer: category.description,
-    monthlyVolume: null,
-    keywordDifficulty: null,
-    researchStatus: "keyword-tool-required",
-    researchSource: "Category seed; validate in Keyword Planner, Ahrefs, or Semrush",
-  };
-}
 
 const siteTargets: PageKeywordTarget[] = [
   ["/", "site", "finance courses and dictionary India", "Mixed informational", "India", "head-term", "P3", "FinYaar provides practical finance learning, dictionary lessons, calculators, and exam preparation."],
@@ -341,7 +322,7 @@ const siteTargets: PageKeywordTarget[] = [
   ["/blog/", "site", "finance learning articles", "Informational navigation", "Global", "supporting", "P3", "Read practical finance, markets, modelling, and career articles."],
   ["/about/", "site", "about FinYaar Finance", "Navigational", "Global", "supporting", "P3", "Learn about FinYaar Finance, its practical teaching approach, editorial standards, and finance education mission."],
   ["/contact/", "site", "contact FinYaar Finance", "Navigational", "Global", "supporting", "P3", "Contact the FinYaar Finance team."],
-  ["/sitemap/", "site", "FinYaar sitemap", "Navigational", "Global", "supporting", "P3", "Browse every public FinYaar page, topic hub, finance dictionary category, and lesson."],
+  ["/sitemap/", "site", "FinYaar sitemap", "Navigational", "Global", "supporting", "P3", "Browse every public FinYaar page, topic hub and dictionary lesson."],
 ].map(([url, pageType, primaryKeyword, searchIntent, market, stage, priority, snippetAnswer]) => ({
   url,
   pageType,
@@ -361,7 +342,6 @@ export const keywordMap: PageKeywordTarget[] = [
   ...siteTargets,
   ...pillars.map(getPillarSeo),
   ...pillars.flatMap((pillar) => pillar.clusters.map((cluster) => getClusterSeo(pillar, cluster))),
-  ...dictionaryCategories.map(getCategorySeo),
   ...terms.map(getTermSeo),
 ];
 
@@ -384,5 +364,5 @@ export function getKeywordTargetByUrl(url: string): PageKeywordTarget | undefine
 }
 
 export function getTermCategoryKeyword(term: Term): string {
-  return keywordMap.find((entry) => entry.url === `/dictionary/category/${getTermCategorySlug(term)}/`)?.primaryKeyword ?? "finance glossary";
+  return keywordMap.find((entry) => entry.url === `/${getPillarSlugForTerm(term)}/`)?.primaryKeyword ?? "finance glossary";
 }

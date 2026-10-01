@@ -1,4 +1,6 @@
 ---
+import { contentSchemaMetadata } from "../lib/content-metadata";
+import ContentByline from "./ContentByline.astro";
 import GoogleTag from "./GoogleTag.astro";
 import "../styles.css";
 import SiteFonts from "./SiteFonts.astro";
@@ -35,7 +37,7 @@ const examCourse = pillar.slug === "cfa"
 const structuredData = JSON.stringify({ "@context": "https://schema.org", "@graph": [
   { "@type": "CollectionPage", name: pageH1, description: metaDescription, url: canonicalUrl.href },
   {
-    "@type": "Article",
+    "@type": "Article", ...contentSchemaMetadata(canonicalUrl),
     "@id": `${canonicalUrl.href}#article`,
     headline: pageH1,
     description: metaDescription,
@@ -91,6 +93,7 @@ const kindLabels = {
                 Finance pillar
               </span>
               <h1 class="text-[clamp(2.35rem,5vw,4rem)] font-extrabold tracking-[-0.035em] text-ink">{pageH1}</h1>
+        <ContentByline />
               <p class="mt-5 max-w-2xl text-lg leading-relaxed text-muted">{openingAnswer}</p>
             </div>
             <div class="rounded-[14px] border border-line bg-surface p-5">

@@ -1,4 +1,6 @@
 ---
+import { contentSchemaMetadata } from "../../lib/content-metadata";
+import ContentByline from "../../components/ContentByline.astro";
 import GoogleTag from "../../components/GoogleTag.astro";
 import "../../styles.css";
 import SiteFonts from "../../components/SiteFonts.astro";
@@ -6,7 +8,7 @@ import SiteHeader from "../../components/SiteHeader.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import SeoFaq from "../../components/SeoFaq.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
-import { terms, categoryMap, getRelatedTerms, getTermCategorySlug } from "../../lib/dictionary";
+import { terms, categoryMap, getRelatedTerms } from "../../lib/dictionary";
 import { getPillarBySlug, getPillarSlugForTerm } from "../../lib/pillars";
 import { buildGenericFaqs, buildMetaDescription, buildSeoTitle, faqSchema, getTermSeo, formatTermName } from "../../lib/seo";
 import "katex/dist/katex.min.css";
@@ -29,17 +31,19 @@ const metaDescription = buildMetaDescription(termSeo.primaryKeyword, term.metaDe
 const pageFaqs = term.faq?.map((item) => ({ question: item.question, answer: item.answer }))
   ?? buildGenericFaqs(termSeo.primaryKeyword, term.definition);
 const category = categoryMap[term.category];
-const categoryLabel = term.categoryLabel ?? category.label;
+
 const related = getRelatedTerms(term, 4);
-const pillar = getPillarBySlug(getPillarSlugForTerm(term));
+const pillar = getPillarBySlug(getPillarSlugForTerm(term))!;
+const categoryLabel = pillar.title;
 
 const canonicalPath = term.url ?? `/dictionary/${term.slug}/`;
 const canonicalUrl = new URL(canonicalPath, Astro.site ?? Astro.url.origin);
-const categoryUrl = new URL(`/dictionary/category/${getTermCategorySlug(term)}/`, canonicalUrl);
+const categoryUrl = new URL(`/${pillar.slug}/`, canonicalUrl);
 const dictionaryUrl = new URL("/dictionary/", canonicalUrl);
 const schemaGraph: Record<string, unknown>[] = [
   {
     "@type": "DefinedTerm",
+    ...contentSchemaMetadata(canonicalUrl),
     "@id": `${canonicalUrl.href}#term`,
     name: term.term,
     termCode: term.slug,
@@ -336,7 +340,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
       <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-sm text-muted">
         <a class="hover:text-brand" href="/dictionary/">Dictionary</a>
         <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-        <a href={`/dictionary/category/${getTermCategorySlug(term)}/`} class="hover:text-brand">{categoryLabel}</a>
+        <a href={`/${pillar.slug}/`} class="hover:text-brand">{categoryLabel}</a>
         <span class="material-symbols-outlined text-[16px]">chevron_right</span>
         <span class="text-ink">{term.term}</span>
       </nav>
@@ -347,6 +351,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6";
           {categoryLabel}
         </a>
         <h1 class="text-[clamp(2rem,4vw,3rem)] font-extrabold tracking-[-0.02em] text-ink">{pageH1}</h1>
+        <ContentByline />
 
         <div class="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1.5 text-sm text-muted">
           <span>By the <b class="font-bold text-ink">FinYaar Editorial Team</b></span>

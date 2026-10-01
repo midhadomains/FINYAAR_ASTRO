@@ -1,0 +1,13 @@
+---
+import { getContentDates } from "../lib/content-metadata";
+interface Props { path?: string }
+const { path = Astro.url.pathname } = Astro.props;
+const { dateModified } = getContentDates(path);
+const label = new Intl.DateTimeFormat("en-IN", {
+  day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Kolkata",
+}).format(new Date(dateModified));
+---
+<p class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted" data-content-byline>
+  <span>By <a href="/about/" rel="author" class="font-semibold text-brand hover:underline">FinYaar Team</a></span>
+  <span>Last updated: <time datetime={dateModified}>{label}</time></span>
+</p>

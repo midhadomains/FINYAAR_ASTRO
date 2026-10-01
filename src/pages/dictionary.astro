@@ -1,4 +1,6 @@
 ---
+import { contentSchemaMetadata } from "../lib/content-metadata";
+import ContentByline from "../components/ContentByline.astro";
 import GoogleTag from "../components/GoogleTag.astro";
 import "../styles.css";
 import SiteFonts from "../components/SiteFonts.astro";
@@ -8,6 +10,8 @@ import SeoFaq from "../components/SeoFaq.astro";
 import SocialMeta from "../components/SocialMeta.astro";
 import { categories, dictionaryCategories, terms, getTermBySlug, getTermCategorySlug } from "../lib/dictionary";
 import { buildGenericFaqs, buildMetaDescription, buildSeoTitle, faqSchema, getKeywordTargetByUrl } from "../lib/seo";
+
+import { getPillarSlugForCategory, getPillarBySlug } from "../lib/pillars";
 
 const lessonCategories = dictionaryCategories.filter((category) => category.hasLessonContent);
 const indexDescription = "Plain-English finance definitions across money, banking, investing, markets, accounting, valuation, risk, and corporate finance.";
@@ -38,6 +42,7 @@ const structuredData = JSON.stringify({
       url: canonicalUrl.href,
       hasDefinedTerm: terms.map((term) => ({
         "@type": "DefinedTerm",
+        ...contentSchemaMetadata(new URL(`/dictionary/${term.slug}/`, canonicalUrl)),
         name: term.term,
         url: new URL(`/dictionary/${term.slug}/`, canonicalUrl).href,
       })),
@@ -83,6 +88,7 @@ const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-bran
       <!-- Hero -->
       <div class="mb-10 flex flex-col items-center text-center">
         <h1 class="text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold tracking-[-0.02em] text-ink">Finance Dictionary</h1>
+        <ContentByline />
         <p class="mx-auto mt-3 max-w-2xl text-muted">
           {seo.snippetAnswer} Browse every term alphabetically or filter the lesson-backed categories below.
         </p>
@@ -128,13 +134,13 @@ const card14 = "rounded-[14px] border border-line bg-white p-6 hover:border-bran
 
           <details class="rounded-[14px] border border-line bg-white">
             <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-bold text-ink">
-              Browse dictionary category hubs
+              Browse topic hubs
               <span class="material-symbols-outlined text-brand">expand_more</span>
             </summary>
             <div class="grid gap-2 border-t border-line p-4 sm:grid-cols-2 lg:grid-cols-3">
               {dictionaryCategories.map((category) => (
-                <a href={`/dictionary/category/${category.slug}/`} class="flex items-center justify-between gap-3 rounded-[10px] bg-surface px-3 py-2.5 text-sm font-semibold text-ink hover:text-brand">
-                  <span>{category.label}</span>
+                <a href={`/${getPillarSlugForCategory(category.slug)}/`} class="flex items-center justify-between gap-3 rounded-[10px] bg-surface px-3 py-2.5 text-sm font-semibold text-ink hover:text-brand">
+                  <span>{getPillarBySlug(getPillarSlugForCategory(category.slug))!.title}</span>
                   <span class="text-xs text-muted">{category.termCount}</span>
                 </a>
               ))}

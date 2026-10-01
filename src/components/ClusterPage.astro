@@ -1,4 +1,6 @@
 ---
+import { contentSchemaMetadata } from "../lib/content-metadata";
+import ContentByline from "./ContentByline.astro";
 import GoogleTag from "./GoogleTag.astro";
 import "../styles.css";
 import SiteFonts from "./SiteFonts.astro";
@@ -17,6 +19,7 @@ interface Props {
 }
 
 const { pillar, cluster } = Astro.props;
+if (cluster.kind !== "calculator") throw new Error("The thin cluster page generator is disabled. Supply a full editorial page instead.");
 const seo = getClusterSeo(pillar, cluster);
 const seoTitle = buildSeoTitle(seo.primaryKeyword);
 const metaDescription = buildMetaDescription(seo.primaryKeyword, cluster.summary);
@@ -28,7 +31,7 @@ const howToSteps = ["Define the outcome you need.", "Gather the relevant figures
 const structuredData = JSON.stringify({
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "Article", "@id": `${canonicalUrl.href}#article`, headline: pageH1, description: metaDescription, url: canonicalUrl.href, mainEntityOfPage: canonicalUrl.href },
+    { "@type": "Article", ...contentSchemaMetadata(canonicalUrl), "@id": `${canonicalUrl.href}#article`, headline: pageH1, description: metaDescription, url: canonicalUrl.href, mainEntityOfPage: canonicalUrl.href },
     ...(cluster.kind === "how-to" ? [{
       "@type": "HowTo",
       "@id": `${canonicalUrl.href}#howto`,
@@ -110,6 +113,7 @@ const guidance = {
               {kindLabel}
             </span>
             <h1 class="mt-5 text-[clamp(2.2rem,5vw,3.5rem)] font-extrabold tracking-[-0.035em] text-ink">{pageH1}</h1>
+        <ContentByline />
             <p class="mt-4 max-w-2xl text-lg leading-relaxed text-muted">{openingAnswer}</p>
           </header>
 

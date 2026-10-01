@@ -7,11 +7,12 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/create-sitemap-alias.mjs",
+    "build": "astro build && node scripts/create-sitemap-alias.mjs && node scripts/build-thin-page-redirects.mjs",
     "deploy": "npm run build && wrangler deploy",
     "seo:audit": "node scripts/audit-seo.mjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test:thin-pages": "node scripts/test-thin-pages.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

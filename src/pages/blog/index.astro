@@ -1,4 +1,5 @@
 ---
+import ContentByline from "../../components/ContentByline.astro";
 import GoogleTag from "../../components/GoogleTag.astro";
 import "../../styles.css";
 import SiteFonts from "../../components/SiteFonts.astro";
@@ -33,6 +34,7 @@ const breadcrumbs = [{ label: "Home", href: "/" }, { label: pageH1, href: seo.ur
           <Breadcrumbs items={breadcrumbs} />
           <p class={eyebrow}>Insights &amp; analysis</p>
           <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">{pageH1}</h1>
+        <ContentByline />
           <p class="mt-4 max-w-[36rem] text-muted">{pageH1} gives you practitioner perspectives on modelling, valuation, AI workflows and the finance career skills that matter.</p>
         </div>
       </section>

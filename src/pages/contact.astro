@@ -1,4 +1,5 @@
 ---
+import ContentByline from "../components/ContentByline.astro";
 import GoogleTag from "../components/GoogleTag.astro";
 import "../styles.css";
 import SiteFonts from "../components/SiteFonts.astro";
@@ -36,6 +37,7 @@ const inputClass = "w-full rounded-2xl border border-line bg-surface p-4 text-in
           <Breadcrumbs items={breadcrumbs} />
           <p class={eyebrow}>Contact</p>
           <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">{pageH1}</h1>
+        <ContentByline />
           <p class="mt-4 max-w-[36rem] text-muted">{pageH1} for questions about courses, team training, enterprise plans or introducing responsible AI workflows into finance operations.</p>
         </div>
       </section>

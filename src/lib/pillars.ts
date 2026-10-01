@@ -1,3 +1,6 @@
+import categoryPillars from "../data/category-pillars.json";
+import thinPageActions from "../data/thin-page-actions.json";
+
 export type ClusterKind = "explainer" | "how-to" | "comparison" | "calculator" | "exam-guide";
 
 export interface ClusterPage {
@@ -34,7 +37,7 @@ function cluster(
   return { title, slug: slugify(title), kind, summary, dictionarySlug };
 }
 
-export const pillars: Pillar[] = [
+const pillarDefinitions: Pillar[] = [
   {
     title: "Personal Finance & Money Basics",
     slug: "personal-finance",
@@ -321,23 +324,25 @@ export const pillars: Pillar[] = [
   },
 ];
 
+// Only explicitly retained calculators can use the generated cluster template.
+// Replacement editorial pages must have their own substantive content and route.
+const retainedUrls = new Set(thinPageActions.filter((item) => item.action === "keep").map((item) => item.url));
+export const pillars: Pillar[] = pillarDefinitions.map((pillar) => ({
+  ...pillar,
+  clusters: pillar.clusters.filter((item) => item.kind === "calculator" && retainedUrls.has(`/${pillar.slug}/${item.slug}/`)),
+}));
+
 export const pillarMap = new Map(pillars.map((pillar) => [pillar.slug, pillar]));
 
 export function getPillarBySlug(slug: string): Pillar | undefined {
   return pillarMap.get(slug);
 }
 
-const labelToPillar: Record<string, string> = {
-  "Investing Basics": "investing-basics",
-  "Banking Savings and Deposits": "banking-savings-deposits",
-  "Mutual Funds and SIP": "mutual-funds-sip-etfs",
-  "Loans Credit and Debt": "loans-credit-debt",
-  "Accounting and Financial Statements": "accounting-financial-statements",
-  "Ratios and Valuation": "ratios-valuation-analysis",
-  "Stock Market and Equities": "stock-market-equities",
-  "Derivatives and Risk": "derivatives-risk",
-  "Economics & Macro": "economics-macro",
-};
+export function getPillarSlugForCategory(categorySlug: string): string {
+  const pillarSlug = (categoryPillars as Record<string, string>)[categorySlug];
+  if (!pillarSlug || !pillarMap.has(pillarSlug)) throw new Error(`Unmapped dictionary category: ${categorySlug}`);
+  return pillarSlug;
+}
 
 const legacyCategoryToPillar: Record<string, string> = {
   valuation: "ratios-valuation-analysis",
@@ -349,7 +354,8 @@ const legacyCategoryToPillar: Record<string, string> = {
 };
 
 export function getPillarSlugForTerm(term: { category: string; categoryLabel?: string }): string {
-  return (term.categoryLabel && labelToPillar[term.categoryLabel]) || legacyCategoryToPillar[term.category] || "personal-finance";
+  if (term.categoryLabel) return getPillarSlugForCategory(slugify(term.categoryLabel));
+  return legacyCategoryToPillar[term.category] || "personal-finance";
 }
 
 export function getCluster(pillarSlug: string, clusterSlug: string): { pillar: Pillar; cluster: ClusterPage } | undefined {

@@ -1,0 +1,469 @@
+[
+  {
+    "url": "/accounting-financial-statements/ebitda/",
+    "action": "redirect",
+    "target": "/dictionary/ebitda/"
+  },
+  {
+    "url": "/banking-savings-deposits/fixed-deposit/",
+    "action": "redirect",
+    "target": "/dictionary/fixed-deposit/"
+  },
+  {
+    "url": "/banking-savings-deposits/recurring-deposit/",
+    "action": "redirect",
+    "target": "/dictionary/recurring-deposit/"
+  },
+  {
+    "url": "/derivatives-risk/beta/",
+    "action": "redirect",
+    "target": "/dictionary/beta/"
+  },
+  {
+    "url": "/economics-macro/gdp/",
+    "action": "redirect",
+    "target": "/dictionary/gdp/"
+  },
+  {
+    "url": "/economics-macro/inflation/",
+    "action": "redirect",
+    "target": "/dictionary/inflation/"
+  },
+  {
+    "url": "/economics-macro/repo-rate/",
+    "action": "redirect",
+    "target": "/dictionary/repo-rate/"
+  },
+  {
+    "url": "/fixed-income-bonds/bond/",
+    "action": "redirect",
+    "target": "/dictionary/bond/"
+  },
+  {
+    "url": "/fixed-income-bonds/yield-to-maturity/",
+    "action": "redirect",
+    "target": "/dictionary/yield-to-maturity/"
+  },
+  {
+    "url": "/insurance/health-insurance/",
+    "action": "redirect",
+    "target": "/dictionary/health-insurance/"
+  },
+  {
+    "url": "/investing-basics/compound-interest/",
+    "action": "redirect",
+    "target": "/dictionary/compound-interest/"
+  },
+  {
+    "url": "/investing-basics/diversification/",
+    "action": "redirect",
+    "target": "/dictionary/diversification/"
+  },
+  {
+    "url": "/investing-basics/risk-vs-return/",
+    "action": "redirect",
+    "target": "/dictionary/risk-vs-return/"
+  },
+  {
+    "url": "/loans-credit-debt/credit-score-cibil/",
+    "action": "redirect",
+    "target": "/dictionary/credit-score-cibil/"
+  },
+  {
+    "url": "/loans-credit-debt/emi/",
+    "action": "redirect",
+    "target": "/dictionary/emi/"
+  },
+  {
+    "url": "/mutual-funds-sip-etfs/etf/",
+    "action": "redirect",
+    "target": "/dictionary/etf/"
+  },
+  {
+    "url": "/mutual-funds-sip-etfs/expense-ratio/",
+    "action": "redirect",
+    "target": "/dictionary/expense-ratio/"
+  },
+  {
+    "url": "/mutual-funds-sip-etfs/index-fund/",
+    "action": "redirect",
+    "target": "/dictionary/index-fund/"
+  },
+  {
+    "url": "/mutual-funds-sip-etfs/mutual-fund/",
+    "action": "redirect",
+    "target": "/dictionary/mutual-fund/"
+  },
+  {
+    "url": "/mutual-funds-sip-etfs/nav-net-asset-value/",
+    "action": "redirect",
+    "target": "/dictionary/nav-net-asset-value/"
+  },
+  {
+    "url": "/mutual-funds-sip-etfs/sip-systematic-investment-plan/",
+    "action": "redirect",
+    "target": "/dictionary/sip-systematic-investment-plan/"
+  },
+  {
+    "url": "/personal-finance/budgeting/",
+    "action": "redirect",
+    "target": "/dictionary/budgeting/"
+  },
+  {
+    "url": "/personal-finance/emergency-fund/",
+    "action": "redirect",
+    "target": "/dictionary/emergency-fund/"
+  },
+  {
+    "url": "/ratios-valuation-analysis/eps/",
+    "action": "redirect",
+    "target": "/dictionary/eps/"
+  },
+  {
+    "url": "/ratios-valuation-analysis/p-e-ratio/",
+    "action": "redirect",
+    "target": "/dictionary/pe-ratio/"
+  },
+  {
+    "url": "/retirement-planning/epf/",
+    "action": "redirect",
+    "target": "/dictionary/epf/"
+  },
+  {
+    "url": "/retirement-planning/nps/",
+    "action": "redirect",
+    "target": "/dictionary/nps/"
+  },
+  {
+    "url": "/retirement-planning/ppf/",
+    "action": "redirect",
+    "target": "/dictionary/ppf/"
+  },
+  {
+    "url": "/stock-market-equities/dividends/",
+    "action": "redirect",
+    "target": "/dictionary/dividend/"
+  },
+  {
+    "url": "/stock-market-equities/equity-share/",
+    "action": "redirect",
+    "target": "/dictionary/equity-share/"
+  },
+  {
+    "url": "/stock-market-equities/ipo/",
+    "action": "redirect",
+    "target": "/dictionary/ipo/"
+  },
+  {
+    "url": "/stock-market-equities/market-capitalization/",
+    "action": "redirect",
+    "target": "/dictionary/market-capitalization/"
+  },
+  {
+    "url": "/stock-market-equities/sensex-and-nifty/",
+    "action": "redirect",
+    "target": "/dictionary/sensex-and-nifty/"
+  },
+  {
+    "url": "/taxation-india/capital-gains-tax/",
+    "action": "redirect",
+    "target": "/dictionary/capital-gains-tax/"
+  },
+  {
+    "url": "/taxation-india/old-vs-new-tax-regime/",
+    "action": "redirect",
+    "target": "/dictionary/old-vs-new-tax-regime/"
+  },
+  {
+    "url": "/taxation-india/section-80c/",
+    "action": "redirect",
+    "target": "/dictionary/section-80c/"
+  },
+  {
+    "url": "/taxation-india/tds/",
+    "action": "redirect",
+    "target": "/dictionary/tds/"
+  },
+  {
+    "url": "/accounting-financial-statements/balance-sheet/",
+    "action": "pending-redirect",
+    "target": "/dictionary/balance-sheet/"
+  },
+  {
+    "url": "/accounting-financial-statements/cash-flow-statement/",
+    "action": "pending-redirect",
+    "target": "/dictionary/cash-flow-statement/"
+  },
+  {
+    "url": "/accounting-financial-statements/depreciation/",
+    "action": "pending-redirect",
+    "target": "/dictionary/depreciation/"
+  },
+  {
+    "url": "/accounting-financial-statements/income-statement/",
+    "action": "pending-redirect",
+    "target": "/dictionary/income-statement/"
+  },
+  {
+    "url": "/banking-savings-deposits/savings-account/",
+    "action": "pending-redirect",
+    "target": "/dictionary/savings-account/"
+  },
+  {
+    "url": "/derivatives-risk/futures/",
+    "action": "pending-redirect",
+    "target": "/dictionary/futures/"
+  },
+  {
+    "url": "/derivatives-risk/hedging/",
+    "action": "pending-redirect",
+    "target": "/dictionary/hedging/"
+  },
+  {
+    "url": "/derivatives-risk/options/",
+    "action": "pending-redirect",
+    "target": "/dictionary/options/"
+  },
+  {
+    "url": "/fixed-income-bonds/coupon-rate/",
+    "action": "pending-redirect",
+    "target": "/dictionary/coupon-rate/"
+  },
+  {
+    "url": "/investing-basics/asset-allocation/",
+    "action": "pending-redirect",
+    "target": "/dictionary/asset-allocation/"
+  },
+  {
+    "url": "/loans-credit-debt/home-loan/",
+    "action": "pending-redirect",
+    "target": "/dictionary/home-loan/"
+  },
+  {
+    "url": "/loans-credit-debt/personal-loan/",
+    "action": "pending-redirect",
+    "target": "/dictionary/personal-loan/"
+  },
+  {
+    "url": "/ratios-valuation-analysis/book-value/",
+    "action": "pending-redirect",
+    "target": "/dictionary/book-value/"
+  },
+  {
+    "url": "/ratios-valuation-analysis/roe/",
+    "action": "pending-redirect",
+    "target": "/dictionary/roe/"
+  },
+  {
+    "url": "/banking-savings-deposits/fd-maturity-calculator/",
+    "action": "keep"
+  },
+  {
+    "url": "/fixed-income-bonds/bond-yield-calculator/",
+    "action": "keep"
+  },
+  {
+    "url": "/forex-commodities-global-markets/currency-converter/",
+    "action": "keep"
+  },
+  {
+    "url": "/insurance/life-cover-calculator/",
+    "action": "keep"
+  },
+  {
+    "url": "/investing-basics/investment-growth-calculator/",
+    "action": "keep"
+  },
+  {
+    "url": "/loans-credit-debt/emi-calculator/",
+    "action": "keep"
+  },
+  {
+    "url": "/personal-finance/net-worth-calculator/",
+    "action": "keep"
+  },
+  {
+    "url": "/retirement-planning/retirement-calculator/",
+    "action": "keep"
+  },
+  {
+    "url": "/taxation-india/income-tax-calculator/",
+    "action": "keep"
+  },
+  {
+    "url": "/banking-savings-deposits/neft-imps-and-upi/",
+    "action": "remove"
+  },
+  {
+    "url": "/cfa/cfa-formula-guide/",
+    "action": "remove"
+  },
+  {
+    "url": "/cfa/cfa-level-i-topics/",
+    "action": "remove"
+  },
+  {
+    "url": "/cfa/cfa-level-ii-topics/",
+    "action": "remove"
+  },
+  {
+    "url": "/cfa/cfa-level-iii-topics/",
+    "action": "remove"
+  },
+  {
+    "url": "/cfa/cfa-study-tips/",
+    "action": "remove"
+  },
+  {
+    "url": "/corporate-finance/capital-budgeting/",
+    "action": "remove"
+  },
+  {
+    "url": "/corporate-finance/capital-structure/",
+    "action": "remove"
+  },
+  {
+    "url": "/corporate-finance/cost-of-capital/",
+    "action": "remove"
+  },
+  {
+    "url": "/corporate-finance/wacc/",
+    "action": "remove"
+  },
+  {
+    "url": "/corporate-finance/working-capital/",
+    "action": "remove"
+  },
+  {
+    "url": "/crypto-fintech-digital-assets/bitcoin/",
+    "action": "remove"
+  },
+  {
+    "url": "/crypto-fintech-digital-assets/blockchain/",
+    "action": "remove"
+  },
+  {
+    "url": "/crypto-fintech-digital-assets/crypto-tax-in-india/",
+    "action": "remove"
+  },
+  {
+    "url": "/crypto-fintech-digital-assets/digital-asset-risk/",
+    "action": "remove"
+  },
+  {
+    "url": "/crypto-fintech-digital-assets/stablecoins/",
+    "action": "remove"
+  },
+  {
+    "url": "/derivatives-risk/value-at-risk-var/",
+    "action": "remove"
+  },
+  {
+    "url": "/economics-macro/business-cycles/",
+    "action": "remove"
+  },
+  {
+    "url": "/economics-macro/fiscal-deficit/",
+    "action": "remove"
+  },
+  {
+    "url": "/finance-exam-prep/finance-certification-comparison/",
+    "action": "remove"
+  },
+  {
+    "url": "/finance-exam-prep/financial-modelling-basics/",
+    "action": "remove"
+  },
+  {
+    "url": "/finance-exam-prep/fmva-guide/",
+    "action": "remove"
+  },
+  {
+    "url": "/finance-exam-prep/nism-exam-guide/",
+    "action": "remove"
+  },
+  {
+    "url": "/fixed-income-bonds/bond-duration/",
+    "action": "remove"
+  },
+  {
+    "url": "/fixed-income-bonds/credit-rating/",
+    "action": "remove"
+  },
+  {
+    "url": "/forex-commodities-global-markets/crude-oil/",
+    "action": "remove"
+  },
+  {
+    "url": "/forex-commodities-global-markets/exchange-rates/",
+    "action": "remove"
+  },
+  {
+    "url": "/forex-commodities-global-markets/global-indices/",
+    "action": "remove"
+  },
+  {
+    "url": "/forex-commodities-global-markets/gold-investing/",
+    "action": "remove"
+  },
+  {
+    "url": "/frm/frm-formula-guide/",
+    "action": "remove"
+  },
+  {
+    "url": "/frm/frm-part-i-topics/",
+    "action": "remove"
+  },
+  {
+    "url": "/frm/frm-part-ii-topics/",
+    "action": "remove"
+  },
+  {
+    "url": "/frm/frm-study-tips/",
+    "action": "remove"
+  },
+  {
+    "url": "/insurance/irdai-basics/",
+    "action": "remove"
+  },
+  {
+    "url": "/insurance/term-vs-endowment-insurance/",
+    "action": "remove"
+  },
+  {
+    "url": "/insurance/ulip/",
+    "action": "remove"
+  },
+  {
+    "url": "/loans-credit-debt/debt-payoff/",
+    "action": "remove"
+  },
+  {
+    "url": "/mutual-funds-sip-etfs/sip-vs-lump-sum-for-beginners-in-india/",
+    "action": "remove"
+  },
+  {
+    "url": "/personal-finance/financial-goals/",
+    "action": "remove"
+  },
+  {
+    "url": "/personal-finance/saving-vs-investing/",
+    "action": "remove"
+  },
+  {
+    "url": "/ratios-valuation-analysis/dcf/",
+    "action": "remove"
+  },
+  {
+    "url": "/ratios-valuation-analysis/valuation-comparison/",
+    "action": "remove"
+  },
+  {
+    "url": "/retirement-planning/goal-planning/",
+    "action": "remove"
+  },
+  {
+    "url": "/retirement-planning/retirement-corpus/",
+    "action": "remove"
+  }
+]

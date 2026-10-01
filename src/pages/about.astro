@@ -1,4 +1,5 @@
 ---
+import ContentByline from "../components/ContentByline.astro";
 import GoogleTag from "../components/GoogleTag.astro";
 import "../styles.css";
 import SiteFonts from "../components/SiteFonts.astro";
@@ -39,6 +40,7 @@ const iconBadge = "mb-4 inline-flex h-11 w-11 items-center justify-center rounde
           <Breadcrumbs items={breadcrumbs} />
           <p class={eyebrow}>Who we are</p>
           <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">{pageH1}</h1>
+        <ContentByline />
           <p class="mt-4 max-w-[36rem] text-muted">{pageH1} explains our mission: practical finance education combining analyst workflows, responsible AI and practitioner-led review.</p>
         </div>
       </section>

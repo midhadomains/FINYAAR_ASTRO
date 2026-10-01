@@ -1,4 +1,5 @@
 ---
+import ContentByline from "../components/ContentByline.astro";
 import GoogleTag from "../components/GoogleTag.astro";
 import "../styles.css";
 import SiteFonts from "../components/SiteFonts.astro";
@@ -67,6 +68,7 @@ const workflows = [
             <div class="max-w-3xl">
               <p class="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-brand">Prompts and workflows</p>
               <h1 class="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold tracking-[-0.03em] text-ink">{pageH1}</h1>
+        <ContentByline />
               <p class="mt-5 max-w-2xl text-lg leading-relaxed text-muted">{benefit}</p>
               <a href="/contact/" class="mt-7 inline-flex items-center gap-2 rounded-xl bg-brand px-5 py-3 font-bold text-white transition-transform hover:-translate-y-0.5">
                 Request Vault access
