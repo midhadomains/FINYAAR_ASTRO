@@ -662,14 +662,54 @@
       "category": "Loans Credit and Debt",
       "url": "/dictionary/home-loan/",
       "focus_keyword": "home loan interest rate",
-      "seo_title": "Home Loan: Meaning, EMI, Tax Benefits & Prepayment | FinYaar",
-      "meta_description": "Home Loan is a secured, long-tenure loan that a bank or housing finance company gives you to buy, build, or renovate a residential property, where the proper...",
+      "seo_title": "Home Loan Interest Rate, EMI & Prepayment | FinYaar",
+      "meta_description": "Understand home loan interest rates, fixed versus floating rates, EMI calculations, tax benefits and how prepayment can reduce your total borrowing cost in India.",
       "definition": "Home Loan is a secured, long-tenure loan that a bank or housing finance company gives you to buy, build, or renovate a residential property, where the property itself is pledged as collateral and you repay the amount, plus interest, through monthly instalments over a period that often runs from 10 to 30 years.",
       "related": [
-        { "slug": "emi", "url": "/dictionary/emi/" },
-        { "slug": "credit-score-cibil", "url": "/dictionary/credit-score-cibil/" },
-        { "slug": "section-80c", "url": "/dictionary/section-80c/" },
-        { "slug": "repo-rate", "url": "/dictionary/repo-rate/" }
+        {
+          "slug": "emi",
+          "url": "/dictionary/emi/"
+        },
+        {
+          "slug": "credit-score-cibil",
+          "url": "/dictionary/credit-score-cibil/"
+        },
+        {
+          "slug": "section-80c",
+          "url": "/dictionary/section-80c/"
+        },
+        {
+          "slug": "repo-rate",
+          "url": "/dictionary/repo-rate/"
+        }
+      ],
+      "heading": "Home Loan",
+      "sub_cluster": "Home loans",
+      "faqs": [
+        {
+          "q": "What decides my home loan interest rate?",
+          "a": "For most retail loans the rate is floating and linked to the RBI repo rate plus the lender's spread. Your income, tenure, and credit score also shape the rate you are offered."
+        },
+        {
+          "q": "Should I pick a fixed or floating rate?",
+          "a": "Floating rates are usually cheaper over time and let you prepay without penalty, but the EMI can rise if the repo rate goes up. Fixed rates give certainty at a higher starting cost."
+        },
+        {
+          "q": "Is there a penalty for prepaying?",
+          "a": "For individual borrowers, floating-rate home loans generally carry no prepayment penalty. Fixed-rate loans may charge a fee, so check your agreement first."
+        },
+        {
+          "q": "What tax benefits does a home loan give?",
+          "a": "Under the old regime, principal repayment qualifies within the &#8377;1.5 lakh Section 80C limit and interest on a self-occupied home is deductible up to &#8377;2 lakh under Section 24(b). The new regime largely removes these."
+        },
+        {
+          "q": "How does credit score affect my loan?",
+          "a": "A higher credit score signals lower risk and can win you a lower rate and a larger sanctioned amount. A weak score may raise your rate or lead to rejection."
+        },
+        {
+          "q": "Does a longer tenure make the loan cheaper?",
+          "a": "No. A longer tenure lowers the monthly EMI but increases the total interest you pay, because the balance stays outstanding for more years."
+        }
       ]
     },
     {
@@ -1113,10 +1153,38 @@
       "term": "UPI (Unified Payments Interface)",
       "category": "Banking Savings and Deposits",
       "url": "/dictionary/upi/",
-      "focus_keyword": "upi",
-      "seo_title": "UPI: What It Is and How It Works in India | FinYaar",
+      "focus_keyword": "what is UPI",
+      "seo_title": "What is UPI? How It Works in India | FinYaar",
       "meta_description": "What UPI is, how instant payments work, VPA and safety basics, plus a worked India example. Understand India's real-time payment system.",
       "definition": "UPI (Unified Payments Interface) is India's instant, round-the-clock payment system that lets you move money directly between two bank accounts using a mobile phone.",
+      "heading": "UPI (Unified Payments Interface)",
+      "sub_cluster": "Payments (UPI/NEFT/RTGS)",
+      "faqs": [
+        {
+          "q": "Is UPI free to use?",
+          "a": "For ordinary users, sending money person-to-person is free. Some merchant or wallet-loading scenarios can attract charges, but everyday UPI transfers between people cost nothing."
+        },
+        {
+          "q": "Do I ever enter my UPI PIN to receive money?",
+          "a": "No. The UPI PIN is only needed to send money. To receive, you simply share your VPA or QR. Anyone asking for a PIN to receive funds is trying to defraud you."
+        },
+        {
+          "q": "What is a VPA or UPI ID?",
+          "a": "A Virtual Payment Address is a short handle such as name@bank that maps to your bank account. You share it instead of your account number and IFSC code."
+        },
+        {
+          "q": "What are the transfer limits on UPI?",
+          "a": "Per-transaction and daily limits apply, but they are set and periodically revised by NPCI and individual banks. They differ by account and app, so check your own bank for the current figures."
+        },
+        {
+          "q": "Can I link more than one bank account?",
+          "a": "Yes. A single UPI app can link several accounts, and you choose which account to pay from for each transaction. Each account still uses your device and UPI PIN for security."
+        },
+        {
+          "q": "Is a UPI payment reversible if I pay the wrong person?",
+          "a": "UPI is instant and generally irreversible, so always verify the receiver name before confirming. If you pay in error, raise a complaint with your app and bank quickly, though recovery is not guaranteed."
+        }
+      ],
       "related": [
         { "slug": "savings-account", "url": "/dictionary/savings-account/" },
         { "slug": "credit-card", "url": "/dictionary/credit-card/" },
@@ -1306,6 +1374,246 @@
         { "slug": "nps", "url": "/dictionary/nps/" },
         { "slug": "section-80c", "url": "/dictionary/section-80c/" },
         { "slug": "old-vs-new-tax-regime", "url": "/dictionary/old-vs-new-tax-regime/" }
+      ]
+    },
+    {
+      "slug": "neft",
+      "term": "NEFT",
+      "heading": "NEFT",
+      "category": "Banking Savings and Deposits",
+      "sub_cluster": "Payments (UPI/NEFT/RTGS)",
+      "url": "/dictionary/neft/",
+      "focus_keyword": "NEFT meaning",
+      "seo_title": "NEFT Meaning: How Transfers Work in India | FinYaar",
+      "meta_description": "NEFT meaning explained: learn how half-hourly bank transfers work, online charges, settlement timings, limits and a practical rent-payment example in India.",
+      "definition": "NEFT (National Electronic Funds Transfer) is the Reserve Bank of India&#39;s nationwide retail payment system for moving money between bank accounts in half-hourly settlement batches. It works on deferred net settlement, so instructions collected in each window are netted across banks and settled together rather than one payment at a time. The system has run around the clock on all 365 days of the year since December 2019, and since 1 January 2020 banks do not charge savings account holders for NEFT started online. The RBI fixes neither a minimum nor a maximum amount, though your bank sets its own channel limits.",
+      "faqs": [
+        {
+          "q": "Is NEFT available on Sundays and bank holidays?",
+          "a": "Yes, since 16 December 2019 batches settle on every day of the year. Your bank may still take its systems down for maintenance, which is a bank outage rather than a closure of NEFT."
+        },
+        {
+          "q": "What is the maximum I can send through NEFT?",
+          "a": "The RBI imposes no ceiling. Any cap you meet comes from your bank, differs between mobile banking, net banking and the branch, and can often be raised on request."
+        },
+        {
+          "q": "Why has my NEFT not reached the payee yet?",
+          "a": "Check which batch it fell into, because a transfer made just after a cut-off takes longer than one made just before. Past the two-hour window, ask your bank for the unique transaction reference and escalate."
+        },
+        {
+          "q": "Can I cancel a NEFT after confirming it?",
+          "a": "Not unilaterally. Before the batch settles some banks attempt a stop through the branch, with no guarantee. After settlement, recovery depends on the beneficiary bank and the account holder agreeing to send it back."
+        },
+        {
+          "q": "Does the beneficiary name have to match the account number?",
+          "a": "Credits are applied on the account number and IFSC, and a name mismatch is a common reason for a return. Some banks validate the name upfront and others do not, so check the account number twice."
+        },
+        {
+          "q": "Is NEFT safe for a large one-time payment?",
+          "a": "It is safe, but where a payment must be final within minutes the gross settlement rail fits better, because each instruction settles individually. NEFT suits planned, dated payments."
+        }
+      ],
+      "related": [
+        {
+          "slug": "rtgs",
+          "url": "/dictionary/rtgs/"
+        },
+        {
+          "slug": "imps",
+          "url": "/dictionary/imps/"
+        },
+        {
+          "slug": "upi",
+          "url": "/dictionary/upi/"
+        },
+        {
+          "slug": "savings-account",
+          "url": "/dictionary/savings-account/"
+        },
+        {
+          "slug": "repo-rate",
+          "url": "/dictionary/repo-rate/"
+        }
+      ]
+    },
+    {
+      "slug": "rtgs",
+      "term": "RTGS",
+      "heading": "RTGS",
+      "category": "Banking Savings and Deposits",
+      "sub_cluster": "Payments (UPI/NEFT/RTGS)",
+      "url": "/dictionary/rtgs/",
+      "focus_keyword": "RTGS full form",
+      "seo_title": "RTGS Full Form: Meaning, Limits & Charges | FinYaar",
+      "meta_description": "RTGS full form is Real Time Gross Settlement. Learn how high-value transfers work, minimum amounts, charges, timings and a property-payment example in India.",
+      "definition": "RTGS (Real Time Gross Settlement) is the high-value payment rail on which the Reserve Bank of India settles every instruction individually and continuously, rather than bundling it with others. Settlement takes place on the books of the RBI itself, so a completed RTGS transfer is final and cannot be recalled. A customer must remit at least &#8377;2,00,000 through it, and the RBI sets no upper ceiling, which is why property purchases, business settlements and inter-corporate payments run on this rail. RTGS has been open 24 hours a day on every day of the year since 14 December 2020.",
+      "faqs": [
+        {
+          "q": "Can I send less than &#8377;2,00,000 by RTGS?",
+          "a": "No. Customer transactions below that floor are rejected, and the payment should go through NEFT, IMPS or UPI instead. The floor applies to customer remittances, not to settlement between banks themselves."
+        },
+        {
+          "q": "Is RTGS available at night and on holidays?",
+          "a": "Yes, RTGS has run 24 hours a day on all days since 14 December 2020. Banks may still keep shorter counter hours or run maintenance windows, so availability of the system is not the same as availability of your bank."
+        },
+        {
+          "q": "Can an RTGS transfer be reversed?",
+          "a": "Not once it has settled. If the beneficiary details were wrong and the credit cannot be applied, the money returns automatically. If it reached the wrong but valid account, recovery depends on that account holder agreeing to return it, so verify details before you confirm."
+        },
+        {
+          "q": "What is the maximum RTGS amount?",
+          "a": "The RBI prescribes none. Practical ceilings come from your bank and vary by channel, with net banking usually capped well below what a branch will process."
+        },
+        {
+          "q": "What details do I need to send an RTGS?",
+          "a": "The amount, your account number, and the beneficiary name, account number, account type, branch and IFSC. Eligible entities must also quote a Legal Entity Identifier on qualifying transactions."
+        },
+        {
+          "q": "Is RTGS faster than IMPS or UPI?",
+          "a": "In wall-clock terms, no. IMPS and UPI credit a beneficiary in seconds, while an RTGS credit is due within thirty minutes. What RTGS offers instead is unlimited value and settlement that is final on the central bank&#39;s books."
+        }
+      ],
+      "related": [
+        {
+          "slug": "neft",
+          "url": "/dictionary/neft/"
+        },
+        {
+          "slug": "imps",
+          "url": "/dictionary/imps/"
+        },
+        {
+          "slug": "upi",
+          "url": "/dictionary/upi/"
+        },
+        {
+          "slug": "home-loan",
+          "url": "/dictionary/home-loan/"
+        },
+        {
+          "slug": "liquidity",
+          "url": "/dictionary/liquidity/"
+        }
+      ]
+    },
+    {
+      "slug": "imps",
+      "term": "IMPS",
+      "heading": "IMPS",
+      "category": "Banking Savings and Deposits",
+      "sub_cluster": "Payments (UPI/NEFT/RTGS)",
+      "url": "/dictionary/imps/",
+      "focus_keyword": "IMPS meaning",
+      "seo_title": "IMPS Meaning: Transfers, Limits & Charges | FinYaar",
+      "meta_description": "IMPS meaning explained: learn how instant bank transfers work, MMID, transaction limits, bank charges and failed-payment reversals with a practical India example.",
+      "definition": "IMPS (Immediate Payment Service) is the National Payments Corporation of India&#39;s interbank system for moving money between accounts within seconds, at any hour of any day. Launched publicly in November 2010, it was the first Indian rail to make round-the-clock retail transfers ordinary. It can address a beneficiary by account number and IFSC or by a mobile number paired with a seven-digit MMID, and it works through mobile banking, net banking, ATMs and branches. The RBI raised the per-transaction ceiling to &#8377;5,00,000 in 2021, and each bank sets its own channel limits within that.",
+      "faqs": [
+        {
+          "q": "What is an MMID and where do I find mine?",
+          "a": "A seven-digit code your bank issues against the mobile number registered with your account, the first four digits identifying the bank. Most banks show it in the app or send it by SMS on request."
+        },
+        {
+          "q": "Is IMPS free?",
+          "a": "That depends on your bank. No rule waives IMPS charges the way online NEFT charges were waived, so banks publish their own slabs and several charge nothing on small transfers."
+        },
+        {
+          "q": "How much can I send through IMPS in a day?",
+          "a": "The RBI caps a single transaction at &#8377;5,00,000, and your bank sets the per-transaction and daily limits within that, usually differing between the app, net banking and an ATM."
+        },
+        {
+          "q": "What is the difference between IMPS and UPI?",
+          "a": "UPI is addressed by a handle or mobile number through an app and is generally free person to person; IMPS is addressed by account and IFSC or by mobile and MMID, works without a smartphone app, and may carry a bank fee."
+        },
+        {
+          "q": "Can I use IMPS without internet banking?",
+          "a": "Yes. IMPS is reachable from ATMs and branches, and several banks support it through mobile banking without a data connection. The channel determines the limit and the authentication method."
+        },
+        {
+          "q": "Does IMPS work on Sundays and bank holidays?",
+          "a": "Yes, it runs continuously on all days of the year, which was its original point of difference. Only your bank&#39;s maintenance windows interrupt it."
+        }
+      ],
+      "related": [
+        {
+          "slug": "upi",
+          "url": "/dictionary/upi/"
+        },
+        {
+          "slug": "neft",
+          "url": "/dictionary/neft/"
+        },
+        {
+          "slug": "rtgs",
+          "url": "/dictionary/rtgs/"
+        },
+        {
+          "slug": "savings-account",
+          "url": "/dictionary/savings-account/"
+        },
+        {
+          "slug": "emergency-fund",
+          "url": "/dictionary/emergency-fund/"
+        }
+      ]
+    },
+    {
+      "slug": "personal-loan",
+      "term": "Personal Loan",
+      "heading": "Personal Loan",
+      "category": "Loans Credit and Debt",
+      "sub_cluster": "Personal & consumer loans",
+      "url": "/dictionary/personal-loan/",
+      "focus_keyword": "personal loan eligibility",
+      "seo_title": "Personal Loan Eligibility, EMI & Fees | FinYaar",
+      "meta_description": "Understand personal loan eligibility, credit scores, income checks, EMI calculations, processing fees and prepayment terms with a worked borrowing example in India.",
+      "definition": "Personal Loan is the standard Indian name for an unsecured, fixed-tenure borrowing that a bank or NBFC advances against your income and repayment record rather than against any asset. Nothing is pledged, so the lender has no property to fall back on and prices that exposure into a rate well above a secured loan. Repayment runs by equated monthly instalment over a term usually between one and five years, with a processing fee taken out of the disbursal. The end use is unrestricted, which is why lenders scrutinise the borrower rather than the purpose.",
+      "faqs": [
+        {
+          "q": "What credit score do I need for a personal loan?",
+          "a": "There is no common cut-off; each lender sets its own. A score high in the range gets the sharpest pricing, a middling score an approval at a higher rate, and a poor score a decline."
+        },
+        {
+          "q": "Can I prepay a personal loan without a penalty?",
+          "a": "For loans sanctioned or renewed from 1 January 2026 on a floating rate to an individual for a non-business purpose, prepayment charges are barred. Fixed rate personal loans, the common form, may still carry a foreclosure charge under the agreement."
+        },
+        {
+          "q": "Does a personal loan hurt my credit score?",
+          "a": "Applying triggers a hard enquiry, and several applications in a short span read badly. The loan raises your outstanding debt, which weighs on the score at first, while a clean run of on-time EMIs lifts it over the tenure."
+        },
+        {
+          "q": "Is a top-up on a home loan cheaper than a personal loan?",
+          "a": "Usually yes, because the top-up is secured on the same property. The trade-off is that it stretches the debt over the remaining home loan tenure, so a small borrowing accrues interest for a very long time."
+        },
+        {
+          "q": "Can I claim tax benefit on a personal loan?",
+          "a": "There is no deduction for a personal loan as such. Where the money is demonstrably used for a purpose the Income Tax Act recognises, such as house construction or a business, the interest may be claimable, so keep records."
+        },
+        {
+          "q": "What happens if I miss an EMI?",
+          "a": "You are charged late payment and bounce fees, and the miss is reported to the credit bureaus, where it stays on record for years. Repeated defaults invite recovery action and make future borrowing far harder."
+        }
+      ],
+      "related": [
+        {
+          "slug": "emi",
+          "url": "/dictionary/emi/"
+        },
+        {
+          "slug": "credit-score-cibil",
+          "url": "/dictionary/credit-score-cibil/"
+        },
+        {
+          "slug": "collateral",
+          "url": "/dictionary/collateral/"
+        },
+        {
+          "slug": "home-loan",
+          "url": "/dictionary/home-loan/"
+        },
+        {
+          "slug": "loan-prepayment",
+          "url": "/dictionary/loan-prepayment/"
+        }
       ]
     }
   ]
