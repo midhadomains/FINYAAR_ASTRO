@@ -717,15 +717,55 @@
       "term": "Credit Card",
       "category": "Loans Credit and Debt",
       "url": "/dictionary/credit-card/",
-      "focus_keyword": "credit card",
-      "seo_title": "Credit Card: How It Works, Interest & the Minimum-Due Trap | FinYaar",
-      "meta_description": "Credit Card is a revolving line of unsecured credit issued by a bank that lets you spend up to a preset limit and repay later. If you clear the full statemen...",
+      "focus_keyword": "how credit cards work",
+      "seo_title": "How Credit Cards Work: Billing, Interest & Fees | FinYaar",
+      "meta_description": "Learn how credit cards work in India: billing cycles, interest-free periods, minimum payments, credit utilisation and a worked example of revolving debt costs.",
       "definition": "Credit Card is a revolving line of unsecured credit issued by a bank that lets you spend up to a preset limit and repay later. If you clear the full statement balance by the due date, you pay no interest and enjoy a short interest-free period. If you carry an unpaid balance, the card charges very high interest, commonly about 3% to 3.75% per month, which works out to roughly 36% to 45% a year. It is a powerful payment and short-term convenience tool that becomes an expensive debt trap the moment you stop paying in full.",
       "related": [
-        { "slug": "credit-score-cibil", "url": "/dictionary/credit-score-cibil/" },
-        { "slug": "emi", "url": "/dictionary/emi/" },
-        { "slug": "home-loan", "url": "/dictionary/home-loan/" },
-        { "slug": "compound-interest", "url": "/dictionary/compound-interest/" }
+        {
+          "slug": "credit-score-cibil",
+          "url": "/dictionary/credit-score-cibil/"
+        },
+        {
+          "slug": "emi",
+          "url": "/dictionary/emi/"
+        },
+        {
+          "slug": "home-loan",
+          "url": "/dictionary/home-loan/"
+        },
+        {
+          "slug": "compound-interest",
+          "url": "/dictionary/compound-interest/"
+        }
+      ],
+      "heading": "Credit Card",
+      "sub_cluster": "Credit cards",
+      "faqs": [
+        {
+          "q": "Is a credit card free to use?",
+          "a": "It is interest-free only if you pay the full statement balance by the due date. Carry a balance and you pay very high interest, commonly about 3% to 3.75% per month."
+        },
+        {
+          "q": "What happens if I pay only the minimum due?",
+          "a": "You avoid being marked overdue, but the rest of the balance keeps compounding at the card rate. Clearing it can take years and cost far more in interest than you spent."
+        },
+        {
+          "q": "How is a credit card different from a debit card?",
+          "a": "A debit card spends your own bank balance instantly. A credit card borrows from the bank up to a limit, and you repay later."
+        },
+        {
+          "q": "Does a credit card affect my credit score?",
+          "a": "Yes. On-time payments and low utilisation lift your credit score (CIBIL), while missed payments and a maxed-out card pull it down."
+        },
+        {
+          "q": "What is a good credit utilisation ratio?",
+          "a": "Utilisation is your balance divided by your limit. Bureaus generally prefer it kept low, ideally well under 30% of the total limit."
+        },
+        {
+          "q": "Should I withdraw cash on my credit card?",
+          "a": "Avoid it. Cash withdrawals usually attract a fee plus interest from the very first day, with no interest-free period at all."
+        }
       ]
     },
     {
@@ -1613,6 +1653,366 @@
         {
           "slug": "loan-prepayment",
           "url": "/dictionary/loan-prepayment/"
+        }
+      ]
+    },
+    {
+      "slug": "collateral",
+      "term": "Collateral",
+      "heading": "Collateral",
+      "category": "Loans Credit and Debt",
+      "sub_cluster": "Loan mechanics",
+      "url": "/dictionary/collateral/",
+      "focus_keyword": "collateral meaning",
+      "seo_title": "Collateral Meaning: LTV, Margin & Secured Loans | FinYaar",
+      "meta_description": "Understand collateral meaning, assets lenders accept, loan-to-value ratios, margins and default risks with a worked gold-loan example for borrowers in India.",
+      "definition": "Collateral is an asset you pledge to a lender so that the loan is backed by something the lender can sell if you stop repaying. In India that is usually property, gold jewellery, a fixed deposit, a vehicle or listed securities, pledged through a mortgage, a lien, a hypothecation or a physical pledge. Because the lender holds a fallback, secured borrowing is priced below unsecured borrowing. No lender advances full value: the gap between the asset value and the loan is the margin.",
+      "faqs": [
+        {
+          "q": "Is collateral the same thing as a guarantor?",
+          "a": "No. Collateral is an asset and the claim attaches to that asset, while a guarantor is a person whose general finances stand behind the loan."
+        },
+        {
+          "q": "Can I borrow if I have nothing to pledge?",
+          "a": "Yes. Personal loans, credit cards and consumer durable finance are unsecured, so approval hinges on income proof and your bureau record. The rate is higher and the amount is capped by monthly income."
+        },
+        {
+          "q": "Who keeps the title deeds or the gold while the loan runs?",
+          "a": "The lender does, and returns them on closure with a no-dues certificate. Insist on written acknowledgement of what was deposited, then follow up until the charge is removed from the records."
+        },
+        {
+          "q": "Can a lender demand more security mid-loan?",
+          "a": "For assets whose price moves, yes, and the agreement will say so. Gold loans and loans against securities carry a top-up clause triggered when the LTV breaches its sanctioned level."
+        },
+        {
+          "q": "Can a bank sell my house without going to court?",
+          "a": "Under SARFAESI a bank or notified NBFC can take possession and sell mortgaged property without a decree, once the account is non-performing and the sixty-day notice has expired unpaid. Agricultural land is exempt."
+        },
+        {
+          "q": "Does pledging a fixed deposit stop it earning interest?",
+          "a": "No. A lien marks the deposit without breaking it, so it earns at the contracted rate for the full term, and you pay a spread over that rate on the borrowed amount."
+        }
+      ],
+      "related": [
+        {
+          "slug": "home-loan",
+          "url": "/dictionary/home-loan/"
+        },
+        {
+          "slug": "personal-loan",
+          "url": "/dictionary/personal-loan/"
+        },
+        {
+          "slug": "fixed-deposit",
+          "url": "/dictionary/fixed-deposit/"
+        },
+        {
+          "slug": "credit-score-cibil",
+          "url": "/dictionary/credit-score-cibil/"
+        },
+        {
+          "slug": "loan-prepayment",
+          "url": "/dictionary/loan-prepayment/"
+        }
+      ]
+    },
+    {
+      "slug": "loan-prepayment",
+      "term": "Loan Prepayment",
+      "heading": "Loan Prepayment",
+      "category": "Loans Credit and Debt",
+      "sub_cluster": "Loan mechanics",
+      "url": "/dictionary/loan-prepayment/",
+      "focus_keyword": "loan prepayment",
+      "seo_title": "Loan Prepayment: EMI, Tenure & Interest Savings | FinYaar",
+      "meta_description": "Understand loan prepayment, part-payments and foreclosure. Compare reducing your EMI with shortening tenure using a worked home-loan interest-saving example.",
+      "definition": "Loan Prepayment is paying back part or all of an outstanding loan ahead of the schedule written into your agreement. A part-prepayment is a lump sum that cuts the principal while the loan continues, and a full prepayment, usually called foreclosure, closes the account outright. Because Indian retail loans run on reducing-balance interest, every rupee prepaid stops attracting interest from the day it is credited. Under the RBI (Pre-payment Charges on Loans) Directions, 2025, floating-rate loans taken by individuals for non-business purposes carry no prepayment charge.",
+      "faqs": [
+        {
+          "q": "Is there a limit on how much I can prepay in a year?",
+          "a": "For floating-rate retail loans covered by the Directions there is no lock-in and no restriction on the source of funds. Lenders may still set a minimum amount per prepayment."
+        },
+        {
+          "q": "Should I prepay the home loan or invest the money instead?",
+          "a": "Compare the loan rate with the return you realistically expect after tax elsewhere. Prepaying delivers a certain, risk-free saving equal to the loan rate, a high bar for any investment."
+        },
+        {
+          "q": "Does prepaying a loan hurt my credit score?",
+          "a": "No. Closing a loan on your own terms is recorded in good standing and generally helps, since it lowers your outstanding debt."
+        },
+        {
+          "q": "Which loan should I clear first if I have several?",
+          "a": "Attack the highest rate first, which almost always means credit card dues, then personal loans, then secured loans. Rate matters more than balance size."
+        },
+        {
+          "q": "Can a lender refuse to accept my prepayment?",
+          "a": "Not for the categories named in the Directions, where the right to prepay without charge is explicit. For other loans your agreement governs, so read the prepayment clause."
+        },
+        {
+          "q": "What paperwork should I collect after foreclosure?",
+          "a": "Ask for a no-dues certificate, all original documents and a letter releasing the charge. Verify later that the account shows as closed on your credit report."
+        }
+      ],
+      "related": [
+        {
+          "slug": "emi",
+          "url": "/dictionary/emi/"
+        },
+        {
+          "slug": "home-loan",
+          "url": "/dictionary/home-loan/"
+        },
+        {
+          "slug": "collateral",
+          "url": "/dictionary/collateral/"
+        },
+        {
+          "slug": "compound-interest",
+          "url": "/dictionary/compound-interest/"
+        },
+        {
+          "slug": "personal-loan",
+          "url": "/dictionary/personal-loan/"
+        }
+      ]
+    },
+    {
+      "slug": "asset-allocation",
+      "term": "Asset Allocation",
+      "heading": "Asset Allocation",
+      "category": "Investing Basics",
+      "sub_cluster": "Diversification",
+      "url": "/dictionary/asset-allocation/",
+      "focus_keyword": "asset allocation",
+      "seo_title": "Asset Allocation: Meaning & Rebalancing | FinYaar",
+      "meta_description": "Learn asset allocation: dividing money across equity, debt, gold and cash, matching goals and time horizons, and rebalancing with a worked Indian portfolio example.",
+      "definition": "Asset Allocation is the decision about how your money is divided across asset classes, chiefly equity, debt, gold and cash, rather than which particular share or scheme you buy inside each class. It is driven by the goal you are funding, the years before you need the money, and the fall in value you can tolerate without abandoning the plan. An Indian portfolio usually carries its debt sleeve through EPF, PPF, deposits and debt funds, and its equity sleeve through shares or mutual funds. Over long periods this split explains far more of the variation in results than the individual securities picked inside it.",
+      "faqs": [
+        {
+          "q": "Is the rule of 100 minus your age a good allocation?",
+          "a": "It is a starting point, not an answer, because it uses only age and ignores income stability, dependents and the goal date. Two people of the same age with different job security should not carry the same weight in equity."
+        },
+        {
+          "q": "How often should I rebalance?",
+          "a": "Once a year on a fixed date suits most household portfolios, or whenever a sleeve drifts beyond a set band. More frequent rebalancing adds cost and tax for little gain."
+        },
+        {
+          "q": "Does allocation replace choosing good funds?",
+          "a": "No, it comes first and the fund choice follows. Get the equity share right and a reasonable index fund will do; get it wrong and no fund selection rescues you."
+        },
+        {
+          "q": "How much gold belongs in an Indian portfolio?",
+          "a": "Investors commonly hold a modest share as a diversifier, since gold tends not to move with equities. Jewellery is not the investment sleeve, because making charges and resale losses eat the return."
+        },
+        {
+          "q": "Do EPF and PPF count towards my allocation?",
+          "a": "Yes. They are debt holdings and often the largest a salaried Indian owns, so leaving them out makes a portfolio look far more equity-heavy than it is."
+        },
+        {
+          "q": "Should I change my allocation when markets fall?",
+          "a": "Changing the target because of a fall usually locks in losses at the worst moment. Rebalancing back to the existing target means buying equity cheaper, a different action altogether."
+        }
+      ],
+      "related": [
+        {
+          "slug": "diversification",
+          "url": "/dictionary/diversification/"
+        },
+        {
+          "slug": "risk-vs-return",
+          "url": "/dictionary/risk-vs-return/"
+        },
+        {
+          "slug": "mutual-fund",
+          "url": "/dictionary/mutual-fund/"
+        },
+        {
+          "slug": "sip-systematic-investment-plan",
+          "url": "/dictionary/sip-systematic-investment-plan/"
+        },
+        {
+          "slug": "capital-gains-tax",
+          "url": "/dictionary/capital-gains-tax/"
+        }
+      ]
+    },
+    {
+      "slug": "time-value-of-money",
+      "term": "Time Value of Money",
+      "heading": "Time Value of Money",
+      "category": "Investing Basics",
+      "sub_cluster": "Compounding & TVM",
+      "url": "/dictionary/time-value-of-money/",
+      "focus_keyword": "time value of money",
+      "seo_title": "Time Value of Money: PV, FV & Examples | FinYaar",
+      "meta_description": "Understand time value of money, present and future value formulas, discount rates and compounding with a worked example comparing cash now with a later payment.",
+      "definition": "Time Value of Money is the principle that a rupee available now is worth more than the same rupee promised later, because the rupee in hand can be put to work immediately. Turning a future amount into what it is worth now is discounting, and the answer is its present value; pushing a present amount forward is compounding, and the answer is its future value. The rate used to move money across time is the discount rate, and it reflects what the money could otherwise earn plus the risk the promise is not honoured. Almost every calculation in Indian personal finance sits on this idea, from an EMI schedule to bond pricing.",
+      "faqs": [
+        {
+          "q": "Is time value of money the same as inflation?",
+          "a": "No. Inflation is one reason future money is worth less, but the larger reason is the return you forgo by waiting. Even with zero inflation, money in hand could be earning."
+        },
+        {
+          "q": "What discount rate should an individual use?",
+          "a": "Use the return you could realistically get on money of comparable risk over the same period, after tax. If the alternative is repaying a loan, the loan rate is a fair choice."
+        },
+        {
+          "q": "How is this different from compound interest?",
+          "a": "They are two views of one mechanism. Compound interest describes money growing forward, while discounting runs the same growth backwards to value a future sum today."
+        },
+        {
+          "q": "Does it apply to monthly cash flows too?",
+          "a": "Yes, and Indian loans work exactly this way. Convert the annual rate to a monthly rate and count n in months, which is how EMI schedules are built in practice."
+        },
+        {
+          "q": "Why do insurance and pension illustrations look so large?",
+          "a": "Because they quote undiscounted future amounts spread over decades. Discount that maturity value back at a sensible rate and it usually shrinks a great deal, which is the fair way to compare options."
+        },
+        {
+          "q": "Where does risk enter the calculation?",
+          "a": "Through the discount rate. A government security is discounted at a lower rate than payments promised by an unknown counterparty, and that higher rate is what shrinks their present value."
+        }
+      ],
+      "related": [
+        {
+          "slug": "compound-interest",
+          "url": "/dictionary/compound-interest/"
+        },
+        {
+          "slug": "cagr",
+          "url": "/dictionary/cagr/"
+        },
+        {
+          "slug": "emi",
+          "url": "/dictionary/emi/"
+        },
+        {
+          "slug": "bond",
+          "url": "/dictionary/bond/"
+        },
+        {
+          "slug": "inflation",
+          "url": "/dictionary/inflation/"
+        }
+      ]
+    },
+    {
+      "slug": "liquidity",
+      "term": "Liquidity",
+      "heading": "Liquidity",
+      "category": "Investing Basics",
+      "sub_cluster": "Core concepts",
+      "url": "/dictionary/liquidity/",
+      "focus_keyword": "liquidity meaning in finance",
+      "seo_title": "Liquidity Meaning in Finance: Assets & Risk | FinYaar",
+      "meta_description": "Learn liquidity meaning in finance: how quickly assets turn into cash, bid-ask spreads, market depth and emergency funding, with a worked Indian household example.",
+      "definition": "Liquidity is how quickly and how cheaply an asset can be turned into cash without knocking its own price down. A liquid asset has buyers waiting near the last traded price, so selling in a hurry costs almost nothing extra, while an illiquid one makes you choose between waiting and accepting less. For an Indian household the ladder runs from a savings balance through liquid funds and listed shares down to property. Those rungs matter most on the day an emergency arrives.",
+      "faqs": [
+        {
+          "q": "Is a fixed deposit a liquid asset?",
+          "a": "Reasonably so, since most deposits can be broken the same day. What you give up is interest, because banks pay the rate applicable to the period the deposit actually ran, usually with a penalty. Tax-saving deposits with a statutory lock-in are the exception."
+        },
+        {
+          "q": "Are liquid funds risk free?",
+          "a": "No. They hold short-maturity debt, so the value moves little day to day, but a credit event in an underlying holding can still hurt. They are chosen for ease of exit, not for a guarantee."
+        },
+        {
+          "q": "How much of my money should sit in liquid form?",
+          "a": "A common working rule is three to six months of essential household expenses, stretched further if your income is irregular. Sizing it against expenses rather than total wealth matters more than the figure itself."
+        },
+        {
+          "q": "Does high trading volume always mean good liquidity?",
+          "a": "Not by itself. Volume can sit in a few minutes or a handful of accounts, leaving the book empty when you want to trade. The spread and the quantity resting behind the best bid and offer describe what you face."
+        },
+        {
+          "q": "What is the difference between liquidity and solvency?",
+          "a": "Solvency asks whether your assets exceed your liabilities. Liquidity asks whether you can pay what falls due this month. Aarti above was solvent and illiquid, and businesses fail on the second count more often."
+        },
+        {
+          "q": "Do gold and property count as an emergency fund?",
+          "a": "Property does not, since its sale timeline runs into months. Gold is a middle case, because a loan against jewellery is sanctioned quickly even though selling takes time."
+        }
+      ],
+      "related": [
+        {
+          "slug": "emergency-fund",
+          "url": "/dictionary/emergency-fund/"
+        },
+        {
+          "slug": "savings-account",
+          "url": "/dictionary/savings-account/"
+        },
+        {
+          "slug": "volatility",
+          "url": "/dictionary/volatility/"
+        },
+        {
+          "slug": "asset-allocation",
+          "url": "/dictionary/asset-allocation/"
+        },
+        {
+          "slug": "net-worth",
+          "url": "/dictionary/net-worth/"
+        }
+      ]
+    },
+    {
+      "slug": "demat-account",
+      "term": "Demat Account",
+      "heading": "Demat Account",
+      "category": "Stock Market and Equities",
+      "sub_cluster": "Market structure",
+      "url": "/dictionary/demat-account/",
+      "focus_keyword": "what is a demat account",
+      "seo_title": "What Is a Demat Account? Meaning & Charges | FinYaar",
+      "meta_description": "What is a demat account? Learn how NSDL, CDSL and participants hold securities, how trading and bank accounts differ, and how demat charges work in India.",
+      "definition": "Demat Account is the standard name for the electronic account in which your shares, bonds, fund units and other securities are held in dematerialised form instead of as paper certificates. In India the record sits with one of two depositories, NSDL or CDSL, and the account is opened for you by a SEBI-registered depository participant such as a bank or a broker. Securities are credited when you buy and debited when you sell, much as a bank account handles money. Anyone buying listed shares needs one, under the Depositories Act, 1996.",
+      "faqs": [
+        {
+          "q": "Can I hold more than one demat account?",
+          "a": "Yes, with the same or different participants, provided the PAN matches. Each carries its own maintenance charge, and holding more than one disqualifies you from the Basic Services category, so a single account suits most individual investors."
+        },
+        {
+          "q": "Do I need a demat account to invest in mutual funds?",
+          "a": "No. Units can be held in statement form with the registrar, which is how most direct investors hold them. A demat account is optional for funds but necessary for exchange traded funds, which are bought and sold on the exchange like shares."
+        },
+        {
+          "q": "What happens to my shares if my broker shuts down?",
+          "a": "They remain yours, being recorded at the depository against your name and not on the broker&#39;s books. You can move the account to another participant or approach the depository directly. That separation is why direct payout of securities to client accounts was made mandatory."
+        },
+        {
+          "q": "Can I still hold physical share certificates?",
+          "a": "You can hold them, but not transfer them in paper form, since transfers of listed securities must be dematerialised. Old certificates are converted by lodging a dematerialisation request form with them at your participant, which takes a few weeks."
+        },
+        {
+          "q": "Is a demat account needed to apply for an IPO?",
+          "a": "Yes, because allotted shares can only be credited electronically. The application also needs a bank account supporting the blocked-amount facility; a trading account matters only when you sell after listing."
+        },
+        {
+          "q": "How do I keep the account safe?",
+          "a": "Read the consolidated account statement the depository sends, register for transaction alerts, and never hand over instruction slips signed in blank. If you are away, the account can be frozen for debits and unfrozen later."
+        }
+      ],
+      "related": [
+        {
+          "slug": "equity-share",
+          "url": "/dictionary/equity-share/"
+        },
+        {
+          "slug": "nse",
+          "url": "/dictionary/nse/"
+        },
+        {
+          "slug": "bse",
+          "url": "/dictionary/bse/"
+        },
+        {
+          "slug": "ipo",
+          "url": "/dictionary/ipo/"
+        },
+        {
+          "slug": "etf",
+          "url": "/dictionary/etf/"
         }
       ]
     }
