@@ -2015,6 +2015,486 @@
           "url": "/dictionary/etf/"
         }
       ]
+    },
+    {
+      "slug": "nse",
+      "term": "NSE",
+      "heading": "NSE",
+      "category": "Stock Market and Equities",
+      "sub_cluster": "Market structure",
+      "url": "/dictionary/nse/",
+      "focus_keyword": "NSE full form",
+      "seo_title": "NSE Full Form: Trading, Clearing & Nifty 50 | FinYaar",
+      "meta_description": "NSE full form is National Stock Exchange. Learn how orders match, impact cost works, trades settle and the Nifty 50 is built, with a worked order-book example.",
+      "definition": "NSE (National Stock Exchange) is India&#39;s fully electronic stock exchange, where buy and sell orders from across the country meet in one computerised order book and are matched without a trading floor. It was incorporated in 1992, recognised in 1993 and began operations in 1994. It runs equity, derivatives and debt segments, publishes the Nifty 50, and settles trades through its own clearing corporation, all under SEBI regulation.",
+      "faqs": [
+        {
+          "q": "Can I trade directly on NSE without a broker?",
+          "a": "No. Orders reach the exchange only through a trading member registered with NSE and SEBI. You open a trading account with that member and a demat account with a depository participant, and the broker routes your instructions."
+        },
+        {
+          "q": "Why do the same shares trade on both NSE and the BSE?",
+          "a": "Companies may list on more than one exchange, and most large ones do. Prices track each other closely because participants arbitrage any gap within seconds. Buying on one and selling on the other works only if you take delivery first."
+        },
+        {
+          "q": "What is the difference between the Nifty 50 and the Sensex?",
+          "a": "They belong to different exchanges: the Nifty 50 holds fifty NSE-listed companies, the Sensex thirty on the BSE. Both use free-float weighting and overlap heavily, so they usually move together."
+        },
+        {
+          "q": "What happens if the person selling me shares fails to deliver?",
+          "a": "You still receive your shares, because the clearing corporation guarantees settlement. The shortfall is covered through an auction in which the securities are bought from the market, at the defaulting seller&#39;s cost."
+        },
+        {
+          "q": "Are NSE trading hours the same for every segment?",
+          "a": "No. The equity market has a pre-open session, continuous trading and a closing session, while currency and commodity segments follow their own schedules, all published by the exchange with the holiday calendar."
+        },
+        {
+          "q": "Does a rising Nifty 50 mean every listed share is rising?",
+          "a": "Not at all. Fifty free-float weighted companies can be pulled up by a few heavyweights while most of the market falls. Breadth measures, counting shares advanced against declined, describe such a day far better."
+        }
+      ],
+      "related": [
+        {
+          "slug": "bse",
+          "url": "/dictionary/bse/"
+        },
+        {
+          "slug": "sensex-and-nifty",
+          "url": "/dictionary/sensex-and-nifty/"
+        },
+        {
+          "slug": "demat-account",
+          "url": "/dictionary/demat-account/"
+        },
+        {
+          "slug": "equity-share",
+          "url": "/dictionary/equity-share/"
+        },
+        {
+          "slug": "index-fund",
+          "url": "/dictionary/index-fund/"
+        }
+      ]
+    },
+    {
+      "slug": "bse",
+      "term": "BSE",
+      "heading": "BSE",
+      "category": "Stock Market and Equities",
+      "sub_cluster": "Market structure",
+      "url": "/dictionary/bse/",
+      "focus_keyword": "BSE full form",
+      "seo_title": "BSE Full Form: History, Sensex & Trading | FinYaar",
+      "meta_description": "BSE full form is Bombay Stock Exchange. Learn its history, how the Sensex is calculated, listing platforms and settlement, with a worked index-movement example.",
+      "definition": "BSE (Bombay Stock Exchange) is India&#39;s oldest stock exchange and the oldest in Asia, established in Mumbai in 1875. It carries several thousand listings, publishes the Sensex, and runs a main board plus dedicated platforms for smaller firms. Trading has been fully electronic since the outcry ring closed in the mid-1990s, clearing runs through its own clearing corporation, and BSE Limited is itself a listed company today, under SEBI regulation like every Indian exchange.",
+      "faqs": [
+        {
+          "q": "Why does the Sensex hold only thirty companies?",
+          "a": "A small, liquid set was easier to compute and follow when the index began in 1986, and thirty free-float weighted companies still capture much of total market value. Broader BSE indices exist for wider coverage."
+        },
+        {
+          "q": "Does it matter to me whether I trade on BSE or NSE?",
+          "a": "For a large company listed on both, very little, since prices stay within paise of each other. For a smaller company it can matter, because one exchange may carry the deeper order book and the better fill on any real size."
+        },
+        {
+          "q": "Can I buy shares of BSE itself?",
+          "a": "Yes. BSE Limited is a listed company and its shares trade on the NSE. That makes you a shareholder in the exchange business, which earns from transaction charges, listing fees and data services, separately from the companies listed on it."
+        },
+        {
+          "q": "Why do the Sensex and the Nifty move by different point amounts on the same day?",
+          "a": "They sit at different levels and hold different constituents in different weights, so a point on one is not comparable to a point on the other. Compare percentage changes, where the two usually land close together."
+        },
+        {
+          "q": "What is an SME listing and should a retail investor buy into one?",
+          "a": "It is a listing on the platform for smaller companies, with lighter entry norms and a lot size that keeps the ticket large. Volumes are thin, disclosures less extensive than on the main board and price swings violent, so the risk profile differs materially."
+        },
+        {
+          "q": "Does the Sensex account for dividends?",
+          "a": "The headline index is a price index, capturing price movement alone. Separate total return versions add dividends back, and those are the fairer benchmark for a fund&#39;s performance over long periods."
+        }
+      ],
+      "related": [
+        {
+          "slug": "nse",
+          "url": "/dictionary/nse/"
+        },
+        {
+          "slug": "sensex-and-nifty",
+          "url": "/dictionary/sensex-and-nifty/"
+        },
+        {
+          "slug": "market-capitalization",
+          "url": "/dictionary/market-capitalization/"
+        },
+        {
+          "slug": "ipo",
+          "url": "/dictionary/ipo/"
+        },
+        {
+          "slug": "demat-account",
+          "url": "/dictionary/demat-account/"
+        }
+      ]
+    },
+    {
+      "slug": "bull-and-bear-market",
+      "term": "Bull and Bear Market",
+      "heading": "Bull and Bear Market",
+      "category": "Stock Market and Equities",
+      "sub_cluster": "Market structure",
+      "url": "/dictionary/bull-and-bear-market/",
+      "focus_keyword": "bull vs bear market",
+      "seo_title": "Bull vs Bear Market: Meaning & Examples | FinYaar",
+      "meta_description": "Understand bull vs bear market phases, corrections, drawdowns and recovery maths, with a worked SIP example showing how changing prices affect units purchased.",
+      "definition": "Bull and Bear Market are the two labels used for the long upward and downward phases of a stock market. A bull market is a stretch in which prices rise broadly and confidence builds, while a bear market is usually marked when a broad index such as the Nifty 50 or the Sensex falls twenty per cent or more from its recent peak. Those thresholds are market convention, not something SEBI or the exchanges define in a rulebook. The labels matter far less than what each phase does to behaviour, because money is lost in the reaction rather than the fall.",
+      "faqs": [
+        {
+          "q": "Is a bear market officially declared in India?",
+          "a": "No. SEBI, the NSE and the BSE publish no such declaration, because the twenty per cent rule is analyst and press convention, so two commentators can date the same phase differently."
+        },
+        {
+          "q": "What is the difference between a correction and a bear market?",
+          "a": "Only the depth of the fall, with about ten per cent called a correction and twenty per cent a bear market. Most corrections stop short of that line, and nobody knows which one will not."
+        },
+        {
+          "q": "Should I stop my SIP when the market is falling?",
+          "a": "A falling market is when a fixed instalment buys the most units, so stopping removes the cheapest purchases of the cycle. Pause for a real reason such as a job loss."
+        },
+        {
+          "q": "How long do bull and bear markets last?",
+          "a": "Bull phases have historically run longer than bear phases, but the range around that average is enormous. Past durations set no schedule for the current one."
+        },
+        {
+          "q": "Does every stock fall in a bear market?",
+          "a": "No. Companies with stable cash flows often fall far less, while leveraged or richly valued ones fall much more. The index is an average hiding a wide spread."
+        },
+        {
+          "q": "Can anyone reliably spot the turn?",
+          "a": "Only in hindsight, once prices have risen far enough above the low. Because the strongest days of a recovery cluster near that point, waiting for clarity usually means re-entering higher."
+        }
+      ],
+      "related": [
+        {
+          "slug": "sensex-and-nifty",
+          "url": "/dictionary/sensex-and-nifty/"
+        },
+        {
+          "slug": "volatility",
+          "url": "/dictionary/volatility/"
+        },
+        {
+          "slug": "sip-systematic-investment-plan",
+          "url": "/dictionary/sip-systematic-investment-plan/"
+        },
+        {
+          "slug": "risk-vs-return",
+          "url": "/dictionary/risk-vs-return/"
+        },
+        {
+          "slug": "beta",
+          "url": "/dictionary/beta/"
+        }
+      ]
+    },
+    {
+      "slug": "blue-chip-stock",
+      "term": "Blue Chip Stock",
+      "heading": "Blue Chip Stock",
+      "category": "Stock Market and Equities",
+      "sub_cluster": "Equity types",
+      "url": "/dictionary/blue-chip-stock/",
+      "focus_keyword": "blue chip stocks",
+      "seo_title": "Blue Chip Stocks: Meaning, Dividends & Risks | FinYaar",
+      "meta_description": "Learn what blue chip stocks are, how they differ from large caps, and how dividends, valuation and risk affect returns, with a worked Indian investing example.",
+      "definition": "Blue Chip Stock is an informal term for the share of a large, long-established company with a consistent record of profits, manageable debt and usually a steady dividend. In India the phrase is applied to the biggest and most heavily traded names, most of which sit inside the Nifty 50 or the Sensex. It is a description, not a category: SEBI and AMFI classify listed companies as large, mid or small cap purely by rank of market capitalisation, and no rulebook certifies any company as blue chip. The label signals steadiness and easy exit, not safety, and never a promise of returns.",
+      "faqs": [
+        {
+          "q": "Is blue chip an official SEBI category?",
+          "a": "No. SEBI defines large, mid and small cap by market capitalisation rank for mutual fund scheme categories, and blue chip appears nowhere in that framework. A scheme carrying the word is governed by its registered category."
+        },
+        {
+          "q": "Are all Nifty 50 companies blue chips?",
+          "a": "Index membership is one marker, not the whole test, since inclusion depends largely on size and liquidity. A constituent with heavy debt or an unreliable profit record fails the description."
+        },
+        {
+          "q": "Can a blue chip stock lose money?",
+          "a": "Yes, and sometimes for years. Falls of thirty or forty per cent happen in bad markets, and a stretched entry valuation can leave a good business delivering a poor return."
+        },
+        {
+          "q": "Should a beginner start with blue chips?",
+          "a": "They are easier to research and easier to sell. Many first-time investors get similar exposure more cheaply through an index fund, since a headline index is dominated by exactly these companies."
+        },
+        {
+          "q": "How many should a portfolio hold?",
+          "a": "No fixed number applies, but sector concentration matters more than the count. Four names from one industry are a single bet, however large each company is."
+        },
+        {
+          "q": "Do blue chips always pay dividends?",
+          "a": "Not always, and a payout can be cut in a difficult year because dividends are declared, never guaranteed. A long unbroken record is evidence of stability, not a contract."
+        }
+      ],
+      "related": [
+        {
+          "slug": "market-capitalization",
+          "url": "/dictionary/market-capitalization/"
+        },
+        {
+          "slug": "dividend-yield",
+          "url": "/dictionary/dividend-yield/"
+        },
+        {
+          "slug": "sensex-and-nifty",
+          "url": "/dictionary/sensex-and-nifty/"
+        },
+        {
+          "slug": "pe-ratio",
+          "url": "/dictionary/pe-ratio/"
+        },
+        {
+          "slug": "beta",
+          "url": "/dictionary/beta/"
+        }
+      ]
+    },
+    {
+      "slug": "face-value",
+      "term": "Face Value",
+      "heading": "Face Value",
+      "category": "Stock Market and Equities",
+      "sub_cluster": "Equity types",
+      "url": "/dictionary/face-value/",
+      "focus_keyword": "face value of share",
+      "seo_title": "Face Value of Share: Meaning, Splits & Dividends | FinYaar",
+      "meta_description": "Understand face value of shares, how it differs from market and book value, and how splits, bonus issues and dividend percentages work with a rupee example.",
+      "definition": "Face Value is the nominal value fixed on a share or a bond at issue and recorded in the company&#39;s books. Indian equity shares commonly carry a face value of &#8377;10, &#8377;5, &#8377;2 or &#8377;1, and that figure is the building block of paid-up share capital. It is not the market price, which the NSE and the BSE reset every second, and it is not book value, which comes off the balance sheet. Face value governs the arithmetic of a split, the reading of a dividend percentage and the sum a bond repays at maturity, yet it says nothing about worth.",
+      "faqs": [
+        {
+          "q": "Is a low face value a sign of a cheap share?",
+          "a": "No. Face value is an accounting convention carrying no information about worth: a &#8377;1 face value share can trade at &#8377;4,000 and a &#8377;10 one at &#8377;12."
+        },
+        {
+          "q": "Can a company change the face value of its shares?",
+          "a": "Yes, by sub-dividing shares in a split or combining them in a consolidation, each requiring members to approve an alteration of the capital clause. Both are announced with a record date."
+        },
+        {
+          "q": "What is the difference between face value and book value?",
+          "a": "Face value is fixed at issue and moves only in a split or consolidation. Book value is net assets divided by shares outstanding and changes at every reporting date."
+        },
+        {
+          "q": "Do shares always have a face value?",
+          "a": "Under Indian company law shares carry a nominal value, so every listed Indian share has one. Some jurisdictions elsewhere permit shares of no par value."
+        },
+        {
+          "q": "Why is my dividend smaller than the percentage suggests?",
+          "a": "Because the percentage applies to face value, not to what you paid. A 300 per cent dividend on a &#8377;2 face value is &#8377;6 per share, a one per cent yield at &#8377;600."
+        },
+        {
+          "q": "Does a bond always repay its face value?",
+          "a": "Standard bonds redeem at par, meaning at face value, unless the terms provide for a redemption premium. That assumes the issuer can pay, since credit risk sits outside this arithmetic."
+        }
+      ],
+      "related": [
+        {
+          "slug": "book-value",
+          "url": "/dictionary/book-value/"
+        },
+        {
+          "slug": "equity-share",
+          "url": "/dictionary/equity-share/"
+        },
+        {
+          "slug": "dividend",
+          "url": "/dictionary/dividend/"
+        },
+        {
+          "slug": "coupon-rate",
+          "url": "/dictionary/coupon-rate/"
+        },
+        {
+          "slug": "market-capitalization",
+          "url": "/dictionary/market-capitalization/"
+        }
+      ]
+    },
+    {
+      "slug": "book-value",
+      "term": "Book Value",
+      "heading": "Book Value",
+      "category": "Stock Market and Equities",
+      "sub_cluster": "Equity types",
+      "url": "/dictionary/book-value/",
+      "focus_keyword": "book value per share",
+      "seo_title": "Book Value per Share: Formula & Example | FinYaar",
+      "meta_description": "Learn book value per share, its formula, tangible book value and how it differs from face value and market price, with a worked balance-sheet example in rupees.",
+      "definition": "Book Value is what a company&#39;s accounts say is left for its shareholders once every liability has been settled: total assets minus total liabilities. On an Indian balance sheet the same figure appears directly as shareholders&#39; funds, being share capital plus reserves and surplus, or equity share capital plus other equity under Ind AS. Divide it by the equity shares outstanding and you have book value per share. It is neither the face value printed at issue nor the price the NSE and BSE quote today, and the distance between the three is the informative part.",
+      "faqs": [
+        {
+          "q": "Is book value the same as net worth?",
+          "a": "For a company the two describe the same quantity, assets minus liabilities, with net worth the commoner term in lending language. Book value is preferred when the figure goes per share."
+        },
+        {
+          "q": "Can a share trade below its book value?",
+          "a": "Yes, when investors expect poor returns on those assets, doubt the values they are carried at, or fear losses ahead. Treat it as a reason to examine asset quality, not as a bargain."
+        },
+        {
+          "q": "What is the difference between book value and market value?",
+          "a": "Book value is a historical measure fixed at each reporting date; market value is what buyers and sellers agree on continuously. One records what was spent and retained, the other prices what is expected."
+        },
+        {
+          "q": "How does depreciation affect it?",
+          "a": "Each year&#39;s charge reduces the carrying value of the asset and the profit flowing into reserves, so book value falls though no cash left. Over a long asset life it can sink well below replacement cost."
+        },
+        {
+          "q": "Does book value show what a shutdown would pay me?",
+          "a": "Only very roughly. A forced sale rarely realises carrying values, closure costs arise and secured lenders are paid first, so liquidation value usually lands below book value."
+        },
+        {
+          "q": "Why do banks report book value so prominently?",
+          "a": "Because a lender&#39;s net worth is the regulated cushion that absorbs loan losses and caps how much it can lend, and its assets are financial instruments carried at measured values."
+        }
+      ],
+      "related": [
+        {
+          "slug": "pb-ratio",
+          "url": "/dictionary/pb-ratio/"
+        },
+        {
+          "slug": "face-value",
+          "url": "/dictionary/face-value/"
+        },
+        {
+          "slug": "balance-sheet",
+          "url": "/dictionary/balance-sheet/"
+        },
+        {
+          "slug": "net-worth",
+          "url": "/dictionary/net-worth/"
+        },
+        {
+          "slug": "roe",
+          "url": "/dictionary/roe/"
+        }
+      ]
+    },
+    {
+      "slug": "elss",
+      "term": "ELSS",
+      "heading": "ELSS",
+      "category": "Mutual Funds and SIP",
+      "sub_cluster": "Fund types",
+      "url": "/dictionary/elss/",
+      "focus_keyword": "ELSS funds",
+      "seo_title": "ELSS Funds: Meaning, Lock-in & Tax Benefits | FinYaar",
+      "meta_description": "Learn how ELSS funds work, their three-year lock-in, old-regime tax deductions and SIP allotment rules, with a worked example of when units become redeemable.",
+      "definition": "ELSS (Equity Linked Savings Scheme) is an equity mutual fund carrying a statutory three-year lock-in that qualifies for a deduction under Section 80C of the Income Tax Act. SEBI requires the category to hold at least 80 per cent in equity, so the money goes into listed Indian companies and nothing guaranteed. Three years is the shortest lock-in among the 80C options, though the deduction reaches only a taxpayer filing under the old regime. The tax break is certain the day you claim it; the return is certain on no day at all.",
+      "faqs": [
+        {
+          "q": "Can I withdraw from an ELSS before three years in an emergency?",
+          "a": "No. The lock-in is statutory rather than a fee-based restriction, so the fund house cannot release units early for a job loss or a medical bill. That is the sharpest difference between an ELSS and an ordinary equity fund carrying only an exit load."
+        },
+        {
+          "q": "Is ELSS worth it if I file under the new tax regime?",
+          "a": "Only as an equity fund. You accept a three-year lock-in and receive no deduction, while an ordinary scheme with a similar mandate offers the same exposure freely."
+        },
+        {
+          "q": "Which is better for tax saving, ELSS or PPF?",
+          "a": "They answer different questions. PPF pays a notified rate and locks money for fifteen years, while ELSS offers equity returns and equity volatility over three. Many households hold both."
+        },
+        {
+          "q": "How is the gain taxed when I finally redeem?",
+          "a": "As long-term capital gains on an equity-oriented scheme, since the units necessarily crossed twelve months during the lock-in, with an annual exemption before tax. Confirm the current rate and threshold with the Income Tax Department."
+        },
+        {
+          "q": "Does the IDCW option change the lock-in?",
+          "a": "Units remain locked for three years under either option. What changes is that an IDCW payout distributes cash during the lock-in, taxable in your hands, while growth leaves everything inside the scheme."
+        },
+        {
+          "q": "What happens to ELSS units if the investor dies during the lock-in?",
+          "a": "Units generally become transmissible to the nominee or legal heir after a specified period from allotment, once the fund house completes its process. The scheme information document sets out the treatment."
+        }
+      ],
+      "related": [
+        {
+          "slug": "section-80c",
+          "url": "/dictionary/section-80c/"
+        },
+        {
+          "slug": "old-vs-new-tax-regime",
+          "url": "/dictionary/old-vs-new-tax-regime/"
+        },
+        {
+          "slug": "sip-systematic-investment-plan",
+          "url": "/dictionary/sip-systematic-investment-plan/"
+        },
+        {
+          "slug": "capital-gains-tax",
+          "url": "/dictionary/capital-gains-tax/"
+        },
+        {
+          "slug": "ppf",
+          "url": "/dictionary/ppf/"
+        }
+      ]
+    },
+    {
+      "slug": "cagr",
+      "term": "CAGR",
+      "heading": "CAGR",
+      "category": "Mutual Funds and SIP",
+      "sub_cluster": "Fund metrics (XIRR/CAGR)",
+      "url": "/dictionary/cagr/",
+      "focus_keyword": "what is CAGR",
+      "seo_title": "What Is CAGR? Formula, Examples & Limits | FinYaar",
+      "meta_description": "What is CAGR? Learn the compound annual growth rate formula, how to compare investment returns, why it hides volatility and when SIP returns need XIRR instead.",
+      "definition": "CAGR (Compound Annual Growth Rate) is the single constant annual rate that would carry a starting value to an ending value over a stated number of years. It answers one narrow question: at what steady speed did this investment travel, ignoring everything that happened between the first day and the last. Fund factsheets, Sensex charts and property brochures across India quote it because one clean percentage compares things that grew over different periods. That convenience is also its limitation, since the smoothing throws away the path.",
+      "faqs": [
+        {
+          "q": "What is a good CAGR for an Indian equity mutual fund?",
+          "a": "There is no fixed benchmark, and any number quoted applies to a particular past period. Compare against the scheme&#39;s own benchmark index and its category over the same window, not against a figure remembered from another decade."
+        },
+        {
+          "q": "Can CAGR be negative?",
+          "a": "Yes. If the ending value is lower than the starting value, the growth multiple is below one and the formula returns a negative rate. A holding that fell from &#8377;5,00,000 to &#8377;4,00,000 over three years has a CAGR of roughly negative 7.2 per cent a year."
+        },
+        {
+          "q": "How is CAGR different from absolute return?",
+          "a": "Absolute return states total growth without reference to time, so 60 per cent could have taken two years or twelve. CAGR spreads that growth across the years in a compounding way, which makes different holding periods comparable."
+        },
+        {
+          "q": "Should I use CAGR for my SIP returns?",
+          "a": "No. Each instalment has been invested for a different length of time, and CAGR assumes one lump sum on day one. Applying it to a SIP typically understates the real return substantially. XIRR handles dated instalments correctly."
+        },
+        {
+          "q": "Is CAGR the same as annualised return?",
+          "a": "For a single inflow and a single outflow the two terms mean the same thing, and factsheets often say annualised return where they mean CAGR. Where cash flows are irregular it is computed as XIRR instead."
+        },
+        {
+          "q": "Does CAGR account for inflation or tax?",
+          "a": "Neither, unless you build them in yourself. A quoted CAGR is gross, pre-tax and nominal. Subtract inflation for a real rate, and subtract the capital gains you will owe for what you keep."
+        }
+      ],
+      "related": [
+        {
+          "slug": "xirr",
+          "url": "/dictionary/xirr/"
+        },
+        {
+          "slug": "compound-interest",
+          "url": "/dictionary/compound-interest/"
+        },
+        {
+          "slug": "rule-of-72",
+          "url": "/dictionary/rule-of-72/"
+        },
+        {
+          "slug": "volatility",
+          "url": "/dictionary/volatility/"
+        },
+        {
+          "slug": "risk-vs-return",
+          "url": "/dictionary/risk-vs-return/"
+        }
+      ]
     }
   ]
 }

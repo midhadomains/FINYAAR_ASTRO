@@ -378,5 +378,37 @@
   "/dictionary/demat-account/": {
     "datePublished": "2026-10-07T00:00:00+05:30",
     "dateModified": "2026-10-07T00:00:00+05:30"
+  },
+  "/dictionary/nse/": {
+    "datePublished": "2026-10-08T00:00:00+05:30",
+    "dateModified": "2026-10-08T00:00:00+05:30"
+  },
+  "/dictionary/bse/": {
+    "datePublished": "2026-10-08T00:00:00+05:30",
+    "dateModified": "2026-10-08T00:00:00+05:30"
+  },
+  "/dictionary/bull-and-bear-market/": {
+    "datePublished": "2026-10-08T00:00:00+05:30",
+    "dateModified": "2026-10-08T00:00:00+05:30"
+  },
+  "/dictionary/blue-chip-stock/": {
+    "datePublished": "2026-10-08T00:00:00+05:30",
+    "dateModified": "2026-10-08T00:00:00+05:30"
+  },
+  "/dictionary/face-value/": {
+    "datePublished": "2026-10-08T00:00:00+05:30",
+    "dateModified": "2026-10-08T00:00:00+05:30"
+  },
+  "/dictionary/book-value/": {
+    "datePublished": "2026-10-08T00:00:00+05:30",
+    "dateModified": "2026-10-08T00:00:00+05:30"
+  },
+  "/dictionary/elss/": {
+    "datePublished": "2026-10-08T00:00:00+05:30",
+    "dateModified": "2026-10-08T00:00:00+05:30"
+  },
+  "/dictionary/cagr/": {
+    "datePublished": "2026-10-08T00:00:00+05:30",
+    "dateModified": "2026-10-08T00:00:00+05:30"
   }
 }
