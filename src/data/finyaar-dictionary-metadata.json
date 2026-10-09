@@ -918,23 +918,55 @@
       "category": "Fixed Income and Bonds",
       "url": "/dictionary/bond/",
       "focus_keyword": "what is a bond",
-      "seo_title": "Bond: Meaning, Coupon, Yield & Price Explained | FinYaar",
-      "meta_description": "Bond is a loan that an investor makes to a government or a company in exchange for regular interest and the return of the original amount on a fixed future d...",
-      "definition": "Bond is a loan that an investor makes to a government or a company in exchange for regular interest and the return of the original amount on a fixed future date. The borrower (the issuer) sells the bond to raise money, promises to pay a stated interest rate (the coupon) at set intervals, and repays the face value when the bond reaches its maturity. In India, bonds range from ultra-safe government securities to higher-paying corporate bonds, so a bond sits between a bank deposit and a share in the risk-and-return ladder.",
+      "seo_title": "What Is a Bond? Coupon, Yield & Price Explained | FinYaar",
+      "meta_description": "What is a bond? Learn how coupons, face value and maturity work, why bond prices change, and how government and corporate bonds differ in risk.",
+      "definition": "A bond is a debt security through which an investor lends money to a government or company. The issuer promises payments according to the bond's terms: a conventional fixed-rate bond pays interest, called the coupon, and repays its face value at maturity. The price an investor pays can differ from face value. Some bonds have floating interest rates or pay no periodic coupon, and their credit, market and liquidity risks vary by issuer and structure.",
       "faqs": [
-        { "q": "Is a bond safer than a share?", "a": "Often, but not automatically. Bondholders rank ahead of shareholders if an issuer is liquidated, and Indian government securities carry no domestic credit risk according to RBI. Corporate bonds can still default, and all traded fixed-rate bonds can lose market value when yields rise." },
-        { "q": "How is a bond different from a fixed deposit?", "a": "A bond is a marketable security issued by a government or company, so its price can change before maturity and its credit and liquidity risks depend on the issuer and issue. A bank fixed deposit is not exchange-traded and usually permits early closure subject to its terms and a penalty. Tax and protection arrangements can also differ." },
-        { "q": "Can I lose money on a government bond?", "a": "An Indian central-government security held to maturity is treated as carrying no domestic credit risk, but its market price can fall. Selling before maturity when yields have risen can crystallise a loss, while inflation and reinvestment rates can reduce the real or realised return." },
-        { "q": "What does a bond credit rating mean?", "a": "A credit rating is an agency opinion about the issuer’s relative ability to meet its obligations. It is not a guarantee, can change, and does not measure every risk such as interest-rate or liquidity risk." },
-        { "q": "How can a retail investor in India buy government bonds?", "a": "Eligible individuals can use RBI Retail Direct to access Treasury Bills, dated Government of India securities and State Development Loans in the primary and secondary markets. Government and corporate securities may also be available through recognised exchanges, brokers and regulated platforms." },
-        { "q": "Why does a fixed bond’s coupon stay the same when its price changes?", "a": "The coupon amount is fixed by the bond’s contractual terms and is normally calculated on face value. Market yield adjusts through the price investors are willing to pay for those fixed cash flows, so coupon and market yield can differ." }
+        {
+          "q": "Is a bond safer than a share?",
+          "a": "Often, but not automatically. Bondholders rank ahead of shareholders if an issuer is liquidated, and Indian government securities carry no domestic credit risk according to RBI. Corporate bonds can still default, and all traded fixed-rate bonds can lose market value when yields rise."
+        },
+        {
+          "q": "How is a bond different from a fixed deposit?",
+          "a": "A bond is a marketable security issued by a government or company, so its price can change before maturity and its credit and liquidity risks depend on the issuer and issue. A bank fixed deposit is not exchange-traded and usually permits early closure subject to its terms and a penalty. Tax and protection arrangements can also differ."
+        },
+        {
+          "q": "Can I lose money on a government bond?",
+          "a": "An Indian central-government security held to maturity is treated as carrying no domestic credit risk, but its market price can fall. Selling before maturity when yields have risen can crystallise a loss, while inflation and reinvestment rates can reduce the real or realised return."
+        },
+        {
+          "q": "What does a bond credit rating mean?",
+          "a": "A credit rating is an agency opinion about the issuer’s relative ability to meet its obligations. It is not a guarantee, can change, and does not measure every risk such as interest-rate or liquidity risk."
+        },
+        {
+          "q": "How can a retail investor in India buy government bonds?",
+          "a": "Eligible individuals can use RBI Retail Direct to access Treasury Bills, dated Government of India securities and State Development Loans in the primary and secondary markets. Government and corporate securities may also be available through recognised exchanges, brokers and regulated platforms."
+        },
+        {
+          "q": "Why does a fixed bond’s coupon stay the same when its price changes?",
+          "a": "The coupon amount is fixed by the bond’s contractual terms and is normally calculated on face value. Market yield adjusts through the price investors are willing to pay for those fixed cash flows, so coupon and market yield can differ."
+        }
       ],
       "related": [
-        { "slug": "yield-to-maturity", "url": "/dictionary/yield-to-maturity/" },
-        { "slug": "repo-rate", "url": "/dictionary/repo-rate/" },
-        { "slug": "fixed-deposit", "url": "/dictionary/fixed-deposit/" },
-        { "slug": "risk-vs-return", "url": "/dictionary/risk-vs-return/" }
-      ]
+        {
+          "slug": "yield-to-maturity",
+          "url": "/dictionary/yield-to-maturity/"
+        },
+        {
+          "slug": "repo-rate",
+          "url": "/dictionary/repo-rate/"
+        },
+        {
+          "slug": "fixed-deposit",
+          "url": "/dictionary/fixed-deposit/"
+        },
+        {
+          "slug": "risk-vs-return",
+          "url": "/dictionary/risk-vs-return/"
+        }
+      ],
+      "heading": "What Is a Bond?",
+      "sub_cluster": "Bond basics"
     },
     {
       "slug": "yield-to-maturity",
@@ -943,22 +975,54 @@
       "url": "/dictionary/yield-to-maturity/",
       "focus_keyword": "yield to maturity",
       "seo_title": "Yield to Maturity (YTM): Formula & Worked Example | FinYaar",
-      "meta_description": "Yield to Maturity (YTM) is the total annualised return an investor earns on a bond if it is bought at today's market price and held until maturity, assuming ...",
-      "definition": "Yield to Maturity (YTM) is the total annualised return an investor earns on a bond if it is bought at today's market price and held until maturity, assuming every coupon is received on time and reinvested at the same rate. It rolls the purchase price, the coupon income, the face value repaid at maturity and the time remaining into a single percentage, so bonds of different prices and tenors can be compared like-for-like. YTM moves inversely to price: when a bond's price falls, its YTM rises, and when its price rises, its YTM falls.",
+      "meta_description": "Yield to maturity explained: compare YTM with coupon rate and current yield, use the bond pricing formula, and follow an exact versus approximate worked example.",
+      "definition": "Yield to Maturity (YTM) is the annualised discount rate that equates a bond's current price with the present value of its remaining coupons and redemption amount. It includes both coupon income and the gain or loss between purchase price and redemption value. Realising the same compound return through maturity requires receiving all promised payments and reinvesting coupons at that yield. YTM is not a guaranteed return; price and YTM move inversely when contractual cash flows are unchanged.",
       "faqs": [
-        { "q": "Is a higher YTM always better?", "a": "No. A higher quoted YTM can compensate for greater credit, liquidity, call, duration or other risk. Compare securities with similar risk, cash-flow structure and tax treatment rather than choosing the highest number." },
-        { "q": "Does YTM assume I reinvest the coupons?", "a": "Yes. Standard YTM assumes coupon cash flows can be reinvested at the calculated yield and that the bond is held to maturity without default. Different reinvestment rates produce a different realised return." },
-        { "q": "How is YTM different from current yield?", "a": "Current yield divides the annual coupon by the bond’s market price. YTM discounts every remaining coupon and redemption payment and therefore includes the pull from purchase price toward the maturity value." },
-        { "q": "Why does a bond’s price fall when market yields rise?", "a": "A bond’s fixed cash flows become less attractive when comparable new securities offer higher yields. Its market price must fall so those fixed cash flows produce a competitive yield, all else equal." },
-        { "q": "Can I compare a bond’s YTM with a fixed-deposit rate?", "a": "They can be an initial comparison, but they are not automatically equivalent. Adjust for compounding convention, tax, credit risk, liquidity, early-sale price risk, call features and deposit insurance before deciding." },
-        { "q": "Where can I find a bond’s YTM?", "a": "Recognised exchanges, trading platforms and broker interfaces may display indicative price and yield data. RBI Retail Direct and related market sources provide information for government securities. Verify settlement date, accrued interest, coupon frequency and day-count convention." }
+        {
+          "q": "Is a higher YTM always better?",
+          "a": "No. A higher quoted YTM can compensate for greater credit, liquidity, call, duration or other risk. Compare securities with similar risk, cash-flow structure and tax treatment rather than choosing the highest number."
+        },
+        {
+          "q": "Does YTM assume I reinvest the coupons?",
+          "a": "YTM is calculated from the purchase price and promised cash flows. To realise that same compound rate on wealth accumulated through maturity, coupons must be reinvested at the YTM and all payments must arrive as promised. Different reinvestment rates change that realised compound return."
+        },
+        {
+          "q": "How is YTM different from current yield?",
+          "a": "Current yield divides the annual coupon by the bond’s market price. YTM discounts every remaining coupon and redemption payment and therefore includes the pull from purchase price toward the maturity value."
+        },
+        {
+          "q": "Why does a bond’s price fall when market yields rise?",
+          "a": "A bond’s fixed cash flows become less attractive when comparable new securities offer higher yields. Its market price must fall so those fixed cash flows produce a competitive yield, all else equal."
+        },
+        {
+          "q": "Can I compare a bond’s YTM with a fixed-deposit rate?",
+          "a": "They can be an initial comparison, but they are not automatically equivalent. Adjust for compounding convention, tax, credit risk, liquidity, early-sale price risk, call features and deposit insurance before deciding."
+        },
+        {
+          "q": "Where can I find a bond’s YTM?",
+          "a": "Recognised exchanges, trading platforms and broker interfaces may display indicative price and yield data. RBI Retail Direct and related market sources provide information for government securities. Verify settlement date, accrued interest, coupon frequency and day-count convention."
+        }
       ],
       "related": [
-        { "slug": "bond", "url": "/dictionary/bond/" },
-        { "slug": "repo-rate", "url": "/dictionary/repo-rate/" },
-        { "slug": "risk-vs-return", "url": "/dictionary/risk-vs-return/" },
-        { "slug": "fixed-deposit", "url": "/dictionary/fixed-deposit/" }
-      ]
+        {
+          "slug": "bond",
+          "url": "/dictionary/bond/"
+        },
+        {
+          "slug": "repo-rate",
+          "url": "/dictionary/repo-rate/"
+        },
+        {
+          "slug": "risk-vs-return",
+          "url": "/dictionary/risk-vs-return/"
+        },
+        {
+          "slug": "fixed-deposit",
+          "url": "/dictionary/fixed-deposit/"
+        }
+      ],
+      "heading": "Yield to Maturity (YTM)",
+      "sub_cluster": "Yields & pricing"
     },
     {
       "slug": "options",
@@ -2493,6 +2557,362 @@
         {
           "slug": "risk-vs-return",
           "url": "/dictionary/risk-vs-return/"
+        }
+      ]
+    },
+    {
+      "slug": "xirr",
+      "term": "XIRR",
+      "heading": "XIRR Meaning",
+      "category": "Mutual Funds and SIP",
+      "sub_cluster": "Fund metrics (XIRR/CAGR)",
+      "url": "/dictionary/xirr/",
+      "focus_keyword": "XIRR meaning",
+      "seo_title": "XIRR Meaning: Formula, SIP Example & CAGR | FinYaar",
+      "meta_description": "XIRR meaning explained with dated cash flows, a worked SIP example and spreadsheet signs. Learn how XIRR differs from CAGR and why short-term returns can mislead.",
+      "definition": "XIRR is the annualised rate of return on a series of cash flows that happen on irregular dates, which is what almost every real Indian portfolio looks like. It finds the one yearly rate at which every rupee you paid in, grown from its own date, adds up exactly to what you took out or still hold. Fund platforms, registrars and consolidated account statements report SIP returns this way because instalments arrive monthly and redemptions arrive whenever life demands. The letter X stands for the dates: unlike a plain internal rate of return, XIRR reads the actual calendar.",
+      "faqs": [
+        {
+          "q": "What is a good XIRR for a SIP in India?",
+          "a": "It depends on the asset class and the period. Judge an equity SIP against the scheme&#39;s benchmark index and its category over the same dates."
+        },
+        {
+          "q": "Why is my XIRR higher than the fund&#39;s published CAGR?",
+          "a": "They measure different things. The fund publishes point-to-point growth for a lump sum, while your XIRR reflects the dates your own instalments went in. Buying through a weak stretch lifts your XIRR above the scheme&#39;s CAGR, and the reverse happens too."
+        },
+        {
+          "q": "Can XIRR be negative?",
+          "a": "Yes, whenever what you hold plus what you have withdrawn falls short of what you paid in. Early in an equity SIP a negative XIRR is common and says little, since few instalments have had time to work."
+        },
+        {
+          "q": "Does XIRR work for a portfolio holding several funds?",
+          "a": "It does. Put every purchase and redemption across all schemes into one dated list and add the combined current value as the final positive flow."
+        },
+        {
+          "q": "Is XIRR the same as IRR?",
+          "a": "The idea is the same, but IRR assumes equally spaced flows while XIRR takes explicit dates and a 365-day year. For monthly instalments and an irregular redemption, XIRR is the correct function."
+        },
+        {
+          "q": "Should XIRR be calculated before or after tax?",
+          "a": "Platforms report it before tax. To see what you keep, enter redemption proceeds net of capital gains tax. Confirm applicable rates with the Income Tax Department for your assessment year."
+        }
+      ],
+      "related": [
+        {
+          "slug": "cagr",
+          "url": "/dictionary/cagr/"
+        },
+        {
+          "slug": "sip-systematic-investment-plan",
+          "url": "/dictionary/sip-systematic-investment-plan/"
+        },
+        {
+          "slug": "time-value-of-money",
+          "url": "/dictionary/time-value-of-money/"
+        },
+        {
+          "slug": "compound-interest",
+          "url": "/dictionary/compound-interest/"
+        },
+        {
+          "slug": "nav-net-asset-value",
+          "url": "/dictionary/nav-net-asset-value/"
+        }
+      ]
+    },
+    {
+      "slug": "swp",
+      "term": "SWP",
+      "heading": "SWP (Systematic Withdrawal Plan)",
+      "category": "Mutual Funds and SIP",
+      "sub_cluster": "SIP & investing modes",
+      "url": "/dictionary/swp/",
+      "focus_keyword": "systematic withdrawal plan",
+      "seo_title": "Systematic Withdrawal Plan (SWP): Meaning & Example | FinYaar",
+      "meta_description": "A systematic withdrawal plan sells mutual fund units for regular cash payouts. Learn how SWP works, withdrawal risks, tax treatment and a six-month example.",
+      "definition": "SWP (Systematic Withdrawal Plan) is a standing instruction to a mutual fund to sell a fixed rupee amount of your units at a fixed interval and credit the proceeds to your bank. Retired Indians use it to manufacture a monthly income from a lump sum, naming the date and amount themselves rather than waiting for the fund to declare a payout. Nothing is guaranteed: the fund redeems whatever units the cheque requires at that day&#39;s NAV, so a falling market consumes more of them. Used carelessly it drains capital quietly; used carefully it is a clean income arrangement.",
+      "faqs": [
+        {
+          "q": "Is an SWP better than a monthly income from a fixed deposit?",
+          "a": "They trade different risks. A deposit gives a contracted payout and no market risk, while an SWP offers growth alongside the chance the corpus shrinks. Many retired households run both."
+        },
+        {
+          "q": "What withdrawal rate is safe?",
+          "a": "None is guaranteed safe, since outcomes depend on the sequence of returns you happen to get. Lower rates survive far more scenarios, and an annual review against the actual corpus matters more than any rule fixed at the outset."
+        },
+        {
+          "q": "How is each SWP withdrawal taxed?",
+          "a": "Every withdrawal is a redemption, and only the capital gain within the units sold is taxable. For an equity fund the holding period of those specific units, picked first-in-first-out, decides the treatment. Verify current rates and the exemption limit with the Income Tax Department."
+        },
+        {
+          "q": "Can I run an SWP from an ELSS?",
+          "a": "Only on units that have completed the statutory three-year lock-in. Units still locked cannot be redeemed, so an SWP started too early fails for want of free units."
+        },
+        {
+          "q": "Does an exit load apply to SWP withdrawals?",
+          "a": "It can, if the units redeemed are younger than the scheme&#39;s exit-load period. Many investors start one only after the earliest units cross that window."
+        },
+        {
+          "q": "What happens if the corpus runs out?",
+          "a": "Withdrawals cannot continue once no units remain. The scheme terms determine how an insufficient balance and any notifications are handled. That is why the withdrawal rate deserves an annual review."
+        }
+      ],
+      "related": [
+        {
+          "slug": "stp",
+          "url": "/dictionary/stp/"
+        },
+        {
+          "slug": "capital-gains-tax",
+          "url": "/dictionary/capital-gains-tax/"
+        },
+        {
+          "slug": "nav-net-asset-value",
+          "url": "/dictionary/nav-net-asset-value/"
+        },
+        {
+          "slug": "dividend",
+          "url": "/dictionary/dividend/"
+        },
+        {
+          "slug": "mutual-fund",
+          "url": "/dictionary/mutual-fund/"
+        }
+      ]
+    },
+    {
+      "slug": "stp",
+      "term": "STP",
+      "heading": "STP (Systematic Transfer Plan)",
+      "category": "Mutual Funds and SIP",
+      "sub_cluster": "SIP & investing modes",
+      "url": "/dictionary/stp/",
+      "focus_keyword": "systematic transfer plan",
+      "seo_title": "Systematic Transfer Plan (STP): Meaning & Example | FinYaar",
+      "meta_description": "A systematic transfer plan moves money between mutual fund schemes. Learn how STP works, source-fund taxes, exit loads and a worked comparison with lump-sum investing.",
+      "definition": "STP (Systematic Transfer Plan) is a fund house arrangement that shifts a fixed amount from one of its own schemes into another at a regular interval, usually out of a liquid or debt scheme and into an equity scheme. Indians receiving a bonus, a retirement payout or property sale proceeds use it to enter equity in slices rather than all at once. Both legs sit inside one asset management company, which is the practical limit on what an STP can do. Each transfer is a redemption from the source, so it is a taxable event and can attract an exit load.",
+      "faqs": [
+        {
+          "q": "Can I run an STP between two different fund houses?",
+          "a": "No. An STP runs only between schemes of one asset management company. Across fund houses you would redeem to your bank and run a SIP into the other."
+        },
+        {
+          "q": "Is an STP better than investing the lump sum at once?",
+          "a": "It depends on what the market does next, which nobody knows. Lump-sum entry can finish ahead when the target rises faster than the source while transfers are pending. An STP spreads entry dates but guarantees neither better returns nor protection from losses."
+        },
+        {
+          "q": "How long should an STP run?",
+          "a": "There is no universal duration; choose a schedule that fits your intended allocation, time horizon and tolerance for entry-date risk. Stretching it further leaves a large share in a low-return source, working against the goal that prompted the equity allocation."
+        },
+        {
+          "q": "Does the receiving scheme have its own lock-in or load?",
+          "a": "Each purchase in the target starts its own holding period and exit-load clock, so redeeming soon after the STP ends can attract a load on recent transfers."
+        },
+        {
+          "q": "What is the difference between an STP and an SWP?",
+          "a": "An SWP sends money out to your bank; an STP keeps it inside by buying units of another scheme. Both redeem units, so either can realise capital gains or losses."
+        },
+        {
+          "q": "Can I stop or change an STP midway?",
+          "a": "Yes, through the fund house or your platform, usually with a few working days of notice. Investors often stop one early and move the balance after a fall."
+        }
+      ],
+      "related": [
+        {
+          "slug": "swp",
+          "url": "/dictionary/swp/"
+        },
+        {
+          "slug": "sip-systematic-investment-plan",
+          "url": "/dictionary/sip-systematic-investment-plan/"
+        },
+        {
+          "slug": "capital-gains-tax",
+          "url": "/dictionary/capital-gains-tax/"
+        },
+        {
+          "slug": "asset-allocation",
+          "url": "/dictionary/asset-allocation/"
+        },
+        {
+          "slug": "mutual-fund",
+          "url": "/dictionary/mutual-fund/"
+        }
+      ]
+    },
+    {
+      "slug": "coupon-rate",
+      "term": "Coupon Rate",
+      "heading": "Coupon Rate",
+      "category": "Fixed Income and Bonds",
+      "sub_cluster": "Bond basics",
+      "url": "/dictionary/coupon-rate/",
+      "focus_keyword": "coupon rate",
+      "seo_title": "Coupon Rate: Meaning, Formula & Bond Example | FinYaar",
+      "meta_description": "Coupon rate explained with formulas and bond examples. Compare coupon rate, current yield and yield to maturity, and understand payment frequency and price changes.",
+      "definition": "Coupon Rate is a bond's annual interest expressed as a percentage of its face value, rather than its market price. On a plain fixed-rate bond, the rate is set at issue and stays unchanged; floating-rate bonds reset it according to their terms. Dated government securities generally pay coupons half-yearly, while corporate payment schedules vary by issue. Because market prices move, coupon rate, current yield and yield to maturity can differ.",
+      "faqs": [
+        {
+          "q": "Is the coupon rate the same as the interest rate on a bond?",
+          "a": "It is the contractual rate, not the rate of return. The coupon rate fixes the rupee payment against face value, while your return depends on what you paid, while quoted yield to maturity describes the contractual cash flows rather than a guaranteed realised return."
+        },
+        {
+          "q": "Can a coupon rate ever change?",
+          "a": "On a plain fixed-rate bond, no. Floating rate bonds reset their coupon periodically against a reference rate, so the payment moves even though the spread is fixed. The government issues these alongside its fixed-coupon securities."
+        },
+        {
+          "q": "What is a zero coupon bond?",
+          "a": "A bond with a coupon rate of zero. It pays nothing along the way and is sold below face value, the whole return being the gap between purchase price and redemption. Treasury bills work this way."
+        },
+        {
+          "q": "How often are coupons paid in India?",
+          "a": "Half-yearly is standard for conventional dated government securities. Corporate bond payment schedules vary by issue. Some issues pay annually, quarterly or monthly, and a few accumulate everything until redemption."
+        },
+        {
+          "q": "Does a higher coupon rate mean a better bond?",
+          "a": "Not by itself. A high coupon reflects either a high rate environment at issue or a weaker credit that had to pay up. Compare yield to maturity for return and the rating for risk."
+        },
+        {
+          "q": "How is coupon income taxed for an Indian investor?",
+          "a": "For a resident individual, taxable bond interest is generally included in income and taxed at applicable slab rates, with tax deducted at source where required. Exempt securities and investor-specific rules can differ. A sale before maturity falls under the capital gains rules; confirm your position with the Income Tax Department."
+        }
+      ],
+      "related": [
+        {
+          "slug": "g-sec",
+          "url": "/dictionary/g-sec/"
+        },
+        {
+          "slug": "bond",
+          "url": "/dictionary/bond/"
+        },
+        {
+          "slug": "yield-to-maturity",
+          "url": "/dictionary/yield-to-maturity/"
+        },
+        {
+          "slug": "face-value",
+          "url": "/dictionary/face-value/"
+        },
+        {
+          "slug": "treasury-bill",
+          "url": "/dictionary/treasury-bill/"
+        }
+      ]
+    },
+    {
+      "slug": "treasury-bill",
+      "term": "Treasury Bill",
+      "heading": "Treasury Bills India: Meaning and Examples",
+      "category": "Fixed Income and Bonds",
+      "sub_cluster": "Government securities",
+      "url": "/dictionary/treasury-bill/",
+      "focus_keyword": "treasury bills India",
+      "seo_title": "Treasury Bills India: Meaning, Yield & Example | FinYaar",
+      "meta_description": "Treasury bills India explained: learn 91-, 182- and 364-day tenors, discounted pricing, annualised yields, Retail Direct auctions and a worked deposit comparison.",
+      "definition": "Treasury Bill is a short-term instrument through which the Government of India borrows for up to one year, issued by the Reserve Bank of India in tenors of 91 days, 182 days and 364 days. It carries no coupon: it is sold at a discount to face value and redeemed at full face value on maturity, and the difference between the two is the investor&#39;s entire return. The minimum investment is &#8377;10,000, in multiples of that amount. Because the borrower is the sovereign and the tenor is short, treasury bills are the benchmark for safety among rupee instruments.",
+      "faqs": [
+        {
+          "q": "What tenors do Indian treasury bills come in?",
+          "a": "Three: 91 days, 182 days and 364 days. Nothing longer exists, since borrowing beyond twelve months goes through dated securities. Cash management bills of other short maturities appear occasionally for temporary mismatches."
+        },
+        {
+          "q": "Can I sell a treasury bill before maturity?",
+          "a": "Yes. Bills trade in the secondary market, and a Retail Direct holder can place a sell request on the platform. Execution depends on available buyers and the market price. An early sale can realise a loss; the maturity payoff does not guarantee an early-sale price."
+        },
+        {
+          "q": "Are treasury bills safer than a fixed deposit?",
+          "a": "In credit terms, yes. A bill is a direct obligation of the Government of India; a deposit is an obligation of a bank, insured only up to the deposit insurance limit per depositor per bank."
+        },
+        {
+          "q": "How is the return on a treasury bill taxed?",
+          "a": "The discount is not automatically tax-free. Treatment depends on the applicable law, the holder and whether the bill is held as an investment or trading asset. Confirm the classification and rate for redemption or sale with the Income Tax Department or a tax adviser before calculating a post-tax return."
+        },
+        {
+          "q": "What is the minimum I can invest?",
+          "a": "&#8377;10,000 of face value, and multiples of &#8377;10,000 above that. Because bills sell at a discount, the cash you pay is a little less than the face value you bid for."
+        },
+        {
+          "q": "Why do treasury bill yields move with the repo rate?",
+          "a": "Bills sit at the shortest end of the government yield curve, so they track the cost of very short-term money closely. Policy expectations, banking-system liquidity and demand also affect auction yields, so the response is not a fixed or guaranteed timetable."
+        }
+      ],
+      "related": [
+        {
+          "slug": "g-sec",
+          "url": "/dictionary/g-sec/"
+        },
+        {
+          "slug": "coupon-rate",
+          "url": "/dictionary/coupon-rate/"
+        },
+        {
+          "slug": "liquidity",
+          "url": "/dictionary/liquidity/"
+        },
+        {
+          "slug": "fixed-deposit",
+          "url": "/dictionary/fixed-deposit/"
+        },
+        {
+          "slug": "repo-rate",
+          "url": "/dictionary/repo-rate/"
+        }
+      ]
+    },
+    {
+      "slug": "g-sec",
+      "term": "G-Sec",
+      "heading": "Government Securities (G-Sec)",
+      "category": "Fixed Income and Bonds",
+      "sub_cluster": "Government securities",
+      "url": "/dictionary/g-sec/",
+      "focus_keyword": "government securities",
+      "seo_title": "Government Securities (G-Sec): Meaning & Risks | FinYaar",
+      "meta_description": "Government securities explained: compare RBI Retail Direct with gilt funds, understand coupons and interest-rate risk, and follow a worked G-Sec pricing example.",
+      "definition": "Government securities (G-Secs) are tradeable debt instruments issued by the central or state governments. They include Treasury Bills, dated Government of India securities and State Development Loans. This lesson focuses on dated central-government securities, commonly paying half-yearly coupons and redeeming face value on a stated maturity date. Individuals can own securities through RBI Retail Direct or gain indirect exposure through gilt funds. RBI describes rupee government securities as carrying no domestic credit risk, but their market prices remain exposed to interest-rate and liquidity risk.",
+      "faqs": [
+        {
+          "q": "How do I buy a G-Sec as an individual in India?",
+          "a": "Register on RBI Retail Direct with a rupee savings account, PAN and KYC, open a Retail Direct Gilt account at no cost, and bid non-competitively in a weekly auction. Banks and primary dealers route retail bids too."
+        },
+        {
+          "q": "How does a G-Sec differ from a state development loan?",
+          "a": "State Development Loans are themselves government securities, issued by state governments through RBI. Dated Government of India securities are issued by the central government. Both are available through Retail Direct, and their yields can differ."
+        },
+        {
+          "q": "Can I lose money on a government security?",
+          "a": "RBI describes rupee G-Secs as carrying no domestic credit risk, but selling before maturity can realise a loss. Redemption returns face value, which may be less than a premium purchase price. Inflation and coupon reinvestment rates also affect the realised outcome."
+        },
+        {
+          "q": "Is there a lock-in on a Retail Direct holding?",
+          "a": "No. Securities can be sold through the secondary market window on Retail Direct. Liquidity varies sharply, so recently issued benchmark tenors are easier to exit than older ones."
+        },
+        {
+          "q": "How is G-Sec income taxed?",
+          "a": "Coupon income is generally taxable at the holder&#39;s applicable rate. Sale or redemption gains and gilt fund units can follow different rules depending on the instrument, acquisition date and investor. Verify current treatment with the Income Tax Department before comparing post-tax returns."
+        },
+        {
+          "q": "Why do G-Sec yields move when the RBI changes policy?",
+          "a": "The policy rate anchors the short end of the curve while expectations about future policy and inflation shape the long end. Prices respond to changes in expectations, which may occur before or after an announcement; different maturities need not move together."
+        }
+      ],
+      "related": [
+        {
+          "slug": "treasury-bill",
+          "url": "/dictionary/treasury-bill/"
+        },
+        {
+          "slug": "yield-to-maturity",
+          "url": "/dictionary/yield-to-maturity/"
+        },
+        {
+          "slug": "bond",
+          "url": "/dictionary/bond/"
+        },
+        {
+          "slug": "mutual-fund",
+          "url": "/dictionary/mutual-fund/"
         }
       ]
     }
