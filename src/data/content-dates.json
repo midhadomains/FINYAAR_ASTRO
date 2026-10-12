@@ -1,4 +1,56 @@
 {
+  "/dictionary/debt-to-equity-ratio/": {
+    "datePublished": "2026-10-12T00:00:00+05:30",
+    "dateModified": "2026-10-12T00:00:00+05:30"
+  },
+  "/dictionary/pb-ratio/": {
+    "datePublished": "2026-10-12T00:00:00+05:30",
+    "dateModified": "2026-10-12T00:00:00+05:30"
+  },
+  "/dictionary/roce/": {
+    "datePublished": "2026-10-12T00:00:00+05:30",
+    "dateModified": "2026-10-12T00:00:00+05:30"
+  },
+  "/dictionary/roe/": {
+    "datePublished": "2026-10-12T00:00:00+05:30",
+    "dateModified": "2026-10-12T00:00:00+05:30"
+  },
+  "/dictionary/depreciation/": {
+    "datePublished": "2026-10-12T00:00:00+05:30",
+    "dateModified": "2026-10-12T00:00:00+05:30"
+  },
+  "/dictionary/cash-flow-statement/": {
+    "datePublished": "2026-10-10T00:00:00+05:30",
+    "dateModified": "2026-10-10T00:00:00+05:30"
+  },
+  "/dictionary/income-statement/": {
+    "datePublished": "2026-10-10T00:00:00+05:30",
+    "dateModified": "2026-10-10T00:00:00+05:30"
+  },
+  "/dictionary/balance-sheet/": {
+    "datePublished": "2026-10-10T00:00:00+05:30",
+    "dateModified": "2026-10-10T00:00:00+05:30"
+  },
+  "/dictionary/hedging/": {
+    "datePublished": "2026-10-10T00:00:00+05:30",
+    "dateModified": "2026-10-10T00:00:00+05:30"
+  },
+  "/dictionary/put-option/": {
+    "datePublished": "2026-10-10T00:00:00+05:30",
+    "dateModified": "2026-10-10T00:00:00+05:30"
+  },
+  "/dictionary/call-option/": {
+    "datePublished": "2026-10-10T00:00:00+05:30",
+    "dateModified": "2026-10-10T00:00:00+05:30"
+  },
+  "/dictionary/options/": {
+    "datePublished": "2026-10-10T00:00:00+05:30",
+    "dateModified": "2026-10-10T00:00:00+05:30"
+  },
+  "/dictionary/futures/": {
+    "datePublished": "2026-10-10T00:00:00+05:30",
+    "dateModified": "2026-10-10T00:00:00+05:30"
+  },
   "/": {
     "datePublished": "2026-07-18T17:50:13+05:30",
     "dateModified": "2026-09-21T17:48:25+05:30"

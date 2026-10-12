@@ -1,6 +1,186 @@
 {
   "terms": [
     {
+      "slug": "debt-to-equity-ratio",
+      "term": "Debt-to-Equity Ratio",
+      "heading": "Debt to Equity Ratio: Formula and Example",
+      "category": "Ratios and Valuation",
+      "sub_cluster": "Liquidity & solvency",
+      "url": "/dictionary/debt-to-equity-ratio/",
+      "focus_keyword": "debt to equity ratio",
+      "seo_title": "Debt to Equity Ratio: Meaning, Formula & Example | FinYaar",
+      "meta_description": "Learn the debt to equity ratio, what counts as debt, gross versus net debt, and how borrowing affects returns, with a worked example across good and bad years.",
+      "definition": "Debt-to-Equity Ratio measures how much borrowed money a company uses for every rupee its shareholders put in or left behind. It is total borrowings divided by shareholders&#39; funds, meaning share capital plus reserves and surplus. A ratio of 1.5 says the business runs on one and a half rupees of debt for each rupee of owner capital, which sharpens returns while the good years last and shortens the fuse when they do not. A comfortable level is set by the industry, the steadiness of the cash flows and the loan terms, never by one figure that travels everywhere.",
+      "related": [
+        {
+          "slug": "roce",
+          "url": "/dictionary/roce/"
+        },
+        {
+          "slug": "roe",
+          "url": "/dictionary/roe/"
+        },
+        {
+          "slug": "ebitda",
+          "url": "/dictionary/ebitda/"
+        },
+        {
+          "slug": "balance-sheet",
+          "url": "/dictionary/balance-sheet/"
+        },
+        {
+          "slug": "collateral",
+          "url": "/dictionary/collateral/"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Is there an ideal debt-to-equity ratio?",
+          "a": "No figure works across industries. Utilities and infrastructure projects with contracted revenue support far more debt than cyclical manufacturers, while many service businesses carry almost none. Compare with close peers and with the company&#39;s own record."
+        },
+        {
+          "q": "Do trade payables count as debt in this ratio?",
+          "a": "Not in the standard calculation, because payables arise from trading and carry no stated interest. A broader total-liabilities-to-equity measure exists, but that is a different ratio."
+        },
+        {
+          "q": "What is the difference between gross and net debt to equity?",
+          "a": "Gross uses all borrowings. Net subtracts cash and liquid investments first, on the view that money available to repay a loan offsets it, which is fairer for cash-rich companies."
+        },
+        {
+          "q": "Why do banks and finance companies show very high ratios?",
+          "a": "Borrowing is their business model rather than a funding choice, since deposits and market borrowings become the loans they advance. Their solvency is governed by RBI capital adequacy rules instead."
+        },
+        {
+          "q": "Do lease liabilities have to be included?",
+          "a": "Under Ind AS 116 most leases appear as a right-of-use asset and a matching liability that behaves like debt. Including it makes retailers and airlines comparable with firms that bought such assets on loan."
+        },
+        {
+          "q": "Can the ratio be negative?",
+          "a": "Yes, when accumulated losses exceed share capital and reserves. The number then stops describing leverage and becomes a solvency alarm."
+        }
+      ]
+    },
+    {
+      "slug": "pb-ratio",
+      "term": "P/B Ratio",
+      "heading": "Price to Book Ratio (P/B Ratio)",
+      "category": "Ratios and Valuation",
+      "sub_cluster": "Valuation multiples",
+      "url": "/dictionary/pb-ratio/",
+      "focus_keyword": "price to book ratio",
+      "seo_title": "Price to Book Ratio (P/B): Meaning, Formula & Example | FinYaar",
+      "meta_description": "Learn the price to book ratio (P/B), its formula, how to interpret it for banks and asset-light businesses, and a worked example linking P/B with ROE.",
+      "definition": "P/B Ratio (Price to Book) compares the market price of a share with the net assets the accounts say stand behind it. Divide the price of one share by its book value per share, or market capitalisation by shareholders&#39; funds, and you learn how many rupees investors pay for each rupee of audited net worth. It carries real information for banks, finance companies and asset-heavy manufacturers, where the balance sheet holds most of what the business is, and much less for asset-light firms, whose brands, code and trained people never reach the books at all.",
+      "related": [
+        {
+          "slug": "book-value",
+          "url": "/dictionary/book-value/"
+        },
+        {
+          "slug": "roe",
+          "url": "/dictionary/roe/"
+        },
+        {
+          "slug": "pe-ratio",
+          "url": "/dictionary/pe-ratio/"
+        },
+        {
+          "slug": "roce",
+          "url": "/dictionary/roce/"
+        },
+        {
+          "slug": "market-capitalization",
+          "url": "/dictionary/market-capitalization/"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What does a price-to-book ratio below one mean?",
+          "a": "The market values the company at less than the net assets its accounts report, which points to doubts about those carrying values, or to returns below what investors require."
+        },
+        {
+          "q": "Why are banks valued on price to book rather than price to earnings?",
+          "a": "A lender&#39;s earnings swing with provisioning decisions that can be deferred or accelerated, while its net worth is a regulated quantity supporting the loan book. Book value is the steadier anchor."
+        },
+        {
+          "q": "Is price to tangible book better?",
+          "a": "It is stricter. Removing goodwill and intangibles leaves only assets that could be sold, which matters after large acquisitions. The resulting ratio is higher, so compare it only with itself."
+        },
+        {
+          "q": "How does a buyback change the ratio?",
+          "a": "Buying shares back uses cash, so assets and net worth both fall. Done above book value, it lowers book value per share too, lifting the ratio with no change in the business."
+        },
+        {
+          "q": "Can the ratio be negative?",
+          "a": "Arithmetically yes, once accumulated losses have wiped out reserves, but the result is useless as a valuation measure. Treat negative net worth as a solvency signal."
+        },
+        {
+          "q": "Should I use standalone or consolidated book value?",
+          "a": "Use consolidated figures where subsidiaries matter, because the share price reflects the whole group. Mixing consolidated market capitalisation with standalone net worth describes nothing."
+        }
+      ]
+    },
+    {
+      "slug": "roce",
+      "term": "ROCE (Return on Capital Employed)",
+      "heading": "ROCE (Return on Capital Employed)",
+      "category": "Ratios and Valuation",
+      "sub_cluster": "Profitability ratios",
+      "url": "/dictionary/roce/",
+      "focus_keyword": "return on capital employed",
+      "seo_title": "ROCE: Return on Capital Employed, Formula & Example | FinYaar",
+      "meta_description": "Learn return on capital employed (ROCE), its formula, how it differs from ROE, and how to interpret it with a worked example comparing two companies.",
+      "definition": "ROCE (Return on Capital Employed) is the operating profit a company earns on every rupee of long-term capital put to work in the business. It divides earnings before interest and tax by capital employed, which an Indian annual report lets you read as total assets minus current liabilities, or as shareholders&#39; funds plus long-term borrowings. Because the profit figure sits above the interest line, the ratio grades the entire capital base, borrowed money included. That makes it a check on return on equity, a number cheap debt can lift without any operation improving.",
+      "related": [
+        {
+          "slug": "roe",
+          "url": "/dictionary/roe/"
+        },
+        {
+          "slug": "debt-to-equity-ratio",
+          "url": "/dictionary/debt-to-equity-ratio/"
+        },
+        {
+          "slug": "pb-ratio",
+          "url": "/dictionary/pb-ratio/"
+        },
+        {
+          "slug": "ebitda",
+          "url": "/dictionary/ebitda/"
+        },
+        {
+          "slug": "balance-sheet",
+          "url": "/dictionary/balance-sheet/"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What counts as a good ROCE?",
+          "a": "There is no universal figure. The tests that matter are whether the ratio comfortably exceeds the cost of capital, whether it holds up across a cycle, and how it sits against the same industry."
+        },
+        {
+          "q": "How is ROCE different from return on equity?",
+          "a": "Return on equity measures profit after interest and tax against shareholders&#39; funds alone. ROCE measures profit before interest against equity and long-term debt together, so it reports operating efficiency instead."
+        },
+        {
+          "q": "Is ROCE the same as ROIC?",
+          "a": "They are close cousins. Return on invested capital puts after-tax operating profit on top and nets surplus cash out of the base, while ROCE stays pre-tax and leaves cash in."
+        },
+        {
+          "q": "Why does ROCE fall when a company builds a new factory?",
+          "a": "Money spent on a project under construction enters capital work in progress, so the denominator grows at once while the factory earns nothing. Many analysts recompute the ratio with that item excluded."
+        },
+        {
+          "q": "Can ROCE be compared across industries?",
+          "a": "Only loosely. Software and consumer services employ little capital and post high ratios, while steel, cement and power carry enormous asset bases by necessity."
+        },
+        {
+          "q": "Should exceptional items stay inside EBIT?",
+          "a": "No. A gain on selling land or a one-time impairment says nothing about the ongoing return on capital, so strip such items out and recompute."
+        }
+      ]
+    },
+    {
       "slug": "compound-interest",
       "term": "Compound Interest",
       "category": "Investing Basics",
@@ -1029,15 +1209,54 @@
       "term": "Options",
       "category": "Derivatives and Risk",
       "url": "/dictionary/options/",
-      "focus_keyword": "options trading",
-      "seo_title": "Options Trading: Calls, Puts, Payoff & Risk | FinYaar",
-      "meta_description": "Options are contracts that give the buyer the right, but not the obligation, to buy or sell an underlying asset at a fixed strike price on or before a set ex...",
+      "focus_keyword": "options trading basics",
+      "seo_title": "Options Trading Basics: Calls, Puts & Risk | FinYaar",
+      "meta_description": "Learn options trading basics: calls, puts, premiums, strike prices, buyer and seller risks, and a worked example showing break-even and expiry payoffs.",
       "definition": "Options are contracts that give the buyer the right, but not the obligation, to buy or sell an underlying asset at a fixed strike price on or before a set expiry date, in return for an upfront payment called the premium. A call option is the right to buy; a put option is the right to sell. The buyer risks only the premium paid, while the seller collects that premium but accepts far larger risk. In India, index and stock options trade on the NSE, and options trading is often described as the most misunderstood corner of the market.",
       "related": [
-        { "slug": "volatility", "url": "/dictionary/volatility/" },
-        { "slug": "beta", "url": "/dictionary/beta/" },
-        { "slug": "risk-vs-return", "url": "/dictionary/risk-vs-return/" },
-        { "slug": "equity-share", "url": "/dictionary/equity-share/" }
+        {
+          "slug": "volatility",
+          "url": "/dictionary/volatility/"
+        },
+        {
+          "slug": "beta",
+          "url": "/dictionary/beta/"
+        },
+        {
+          "slug": "risk-vs-return",
+          "url": "/dictionary/risk-vs-return/"
+        },
+        {
+          "slug": "equity-share",
+          "url": "/dictionary/equity-share/"
+        }
+      ],
+      "sub_cluster": "Options & the Greeks",
+      "faqs": [
+        {
+          "q": "Is options trading gambling?",
+          "a": "Not by definition, but it can become gambling when used without a plan. Options are legitimate risk-transfer tools. Used to hedge a holding or to express a measured view, they serve a purpose. Bought blindly on tips, they behave like lottery tickets, which is why so many retail traders lose."
+        },
+        {
+          "q": "Can I lose more than I invest as an option buyer?",
+          "a": "The option payoff limits a standalone buyer's loss to the premium, before costs. However, physically settled stock options can require funds or shares at expiry. Delivery obligations, charges and any resulting stock exposure must also be considered."
+        },
+        {
+          "q": "What is the difference between an option and a future?",
+          "a": "A future is a binding obligation for both parties to transact at a set price. An option gives one side a right and the other side an obligation. The option buyer can simply walk away and lose only the premium, whereas a futures position must be honoured or squared off."
+        },
+        {
+          "q": "Why do options expire worthless so often?",
+          "a": "At expiry, a call is worthless when the underlying is at or below its strike; a put is worthless when it is at or above its strike. An in-the-money option has intrinsic value but can still produce a net loss if that value is less than the premium paid. Time decay reduces time value, all else equal."
+        },
+        {
+          "q": "Do I need a large amount to trade options in India?",
+          "a": "Buying options can be done with modest amounts because you pay only the premium. Selling or writing options, however, requires substantial margin that the exchange revises as the market moves. The low entry cost of buying is part of what makes options tempting and risky."
+        },
+        {
+          "q": "Are options a good idea for a beginner?",
+          "a": "For most beginners, no. Building wealth steadily through diversified funds and a SIP is far more reliable. If you want to learn options, start by studying them on paper and risk only money you can fully afford to lose."
+        }
       ]
     },
     {
@@ -1045,15 +1264,54 @@
       "term": "Balance Sheet",
       "category": "Accounting and Financial Statements",
       "url": "/dictionary/balance-sheet/",
-      "focus_keyword": "balance sheet",
-      "seo_title": "Balance Sheet: Meaning, Format & How to Read It | FinYaar",
-      "meta_description": "Balance Sheet is a financial statement that reports what a company owns and what it owes at a single point in time, together with the residual value belongin...",
+      "focus_keyword": "how to read a balance sheet",
+      "seo_title": "How to Read a Balance Sheet: Example & Ratios | FinYaar",
+      "meta_description": "Learn how to read a balance sheet: assets, liabilities, equity, current ratio and debt-to-equity, with a worked example and limits of ratio analysis.",
       "definition": "Balance Sheet is a financial statement that reports what a company owns and what it owes at a single point in time, together with the residual value belonging to its owners. It is built on one unbreakable rule: total assets must equal total liabilities plus shareholders' equity. Unlike the income statement, which covers a period, the balance sheet is a snapshot taken on one specific date, such as 31 March. It tells you how a business is financed, how liquid it is, and how much of it truly belongs to the shareholders.",
       "related": [
-        { "slug": "roe", "url": "/dictionary/roe/" },
-        { "slug": "ebitda", "url": "/dictionary/ebitda/" },
-        { "slug": "eps", "url": "/dictionary/eps/" },
-        { "slug": "equity-share", "url": "/dictionary/equity-share/" }
+        {
+          "slug": "roe",
+          "url": "/dictionary/roe/"
+        },
+        {
+          "slug": "ebitda",
+          "url": "/dictionary/ebitda/"
+        },
+        {
+          "slug": "eps",
+          "url": "/dictionary/eps/"
+        },
+        {
+          "slug": "equity-share",
+          "url": "/dictionary/equity-share/"
+        }
+      ],
+      "sub_cluster": "Balance sheet",
+      "faqs": [
+        {
+          "q": "Why does a balance sheet always balance?",
+          "a": "Double-entry bookkeeping records equal total debits and credits, preserving Assets = Liabilities + Equity. Transactions need not change both sides: buying equipment with cash changes two asset accounts. A balanced statement can still contain errors or misleading valuations."
+        },
+        {
+          "q": "What is the difference between current and non-current items?",
+          "a": "Current classification considers the normal operating cycle and the twelve-month horizon, with additional criteria for trading items, cash restrictions and settlement rights. Operating-cycle items can remain current even beyond twelve months. Items that do not meet current classification criteria are non-current."
+        },
+        {
+          "q": "What is shareholders' equity?",
+          "a": "It is the residual value left for owners after all liabilities are deducted from assets. It equals paid-up share capital plus reserves and retained earnings, and is also called net worth or book value."
+        },
+        {
+          "q": "Is the balance sheet the same as book value?",
+          "a": "No. The balance sheet is the whole statement; its equity is the book value attributable to owners. It reflects accounting figures, which can differ from market value, since the market prices future prospects that the book does not capture."
+        },
+        {
+          "q": "How is the balance sheet different from the income statement?",
+          "a": "The balance sheet is a snapshot at one date showing what a company owns and owes. The income statement covers a period and shows revenues, expenses, and profit earned during it."
+        },
+        {
+          "q": "What ratios come from the balance sheet?",
+          "a": "The current ratio measures liquidity, and the debt-to-equity ratio measures leverage. Combined with profit figures it also feeds return on equity and other performance measures."
+        }
       ]
     },
     {
@@ -1063,13 +1321,53 @@
       "url": "/dictionary/roe/",
       "focus_keyword": "return on equity",
       "seo_title": "ROE (Return on Equity): Formula, DuPont & Debt Caveat | FinYaar",
-      "meta_description": "ROE (Return on Equity) is a profitability ratio that measures how much net profit a company generates for every rupee of shareholders' equity it holds. Expre...",
+      "meta_description": "Learn return on equity (ROE), its formula, the DuPont breakdown and how debt affects the ratio, with a worked example comparing two Indian companies.",
       "definition": "ROE (Return on Equity) is a profitability ratio that measures how much net profit a company generates for every rupee of shareholders' equity it holds. Expressed as a percentage, it answers a simple owner question: how hard is the money that belongs to the shareholders actually working? A company with net profit of Rs 15 crore on shareholders' equity of Rs 100 crore has an ROE of 15 percent. Higher is generally better, but ROE must always be read together with how much debt the company carries, because borrowing can push the number up without the underlying business improving at all.",
       "related": [
-        { "slug": "eps", "url": "/dictionary/eps/" },
-        { "slug": "pe-ratio", "url": "/dictionary/pe-ratio/" },
-        { "slug": "balance-sheet", "url": "/dictionary/balance-sheet/" },
-        { "slug": "dividend-yield", "url": "/dictionary/dividend-yield/" }
+        {
+          "slug": "eps",
+          "url": "/dictionary/eps/"
+        },
+        {
+          "slug": "pe-ratio",
+          "url": "/dictionary/pe-ratio/"
+        },
+        {
+          "slug": "balance-sheet",
+          "url": "/dictionary/balance-sheet/"
+        },
+        {
+          "slug": "dividend-yield",
+          "url": "/dictionary/dividend-yield/"
+        }
+      ],
+      "heading": "ROE (Return on Equity)",
+      "sub_cluster": "Profitability ratios",
+      "faqs": [
+        {
+          "q": "What is a good ROE for an Indian company?",
+          "a": "A sustained ROE of 15 percent or more is generally considered healthy, and above 20 percent for many years marks a high-quality business. Below 10 percent, the company may be earning less than its cost of capital."
+        },
+        {
+          "q": "Why can a high ROE be misleading?",
+          "a": "Because debt shrinks the equity base, dividing the same profit by a smaller number and lifting ROE mechanically. A high ROE built on heavy borrowing reflects risk, not business strength, so always check the debt-to-equity ratio."
+        },
+        {
+          "q": "What is the difference between ROE and ROCE?",
+          "a": "ROE measures return on shareholders' equity alone, while return on capital employed measures return on equity plus debt together. ROCE is less distorted by leverage, so comparing the two helps reveal how much of the ROE comes from borrowing."
+        },
+        {
+          "q": "Should I use opening, closing or average equity?",
+          "a": "Average equity, the mean of the opening and closing balances, is the most accurate because profit is earned across the whole year. Closing equity is acceptable for a quick calculation but can distort the ratio after a large capital change."
+        },
+        {
+          "q": "How does ROE relate to valuation?",
+          "a": "Companies with consistently high ROE often trade at a higher P/E ratio, because the market pays more for businesses that compound owner capital efficiently. ROE helps explain why two firms with similar profits can command very different valuations."
+        },
+        {
+          "q": "Can ROE be negative?",
+          "a": "Yes. If a company makes a net loss, ROE turns negative. It can also become distorted or meaningless when shareholders' equity is very small or negative due to accumulated losses, so treat such figures with caution."
+        }
       ]
     },
     {
@@ -1299,12 +1597,39 @@
     {
       "slug": "futures",
       "term": "Futures",
+      "sub_cluster": "Futures",
       "category": "Derivatives and Risk",
       "url": "/dictionary/futures/",
-      "focus_keyword": "futures",
-      "seo_title": "Futures: Meaning, How They Work and Example | FinYaar",
+      "focus_keyword": "futures contract",
+      "seo_title": "Futures Contract: Meaning, Margin & Example | FinYaar",
       "meta_description": "What a futures contract is, how margins and settlement work, hedging vs speculation, and a worked India example. A clear derivatives guide.",
       "definition": "Futures are exchange-traded contracts that bind both the buyer and the seller to trade a standardised quantity of an underlying asset &mdash; an index, a stock, a currency or a commodity &mdash; at a price fixed today, for settlement on a set future date.",
+      "faqs": [
+        {
+          "q": "Do I have to take delivery of the underlying?",
+          "a": "Usually no. Index futures are cash-settled, and most traders square off stock futures before expiry rather than taking physical delivery, though some stock futures do settle by delivery."
+        },
+        {
+          "q": "Is a future riskier than an option?",
+          "a": "For the buyer, an option caps loss at the premium, while a future has open-ended losses on both sides. Leverage makes futures unforgiving if the price moves against you."
+        },
+        {
+          "q": "What is a margin call?",
+          "a": "It is a demand to add funds when daily losses pull your account below the required level. If you do not top up, the broker squares off your position."
+        },
+        {
+          "q": "Can I hold a future forever?",
+          "a": "No. Every futures contract has a fixed expiry. To stay in the market you must roll over by closing the near contract and opening the next month's, which has its own cost."
+        },
+        {
+          "q": "What is the minimum I need to trade a future?",
+          "a": "You need the initial margin set by the exchange, typically 10 to 20 percent of the contract value, plus a buffer for mark-to-market swings. The full notional value is not required."
+        },
+        {
+          "q": "Why do so many futures traders lose money?",
+          "a": "Leverage amplifies losses, costs add up, and timing the market is hard. SEBI data shows a large majority of individual derivatives traders end up in the red."
+        }
+      ],
       "related": [
         { "slug": "options", "url": "/dictionary/options/" },
         { "slug": "hedging", "url": "/dictionary/hedging/" },
@@ -1322,10 +1647,49 @@
       "meta_description": "What a call option is, strike, premium and payoff, when buyers profit, and a worked India example. Learn options the simple way.",
       "definition": "Call Option is a contract that gives its buyer the right, but not the obligation, to buy an underlying asset at a fixed strike price on or before a set expiry date, in exchange for an upfront premium paid to the seller.",
       "related": [
-        { "slug": "options", "url": "/dictionary/options/" },
-        { "slug": "put-option", "url": "/dictionary/put-option/" },
-        { "slug": "futures", "url": "/dictionary/futures/" },
-        { "slug": "hedging", "url": "/dictionary/hedging/" }
+        {
+          "slug": "options",
+          "url": "/dictionary/options/"
+        },
+        {
+          "slug": "put-option",
+          "url": "/dictionary/put-option/"
+        },
+        {
+          "slug": "futures",
+          "url": "/dictionary/futures/"
+        },
+        {
+          "slug": "hedging",
+          "url": "/dictionary/hedging/"
+        }
+      ],
+      "sub_cluster": "Options & the Greeks",
+      "faqs": [
+        {
+          "q": "Is buying a call safer than short selling?",
+          "a": "The loss on a bought call is capped at the premium, whereas a short sale can lose far more than the initial stake. In that narrow sense a call limits downside, but the option can still expire worthless, so it is not risk-free."
+        },
+        {
+          "q": "What happens if I do not sell my call before expiry?",
+          "a": "If the underlying finishes at or below the strike, the call expires worthless. An in-the-money NSE stock call is physically settled, requiring the buyer to pay for and receive shares at the strike. Check delivery funding requirements before expiry; the option payoff alone does not describe the cash required."
+        },
+        {
+          "q": "Why does a call lose value even when the stock does not move?",
+          "a": "Premium contains time value that erodes as expiry approaches, a process called time decay. A call can lose money simply because time passes and the expected move fails to arrive quickly enough."
+        },
+        {
+          "q": "How is a call option different from a futures contract?",
+          "a": "A futures buyer is obliged to transact and faces two-sided profit and loss. A call buyer only has a right, pays a premium for it, and can walk away, giving a limited-loss, one-sided payoff."
+        },
+        {
+          "q": "Do I need a large account to buy calls?",
+          "a": "The initial purchase costs the premium times the lot size, plus charges. Physically settled stock calls can require delivery margins and funds to purchase shares near expiry. Uncovered call writing requires margin and carries potentially unlimited loss."
+        },
+        {
+          "q": "Are call options suitable for beginners?",
+          "a": "They are complex, decay with time and often expire worthless, and regulators note that most retail traders lose money. Beginners should learn the mechanics thoroughly and risk only money they can afford to lose."
+        }
       ]
     },
     {
@@ -1338,10 +1702,49 @@
       "meta_description": "What a put option is, how it protects against falling prices, payoff and premium, and a worked India example. A clear beginner guide.",
       "definition": "Put Option is a contract that gives its buyer the right, but not the obligation, to sell a fixed quantity of an underlying asset at a pre-agreed price, called the strike, on or before a set expiry date, in return for an upfront premium.",
       "related": [
-        { "slug": "options", "url": "/dictionary/options/" },
-        { "slug": "call-option", "url": "/dictionary/call-option/" },
-        { "slug": "hedging", "url": "/dictionary/hedging/" },
-        { "slug": "volatility", "url": "/dictionary/volatility/" }
+        {
+          "slug": "options",
+          "url": "/dictionary/options/"
+        },
+        {
+          "slug": "call-option",
+          "url": "/dictionary/call-option/"
+        },
+        {
+          "slug": "hedging",
+          "url": "/dictionary/hedging/"
+        },
+        {
+          "slug": "volatility",
+          "url": "/dictionary/volatility/"
+        }
+      ],
+      "sub_cluster": "Options & the Greeks",
+      "faqs": [
+        {
+          "q": "Is buying a put the same as short selling?",
+          "a": "Both can profit from a falling price. The standalone put payoff limits loss to the premium before costs, while a short sale can lose without limit as the price rises. A put expires, and physically settled stock puts held in the money at expiry require delivery of shares."
+        },
+        {
+          "q": "What happens if the price never falls below the strike?",
+          "a": "If the underlying is at or above the strike at expiry, the put expires worthless and the buyer loses the premium, plus transaction costs. It is the expiry price that determines the final payoff, even if the price crossed the strike earlier."
+        },
+        {
+          "q": "Who should consider a protective put?",
+          "a": "An investor who owns an asset, wants to keep it, but fears a short-term fall. The put acts as insurance, and like insurance it costs a premium in every period."
+        },
+        {
+          "q": "Why is the seller required to post margin?",
+          "a": "Because the seller carries a large potential loss if the price falls sharply. Margin is collateral held by the exchange to ensure the seller can meet that obligation."
+        },
+        {
+          "q": "What makes a put more expensive?",
+          "a": "Other things equal, higher implied volatility, a higher strike and a lower underlying price increase a put premium. More time often adds value, but this is not an unconditional rule for European puts; interest rates and dividends also affect pricing."
+        },
+        {
+          "q": "Can I sell a put before expiry?",
+          "a": "Yes. A bought exchange-traded put can generally be sold during market hours before expiry, provided there is a willing buyer. Liquidity and bid-ask spreads affect the price and whether an order executes. Closing an existing long put is different from writing a new short put."
+        }
       ]
     },
     {
@@ -1349,15 +1752,54 @@
       "term": "Hedging",
       "category": "Derivatives and Risk",
       "url": "/dictionary/hedging/",
-      "focus_keyword": "hedging",
-      "seo_title": "Hedging: Meaning, How It Works and Example | FinYaar",
-      "meta_description": "What hedging is, how it reduces risk using derivatives, its cost and trade-offs, and a worked India example. Understand risk management.",
+      "focus_keyword": "hedging in finance",
+      "seo_title": "Hedging in Finance: Meaning, Tools & Example | FinYaar",
+      "meta_description": "Learn hedging in finance with protective puts, index futures and currency forwards. Compare hedge costs, residual risks and a worked share-portfolio example.",
       "definition": "Hedging is the practice of taking an offsetting position in order to reduce the risk of an existing exposure, so that a loss on one holding is partly or fully cancelled by a gain elsewhere.",
       "related": [
-        { "slug": "options", "url": "/dictionary/options/" },
-        { "slug": "put-option", "url": "/dictionary/put-option/" },
-        { "slug": "futures", "url": "/dictionary/futures/" },
-        { "slug": "diversification", "url": "/dictionary/diversification/" }
+        {
+          "slug": "options",
+          "url": "/dictionary/options/"
+        },
+        {
+          "slug": "put-option",
+          "url": "/dictionary/put-option/"
+        },
+        {
+          "slug": "futures",
+          "url": "/dictionary/futures/"
+        },
+        {
+          "slug": "diversification",
+          "url": "/dictionary/diversification/"
+        }
+      ],
+      "sub_cluster": "Hedging strategies",
+      "faqs": [
+        {
+          "q": "Is hedging the same as diversification?",
+          "a": "No. Diversification spreads money across many unrelated assets, while hedging buys direct protection against one specific exposure, usually with a derivative tied to that exact risk."
+        },
+        {
+          "q": "Does hedging guarantee I will not lose money?",
+          "a": "No. A hedge targets a particular risk. Premiums, transaction costs and funding requirements still matter, and imperfect hedges can leave significant losses. A matched protective put sets an expiry floor under stated assumptions; not every hedge provides such a floor."
+        },
+        {
+          "q": "What is a protective put?",
+          "a": "It is buying a put option on a share or index you already own. The put gains value as the price falls, working like insurance that sets a floor under your holding for a premium."
+        },
+        {
+          "q": "Can I hedge an entire equity portfolio?",
+          "a": "Selling index futures can reduce broad market exposure, but the size must reflect portfolio value and sensitivity to the index. Differences in composition and price movements can leave residual risk. Futures require margin, daily settlement and expiry management, and can offset gains when markets rise."
+        },
+        {
+          "q": "Is hedging only for large institutions?",
+          "a": "No. Individual investors in India can buy index or stock options and futures through a broker, but derivatives are high risk and demand understanding of margins, expiry, and premiums."
+        },
+        {
+          "q": "How is a currency hedge used?",
+          "a": "An investor or business expecting foreign currency can lock a future exchange rate with a forward or futures contract, so a swing in the rupee does not change the amount they finally receive."
+        }
       ]
     },
     {
@@ -1368,12 +1810,51 @@
       "focus_keyword": "income statement",
       "seo_title": "Income Statement: Meaning, Format and Example | FinYaar",
       "meta_description": "What an income statement (P&L) is, the revenue-to-net-profit flow, margins, and a worked India example. Learn to read company profits.",
-      "definition": "Income Statement is a financial statement that reports how much revenue a business earned over a period and what it spent to earn that revenue, arriving at the net profit or loss for the period.",
+      "definition": "An income statement (P&L) reports revenue, recognised expenses and the resulting net profit or loss over a period, such as a quarter or financial year. Accounting profit can differ from cash flow.",
       "related": [
-        { "slug": "balance-sheet", "url": "/dictionary/balance-sheet/" },
-        { "slug": "cash-flow-statement", "url": "/dictionary/cash-flow-statement/" },
-        { "slug": "depreciation", "url": "/dictionary/depreciation/" },
-        { "slug": "roe", "url": "/dictionary/roe/" }
+        {
+          "slug": "balance-sheet",
+          "url": "/dictionary/balance-sheet/"
+        },
+        {
+          "slug": "cash-flow-statement",
+          "url": "/dictionary/cash-flow-statement/"
+        },
+        {
+          "slug": "depreciation",
+          "url": "/dictionary/depreciation/"
+        },
+        {
+          "slug": "roe",
+          "url": "/dictionary/roe/"
+        }
+      ],
+      "sub_cluster": "Income statement",
+      "faqs": [
+        {
+          "q": "Is the income statement the same as the Profit and Loss Account in India?",
+          "a": "Yes. In Indian company law and everyday usage the income statement is called the Statement of Profit and Loss, or simply the P&L Account. The name differs but the content ? revenue down to net profit for a period ? is identical."
+        },
+        {
+          "q": "What is the difference between gross profit and net profit?",
+          "a": "Gross profit is revenue minus only the direct cost of goods sold, so it reflects production and pricing efficiency. Net profit is what remains after operating expenses, interest and tax are also removed ? the final amount that belongs to the owners."
+        },
+        {
+          "q": "Why can a profitable company still run out of cash?",
+          "a": "Because the income statement records sales when they are earned, not when cash arrives. If customers buy on credit and pay late, a firm can show strong net profit on paper while its bank balance runs dry. The cash flow statement and working-capital disclosures help explain this gap; investment spending and loan repayments can also absorb cash."
+        },
+        {
+          "q": "What does EBIT mean on an income statement?",
+          "a": "EBIT means earnings before interest and tax. It equals operating profit in this simplified example, but can differ when non-operating income or expenses are included. Check the calculation and reconcile the measure before comparing companies."
+        },
+        {
+          "q": "How often must an Indian listed company publish its income statement?",
+          "a": "Under the usual main-board equity-listing framework, quarterly results are due within 45 days of quarter-end, except the final quarter; audited annual results are due within 60 days of financial year-end. SME-exchange entities generally report half-yearly. Check applicable rules and any extensions for the entity and period."
+        },
+        {
+          "q": "Does depreciation appear on the income statement even though it is not a cash outflow?",
+          "a": "Yes. Depreciation allocates an asset's depreciable amount over its useful life and affects profit through production costs or other expenses. The depreciation charge itself is non-cash; the asset purchase may still involve cash in the same year. Under the indirect cash-flow method, depreciation included in profit is added back when reconciling operating cash flow."
+        }
       ]
     },
     {
@@ -1386,26 +1867,105 @@
       "meta_description": "What a cash flow statement is, its three sections, why profit differs from cash, and a worked India example. Read cash the right way.",
       "definition": "Cash Flow Statement is a financial statement that tracks the actual cash moving into and out of a business over a period, sorted into operating, investing and financing activities, so that a reader can see how a company generated and used real money rather than accounting profit.",
       "related": [
-        { "slug": "balance-sheet", "url": "/dictionary/balance-sheet/" },
-        { "slug": "income-statement", "url": "/dictionary/income-statement/" },
-        { "slug": "depreciation", "url": "/dictionary/depreciation/" },
-        { "slug": "budgeting", "url": "/dictionary/budgeting/" }
+        {
+          "slug": "balance-sheet",
+          "url": "/dictionary/balance-sheet/"
+        },
+        {
+          "slug": "income-statement",
+          "url": "/dictionary/income-statement/"
+        },
+        {
+          "slug": "depreciation",
+          "url": "/dictionary/depreciation/"
+        },
+        {
+          "slug": "budgeting",
+          "url": "/dictionary/budgeting/"
+        }
+      ],
+      "sub_cluster": "Cash-flow statement",
+      "faqs": [
+        {
+          "q": "Is the cash flow statement the same as a bank passbook?",
+          "a": "No. A passbook lists every individual transaction in date order. The cash flow statement groups a period of movements into three meaningful categories ? operating, investing and financing ? so a reader can judge how the business earned and used cash, not just when each rupee moved."
+        },
+        {
+          "q": "Why is depreciation added back to profit here?",
+          "a": "Depreciation included in profit is a non-cash charge, so it is added back in the indirect operating cash-flow reconciliation. Cash paid to acquire the asset is recorded separately, usually as investing cash flow, and may occur in the same year."
+        },
+        {
+          "q": "Which section should a long-term investor look at first?",
+          "a": "Cash from operations. Strong operating cash shows cash generation from operations, but compare it with investment needs, debt repayments and other commitments before judging funding sufficiency. Weak or negative operating cash, despite good profit, deserves close scrutiny before investing."
+        },
+        {
+          "q": "Can a profitable Indian company still go bankrupt?",
+          "a": "Yes. If profit is locked in unpaid receivables and unsold inventory, the firm may lack the cash to pay suppliers, salaries or loan instalments on time. Several Indian firms with reported profits have faced defaults because their cash flow, not their profit, ran dry."
+        },
+        {
+          "q": "What does negative investing cash flow indicate?",
+          "a": "It usually means the company is spending cash on long-term assets ? new plant, machinery or acquisitions. For a growing firm this is often healthy, showing investment in future capacity. Assess investment quality, expected returns, liquidity and financing as well; negative investing cash flow is neither automatically healthy nor automatically a warning."
+        },
+        {
+          "q": "Where does dividend paid appear in the statement?",
+          "a": "Dividend paid to shareholders is a cash outflow shown under financing activities, because it is money returned to the firm's funders. Under Indian accounting standards, interest and dividends received or paid are classified consistently, and dividend paid typically sits in the financing section."
+        }
       ]
     },
     {
       "slug": "depreciation",
       "term": "Depreciation",
+      "heading": "Depreciation Meaning: Methods and Example",
       "category": "Accounting and Financial Statements",
       "url": "/dictionary/depreciation/",
-      "focus_keyword": "depreciation",
+      "focus_keyword": "depreciation meaning",
       "seo_title": "Depreciation: Meaning, Methods (SLM vs WDV) and Example | FinYaar",
       "meta_description": "What depreciation is, straight-line vs written-down value, its effect on accounts, and a worked India example. A clear accounting guide.",
       "definition": "Depreciation is the accounting method of spreading the cost of a long-lived physical asset over the years it is expected to be useful, so that each year carries a fair share of the asset&rsquo;s wear and tear rather than the whole cost hitting the books in the year of purchase.",
       "related": [
-        { "slug": "income-statement", "url": "/dictionary/income-statement/" },
-        { "slug": "balance-sheet", "url": "/dictionary/balance-sheet/" },
-        { "slug": "cash-flow-statement", "url": "/dictionary/cash-flow-statement/" },
-        { "slug": "net-worth", "url": "/dictionary/net-worth/" }
+        {
+          "slug": "income-statement",
+          "url": "/dictionary/income-statement/"
+        },
+        {
+          "slug": "balance-sheet",
+          "url": "/dictionary/balance-sheet/"
+        },
+        {
+          "slug": "cash-flow-statement",
+          "url": "/dictionary/cash-flow-statement/"
+        },
+        {
+          "slug": "net-worth",
+          "url": "/dictionary/net-worth/"
+        }
+      ],
+      "sub_cluster": "Depreciation & amortisation",
+      "faqs": [
+        {
+          "q": "Is depreciation the same as the asset losing market value?",
+          "a": "No. Depreciation is an accounting allocation based on cost, useful life and method chosen. The asset&rsquo;s real resale price in the market can be higher or lower than its book value at any point. A five-year-old car&rsquo;s book value and its actual second-hand price rarely match."
+        },
+        {
+          "q": "Why is land not depreciated in Indian accounts?",
+          "a": "Land is treated as having an unlimited useful life &mdash; it does not wear out or become obsolete the way a machine does. Since depreciation exists to spread cost over a limited life, land has no life to spread over. Buildings on the land are depreciated, but the land itself is not."
+        },
+        {
+          "q": "Can a company switch from SLM to WDV or back?",
+          "a": "A change in depreciation method is treated as a change in accounting estimate under Indian accounting standards and is allowed only if it gives a more appropriate presentation. The company must disclose the change and its effect. It cannot be switched casually year to year just to manage reported profit."
+        },
+        {
+          "q": "How does depreciation lower my tax bill in India?",
+          "a": "Depreciation is a deductible expense, so it reduces taxable business income. The Income Tax Act prescribes WDV rates on blocks of assets, and because WDV is front-loaded, businesses get larger deductions in an asset&rsquo;s early years, deferring tax to later years."
+        },
+        {
+          "q": "What is the difference between depreciation, amortisation and depletion?",
+          "a": "All three spread cost over time. Depreciation applies to tangible fixed assets like machines and vehicles. Amortisation applies to intangible assets such as patents and software. Depletion applies to natural resources like mines and quarries as they are extracted. The idea is identical; only the asset type differs."
+        },
+        {
+          "q": "What happens to depreciation when an asset is fully written down?",
+          "a": "Once an asset reaches its salvage value or zero book value, no further depreciation is charged, even if it is still in use. It may continue to appear on the balance sheet at its residual value until it is sold or scrapped, at which point any gain or loss on disposal is recorded."
+        }
       ]
     },
     {
