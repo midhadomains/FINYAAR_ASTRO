@@ -3475,6 +3475,65 @@
           "url": "/dictionary/mutual-fund/"
         }
       ]
+    },
+    {
+      "slug": "monetary-policy",
+      "term": "Monetary Policy",
+      "category": "Economics and Macro",
+      "sub_cluster": "Monetary policy (RBI)",
+      "url": "/dictionary/monetary-policy/",
+      "focus_keyword": "monetary policy",
+      "seo_title": "Monetary Policy: RBI Tools and Effects | FinYaar",
+      "meta_description": "Learn how monetary policy in India works, how the RBI and MPC set rates, and how repo rate changes affect home loan EMIs, deposits and the economy.",
+      "definition": "Monetary Policy is the set of decisions through which a central bank influences the price and availability of money in an economy. In India it is framed by the Reserve Bank of India under a flexible inflation targeting mandate in the Reserve Bank of India Act, 1934, with the policy rate set by a six-member Monetary Policy Committee. The Central Government, in consultation with the Reserve Bank, fixes the consumer price inflation target once in five years, currently 4 percent within a band of 2 to 6 percent. Its instruments run from the repo rate to reserve requirements and open market operations.",
+      "faqs": [
+        {
+          "q": "Who decides the repo rate in India?",
+          "a": "The Monetary Policy Committee, by majority vote. Three of its six members come from the Reserve Bank and three are external experts appointed by the Central Government. The Governor chairs and breaks a tie."
+        },
+        {
+          "q": "What is the current repo rate and inflation reading?",
+          "a": "Both change frequently, so no figure printed on a page stays accurate. Read the latest Monetary Policy Committee resolution on the RBI website, and the Ministry of Statistics release for the price index."
+        },
+        {
+          "q": "How does monetary policy differ from fiscal policy?",
+          "a": "Monetary policy is run by the central bank through interest rates and liquidity; fiscal policy by the government through the Union Budget. Both shape demand and prices from different institutions."
+        },
+        {
+          "q": "What does a hawkish or dovish stance mean?",
+          "a": "Hawkish means leaning towards tighter policy, weighting inflation control even at some cost to growth; dovish is the opposite. The committee also announces a formal stance, such as neutral."
+        },
+        {
+          "q": "How does monetary policy affect the stock market?",
+          "a": "Lower rates cut what companies pay to borrow and the rate at which future profits are discounted, both of which support valuations. Banking, housing and vehicle stocks react most."
+        },
+        {
+          "q": "What happens if inflation stays outside the tolerance band?",
+          "a": "Average inflation breaching either tolerance level for three consecutive quarters is a failure to maintain the target. The Reserve Bank must then report to the Central Government with the reasons and the remedial actions proposed."
+        }
+      ],
+      "related": [
+        {
+          "slug": "repo-rate",
+          "url": "/dictionary/repo-rate/"
+        },
+        {
+          "slug": "inflation",
+          "url": "/dictionary/inflation/"
+        },
+        {
+          "slug": "g-sec",
+          "url": "/dictionary/g-sec/"
+        },
+        {
+          "slug": "emi",
+          "url": "/dictionary/emi/"
+        },
+        {
+          "slug": "gdp",
+          "url": "/dictionary/gdp/"
+        }
+      ]
     }
   ]
 }
